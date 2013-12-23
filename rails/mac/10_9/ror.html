@@ -38,29 +38,29 @@
     <li><a href="../../../index.html">Home</a></li>
     <li><a href="../../index.html">Ruby on Rails install</a></li>
     <li><a href="../index.html">Mac OS X</a></li>
-    <li class="active">Mac OS X 10.8</li>
+    <li><a href="index.html">Mac OS X 10.9</a></li>
+    <li class="active">Ruby on Railsのインストール</li>
   </ol>
   <div>
-    <h1>Mac OS X 10.8 (Snow Leopard)</h1>
-    <p>PDFファイルかPowerPointファイルをダウンロードし、参照してください。</p>
-    <div class="row" style="margin-top:50px">
-      <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pdf" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PDFファイルをダウンロード</a> </div>
-    </div>
-  </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> or </div>
-  </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pptx" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PowerPointファイルをダウンロード</a> </div>
-  </div>
+    <h1><span class="active">Ruby on Rails</span>のインストール</h1>
+    
+    <p>Ruby on Railsのライブラリをインストールします。Ruby on Railsは<a href="http://rubygems.org/Ru">Ruby Gems</a>と呼ばれるライブラリ管理アプリケーションによって提供されています。</p>
+    <h2>手順</h2>
+    <p>[ターミナル] を立ち上げます。</p>
+    <p><a href="images/terminal.png"></a>ターミナルに、以下のように入力して[Enter]キーを押します。    </p>
+    <pre>% gem install rails
+</pre>
+<div class="alert alert-info">
+  <p>Ruby on Railsは様々なライブラリに依存しており、上記コマンドを実行すると依存しているライブラリもインストールされます。依存しているライブラリがたくさんあるので、インストールには時間がかかります。</p>
+</div>
+<p><a href="images/terminal.png"></a></p>
+<p>インストールが完了したら、ターミナルに、以下のように入力して[Enter]キーを押します。</p>
+<pre>% gem list</pre>
+<p>railsという表記があったらインストールは成功しています。</p>
+<p>railsを見つけづらい場合は、<code>gem list | grep rails</code>と入力するとrailsが含まれた行だけ表示出来ます。</p>
+<p><br>
+</p>
 </div>
 </div>
-<!-- /.container --> 
-
-<!-- Bootstrap core JavaScript
-        ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
-<script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

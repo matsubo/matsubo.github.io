@@ -38,29 +38,32 @@
     <li><a href="../../../index.html">Home</a></li>
     <li><a href="../../index.html">Ruby on Rails install</a></li>
     <li><a href="../index.html">Mac OS X</a></li>
-    <li class="active">Mac OS X 10.8</li>
+    <li><a href="index.html">Mac OS X 10.9</a></li>
+    <li class="active">rbenvのインストール</li>
   </ol>
   <div>
-    <h1>Mac OS X 10.8 (Snow Leopard)</h1>
-    <p>PDFファイルかPowerPointファイルをダウンロードし、参照してください。</p>
-    <div class="row" style="margin-top:50px">
-      <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pdf" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PDFファイルをダウンロード</a> </div>
-    </div>
-  </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> or </div>
-  </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pptx" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PowerPointファイルをダウンロード</a> </div>
+    <h1><span class="active">rbenv</span>のインストール</h1>
+    
+    <p>ruby自体を管理するためのアプリケーションをインストールし、設定します。</p>
+    <h2>手順</h2>
+    <p>[ターミナル] を立ち上げます。</p>
+    <p><a href="images/terminal.png"></a>ターミナルに、以下のように入力して[Enter]キーを押します。</p>
+<pre>% brew install rbenv</pre>
+<p><br>
+出力例：</p>
+<p><img src="images/brew_install_rbenv.png" alt="" width="531" height="154"></p>
+<p>&nbsp;</p>
+<p>次に、rbenvの設定を書き込みます。</p>
+<pre>% cd 
+% echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; .bash_profile<br>% echo 'if which rbenv &gt; /dev/null; then eval &quot;$(rbenv init -)&quot;; fi' &gt;&gt; .bash_profile</pre>
+<p>&nbsp;</p>
+<p>以下のコマンドを入力して、上記の設定を再読み込みします。<br>
+  (上記の設定を行った直後のみ必要です）</p>
+<pre>% source .bash_profile
+</pre>
+  <p>何も出力されなければ成功です。<br>
+  </p>
   </div>
 </div>
-</div>
-<!-- /.container --> 
-
-<!-- Bootstrap core JavaScript
-        ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
-<script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

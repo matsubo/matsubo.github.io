@@ -38,22 +38,21 @@
     <li><a href="../../../index.html">Home</a></li>
     <li><a href="../../index.html">Ruby on Rails install</a></li>
     <li><a href="../index.html">Mac OS X</a></li>
-    <li class="active">Mac OS X 10.8</li>
+    <li><a href="index.html">Mac OS X 10.9</a></li>
+    <li class="active">Command Line Toolsのインストール</li>
   </ol>
   <div>
-    <h1>Mac OS X 10.8 (Snow Leopard)</h1>
-    <p>PDFファイルかPowerPointファイルをダウンロードし、参照してください。</p>
-    <div class="row" style="margin-top:50px">
-      <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pdf" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PDFファイルをダウンロード</a> </div>
-    </div>
+    <h1>Command Line Toolsのインストール</h1>
+    
+    <p>Command Line Toolsとは、Mac OS上でソフトウェアをコンパイルするために必要なライブラリやコマンドが収録されたライブラリです。</p>
+    <p>一般的に、Mac OS上でソフトウェア開発を行う場合は必要になるツールです。</p>
+    <h2>手順</h2>
+    <p>[ターミナル] （[アプリケーション]の[ユーティリティ]）を立ち上げます。</p>
+    <p><a href="images/terminal.png"><img src="images/terminal.png" alt="" width="569" height="380" class="container"></a></p>
+
+
+
   </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> or </div>
-  </div>
-  <div class="row" style="margin-top:10px">
-    <div class="col-xs-12 text-center"> <a href="asset/manual_formac_v11.pptx" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-file"></span> PowerPointファイルをダウンロード</a> </div>
-  </div>
-</div>
 </div>
 <!-- /.container --> 
 
