@@ -1,0 +1,21 @@
+{
+  "name": "matsubo.github.io",
+  "version": "0.0.0",
+  "homepage": "http://matsubo.github.io/",
+  "authors": [
+    "Yuki Matsukura <matsubokkuri@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap.css": "~2.3.2",
+    "bootstrap": "~3.0.3"
+  }
+}
