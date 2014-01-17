@@ -52,10 +52,17 @@
     <div class="alert alert-info"><code>rbenv install -l</code>と入力するとインストール可能なバージョンの一覧が表示されます。2.0.0-p353は2014年1月で最新の安定バージョンとなります。</div>
     <p><a href="images/terminal.png"></a></p>
     <p>インストールが完了したら、ターミナルに、以下のように入力して[Enter]キーを押します。</p>
-    <pre>% rbenv versions</pre>
-    <p><code>rbenv install</code>で指定したバージョン名が表示されていたら成功です。</p>
+    <pre>% rbenv versions
+* system (set by /Users/matsu/.rbenv/version)
+  2.0.0-p353
+    </pre>
+    <p><code>rbenv install</code>で指定したバージョン名が表示されていたら、rbenvでのrubyインストールが成功です。</p>
     <p>&nbsp;</p>
-    <p>現在利用するrubyの環境設定を更新するために、<br>
+    <p>次に、rbenvでインストールしたrubyを利用する設定を行います。以下のように入力して、利用するrubyの環境を指定します。</p>
+    <pre>% rbenv global 2.0.0-p353</pre>
+    <p>再度、<code>rbenv versions</code>と入力して指定したrubyのバージョンの横にアスタリスクが表示されていれば問題ありません。</p>
+    <p>&nbsp;</p>
+    <p>次に、現在利用するrubyの環境設定を更新するために、<br>
       ターミナルに、以下のように入力して[Enter]キーを押します。</p>
     <pre>% rbenv rehash
 </pre>
