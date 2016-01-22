@@ -1,6 +1,6 @@
 {
   "name": "matsubo.github.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "http://matsubo.github.io/",
   "authors": [
     "Yuki Matsukura <matsubokkuri@gmail.com>"
@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "bootstrap.css": "~2.3.2",
-    "bootstrap": "~3.0.3"
+    "bootstrap": "~3.3.6"
   }
 }
