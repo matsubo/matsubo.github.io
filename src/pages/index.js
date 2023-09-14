@@ -10,22 +10,26 @@ const IndexPage = () => (
     <section className="py-5 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Hello world ! </h1>
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-
+          <h1 className="fw-light">Welcome to Yuki Matsukura github page</h1>
+          <p className="lead text-muted">
+            This site is prepared for the document written in Markdown. Please
+            visit <a href="https://matsu.teraren.com/">my blog</a> instead.
+          </p>
         </div>
       </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary my-2">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
+
+      <div class="text-start">
+        <h2 class="mt-3">Contents</h2>
+
+        <div class="list-group">
+          <Link to="rails/" class="list-group-item">
+            <h4 class="list-group-item-heading">Ruby on Rails Installation</h4>
+            <p class="list-group-item-text">
+              Illustrating how to install Ruby on Rails setup. Goal of the
+              document is to start Rails development using Aptana.
+            </p>
+          </Link>
+        </div>
       </div>
     </section>
   </Layout>
@@ -33,6 +37,4 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const Head = () => (
-    <Seo />
-)
+export const Head = () => <Seo />
