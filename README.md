@@ -1,48 +1,49 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-   Gatsby Bootstrap 5 starter
+  Gatsby Minimal Starter
 </h1>
 
+## 🚀 Quick start
 
-Minimal bootstrap 5 and Gatsby configuration with SCSS support. 
+1.  **Create a Gatsby site.**
 
-Demo here : https://gatsbystarterbootstrap5.gatsbyjs.io/
-
-## 📋 Available options
-
-- You can theme bootstrap via `src/components/layout.scss`
-
-## 🚀 How to install
-
-Use the Gatsby CLI to create a new site. 
-
-```shell
-# create a new Gatsby site using the default starter
-gatsby new gatsby-starter-bootstrap-5 https://github.com/r-ichard/gatsby-starter-bootstrap-5
-```
-
-
-## ✏️ How to develop locally
-
-1.  Navigate into your new site’s directory and start it up.
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
     ```shell
-    cd gatsby-starter-bootstrap-5/
-    gatsby develop
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
     ```
 
-1.  **Open the source code and start editing!**
+2.  **Start developing.**
 
-    Your site is now running at `http://localhost:8000`!
+    Navigate into your new site’s directory and start it up.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-    Open the `gatsby-starter-bootstrap-5` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+3.  **Open the code and start customizing!**
 
-## 💡 How to contribute 
+    Your site is now running at http://localhost:8000!
 
-Any feedback is welcome and helpful.
+    Edit `src/pages/index.js` to see your site update in real-time!
+
+4.  **Learn more**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🚀 Quick start (Netlify)
+
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
