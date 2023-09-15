@@ -12,6 +12,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "deploy": "gatsby build  && gh-pages -d public -b main",
     "clean": "gatsby clean"
   },
   "dependencies": {
@@ -31,5 +32,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.67.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
