@@ -23,41 +23,50 @@ const AboutPage = () => (
             <Link to="/rails/mac/10_9/">Mac OS X 10.9</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
-            homebrewのインストール
+            rbenvのインストール
           </li>
         </ol>
       </nav>
 
       <div>
-        <h1>homebrewのインストール</h1>
+        <h1>
+          <span className="active">rbenv</span>のインストール
+        </h1>
+
         <p>
-          homebrewとはMac OS
-          Xにコマンドを1回打つだけでアプリケーションを導入できるようにするツールです。
-        </p>
-        <p>
-          後ほど利用する、rbenvというrubyを管理するためのアプリケーションをインストールするために利用します。
+          ruby自体を管理するためのアプリケーションをインストールし、設定します。
         </p>
         <h2>手順</h2>
         <p>[ターミナル] を立ち上げます。</p>
-        <StaticImage src="../../../../images/terminal.png" />
         <p>ターミナルに、以下のように入力して[Enter]キーを押します。</p>
         <p>
+          <br />
+          出力例：
+        </p>
+        <p>
+          <StaticImage
+            src="../../../../images/brew_install_rbenv.png"
+            alt="rbenv"
+          />
+        </p>
+
+        <p>次に、rbenvの設定を書き込みます。</p>
+        <pre>
           <code>
-            % ruby -e &quot;$(curl -fsSL
-            https://raw.github.com/Homebrew/homebrew/go/install)&quot;
+            % cd % echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;'
+            &gt;&gt; .bash_profile % echo 'if which rbenv &gt; /dev/null; then
+            eval &quot;$(rbenv init -)&quot;; fi' &gt;&gt; .bash_profile
           </code>
-        </p>
-        <p>&nbsp;</p>
+        </pre>
         <p>
-          いくつか、インストール中に質問を聞かれるので、適切に回答していきます。
+          以下のコマンドを入力して、上記の設定を再読み込みします。
+          <br />
+          (上記の設定を行った直後のみ必要です）
         </p>
-        <p>
-          途中、時分のパスワード入力を求められるので、入力してEnterを押します。
-        </p>
-        <p>&nbsp;</p>
-        <p>最後の方に、</p>
-        <code>Installation successful!</code>
-        <p>と表示されたら完了です。</p>
+        <pre>
+          <code>% source .bash_profile</code>
+        </pre>
+        <p>何も出力されなければ成功です。 </p>
       </div>
 
       <p className="mt-5">

@@ -16,10 +16,10 @@ const AboutPage = () => (
             <Link to="/rails/">Ruby on Rails install</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/rails/10_8/">Mac OS X</Link>
+            <Link to="/rails/mac/">Mac OS X</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/rails/10_8/">Mac OS X 10.9</Link>
+            <Link to="/rails/mac/10_9/">Mac OS X 10.9</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             Command Line Toolsのインストール

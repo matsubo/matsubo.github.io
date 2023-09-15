@@ -16,7 +16,7 @@ const AboutPage = () => (
             <Link to="/rails/">Ruby on Rails install</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/rails/10_8/">Mac OS X</Link>
+            <Link to="/rails/mac/">Mac OS X</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             Mac OS X 10.8

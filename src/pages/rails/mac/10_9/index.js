@@ -16,7 +16,7 @@ const AboutPage = () => (
             <Link to="/rails/">Ruby on Rails install</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/rails/10_8/">Mac OS X</Link>
+            <Link to="/rails/mac/">Mac OS X</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             Mac OS X 10.9
@@ -46,45 +46,45 @@ const AboutPage = () => (
               rubyenvをインストールするためのアプリケーションをインストールします。
             </p>
           </Link>
-          <a href="rbenv.html" className="list-group-item">
+          <Link to="rbenv" className="list-group-item">
             <h4 className="list-group-item-heading">3. rbenvのインストール</h4>
             <p className="list-group-item-text">
               ruby自体を管理するアプリケーションをインストールし、設定します。
             </p>
-          </a>
-          <a href="ruby.html" className="list-group-item">
+          </Link>
+          <Link to="ruby" className="list-group-item">
             <h4 className="list-group-item-heading">4. Rubyのインストール</h4>
             <p className="list-group-item-text">
               Ruby自体のインストールを行います。
             </p>
-          </a>
-          <a href="ror.html" className="list-group-item">
+          </Link>
+          <Link to="ror" className="list-group-item">
             <h4 className="list-group-item-heading">
               5. Ruby on Railsのインストール
             </h4>
             <p className="list-group-item-text">
               Ruby on Railsのライブラリをインストールします。
             </p>
-          </a>
+          </Link>
         </div>
 
         <h2 className="mt-3">Aptana Studioのインストール</h2>
         <div className="list-group">
-          <a href="java.html" className="list-group-item">
+          <Link to="java" className="list-group-item">
             <h4 className="list-group-item-heading">1. Javaのインストール</h4>
             <p className="list-group-item-text">
               Aptanaが依存しているJavaをインストールします。
             </p>
-          </a>
-          <a href="aptana.html" className="list-group-item">
+          </Link>
+          <Link to="aptana" className="list-group-item">
             <h4 className="list-group-item-heading">
               2. Aptana Studioのインストール
             </h4>
             <p className="list-group-item-text">
               Aptana Studioをダウンロードし、インストール、起動します。
             </p>
-          </a>
-          <a href="aptana_check.html" className="list-group-item">
+          </Link>
+          <Link to="aptana_check" className="list-group-item">
             <h4 className="list-group-item-heading">
               3. Ruby on Railsの動作確認
             </h4>
@@ -92,7 +92,7 @@ const AboutPage = () => (
               Aptana StudioからRuby on
               Railsプロジェクトを作成して動作確認をします。
             </p>
-          </a>
+          </Link>
         </div>
 
         <p className="mt-5">
