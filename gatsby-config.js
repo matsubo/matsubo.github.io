@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        sitemap: `https://matsubo.github.io/sitemap-index.xml`
+        sitemap: `https://matsubo.github.io/sitemap-index.xml`,
         policy: [{userAgent: '*', allow: '/'}]
       }
     },
