@@ -17,13 +17,15 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div class="text-start">
-        <h2 class="mt-3">Contents</h2>
+      <div className="text-start">
+        <h2 className="mt-3">Contents</h2>
 
-        <div class="list-group">
-          <Link to="rails/" class="list-group-item">
-            <h4 class="list-group-item-heading">Ruby on Rails Installation</h4>
-            <p class="list-group-item-text">
+        <div className="list-group">
+          <Link to="rails/" className="list-group-item">
+            <h4 className="list-group-item-heading">
+              Ruby on Rails Installation
+            </h4>
+            <p className="list-group-item-text">
               Illustrating how to install Ruby on Rails setup. Goal of the
               document is to start Rails development using Aptana.
             </p>

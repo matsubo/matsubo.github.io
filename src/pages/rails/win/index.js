@@ -8,14 +8,14 @@ const AboutPage = () => (
   <Layout>
     <div className="container my-5">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
             <Link to="/">Home</Link>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <Link to="/rails/">Ruby on Rails install</Link>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
+          <li className="breadcrumb-item active" aria-current="page">
             Windows
           </li>
         </ol>
@@ -32,35 +32,35 @@ const AboutPage = () => (
           </li>
         </ul>
 
-        <div class="row mt-3">
-          <div class="col-xs-12 text-center">
+        <div className="row mt-3">
+          <div className="col-xs-12 text-center">
             <a
               href={`../../manual_forwin_v12.pdf`}
-              class="btn btn-lg btn-primary"
+              className="btn btn-lg btn-primary"
             >
-              <i class="bi bi-filetype-pdf"></i>
+              <i className="bi bi-filetype-pdf"></i>
               PDFファイルをダウンロード
             </a>{" "}
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-xs-12 text-center"> or </div>
+        <div className="row mt-3">
+          <div className="col-xs-12 text-center"> or </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-xs-12 text-center">
+        <div className="row mt-3">
+          <div className="col-xs-12 text-center">
             <a
               href={`../../manual_forwin_v12.pptx`}
-              class="btn btn-lg btn-primary"
+              className="btn btn-lg btn-primary"
             >
-              <i class="bi bi-filetype-ppt"></i>
+              <i className="bi bi-filetype-ppt"></i>
               PowerPointファイルをダウンロード
             </a>
           </div>
         </div>
 
         <p>
-          <Link to="/rails/" class="btn btn-info">
-            <i class="bi bi-chevron-left"></i>
+          <Link to="/rails/" className="btn btn-info">
+            <i className="bi bi-chevron-left"></i>
             戻る
           </Link>
         </p>
