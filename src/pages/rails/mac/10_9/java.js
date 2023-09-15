@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const AbouttPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -46,10 +46,7 @@ const AbouttPage = () => (
           以下のようにバージョン番号が表示されれば、既にインストールされているのでここで、Javaのインストールをする必要は有りません。
         </p>
         <p>
-          <StaticImage
-            src="../../../../images/java.png"
-            alt="java"
-          />
+          <StaticImage src="../../../../images/java.png" alt="java" />
         </p>
         <h2>Javaのダウンロードとインストール</h2>
         <p>以下のサイトへアクセスし、Javaをダウンロードします。</p>
@@ -77,31 +74,19 @@ const AbouttPage = () => (
           保存したファイルを開き、表示されたないよう通りに進んで行けばインストールを完了できます。
         </p>
         <p>
-          <StaticImage
-            src="../../../../images/java_installer.png"
-            alt=""
-          />
+          <StaticImage src="../../../../images/java_installer.png" alt="" />
         </p>
         <p>&nbsp;</p>
         <p>
-          <StaticImage
-            src="../../../../images/java_agreement.png"
-            alt=""
-          />
+          <StaticImage src="../../../../images/java_agreement.png" alt="" />
         </p>
         <p>&nbsp;</p>
         <p>
-          <StaticImage
-            src="../../../../images/java_warning.png"
-            alt=""
-          />
+          <StaticImage src="../../../../images/java_warning.png" alt="" />
         </p>
         <p>&nbsp;</p>
         <p>
-          <StaticImage
-            src="../../../../images/java_installed.png"
-            alt=""
-          />
+          <StaticImage src="../../../../images/java_installed.png" alt="" />
         </p>
         <p>再度、以下を入力してバージョン番号が表示されるかを確認します。 </p>
         <pre>

@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -41,12 +41,11 @@ const AboutPage = () => (
         <p>[ターミナル] を立ち上げます。</p>
         <StaticImage src="../../../../images/terminal.png" />
         <p>ターミナルに、以下のように入力して[Enter]キーを押します。</p>
-        <p>
-          <code>
-            % ruby -e &quot;$(curl -fsSL
-            https://raw.github.com/Homebrew/homebrew/go/install)&quot;
+        <pre>
+          <code>{`% ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+`}
           </code>
-        </p>
+        </pre>
         <p>&nbsp;</p>
         <p>
           いくつか、インストール中に質問を聞かれるので、適切に回答していきます。
@@ -54,9 +53,8 @@ const AboutPage = () => (
         <p>
           途中、時分のパスワード入力を求められるので、入力してEnterを押します。
         </p>
-        <p>&nbsp;</p>
         <p>最後の方に、</p>
-        <code>Installation successful!</code>
+        <pre><code>Installation successful!</code></pre>
         <p>と表示されたら完了です。</p>
       </div>
 

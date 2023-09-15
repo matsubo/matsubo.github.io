@@ -6,7 +6,7 @@ import { Seo } from "../../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">

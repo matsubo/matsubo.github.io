@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -52,10 +52,10 @@ const AboutPage = () => (
 
         <p>次に、rbenvの設定を書き込みます。</p>
         <pre>
-          <code>
-            % cd % echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;'
-            &gt;&gt; .bash_profile % echo 'if which rbenv &gt; /dev/null; then
-            eval &quot;$(rbenv init -)&quot;; fi' &gt;&gt; .bash_profile
+          <code>{`% cd
+% echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' >> .bash_profile
+% echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> .bash_profile
+`}
           </code>
         </pre>
         <p>

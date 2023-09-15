@@ -6,7 +6,7 @@ import { Seo } from "../../../../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -42,11 +42,8 @@ const AboutPage = () => (
         <pre>
           <code>% gem install rails</code>
         </pre>
-        <div className="alert alert-info">
-          <p>
-            Ruby on
-            Railsは様々なライブラリに依存しており、上記コマンドを実行すると依存しているライブラリもインストールされます。依存しているライブラリがたくさんあるので、インストールには時間がかかります。
-          </p>
+        <div className="alert alert-secondary" role="alert">
+            Ruby on Railsは様々なライブラリに依存しており、上記コマンドを実行すると依存しているライブラリもインストールされます。依存しているライブラリがたくさんあるので、インストールには時間がかかります。
         </div>
         <p>
           インストールが完了したら、ターミナルに、以下のように入力して[Enter]キーを押します。

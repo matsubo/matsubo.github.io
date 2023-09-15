@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
-    <div className="container my-5">
+    <div className="container my-2">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -39,7 +39,7 @@ const AboutPage = () => (
         <pre>
           <code>% rbenv install 2.0.0-p353</code>
         </pre>
-        <div className="alert alert-info">
+        <div className="alert alert-secondary" role="alert">
           <code>rbenv install -l</code>
           と入力するとインストール可能なバージョンの一覧が表示されます。2.0.0-p353は2014年1月で最新の安定バージョンとなります。
         </div>
@@ -82,11 +82,9 @@ const AboutPage = () => (
         <pre>
           <code>
             % echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.aptanarc
-            <br/>
-            % echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.aptanarc
+            <br />% echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.aptanarc
           </code>
         </pre>
-        <br />
         <h2>参考：rbenvのその他のオプション</h2>
         <dl>
           <dt>rbenvでRubyのバージョンを指定する方法</dt>
