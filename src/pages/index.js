@@ -10,10 +10,6 @@ const IndexPage = () => (
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
           <h1 className="fw-light">Welcome to Yuki Matsukura github page</h1>
-          <p className="lead text-muted">
-            This site is prepared for the document written in Markdown. Please
-            visit <a href="https://matsu.teraren.com/">my blog</a> instead.
-          </p>
         </div>
       </div>
 
