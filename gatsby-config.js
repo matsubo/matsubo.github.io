@@ -6,6 +6,13 @@ module.exports = {
     siteUrl: `https://matsubo.github.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        sitemap: `https://matsubo.github.io/sitemap-index.xml`
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     {
