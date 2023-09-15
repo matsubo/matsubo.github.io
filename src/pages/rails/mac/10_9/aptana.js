@@ -32,10 +32,10 @@ const AboutPage = () => (
         <h1>
           <span className="active">Aptana Studio</span>のインストール
         </h1>
-        <p>Aptana Studio統合開発環境です。</p>
+        <div>Aptana Studio統合開発環境です。</div>
         <h2>手順</h2>
-        <p>以下のサイトへアクセスし、Aptana Studio 3をダウンロードします。</p>
-        <p>
+        <div>以下のサイトへアクセスし、Aptana Studio 3をダウンロードします。</div>
+        <div>
           <a
             href="https://www.aptana.com/products/studio3/download"
             target="_blank"
@@ -45,28 +45,27 @@ const AboutPage = () => (
             <i className="bi bi-box-arrow-up-right"></i>
             https://www.aptana.com/products/studio3/download
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           ダウンロードしたファイルを開いて、[Aptana Studio 3]
           ディレクトリをアプリケーションフォルダへドラッグアンドドロップします。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/aptana_move.png" alt="" />
-        </p>
-        <p>
-          Spotlightまたは、[アプリケーション] ディレクトリから[Aptana Studio
-          3]を起動します。
-        </p>
-        <p>
+        </div>
+        <div>
+          Spotlightまたは、[アプリケーション] ディレクトリから[Aptana Studio 3]を起動します。
+        </div>
+        <div>
           <StaticImage src="../../../../images/aptana_start.png" alt="" />
-        </p>
-        <p>以下のような画面が表示されればインストールは成功しています。</p>
-        <p>
+        </div>
+        <div>以下のような画面が表示されればインストールは成功しています。</div>
+        <div>
           <StaticImage
             src="../../../../images/aptana_window.png"
             alt="aptana for windows"
           />
-        </p>
+        </div>
       </div>
 
       <p className="mt-5">

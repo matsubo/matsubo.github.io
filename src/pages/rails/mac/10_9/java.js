@@ -32,25 +32,24 @@ const AbouttPage = () => (
         <h1>
           <span className="active">Java</span>のインストール
         </h1>
-        <p>
+        <div>
           AptanaはJavaに依存しているため、Javaがインストールされていない場合は、Javaをインストールします。
-        </p>
+        </div>
         <h2>Javaがインストールされているか確認</h2>
-        <p>[ターミナル] を立ち上げます。</p>
-        <p>ターミナルに、以下のように入力して[Enter]キーを押します。 </p>
+        <div>[ターミナル] を立ち上げます。</div>
+        <div>ターミナルに、以下のように入力して[Enter]キーを押します。 </div>
         <pre>
           <code>% java -version</code>
         </pre>
-        <p>
-          {" "}
+        <div>
           以下のようにバージョン番号が表示されれば、既にインストールされているのでここで、Javaのインストールをする必要は有りません。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/java.png" alt="java" />
-        </p>
+        </div>
         <h2>Javaのダウンロードとインストール</h2>
-        <p>以下のサイトへアクセスし、Javaをダウンロードします。</p>
-        <p>
+        <div>以下のサイトへアクセスし、Javaをダウンロードします。</div>
+        <div>
           <a
             href="http://java.com/ja/download/"
             target="_blank"
@@ -60,46 +59,43 @@ const AbouttPage = () => (
             <i className="bi bi-box-arrow-up-right"></i>
             http://java.com/ja/download/
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           「同意して無料ダウンロードを開始」ボタンをクリックすると、ダウンロードが開始されるためデスクトップなどの適当な場所へファイルを保存します。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage
             src="../../../../images/java_download.png"
             alt="java download"
           />
-        </p>
-        <p>
+        </div>
+        <div>
           保存したファイルを開き、表示されたないよう通りに進んで行けばインストールを完了できます。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/java_installer.png" alt="" />
-        </p>
-        <p>&nbsp;</p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/java_agreement.png" alt="" />
-        </p>
-        <p>&nbsp;</p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/java_warning.png" alt="" />
-        </p>
-        <p>&nbsp;</p>
-        <p>
+        </div>
+        <div>
           <StaticImage src="../../../../images/java_installed.png" alt="" />
-        </p>
-        <p>再度、以下を入力してバージョン番号が表示されるかを確認します。 </p>
+        </div>
+        <div>再度、以下を入力してバージョン番号が表示されるかを確認します。 </div>
         <pre>
           <code>% java -version</code>
         </pre>
       </div>
 
-      <p className="mt-5">
+      <div className="mt-5">
         <Link to="../" className="btn btn-info">
           <i className="bi bi-chevron-left"></i>
           戻る
         </Link>
-      </p>
+      </div>
     </div>
   </Layout>
 )

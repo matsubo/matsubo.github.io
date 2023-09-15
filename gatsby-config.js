@@ -10,8 +10,8 @@ module.exports = {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         sitemap: `https://matsubo.github.io/sitemap-index.xml`,
-        policy: [{userAgent: '*', allow: '/'}]
-      }
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,

@@ -33,76 +33,66 @@ const AboutPage = () => (
           <span className="active">Ruby on Railsの動作確認</span>
         </h1>
 
-        <p>
+        <div>
           Aptana StudioでRuby on Railsのプロジェクトを作成し、Ruby on
           Railsを起動してみます。
-        </p>
+        </div>
         <h2>手順</h2>
-        <p>
+        <div>
           Aptana Studioを立ち上げ、[File] -&gt; [New] -&gt; [Rails
           Project]を選択します。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage
             src="../../../../images/rails_project.png"
-            alt=""
-            width="493"
-            height="174"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
-        <p>[Name] にプロジェクト名を入力し、[Finish]ボタンを押します。</p>
-        <p>
+        </div>
+        <div>&nbsp;</div>
+        <div>[Name] にプロジェクト名を入力し、[Finish]ボタンを押します。</div>
+        <div>
           <StaticImage
             src="../../../../images/aptana_new.png"
-            alt=""
-            width="351"
-            height="310"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
+        </div>
+        <div>&nbsp;</div>
 
-        <p>
+        <div>
           右下に表示されているウィンドウに、以下のような出力が出ていれば成功です。下に表示されている青いバーが終了するまで待ちます。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage
             src="../../../../images/progress.png"
-            alt=""
-            width="800"
-            height="261"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
+        </div>
+        <div>&nbsp;</div>
 
-        <p>
+        <div>
           [App Explorer]タブのギアの形をしたアイコンから、[Run
           Server]を選択して、サーバを起動します。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage
             src="../../../../images/aptana_run_server.png"
-            alt=""
-            width="452"
-            height="160"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
+        </div>
+        <div>&nbsp;</div>
 
-        <p>Console画面に以下のような表示が出力されれば、成功です。。</p>
-        <p>
+        <div>Console画面に以下のような表示が出力されれば、成功です。。</div>
+        <div>
           <StaticImage
             src="../../../../images/server_console.png"
-            alt=""
-            width="800"
-            height="245"
+  alt=""
           />
-        </p>
+        </div>
 
-        <p>
+        <div>
           ブラウザで、以下のページを開き、ページが表示されることを確認します。
-        </p>
-        <p>
+        </div>
+        <div>
           <a
             href="http://0.0.0.0:3000/"
             target="_blank"
@@ -112,39 +102,35 @@ const AboutPage = () => (
             <i className="bi bi-box-arrow-up-right"></i>
             http://0.0.0.0:3000/
           </a>
-        </p>
-        <p>&nbsp;</p>
-        <p>
+        </div>
+        <div>&nbsp;</div>
+        <div>
           以下のような、&quot;Welcome
           aboard&quot;と表示されていれば、正常にセットアップが完了したことになります。
-        </p>
-        <p>
+        </div>
+        <div>
           <StaticImage
             src="../../../../images/aptana_browser.png"
-            alt=""
-            width="786"
-            height="669"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
-        <p>最後に、Aptana Studioを終了します。</p>
-        <p>
+        </div>
+        <div>&nbsp;</div>
+        <div>最後に、Aptana Studioを終了します。</div>
+        <div>
           <StaticImage
             src="../../../../images/aptana_quit.png"
-            alt=""
-            width="330"
-            height="286"
+  alt=""
           />
-        </p>
-        <p>&nbsp;</p>
+        </div>
+        <div>&nbsp;</div>
       </div>
 
-      <p className="mt-5">
+      <div className="mt-5">
         <Link to="../" className="btn btn-info">
           <i className="bi bi-chevron-left"></i>
           戻る
         </Link>
-      </p>
+      </div>
     </div>
   </Layout>
 )

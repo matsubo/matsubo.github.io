@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../../../../components/layout"
 import { Seo } from "../../../../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
@@ -92,7 +91,7 @@ const AboutPage = () => (
             <a
               href="https://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               https://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f
             </a>
@@ -102,7 +101,7 @@ const AboutPage = () => (
             <a
               href="https://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               https://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568
             </a>
