@@ -37,12 +37,13 @@ const AboutPage = () => (
         <p>以下のサイトへアクセスし、Aptana Studio 3をダウンロードします。</p>
         <p>
           <a
-            href="http://www.aptana.com/products/studio3/download"
+            href="https://www.aptana.com/products/studio3/download"
             target="_blank"
+            rel="noreferrer"
             className="btn btn-lg btn-info"
           >
-            <span className="glyphicon glyphicon-link"></span>
-            http://www.aptana.com/products/studio3/download{" "}
+            <i className="bi bi-box-arrow-up-right"></i>
+            https://www.aptana.com/products/studio3/download
           </a>
         </p>
         <p>
@@ -53,8 +54,6 @@ const AboutPage = () => (
           <StaticImage
             src="../../../../images/aptana_move.png"
             alt=""
-            width="268"
-            height="276"
           />
         </p>
         <p>
@@ -65,17 +64,13 @@ const AboutPage = () => (
           <StaticImage
             src="../../../../images/aptana_start.png"
             alt=""
-            width="336"
-            height="288"
           />
         </p>
         <p>以下のような画面が表示されればインストールは成功しています。</p>
         <p>
           <StaticImage
             src="../../../../images/aptana_window.png"
-            alt=""
-            width="527"
-            height="436"
+            alt="aptana for windows"
           />
         </p>
       </div>

@@ -49,7 +49,6 @@ const AboutPage = () => (
               href={`../../../manual_formac_v11.pptx`}
               className="btn btn-lg btn-primary"
             >
-              <span className="glyphicon glyphicon-file"></span>
               <i className="bi bi-filetype-ppt"></i>
               PowerPointファイルをダウンロード
             </a>

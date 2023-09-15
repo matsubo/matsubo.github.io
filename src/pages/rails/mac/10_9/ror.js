@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../../../../components/layout"
 import { Seo } from "../../../../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
@@ -49,9 +48,6 @@ const AboutPage = () => (
             Railsは様々なライブラリに依存しており、上記コマンドを実行すると依存しているライブラリもインストールされます。依存しているライブラリがたくさんあるので、インストールには時間がかかります。
           </p>
         </div>
-        <p>
-          <a href="images/terminal.png"></a>
-        </p>
         <p>
           インストールが完了したら、ターミナルに、以下のように入力して[Enter]キーを押します。
         </p>

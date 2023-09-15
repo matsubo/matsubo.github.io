@@ -30,7 +30,7 @@ const AboutPage = () => (
 
       <div>
         <h1>
-          <span class="active">Ruby on Railsの動作確認</span>
+          <span className="active">Ruby on Railsの動作確認</span>
         </h1>
 
         <p>
@@ -106,9 +106,11 @@ const AboutPage = () => (
           <a
             href="http://0.0.0.0:3000/"
             target="_blank"
-            class="btn btn-lg btn-info"
+            rel="noreferrer"
+            className="btn btn-lg btn-info"
           >
-            <span class="glyphicon glyphicon-link"></span>http://0.0.0.0:3000/
+            <i className="bi bi-box-arrow-up-right"></i>
+            http://0.0.0.0:3000/
           </a>
         </p>
         <p>&nbsp;</p>

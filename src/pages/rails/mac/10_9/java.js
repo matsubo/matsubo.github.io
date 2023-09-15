@@ -49,8 +49,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java.png"
             alt="java"
-            width="422"
-            height="63"
           />
         </p>
         <h2>Javaのダウンロードとインストール</h2>
@@ -59,9 +57,10 @@ const AbouttPage = () => (
           <a
             href="http://java.com/ja/download/"
             target="_blank"
+            rel="noreferrer"
             className="btn btn-lg btn-info"
           >
-            <span className="glyphicon glyphicon-link"></span>
+            <i className="bi bi-box-arrow-up-right"></i>
             http://java.com/ja/download/
           </a>
         </p>
@@ -72,8 +71,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java_download.png"
             alt="java download"
-            width="523"
-            height="245"
           />
         </p>
         <p>
@@ -83,8 +80,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java_installer.png"
             alt=""
-            width="283"
-            height="175"
           />
         </p>
         <p>&nbsp;</p>
@@ -92,8 +87,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java_agreement.png"
             alt=""
-            width="280"
-            height="199"
           />
         </p>
         <p>&nbsp;</p>
@@ -101,8 +94,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java_warning.png"
             alt=""
-            width="280"
-            height="199"
           />
         </p>
         <p>&nbsp;</p>
@@ -110,8 +101,6 @@ const AbouttPage = () => (
           <StaticImage
             src="../../../../images/java_installed.png"
             alt=""
-            width="280"
-            height="199"
           />
         </p>
         <p>再度、以下を入力してバージョン番号が表示されるかを確認します。 </p>

@@ -81,8 +81,9 @@ const AboutPage = () => (
         <p>ターミナルに、以下のように入力して[Enter]キーを押します。</p>
         <pre>
           <code>
-            % echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.aptanarc %
-            echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.aptanarc
+            % echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.aptanarc
+            <br/>
+            % echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.aptanarc
           </code>
         </pre>
         <br />
@@ -91,19 +92,19 @@ const AboutPage = () => (
           <dt>rbenvでRubyのバージョンを指定する方法</dt>
           <dd>
             <a
-              href="http://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f"
+              href="https://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f"
               target="_blank"
             >
-              http://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f
+              https://qiita.com/makoto_kw/items/cc73b628c9ef039f6e6f
             </a>
           </dd>
           <dt>Mountain Lion環境への「rbenv」のインストール手順 + 設定方法</dt>
           <dd>
             <a
-              href="http://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568"
+              href="https://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568"
               target="_blank"
             >
-              http://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568
+              https://qiita.com/skinoshita/items/2cf0c27a6ff4f0602568
             </a>
           </dd>
         </dl>
