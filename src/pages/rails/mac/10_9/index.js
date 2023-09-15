@@ -38,12 +38,12 @@ const AboutPage = () => (
               Xでソフトウェア開発を行う際に必要になる一般的なライブラリをインストールします。30分程度かかります。
             </p>
           </Link>
-          <a href="homebrew.html" class="list-group-item">
+          <Link to="homebrew" class="list-group-item">
             <h4 class="list-group-item-heading">2. homebrewのインストール</h4>
             <p class="list-group-item-text">
               rubyenvをインストールするためのアプリケーションをインストールします。
             </p>
-          </a>
+          </Link>
           <a href="rbenv.html" class="list-group-item">
             <h4 class="list-group-item-heading">3. rbenvのインストール</h4>
             <p class="list-group-item-text">

@@ -27,10 +27,7 @@ const AboutPage = () => (
         <ul>
           <li>
             現在利用中のバージョンを確認する方法はこちらをご参照ください。
-            <a
-              href="http://www.apple.com/jp/support/dotmac/os_version.html"
-              target="_blank"
-            >
+            <a href="http://www.apple.com/jp/support/dotmac/os_version.html">
               http://www.apple.com/jp/support/dotmac/os_version.html
             </a>
           </li>
