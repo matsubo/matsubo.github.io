@@ -3,8 +3,10 @@ module.exports = {
     title: `MATSUBO ON GITHUB`,
     description: `web site of matsubo's public resource. Old archives.`,
     author: `@matsubo`,
+    siteUrl: `https://matsubo.github.io/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
