@@ -4,18 +4,17 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  http://matsubo.github.io/ Created by Gatsby
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone the site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Use git command to clone the repository
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    git clone git@github.com:matsubo/matsubo.github.io.git
     ```
 
 2.  **Start developing.**
@@ -23,7 +22,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd matsubo.github.io
     npm run develop
     ```
 
@@ -41,9 +40,3 @@
     - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
