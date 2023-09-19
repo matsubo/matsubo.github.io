@@ -7,14 +7,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [
-          `/rails/*`
-        ],
-      },
-    },
-    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-M2JT5C2T",
