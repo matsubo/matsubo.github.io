@@ -7,9 +7,10 @@ module.exports = {
   },
   plugins: [
     {
-    resolve: "gatsby-plugin-google-tagmanager",
-    options: {
-      id: "GTM-M2JT5C2T",
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-M2JT5C2T",
+      }
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
