@@ -5,6 +5,8 @@ import Layout from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const AboutPage = () => (
   <Layout>
     <div class="container">
@@ -42,13 +44,13 @@ const AboutPage = () => (
               Hide Tokuda Lab.
               <table width="408" border="0" cellpadding="1" summary="profile">
                 <tr>
-                  <td width="106">E-mail:</td>
-                  <td width="292">matsu (at) ht.sfc.keio.ac.jp</td>
-                </tr>
-                <tr>
-                  <td>skype:</td>
-                  <td>
-                    <a href="callto://matsubo/">matsubo</a>
+                  <td width="106">
+                    <FontAwesomeIcon icon={["fas", "coffee"]} />
+                  </td>
+                  <td width="292">
+                    <Link href="https://www.facebook.com/matsubokkuri">
+                      https://www.facebook.com/matsubokkuri
+                    </Link>
                   </td>
                 </tr>
                 <tr>
@@ -70,7 +72,7 @@ const AboutPage = () => (
           <dl>
             <dt>
               u-Texture: A Self-Organizable Material with Multiple Sensors [{" "}
-              <a href="paper/200408_ubicomp.pdf">PDF</a> ]
+              <a href={`../../paper/200408_ubicomp.pdf`}>PDF</a> ]
             </dt>
             <dd>
               Yuki Matsukura, Naohiko Kohtake, Jin Nakazawa, Kazunori Takashio,
@@ -81,7 +83,7 @@ const AboutPage = () => (
             <dt>
               MUGI:Design and Implementation of Activity Models for Proposal
               Navigation Services using Location Information and Places'
-              Attributes [ <a href="paper/200502_thesis.pdf">PDF</a> ]
+              Attributes [ <a href={`../../paper/200502_thesis.pdf`}>PDF</a> ]
             </dt>
             <dd>
               Yuki Matsukura
@@ -91,7 +93,8 @@ const AboutPage = () => (
             </dd>
             <dt>
               Activity Model using Location and Places' Attributes for
-              Navigation Services [ <a href="paper/200506_iwsawc.pdf">PDF</a> ]
+              Navigation Services [
+              <a href={`../../paper/200506_iwsawc.pdf`}>PDF</a> ]
             </dt>
             <dd>
               Yuki Matsukura, Naohiko Kohtake, Kazunori Takashio, Hideyuki
@@ -102,10 +105,10 @@ const AboutPage = () => (
             </dd>
             <dt>
               Platform for Realizing Social Gaming -How to Develop Attractive
-              Games for 1 Billion Users- [{" "}
+              Games for 1 Billion Users- [
               <a href="http://www.ieice.org/ken/program/index.php?tgs_regid=7b51ac8a2255b64211deee115de18aa9001df9945f52808b72e33513fedb8ef3&amp;tgid=IEICE-NLC&amp;lang=">
                 URL
-              </a>{" "}
+              </a>
               ]
             </dt>
             <dd>
@@ -120,8 +123,8 @@ const AboutPage = () => (
         <div>
           <dl>
             <dt>
-              Basics and Development using PHP5 [{" "}
-              <a href="ppt/function.zip">Zip</a> ]
+              Basics and Development using PHP5 [
+              <a href={`../../ppt/function.zip`}>Zip</a>]
             </dt>
             <dd>
               This presentation is for PHP beginner. By hearing this
@@ -136,7 +139,7 @@ const AboutPage = () => (
             <dt>
               Survey of "Social Disclosure of Place: From Location Technology to
               Communication Practices" [{" "}
-              <a href="ppt/social_disclosure_of_place.ppt">PPT</a>]
+              <a href={`../../ppt/social_disclosure_of_place.ppt`}>PPT</a>]
             </dt>
             <dd>
               PlaceLab works middleware of multiple location devices such as
@@ -233,7 +236,7 @@ const AboutPage = () => (
               COM Corp [ System management department] (
               <a
                 href="https://web.archive.org/web/20211019064322/http://www.com56.com/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -244,7 +247,7 @@ const AboutPage = () => (
               CNS guide 2002 [ Editor ] (
               <a
                 href="https://cns-guide.sfc.keio.ac.jp/2002/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -256,7 +259,7 @@ const AboutPage = () => (
               V-cube internet Inc. (
               <a
                 href="https://web.archive.org/web/20211019064322/http://www.vcube.com/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -267,7 +270,7 @@ const AboutPage = () => (
               SFC Data Science Lab [ Sub-administrator ] (
               <a
                 href="https://web.archive.org/web/20191226035209/http://www.dsci.sfc.keio.ac.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -278,7 +281,7 @@ const AboutPage = () => (
               Clair Inc. [ System developer] (
               <a
                 href="https://web.archive.org/web/20211019064322/http://www.clair-inc.com/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -289,7 +292,7 @@ const AboutPage = () => (
               CNS guide 2003 [ Duputy editor ] (
               <a
                 href="https://cns-guide.sfc.keio.ac.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -300,7 +303,7 @@ const AboutPage = () => (
               Marue Corp., [ Consultant, System Management] (
               <a
                 href="https://www.marue.com/"
-                rel="nofollow extern"
+                rel=" noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -311,7 +314,7 @@ const AboutPage = () => (
               digit Corp., [ Instructor of Network Administration ] (
               <a
                 href="https://web.archive.org/web/20211019064322/http://www.digit.co.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -322,7 +325,7 @@ const AboutPage = () => (
               Marvins Corp., [ Programmer ] (
               <a
                 href="https://www.marvins.co.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -333,7 +336,7 @@ const AboutPage = () => (
               CNS guide 2004 [ Chief editor ] (
               <a
                 href="https://cns-guide.sfc.keio.ac.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -344,7 +347,7 @@ const AboutPage = () => (
               SFC Data Science Lab [ Administrator ] (
               <a
                 href="https://web.archive.org/web/20191226035209/http://www.dsci.sfc.keio.ac.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -355,7 +358,7 @@ const AboutPage = () => (
               Bulthaup [ Consulting, Network Administration ] (
               <a
                 href="https://bulthaup.com/en-jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -366,7 +369,7 @@ const AboutPage = () => (
               CAL BOOK Accounting Systems [ Web design, Web Application] (
               <a
                 href="https://www.cal-book.com/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -377,7 +380,7 @@ const AboutPage = () => (
               Zipangoods [ Web Application, Consulting ] (
               <a
                 href="http://j-goods.us/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -385,7 +388,7 @@ const AboutPage = () => (
               ) (
               <a
                 href="https://web.archive.org/web/20211019064322/http://www.cilabousa-ch.com/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -397,7 +400,7 @@ const AboutPage = () => (
               Coach United [ Chief Engineer ] (
               <a
                 href="https://web.archive.org/web/20211019064322/http://cunited.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -408,7 +411,7 @@ const AboutPage = () => (
               GREE, Inc. [ Senior Engineer / Manager ] (
               <a
                 href="https://gree.co.jp/"
-                rel="nofollow extern"
+                rel="noreferrer nofollow extern"
                 target="_blank"
               >
                 URL
@@ -427,28 +430,32 @@ const AboutPage = () => (
             </li>
             <li>Applications: MySQL PostgreSQL MS-Office</li>
             <li>
-              <a href="https://www.lpi.org/" target="_blank">
+              <a href="https://www.lpi.org/" target="_blank" rel="noreferrer">
                 LPIC (Linux Professional Institute Certification)
               </a>{" "}
               Level 1, Level 2 (2005/5) INACTIVE
               <StaticImage src="img/lpi-lpic2-24.jpg" alt="LPIC" />
             </li>
             <li>
-              Gold holder of{" "}
-              <a href="https://www.kentei.ne.jp/keytouch" target="_blank">
+              Gold holder of
+              <a
+                href="https://www.kentei.ne.jp/keytouch"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Keytouch 2000
               </a>
             </li>
             <li>Amateur Third-Class Radio Operator</li>
             <li>
               3rd grade of{" "}
-              <a href="http://www.shuzan.jp/" target="_blank">
+              <a href="http://www.shuzan.jp/" target="_blank" rel="noreferrer">
                 Abacus
               </a>
             </li>
             <li>
               3rd grade of{" "}
-              <a href="http://www.shuzan.jp/" target="_blank">
+              <a href="http://www.shuzan.jp/" target="_blank" rel="noreferrer">
                 Mental Computation
               </a>
             </li>
@@ -457,6 +464,7 @@ const AboutPage = () => (
               <a
                 href="https://www.jitec.ipa.go.jp/1_11seido/ap.html"
                 target="_blank"
+                rel="noreferrer"
               >
                 Applied Information Technology Engineer Examination)
               </a>
@@ -478,7 +486,7 @@ const AboutPage = () => (
                 <a href="https://twitter.com/matsubokkuri">Twitter</a>
               </li>
             </ul>
-            <p>Last update :2022-11-18</p>
+            <p>Last update :2023-11-07</p>
           </div>
         </div>
       </footer>
