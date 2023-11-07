@@ -14,7 +14,7 @@ const IndexPage = () => (
       </div>
 
       <div className="text-start">
-        <h2 className="mt-3">Contents</h2>
+        <h2 className="mt-3">Archive</h2>
 
         <div className="list-group">
           <Link to="ht/" className="list-group-item">
@@ -23,6 +23,11 @@ const IndexPage = () => (
             </h4>
             <p className="list-group-item-text">Archive of academic segment.</p>
           </Link>
+        </div>
+
+        <h2 className="mt-3">Contents</h2>
+
+        <div className="list-group">
           <Link to="rails/" className="list-group-item">
             <h4 className="list-group-item-heading">
               Ruby on Rails Installation
