@@ -17,6 +17,12 @@ const IndexPage = () => (
         <h2 className="mt-3">Contents</h2>
 
         <div className="list-group">
+          <Link to="ht/" className="list-group-item">
+            <h4 className="list-group-item-heading">
+              Archive within Hide Tokuda reserch lab.
+            </h4>
+            <p className="list-group-item-text">Archive of academic segment.</p>
+          </Link>
           <Link to="rails/" className="list-group-item">
             <h4 className="list-group-item-heading">
               Ruby on Rails Installation
