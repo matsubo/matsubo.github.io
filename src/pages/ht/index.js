@@ -9,11 +9,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const AboutPage = () => (
   <Layout>
+    <div className="container my-2">
+      <nav aria-label="breadcrumb">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="breadcrumb-item active" aria-current="page">
+            Research lab
+          </li>
+        </ol>
+      </nav>
+    </div>
+
     <div class="container">
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Yuki Matsukura</h1>
+            <h1>Yuki Matsukura in academic</h1>
           </div>
         </div>
       </div>
@@ -480,10 +493,7 @@ const AboutPage = () => (
                 <a href="#top">Back to top</a>
               </li>
               <li>
-                <a href="https://matsu.teraren.com/blog/">Blog</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/matsubokkuri">Twitter</a>
+                <a href="https://twitter.com/matsubokkuri">X</a>
               </li>
             </ul>
             <p>Last update :2023-11-07</p>

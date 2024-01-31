@@ -17,9 +17,19 @@ const IndexPage = () => (
         <h2 className="mt-3">Archive</h2>
 
         <div className="list-group">
+          <Link to="sfc/" className="list-group-item">
+            <h4 className="list-group-item-heading">
+              Archive during the university student.
+            </h4>
+            <p className="list-group-item-text">
+              Reports during Shonan Fujisawa Campus.
+            </p>
+          </Link>
+        </div>
+        <div className="list-group">
           <Link to="ht/" className="list-group-item">
             <h4 className="list-group-item-heading">
-              Archive within Hide Tokuda reserch lab.
+              During Hide Tokuda reserch lab.
             </h4>
             <p className="list-group-item-text">Archive of academic segment.</p>
           </Link>
