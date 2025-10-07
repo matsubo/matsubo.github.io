@@ -6,46 +6,56 @@ import { Seo } from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Welcome to Yuki Matsukura github page</h1>
+    <section className="py-12">
+      <div className="text-center mb-12">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4">
+            Welcome to Yuki Matsukura github page
+          </h1>
         </div>
       </div>
 
-      <div className="text-start">
-        <h2 className="mt-3">Archive</h2>
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6">Archive</h2>
 
-        <div className="list-group">
-          <Link to="sfc/" className="list-group-item">
-            <h4 className="list-group-item-heading">
-              Archive during the university student.
-            </h4>
-            <p className="list-group-item-text">
-              Reports during Shonan Fujisawa Campus.
-            </p>
+        <div className="space-y-4 mb-12">
+          <Link
+            to="sfc/"
+            className="card bg-base-200 hover:bg-base-300 shadow-xl transition-colors"
+          >
+            <div className="card-body">
+              <h3 className="card-title">
+                Archive during the university student.
+              </h3>
+              <p>Reports during Shonan Fujisawa Campus.</p>
+            </div>
+          </Link>
+
+          <Link
+            to="ht/"
+            className="card bg-base-200 hover:bg-base-300 shadow-xl transition-colors"
+          >
+            <div className="card-body">
+              <h3 className="card-title">During Hide Tokuda reserch lab.</h3>
+              <p>Archive of academic segment.</p>
+            </div>
           </Link>
         </div>
-        <div className="list-group">
-          <Link to="ht/" className="list-group-item">
-            <h4 className="list-group-item-heading">
-              During Hide Tokuda reserch lab.
-            </h4>
-            <p className="list-group-item-text">Archive of academic segment.</p>
-          </Link>
-        </div>
 
-        <h2 className="mt-3">Contents</h2>
+        <h2 className="text-3xl font-bold mb-6">Contents</h2>
 
-        <div className="list-group">
-          <Link to="rails/" className="list-group-item">
-            <h4 className="list-group-item-heading">
-              Ruby on Rails Installation
-            </h4>
-            <p className="list-group-item-text">
-              Illustrating how to install Ruby on Rails setup. Goal of the
-              document is to start Rails development using Aptana.
-            </p>
+        <div className="space-y-4">
+          <Link
+            to="rails/"
+            className="card bg-base-200 hover:bg-base-300 shadow-xl transition-colors"
+          >
+            <div className="card-body">
+              <h3 className="card-title">Ruby on Rails Installation</h3>
+              <p>
+                Illustrating how to install Ruby on Rails setup. Goal of the
+                document is to start Rails development using Aptana.
+              </p>
+            </div>
           </Link>
         </div>
       </div>

@@ -10,7 +10,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-M2JT5C2T",
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -30,14 +30,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          precision: 6,
-        },
-      },
-    },
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
