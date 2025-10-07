@@ -481,9 +481,9 @@ const AboutPage = () => (
             <h3>チートシート</h3>
             <ul>
               <li>
-                <Link to="/sfc/mule">
+                <a href="/sfc/mule.html">
                   <i className="fab fa-html5"></i> muleコマンドリファレンス
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -512,12 +512,12 @@ const AboutPage = () => (
               </li>
             </ul>
             <h3>
-              プログラミング入門C @TODO fromhere
+              プログラミング入門C
               <small className="text-muted">（1年春学期）</small>
             </h3>
             <ul>
               <li>
-                <a href="pro/">http://www.sfc.keio.ac.jp/~t01549ym/pro/</a>
+                <a href="/sfc/pro/">http://www.sfc.keio.ac.jp/~t01549ym/pro/</a>
               </li>
             </ul>
             <h3>
@@ -525,7 +525,7 @@ const AboutPage = () => (
             </h3>
             <ul>
               <li>
-                <a href="binbou/">
+                <a href="/sfc/binbou/">
                   http://web.sfc.keio.ac.jp/~t01549ym/binbou/
                 </a>
               </li>
