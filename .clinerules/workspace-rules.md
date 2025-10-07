@@ -112,6 +112,16 @@ matsubo.github.io/
 - Global styles are in `src/styles/global.css`
 - PostCSS processes CSS with autoprefixer
 
+## UI Components
+- **Do NOT use accordions** - Use card-based layouts instead for content organization
+- Prefer simple, straightforward layouts over collapsible/expandable UI patterns
+
+## Icons
+- **Always use Heroicons** for icons: https://github.com/tailwindlabs/heroicons
+- Import from `@heroicons/react/24/outline` for outline icons
+- Import from `@heroicons/react/24/solid` for solid icons
+- Example: `import { UserIcon } from '@heroicons/react/24/outline'`
+
 ## Code Quality
 - Project uses Prettier for code formatting
 - Configuration files: `.prettierrc` and `.prettierignore`
