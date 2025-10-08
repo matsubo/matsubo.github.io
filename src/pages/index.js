@@ -15,7 +15,6 @@ import {
   LightBulbIcon,
   SparklesIcon,
   TrophyIcon,
-  PencilSquareIcon,
 } from "@heroicons/react/24/outline"
 import { Link } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
@@ -510,47 +509,6 @@ const IndexPage = () => {
       </div>
     </section>
 
-    {/* Articles & Writing Section */}
-    <section className="py-16 px-4 bg-base-200">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-3 mb-8">
-          <PencilSquareIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">{t("articles.title")}</h2>
-        </div>
-
-        <div className="grid md:grid-cols-1 gap-6">
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body">
-              <h4 className="card-title text-2xl">
-                {t("articles.gree.title")}
-              </h4>
-              <p className="text-sm text-base-content/70">
-                {t("articles.gree.meta")}
-              </p>
-              <p className="mt-2">
-                {t("articles.gree.description")}
-              </p>
-              <div className="mt-4 flex items-center gap-2">
-                <span className="badge badge-accent badge-lg">
-                  {t("articles.gree.bookmarks")}
-                </span>
-              </div>
-              <div className="card-actions mt-4">
-                <a
-                  href="https://labs.gree.jp/blog/2011/04/3282/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm"
-                >
-                  {t("articles.gree.button")}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <FeaturedProjects />
 
     {/* Hobbies & Interests Section */}
@@ -613,6 +571,17 @@ const IndexPage = () => {
                   <span>
                     {t("hobbies.writing.editor")}
                   </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-warning">🔥</span>
+                  <a
+                    href="https://labs.gree.jp/blog/2011/04/3282/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link link-primary hover:link-accent"
+                  >
+                    {t("hobbies.writing.gree")}
+                  </a>
                 </li>
               </ul>
             </div>

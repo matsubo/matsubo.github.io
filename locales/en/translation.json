@@ -166,6 +166,26 @@
     "title": "Let's Connect",
     "description": "Interested in collaboration or just want to say hello? Feel free to reach out!"
   },
+  "footer": {
+    "brand": {
+      "name": "Yuki Matsukura",
+      "description": "CTO & Software Engineer with 20+ years of experience building scalable systems and innovative solutions."
+    },
+    "links": {
+      "title": "Archive Links",
+      "lab": "Research Laboratory",
+      "university": "University Archive",
+      "rails": "Rails Setup Guide"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "theme": "Theme",
+      "language": "Language"
+    },
+    "quote": "Building scalable systems and sharing knowledge through open source contributions.",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with ❤️ using Gatsby"
+  },
   "projects": {
     "title": "Featured Projects",
     "aiTools": {

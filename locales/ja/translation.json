@@ -166,6 +166,26 @@
     "title": "お問い合わせ",
     "description": "コラボレーションに興味がある、またはご挨拶したい方はお気軽にご連絡ください!"
   },
+  "footer": {
+    "brand": {
+      "name": "松倉 友樹",
+      "description": "20年以上の経験を持つCTO & ソフトウェアエンジニア。スケーラブルなシステムと革新的なソリューションを構築しています。"
+    },
+    "links": {
+      "title": "アーカイブリンク",
+      "lab": "研究室",
+      "university": "大学アーカイブ",
+      "rails": "Railsセットアップガイド"
+    },
+    "preferences": {
+      "title": "設定",
+      "theme": "テーマ",
+      "language": "言語"
+    },
+    "quote": "スケーラブルなシステムの構築とオープンソースを通じた知識の共有。",
+    "copyright": "All rights reserved.",
+    "madeWith": "Gatsbyで ❤️ を込めて作成"
+  },
   "projects": {
     "title": "注目のプロジェクト",
     "aiTools": {

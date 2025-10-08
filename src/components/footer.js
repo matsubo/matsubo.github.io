@@ -1,8 +1,9 @@
 import * as React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Footer = () => {
-  const { languages, originalPath, language, changeLanguage } = useI18next()
+  const { languages, originalPath, language } = useI18next()
+  const { t } = useTranslation()
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
@@ -33,11 +34,10 @@ const Footer = () => {
         {/* Brand Section */}
         <div className="space-y-4">
           <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Yuki Matsukura
+            {t("footer.brand.name")}
           </h3>
           <p className="text-base-content/70 text-sm leading-relaxed">
-            CTO & Software Engineer with 20+ years of experience building
-            scalable systems and innovative solutions.
+            {t("footer.brand.description")}
           </p>
           <div className="flex gap-3 pt-2">
             <a
@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="space-y-4">
           <h4 className="text-lg font-semibold text-base-content/90 flex items-center gap-2">
             <span className="inline-block w-1 h-6 bg-primary rounded-full"></span>
-            Archive Links
+            {t("footer.links.title")}
           </h4>
           <nav className="flex flex-col space-y-3">
             <Link
@@ -105,7 +105,7 @@ const Footer = () => {
               <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                 →
               </span>
-              Research Laboratory
+              {t("footer.links.lab")}
             </Link>
             <Link
               to="/sfc/"
@@ -114,7 +114,7 @@ const Footer = () => {
               <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                 →
               </span>
-              University Archive
+              {t("footer.links.university")}
             </Link>
             <Link
               to="/rails/"
@@ -123,7 +123,7 @@ const Footer = () => {
               <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                 →
               </span>
-              Rails Setup Guide
+              {t("footer.links.rails")}
             </Link>
           </nav>
         </div>
@@ -132,11 +132,11 @@ const Footer = () => {
         <div className="space-y-4">
           <h4 className="text-lg font-semibold text-base-content/90 flex items-center gap-2">
             <span className="inline-block w-1 h-6 bg-secondary rounded-full"></span>
-            Preferences
+            {t("footer.preferences.title")}
           </h4>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
-              <span className="text-sm text-base-content/70">Theme</span>
+              <span className="text-sm text-base-content/70">{t("footer.preferences.theme")}</span>
               <label className="swap swap-rotate btn btn-sm btn-ghost hover:btn-primary transition-all duration-300">
                 <input
                   type="checkbox"
@@ -162,7 +162,7 @@ const Footer = () => {
               </label>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-sm text-base-content/70">Language</span>
+              <span className="text-sm text-base-content/70">{t("footer.preferences.language")}</span>
               <div className="flex gap-2">
                 {languages.map(lng => (
                   <Link
@@ -187,8 +187,7 @@ const Footer = () => {
             </div>
             <div className="p-4 rounded-lg bg-base-100/50 backdrop-blur-sm border border-base-content/10">
               <p className="text-xs text-base-content/60 leading-relaxed">
-                Building scalable systems and sharing knowledge through open
-                source contributions.
+                {t("footer.quote")}
               </p>
             </div>
           </div>
@@ -199,7 +198,7 @@ const Footer = () => {
       <div className="pt-8 mt-8 border-t border-base-content/10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-base-content/60">
-            © {new Date().getFullYear()} Yuki Matsukura. All rights reserved.
+            © {new Date().getFullYear()} {t("footer.brand.name")}. {t("footer.copyright")}
           </p>
           <div className="flex items-center gap-6 text-sm text-base-content/60">
             <a
@@ -220,7 +219,7 @@ const Footer = () => {
             </a>
             <span className="text-base-content/40">•</span>
             <span className="text-base-content/50">
-              Made with ❤️ using Gatsby
+              {t("footer.madeWith")}
             </span>
           </div>
         </div>
