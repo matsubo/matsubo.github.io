@@ -3,17 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import { Seo } from "../../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faFilePdf,
-  faFileArchive,
-  faFileAlt,
-  faFilePowerpoint,
-  faFileWord,
-  faFileZipper,
-} from "@fortawesome/free-solid-svg-icons"
 
 const AboutPage = () => (
   <Layout>
