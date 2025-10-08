@@ -40,13 +40,21 @@ jobs:
         with:
           static_site_generator: gatsby
 
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
       - name: Restore Gatsby cache
         uses: actions/cache@v4
         with:
           path: |
             public
             .cache
-          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('**/package-lock.json', '**/bun.lockb') }}
+          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('**/bun.lock') }}
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
 
@@ -56,6 +64,8 @@ jobs:
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: "true"
+          GATSBY_CPU_COUNT: 2
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: "true"
         run: bun run build
 
       - name: Upload artifact
