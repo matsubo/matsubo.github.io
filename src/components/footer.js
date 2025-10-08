@@ -21,7 +21,7 @@ const Footer = () => {
   }
 
   return (
-  <footer className="relative bg-gradient-to-br from-base-300 via-base-200 to-base-300 text-base-content border-t border-base-300 overflow-hidden">
+  <footer className="relative bg-gradient-to-br from-base-300 via-base-200 to-base-300 text-base-content border-t border-base-300 overflow-hidden" role="contentinfo" aria-label="Site footer">
     {/* Decorative Background Elements */}
     <div className="absolute inset-0 opacity-5">
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full filter blur-3xl"></div>

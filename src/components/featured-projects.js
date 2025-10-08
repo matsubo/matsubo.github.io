@@ -11,17 +11,17 @@ const FeaturedProjects = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 px-4 bg-base-200">
+    <section className="py-16 px-4 bg-base-200" aria-labelledby="projects-heading">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
-          <RocketLaunchIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">{t("projects.title")}</h2>
+          <RocketLaunchIcon className="w-8 h-8 text-primary" aria-hidden="true" />
+          <h2 id="projects-heading" className="text-4xl font-bold">{t("projects.title")}</h2>
         </div>
 
         {/* AI-Powered Tools */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            <SparklesIcon className="w-6 h-6 text-accent" />
+          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2" id="ai-tools-heading">
+            <SparklesIcon className="w-6 h-6 text-accent" aria-hidden="true" />
             {t("projects.aiTools.title")}
           </h3>
           <p className="text-base-content/70 mb-6">
@@ -122,8 +122,8 @@ const FeaturedProjects = () => {
 
         {/* API Services Collection */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            <GlobeAltIcon className="w-6 h-6 text-info" />
+          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2" id="api-services-heading">
+            <GlobeAltIcon className="w-6 h-6 text-info" aria-hidden="true" />
             {t("projects.apiServices.title")}
           </h3>
           <p className="text-base-content/70 mb-6">

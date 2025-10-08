@@ -6,11 +6,11 @@ const AboutSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 px-4 bg-base-100">
+    <section className="py-16 px-4 bg-base-100" aria-labelledby="about-heading">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
-          <UserCircleIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">{t("about.title")}</h2>
+          <UserCircleIcon className="w-8 h-8 text-primary" aria-hidden="true" />
+          <h2 id="about-heading" className="text-4xl font-bold">{t("about.title")}</h2>
         </div>
         <div className="prose prose-lg max-w-none">
           <p className="text-lg leading-relaxed">

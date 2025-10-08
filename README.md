@@ -40,3 +40,38 @@
     - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 📋 TODO - Portfolio Improvements
+
+### Accessibility (A11y)
+- [x] **A11y-1**: キーボードナビゲーション対応の強化 ✅
+- [x] **A11y-2**: ARIA属性の追加（ランドマーク、ラベル、説明） ✅
+- [x] **A11y-3**: フォーカス表示の改善（アウトライン、スキップリンク） ✅
+
+### Performance Optimization
+- [ ] **PERF-1**: 画像の遅延読み込み最適化
+- [ ] **PERF-2**: フォントの最適化（サブセット化、プリロード）
+- [ ] **PERF-3**: バンドルサイズの削減（コード分割、tree-shaking）
+
+### SEO Enhancement
+- [ ] **SEO-1**: メタディスクリプションの追加（各ページ）
+- [ ] **SEO-2**: Open Graph/Twitter Card対応
+- [ ] **SEO-3**: 構造化データ（JSON-LD）の追加
+- [x] **SEO-4**: sitemap.xmlの生成 ✅
+
+### Design & UX Improvements
+- [ ] **UX-1**: スクロールアニメーションの追加（フェードイン、スライドイン）
+- [ ] **UX-2**: プロジェクトカードにホバーエフェクト強化
+- [ ] **UX-3**: モバイル表示の最適化
+- [ ] **UX-4**: ダークモード時のコントラスト改善
+
+### Feature Additions
+- [ ] **FEAT-1**: お問い合わせフォーム
+- [ ] **FEAT-2**: ブログ記事の統合
+- [ ] **FEAT-3**: プロジェクトのフィルタリング機能
+- [ ] **FEAT-4**: スキルレベルの可視化（プログレスバー、チャート）
+
+### Content Enhancement
+- [ ] **CONT-1**: 各プロジェクトの詳細ページ
+- [ ] **CONT-2**: 実績の数値化（GitHub stats連携など）
+- [ ] **CONT-3**: 推薦文やテスティモニアルの追加
