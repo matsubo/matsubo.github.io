@@ -17,8 +17,13 @@ import {
   TrophyIcon,
 } from "@heroicons/react/24/outline"
 import { Link } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const { t } = useTranslation()
+
+  return (
   <Layout>
     <HeroSection />
     <AboutSection />
@@ -28,75 +33,66 @@ const IndexPage = () => (
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <LightBulbIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">Personality & Work Style</h2>
+          <h2 className="text-4xl font-bold">{t("personality.title")}</h2>
         </div>
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body">
             <h3 className="card-title text-3xl mb-4">
-              <span className="badge badge-primary badge-lg">INTP-A</span>
-              <span>Logician - Assertive Type</span>
+              <span className="badge badge-primary badge-lg">{t("personality.mbti")}</span>
+              <span>{t("personality.subtitle")}</span>
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="text-xl font-semibold mb-3">Core Strengths</h4>
+                <h4 className="text-xl font-semibold mb-3">{t("personality.strengths.title")}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <SparklesIcon className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <span>
-                      <strong>Logical Analysis:</strong> Deep analytical
-                      thinking and problem-solving capabilities
+                      <strong>{t("personality.strengths.logical.title")}</strong> {t("personality.strengths.logical.description")}
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <SparklesIcon className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <span>
-                      <strong>Strategic Vision:</strong> Long-term planning and
-                      architectural decision-making
+                      <strong>{t("personality.strengths.strategic.title")}</strong> {t("personality.strengths.strategic.description")}
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <SparklesIcon className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <span>
-                      <strong>Innovation Focus:</strong> Creating novel
-                      solutions and exploring new possibilities
+                      <strong>{t("personality.strengths.innovation.title")}</strong> {t("personality.strengths.innovation.description")}
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <SparklesIcon className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <span>
-                      <strong>Individual Understanding:</strong> Recognizing and
-                      leveraging each team member's unique strengths
+                      <strong>{t("personality.strengths.understanding.title")}</strong> {t("personality.strengths.understanding.description")}
                     </span>
                   </li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-xl font-semibold mb-3">
-                  Leadership Approach
+                  {t("personality.leadership.title")}
                 </h4>
                 <p className="mb-4">
-                  As an INTP-A (Assertive) type, I bring confidence and calm
-                  under pressure to technical leadership. My approach combines
-                  rigorous logical thinking with genuine care for team members'
-                  growth and development.
+                  {t("personality.leadership.description1")}
                 </p>
                 <p>
-                  I excel at breaking down complex technical challenges,
-                  creating clear strategic roadmaps, and building environments
-                  where engineers can do their best work.
+                  {t("personality.leadership.description2")}
                 </p>
               </div>
             </div>
             <div className="mt-6 p-4 bg-base-200 rounded-lg">
               <p className="text-sm italic">
-                <strong>Note:</strong> Based on MBTI assessment and AI analysis.{" "}
+                <strong>{t("personality.note")}</strong> {t("personality.noteText")}{" "}
                 <a
                   href="https://diary.teraren.com/2025/04/14/mbti/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link link-primary"
                 >
-                  Full Analysis
+                  {t("personality.fullAnalysis")}
                 </a>
               </p>
             </div>
@@ -111,7 +107,7 @@ const IndexPage = () => (
         <div className="flex items-center gap-3 mb-8">
           <AcademicCapIcon className="w-8 h-8 text-primary" />
           <h2 className="text-4xl font-bold">
-            Academic & Research Achievements
+            {t("academic.title")}
           </h2>
         </div>
 
@@ -119,21 +115,19 @@ const IndexPage = () => (
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
             <DocumentTextIcon className="w-6 h-6 text-secondary" />
-            Research Papers
+            {t("academic.papers.title")}
           </h3>
           <div className="space-y-4">
             <div className="card bg-base-200">
               <div className="card-body">
                 <h4 className="card-title">
-                  Understanding Regional Characteristics Through EC Data
-                  Analysis
+                  {t("academic.papers.ec.title")}
                 </h4>
                 <p className="text-sm text-base-content/70">
-                  Published in Springer • 2023
+                  {t("academic.papers.ec.meta")}
                 </p>
                 <p className="mt-2">
-                  Research analyzing e-commerce data to understand regional
-                  characteristics and consumer behavior patterns.
+                  {t("academic.papers.ec.description")}
                 </p>
                 <div className="card-actions mt-4">
                   <a
@@ -142,7 +136,7 @@ const IndexPage = () => (
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-sm"
                   >
-                    View Publication
+                    {t("academic.papers.ec.button")}
                   </a>
                 </div>
               </div>
@@ -151,14 +145,13 @@ const IndexPage = () => (
             <div className="card bg-base-200">
               <div className="card-body">
                 <h4 className="card-title">
-                  MUGI: Design and Implementation of Activity Models
+                  {t("academic.papers.mugi.title")}
                 </h4>
                 <p className="text-sm text-base-content/70">
-                  Master's Thesis, Keio University • 2005
+                  {t("academic.papers.mugi.meta")}
                 </p>
                 <p className="mt-2">
-                  Design and implementation of activity models using location
-                  information and place attributes for navigation services.
+                  {t("academic.papers.mugi.description")}
                 </p>
                 <div className="card-actions mt-4">
                   <a
@@ -167,7 +160,7 @@ const IndexPage = () => (
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-sm"
                   >
-                    Download PDF
+                    {t("academic.papers.mugi.button")}
                   </a>
                 </div>
               </div>
@@ -179,30 +172,39 @@ const IndexPage = () => (
         <div>
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
             <BeakerIcon className="w-6 h-6 text-secondary" />
-            Presentations & Speaking
+            {t("academic.presentations.title")}
           </h3>
           <div className="space-y-4">
             <div className="card bg-base-200">
               <div className="card-body">
                 <h4 className="card-title">
-                  Snowday Panel Discussion - Data Future
+                  {t("academic.presentations.snowday.title")}
                 </h4>
-                <p className="text-sm text-base-content/70">2023</p>
+                <p className="text-sm text-base-content/70">{t("academic.presentations.snowday.meta")}</p>
                 <p className="mt-2">
-                  Panel discussion about the future of data ecosystems with
-                  insights from Minedia's Mineds service.
+                  {t("academic.presentations.snowday.description")}
                 </p>
+                <div className="card-actions mt-4">
+                  <a
+                    href="https://dev.classmethod.jp/articles/snowday-report-hone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
+                  >
+                    {t("academic.presentations.snowday.button")}
+                  </a>
+                </div>
               </div>
             </div>
 
             <div className="card bg-base-200">
               <div className="card-body">
                 <h4 className="card-title">
-                  Platform for Realizing Social Gaming
+                  {t("academic.presentations.cedec.title")}
                 </h4>
-                <p className="text-sm text-base-content/70">CEDEC 2012</p>
+                <p className="text-sm text-base-content/70">{t("academic.presentations.cedec.meta")}</p>
                 <p className="mt-2">
-                  How to Develop Attractive Games for 1 Billion Users
+                  {t("academic.presentations.cedec.description")}
                 </p>
                 <div className="card-actions mt-4">
                   <a
@@ -211,7 +213,7 @@ const IndexPage = () => (
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-sm"
                   >
-                    View Coverage
+                    {t("academic.presentations.cedec.button")}
                   </a>
                 </div>
               </div>
@@ -226,7 +228,7 @@ const IndexPage = () => (
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <BriefcaseIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">Professional Experience</h2>
+          <h2 className="text-4xl font-bold">{t("experience.title")}</h2>
         </div>
 
         <div className="space-y-8">
@@ -235,28 +237,19 @@ const IndexPage = () => (
             <div className="card-body">
               <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="card-title text-2xl">CTO</h3>
+                  <h3 className="card-title text-2xl">{t("experience.minedia.role")}</h3>
                   <p className="text-lg font-semibold text-primary">
-                    Minedia Inc.
+                    {t("experience.minedia.company")}
                   </p>
                 </div>
                 <div className="badge badge-primary badge-lg">
-                  2018 - Present
+                  {t("experience.minedia.period")}
                 </div>
               </div>
               <ul className="list-disc list-inside space-y-2 text-base-content/80">
-                <li>
-                  Leading technology strategy and development for data
-                  technology startup
-                </li>
-                <li>Successfully raised approximately ¥500M in funding</li>
-                <li>
-                  Published research on regional EC data analysis (Springer,
-                  2023)
-                </li>
-                <li>
-                  Built and scaled engineering team to support business growth
-                </li>
+                {(t("experience.minedia.items", { returnObjects: true }) || []).map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -266,26 +259,19 @@ const IndexPage = () => (
             <div className="card-body">
               <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="card-title text-2xl">Manager</h3>
+                  <h3 className="card-title text-2xl">{t("experience.metaps.role")}</h3>
                   <p className="text-lg font-semibold text-primary">
-                    Metaps Inc.
+                    {t("experience.metaps.company")}
                   </p>
                 </div>
                 <div className="badge badge-secondary badge-lg">
-                  2014 - 2018
+                  {t("experience.metaps.period")}
                 </div>
               </div>
               <ul className="list-disc list-inside space-y-2 text-base-content/80">
-                <li>
-                  Led development of SPIKE - a revolutionary zero-fee payment
-                  service
-                </li>
-                <li>
-                  Built and launched the platform from scratch in 3 months
-                </li>
-                <li>
-                  Managed engineering team and technical architecture decisions
-                </li>
+                {(t("experience.metaps.items", { returnObjects: true }) || []).map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -295,21 +281,19 @@ const IndexPage = () => (
             <div className="card-body">
               <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="card-title text-2xl">Manager</h3>
+                  <h3 className="card-title text-2xl">{t("experience.gree.role")}</h3>
                   <p className="text-lg font-semibold text-primary">
-                    GREE Inc.
+                    {t("experience.gree.company")}
                   </p>
                 </div>
                 <div className="badge badge-secondary badge-lg">
-                  2011 - 2013
+                  {t("experience.gree.period")}
                 </div>
               </div>
               <ul className="list-disc list-inside space-y-2 text-base-content/80">
-                <li>Managed development of in-house social gaming platform</li>
-                <li>
-                  Presented at CEDEC 2012 on social gaming platform strategy
-                </li>
-                <li>Supported platform serving millions of users globally</li>
+                {(t("experience.gree.items", { returnObjects: true }) || []).map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -322,14 +306,14 @@ const IndexPage = () => (
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <CodeBracketIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">Technical Skills</h2>
+          <h2 className="text-4xl font-bold">{t("skills.title")}</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Languages */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">Languages</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.languages")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-primary badge-lg">Ruby</span>
                 <span className="badge badge-primary badge-lg">PHP</span>
@@ -351,7 +335,7 @@ const IndexPage = () => (
           {/* Frameworks */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">Frameworks</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.frameworks")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-secondary badge-lg">
                   Ruby on Rails
@@ -379,7 +363,7 @@ const IndexPage = () => (
           {/* Cloud & DevOps */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">Cloud & DevOps</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.cloud")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-accent badge-lg">AWS</span>
                 <span className="badge badge-accent badge-lg">GCP</span>
@@ -403,7 +387,7 @@ const IndexPage = () => (
           {/* Databases & Caching */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">Databases & Caching</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.database")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-info badge-lg">MySQL</span>
                 <span className="badge badge-info badge-lg">PostgreSQL</span>
@@ -421,7 +405,7 @@ const IndexPage = () => (
           {/* Testing & Quality */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">Testing & Quality</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.testing")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-warning badge-lg">Jest</span>
                 <span className="badge badge-warning badge-lg">RSpec</span>
@@ -439,7 +423,7 @@ const IndexPage = () => (
           {/* API & Integration */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">API & Integration</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.api")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-success badge-lg">REST</span>
                 <span className="badge badge-success badge-lg">GraphQL</span>
@@ -456,7 +440,7 @@ const IndexPage = () => (
           <div className="card bg-base-200">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">
-                Infrastructure & Servers
+                {t("skills.infrastructure")}
               </h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-lg">Linux</span>
@@ -474,7 +458,7 @@ const IndexPage = () => (
           <div className="card bg-base-200">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">
-                Message Queue & Streaming
+                {t("skills.messageQueue")}
               </h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-error badge-lg">RabbitMQ</span>
@@ -490,7 +474,7 @@ const IndexPage = () => (
           <div className="card bg-base-200">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">
-                Version Control & Tools
+                {t("skills.versionControl")}
               </h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-lg">Git</span>
@@ -507,7 +491,7 @@ const IndexPage = () => (
           {/* AI & Machine Learning */}
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">AI & Machine Learning</h3>
+              <h3 className="card-title text-xl mb-4">{t("skills.ai")}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-primary badge-lg">OpenAI</span>
                 <span className="badge badge-primary badge-lg">Anthropic</span>
@@ -532,7 +516,7 @@ const IndexPage = () => (
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <HeartIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">Hobbies & Personal Interests</h2>
+          <h2 className="text-4xl font-bold">{t("hobbies.title")}</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -540,16 +524,16 @@ const IndexPage = () => (
             <div className="card-body">
               <h3 className="card-title flex items-center gap-2">
                 <TrophyIcon className="w-6 h-6 text-warning" />
-                Triathlon
+                {t("hobbies.triathlon.title")}
               </h3>
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2">
                   <span className="text-warning">🏆</span>
-                  <span>IRONMAN World Championship 2017 participant</span>
+                  <span>{t("hobbies.triathlon.worldChampionship")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-info">💡</span>
-                  <span>Developed AI-powered tools for training analysis</span>
+                  <span>{t("hobbies.triathlon.aiTools")}</span>
                 </li>
               </ul>
             </div>
@@ -559,21 +543,21 @@ const IndexPage = () => (
             <div className="card-body">
               <h3 className="card-title flex items-center gap-2">
                 <DocumentTextIcon className="w-6 h-6 text-info" />
-                Technical Writing
+                {t("hobbies.writing.title")}
               </h3>
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2">
                   <span className="text-info">📝</span>
-                  <span>88 articles published on Zenn</span>
+                  <span>{t("hobbies.writing.zenn")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-info">📝</span>
-                  <span>19-year tech blog (blog.teraren.com)</span>
+                  <span>{t("hobbies.writing.blog")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-info">📚</span>
                   <span>
-                    SFC CNS Guide editor for 3 years, served as Editor-in-Chief
+                    {t("hobbies.writing.editor")}
                   </span>
                 </li>
               </ul>
@@ -582,15 +566,12 @@ const IndexPage = () => (
 
           <div className="card bg-base-200">
             <div className="card-body">
-              <h3 className="card-title">Certifications</h3>
+              <h3 className="card-title">{t("hobbies.certifications.title")}</h3>
               <ul className="space-y-2 mt-4 text-sm">
-                <li>
-                  • 応用情報技術者試験 (Applied Information Technology Engineer)
-                  - 2013
-                </li>
-                <li>• LPIC Level 2 - 2004</li>
-                <li>• 第二種電気工事士 (Second-Class Electrician) - 2021</li>
-                <li>• TOEIC: 875</li>
+                <li>• {t("hobbies.certifications.applied")}</li>
+                <li>• {t("hobbies.certifications.lpic")}</li>
+                <li>• {t("hobbies.certifications.electrician")}</li>
+                <li>• {t("hobbies.certifications.toeic")}</li>
               </ul>
             </div>
           </div>
@@ -601,7 +582,7 @@ const IndexPage = () => (
     {/* Archive Section */}
     <section className="py-16 px-4 bg-base-200">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Archive</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">{t("archive.title")}</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <Link
             to="sfc/"
@@ -609,11 +590,10 @@ const IndexPage = () => (
           >
             <div className="card-body">
               <h3 className="card-title group-hover:text-primary transition-colors">
-                University Archive
+                {t("archive.university.title")}
               </h3>
               <p className="text-base-content/70">
-                Academic reports and projects from Shonan Fujisawa Campus
-                period.
+                {t("archive.university.description")}
               </p>
             </div>
           </Link>
@@ -624,10 +604,10 @@ const IndexPage = () => (
           >
             <div className="card-body">
               <h3 className="card-title group-hover:text-primary transition-colors">
-                Research Lab Archive
+                {t("archive.lab.title")}
               </h3>
               <p className="text-base-content/70">
-                Academic work from Hide Tokuda laboratory.
+                {t("archive.lab.description")}
               </p>
             </div>
           </Link>
@@ -638,10 +618,10 @@ const IndexPage = () => (
           >
             <div className="card-body">
               <h3 className="card-title group-hover:text-primary transition-colors">
-                Ruby on Rails Setup Guide
+                {t("archive.rails.title")}
               </h3>
               <p className="text-base-content/70">
-                Complete installation and setup guide for Ruby on Rails.
+                {t("archive.rails.description")}
               </p>
             </div>
           </Link>
@@ -654,11 +634,10 @@ const IndexPage = () => (
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
           <EnvelopeIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">Let's Connect</h2>
+          <h2 className="text-4xl font-bold">{t("contact.title")}</h2>
         </div>
         <p className="text-lg text-base-content/70 mb-8">
-          Interested in collaboration or just want to say hello? Feel free to
-          reach out!
+          {t("contact.description")}
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a
@@ -689,8 +668,23 @@ const IndexPage = () => (
       </div>
     </section>
   </Layout>
-)
+  )
+}
 
 export default IndexPage
 
 export const Head = () => <Seo />
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

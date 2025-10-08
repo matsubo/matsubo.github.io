@@ -3,7 +3,8 @@
     "allow": [
       "Bash(find:*)",
       "Bash(bun add:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []

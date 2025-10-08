@@ -28,3 +28,32 @@ if (typeof window !== "undefined") {
       }
     })
 }
+
+// Handle language preference
+export const onClientEntry = () => {
+  // Save language preference when navigating
+  if (typeof window !== "undefined") {
+    const currentPath = window.location.pathname
+    const savedLanguage = localStorage.getItem("language")
+
+    // Detect current language from path
+    if (currentPath.startsWith("/ja")) {
+      localStorage.setItem("language", "ja")
+    } else if (!currentPath.startsWith("/ja") && !savedLanguage) {
+      localStorage.setItem("language", "en")
+    }
+  }
+}
+
+export const onRouteUpdate = ({ location }) => {
+  // Save language preference on route changes
+  if (typeof window !== "undefined") {
+    const currentPath = location.pathname
+
+    if (currentPath.startsWith("/ja")) {
+      localStorage.setItem("language", "ja")
+    } else if (!currentPath.startsWith("/ja")) {
+      localStorage.setItem("language", "en")
+    }
+  }
+}

@@ -13,6 +13,36 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `ja`],
+        defaultLanguage: `en`,
+        siteUrl: `https://matsubo.github.io/`,
+        redirect: true,
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false,
+          },
+          keySeparator: ".",
+          nsSeparator: false,
+          returnObjects: true,
+          detection: {
+            order: ['localStorage', 'navigator'],
+            caches: ['localStorage'],
+            lookupLocalStorage: 'language',
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         sitemap: `https://matsubo.github.io/sitemap-index.xml`,

@@ -1,7 +1,25 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 
-const Footer = () => (
+const Footer = () => {
+  const { languages, originalPath, language, changeLanguage } = useI18next()
+  const [isDark, setIsDark] = React.useState(false)
+
+  React.useEffect(() => {
+    // Load theme from localStorage or default to light
+    const savedTheme = localStorage.getItem("theme") || "light"
+    document.documentElement.setAttribute("data-theme", savedTheme)
+    setIsDark(savedTheme === "dark")
+  }, [])
+
+  const handleThemeChange = (e) => {
+    const newTheme = e.target.checked ? "dark" : "light"
+    document.documentElement.setAttribute("data-theme", newTheme)
+    localStorage.setItem("theme", newTheme)
+    setIsDark(e.target.checked)
+  }
+
+  return (
   <footer className="relative bg-gradient-to-br from-base-300 via-base-200 to-base-300 text-base-content border-t border-base-300 overflow-hidden">
     {/* Decorative Background Elements */}
     <div className="absolute inset-0 opacity-5">
@@ -124,12 +142,8 @@ const Footer = () => (
                   type="checkbox"
                   className="theme-controller"
                   value="dark"
-                  onChange={e => {
-                    document.documentElement.setAttribute(
-                      "data-theme",
-                      e.target.checked ? "dark" : "light"
-                    )
-                  }}
+                  checked={isDark}
+                  onChange={handleThemeChange}
                 />
                 <svg
                   className="swap-off h-5 w-5 fill-current"
@@ -146,6 +160,30 @@ const Footer = () => (
                   <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                 </svg>
               </label>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-sm text-base-content/70">Language</span>
+              <div className="flex gap-2">
+                {languages.map(lng => (
+                  <Link
+                    key={lng}
+                    to={originalPath}
+                    language={lng}
+                    onClick={() => {
+                      if (typeof window !== "undefined") {
+                        localStorage.setItem("language", lng)
+                      }
+                    }}
+                    className={`btn btn-sm transition-all duration-300 ${
+                      language === lng
+                        ? "btn-primary"
+                        : "btn-ghost hover:btn-primary"
+                    }`}
+                  >
+                    {lng === "en" ? "EN" : "日本語"}
+                  </Link>
+                ))}
+              </div>
             </div>
             <div className="p-4 rounded-lg bg-base-100/50 backdrop-blur-sm border border-base-content/10">
               <p className="text-xs text-base-content/60 leading-relaxed">
@@ -189,6 +227,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+  )
+}
 
 export default Footer
