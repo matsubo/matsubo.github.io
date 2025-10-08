@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
+const React = require("react")
+
 exports.onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }) => {
   setHtmlAttributes({ lang: "en" })
 

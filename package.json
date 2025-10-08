@@ -38,7 +38,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.14",
     "autoprefixer": "^10.4.21",
-    "daisyui": "^5.1.27",
+    "daisyui": "^5.1.29",
     "gatsby-plugin-postcss": "^6.15.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",

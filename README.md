@@ -23,7 +23,7 @@
 
     ```shell
     cd matsubo.github.io
-    npm run develop
+    bun run develop
     ```
 
 3.  **Open the code and start customizing!**
