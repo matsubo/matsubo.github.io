@@ -61,6 +61,10 @@ public
 # Mac files
 .DS_Store
 
+# Vim backup files
+*.un~
+.tmp
+
 # Yarn
 yarn-error.log
 .pnp/
