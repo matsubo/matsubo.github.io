@@ -37,6 +37,13 @@ module.exports = {
           }
         `,
         resolveSiteUrl: () => `https://matsubo.github.io`,
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: `monthly`,
+            priority: path === "/" ? 0.7 : 0.3,
+          }
+        },
       },
     },
     `gatsby-plugin-image`,
