@@ -32,6 +32,9 @@ export const Seo = ({ title, description, pathname, image, children }) => {
             <meta property="og:title" content={seo.title} />
             <meta property="og:description" content={seo.description} />
             <meta property="og:image" content={seo.image} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content={seo.title} />
             <meta property="og:site_name" content={defaultTitle} />
             <meta property="og:locale" content="en_US" />
 
