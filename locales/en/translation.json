@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "About Me",
-    "paragraph1": "I'm a software engineer with over 20 years of experience building scalable systems and innovative solutions. Currently serving as CTO at Minedia, a data technology startup where we've successfully raised approximately ¥500M in funding. My career has spanned multiple high-growth companies including Metaps, where I led the development of SPIKE (a zero-fee payment service), and GREE, where I managed social gaming platform development.",
+    "paragraph1": "I'm a software engineer with over 20 years of experience building scalable systems and innovative solutions. Currently serving as CTO at Minedia, a data technology startup where we raised approximately ¥500M in funding. My career has spanned multiple high-growth companies including Metaps, where I led the development of SPIKE (a zero-fee payment service), and GREE, where I managed social gaming platform development.",
     "paragraph2": "I hold a degree from Keio University Shonan Fujisawa Campus (2005) and studied at UCLA Extension (2006). My approach combines deep technical expertise with strategic thinking, enabling me to build systems that drive business growth while maintaining high engineering standards."
   },
   "personality": {
@@ -83,7 +83,7 @@
       "period": "2018 - Present",
       "items": [
         "Leading technology strategy and development for data technology startup",
-        "Successfully raised approximately ¥500M in funding",
+        "Raised approximately ¥500M in funding",
         "Published research on regional EC data analysis (Springer, 2023)",
         "Built and scaled engineering team to support business growth"
       ]
