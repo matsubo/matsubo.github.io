@@ -7,7 +7,14 @@ const HeroSection = () => (
       <div className="mb-8">
         <div className="avatar mb-4">
           <div className="w-32 rounded-full">
-            <img src="https://github.com/matsubo.png" alt="Yuki Matsukura profile picture" />
+            <img
+              src="https://github.com/matsubo.png"
+              alt="Yuki Matsukura profile picture"
+              loading="lazy"
+              decoding="async"
+              width="128"
+              height="128"
+            />
           </div>
         </div>
       </div>

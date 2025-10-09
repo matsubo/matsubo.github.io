@@ -89,12 +89,13 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: [`auto`, `webp`],
+          formats: [`auto`, `webp`, `avif`],
           placeholder: `blurred`,
-          quality: 80,
+          quality: 75,
+          breakpoints: [750, 1080, 1366, 1920],
         },
         stripMetadata: true,
-        defaultQuality: 80,
+        defaultQuality: 75,
       },
     },
     `gatsby-plugin-postcss`,

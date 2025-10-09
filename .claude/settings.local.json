@@ -4,7 +4,10 @@
       "Bash(find:*)",
       "Bash(bun add:*)",
       "Bash(git rm:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(bun pm ls:*)",
+      "Bash(bun remove:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
