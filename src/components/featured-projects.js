@@ -6,13 +6,15 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/24/outline"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import { useScrollAnimation } from "../hooks/use-scroll-animation"
 
 const FeaturedProjects = () => {
   const { t } = useTranslation()
+  const sectionRef = useScrollAnimation()
 
   return (
     <section className="py-16 px-4 bg-base-200" aria-labelledby="projects-heading">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto" ref={sectionRef}>
         <div className="flex items-center gap-3 mb-8">
           <RocketLaunchIcon className="w-8 h-8 text-primary" aria-hidden="true" />
           <h2 id="projects-heading" className="text-4xl font-bold">{t("projects.title")}</h2>
@@ -30,8 +32,8 @@ const FeaturedProjects = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* AI Moderator */}
-            <div className="card bg-base-100 shadow-xl">
-              <figure className="px-4 pt-4">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
+              <figure className="px-4 pt-4 card-image-zoom">
                 <StaticImage
                   src="../images/ai-moderator.png"
                   alt="AI Moderator Interface"
@@ -65,7 +67,7 @@ const FeaturedProjects = () => {
                     href="https://ai-moderator.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary btn-sm btn-glow"
                   >
                     {t("projects.aiTools.moderator.button")}
                   </a>
@@ -74,8 +76,8 @@ const FeaturedProjects = () => {
             </div>
 
             {/* Triathlon AI Analyzer */}
-            <div className="card bg-base-100 shadow-xl">
-              <figure className="px-4 pt-4">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
+              <figure className="px-4 pt-4 card-image-zoom">
                 <StaticImage
                   src="../images/ai-triathlon.png"
                   alt="Triathlon AI Analyzer Dashboard"
@@ -110,7 +112,7 @@ const FeaturedProjects = () => {
                     href="https://ai-triathlon-result.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary btn-sm btn-glow"
                   >
                     {t("projects.aiTools.triathlon.button")}
                   </a>
@@ -132,7 +134,7 @@ const FeaturedProjects = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Postcode API */}
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
               <div className="card-body">
                 <h4 className="card-title text-lg">
                   {t("projects.apiServices.postcode.title")}
@@ -168,7 +170,7 @@ const FeaturedProjects = () => {
             </div>
 
             {/* Other APIs */}
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
               <div className="card-body">
                 <h4 className="card-title text-lg">
                   {t("projects.apiServices.bank.title")}
@@ -202,7 +204,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
 
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
               <div className="card-body">
                 <h4 className="card-title text-lg">
                   {t("projects.apiServices.corporation.title")}
@@ -236,7 +238,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
 
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
               <div className="card-body">
                 <h4 className="card-title text-lg">
                   {t("projects.apiServices.train.title")}
@@ -270,7 +272,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
 
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl card-hover-lift">
               <div className="card-body">
                 <h4 className="card-title text-lg">
                   {t("projects.apiServices.school.title")}
