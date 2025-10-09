@@ -38,3 +38,8 @@ exports.onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }) => {
     />,
   ])
 }
+
+// Match wrapPageElement in gatsby-browser.js
+exports.wrapPageElement = ({ element }) => {
+  return element
+}

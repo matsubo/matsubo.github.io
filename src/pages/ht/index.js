@@ -1,4 +1,5 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import { Seo } from "../../components/seo"
@@ -626,3 +627,17 @@ export const Head = () => (
     pathname="/ht/"
   />
 )
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

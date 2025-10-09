@@ -29,7 +29,8 @@ module.exports = {
         languages: [`en`, `ja`],
         defaultLanguage: `en`,
         siteUrl: `https://matsubo.github.io/`,
-        redirect: true,
+        redirect: false,
+        generateDefaultLanguagePage: false,
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
@@ -37,11 +38,9 @@ module.exports = {
           keySeparator: ".",
           nsSeparator: false,
           returnObjects: true,
-          detection: {
-            order: ['localStorage', 'navigator'],
-            caches: ['localStorage'],
-            lookupLocalStorage: 'language',
-          },
+          lng: 'en',
+          fallbackLng: 'en',
+          supportedLngs: ['en', 'ja'],
         },
       },
     },

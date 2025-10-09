@@ -14,7 +14,14 @@
       "Bash(convert:*)",
       "Bash(git restore:*)",
       "Bash(env)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(for:*)",
+      "Bash(head:*)",
+      "Bash(done)",
+      "Bash(npm run build:*)",
+      "Bash(curl:*)",
+      "Bash(npm run clean:*)",
+      "Bash(npm run develop:*)"
     ],
     "deny": [],
     "ask": []

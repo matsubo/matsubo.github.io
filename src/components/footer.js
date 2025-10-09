@@ -1,16 +1,45 @@
 import * as React from "react"
-import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Footer = () => {
-  const { languages, originalPath, language } = useI18next()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [isDark, setIsDark] = React.useState(false)
+  const [language, setLanguage] = React.useState("en")
+  const languages = ["en", "ja"]
 
   React.useEffect(() => {
     // Read the current theme that was already set by gatsby-ssr.js
     const currentTheme = document.documentElement.getAttribute("data-theme")
     setIsDark(currentTheme === "dark")
+
+    // Restore language from localStorage
+    const savedLanguage = localStorage.getItem("language")
+
+    if (savedLanguage && savedLanguage !== i18n.language) {
+      i18n.changeLanguage(savedLanguage).then(() => {
+        setLanguage(savedLanguage)
+      })
+    } else {
+      setLanguage(i18n.language || "en")
+    }
   }, [])
+
+  const handleLanguageChange = async (lng) => {
+    try {
+      // Save to localStorage first
+      localStorage.setItem("language", lng)
+
+      // Then change language
+      await i18n.changeLanguage(lng)
+
+      setLanguage(lng)
+
+      // Force page reload to ensure all components re-render with new language
+      window.location.reload()
+    } catch (error) {
+      console.error("Failed to change language:", error)
+    }
+  }
 
   const handleThemeChange = (e) => {
     const newTheme = e.target.checked ? "dark" : "light"
@@ -32,9 +61,11 @@ const Footer = () => {
       <div className="grid md:grid-cols-3 gap-12 mb-12">
         {/* Brand Section */}
         <div className="space-y-4">
-          <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            {t("footer.brand.name")}
-          </h3>
+          <Link to="/" className="inline-block">
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
+              {t("footer.brand.name")}
+            </h3>
+          </Link>
           <p className="text-base-content/70 text-sm leading-relaxed">
             {t("footer.brand.description")}
           </p>
@@ -164,14 +195,13 @@ const Footer = () => {
               <span className="text-sm text-base-content/70">{t("footer.preferences.language")}</span>
               <div className="flex gap-2">
                 {languages.map(lng => (
-                  <Link
+                  <button
                     key={lng}
-                    to={originalPath}
-                    language={lng}
-                    onClick={() => {
-                      if (typeof window !== "undefined") {
-                        localStorage.setItem("language", lng)
-                      }
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      e.stopPropagation()
+                      handleLanguageChange(lng)
                     }}
                     className={`btn btn-sm transition-all duration-300 ${
                       language === lng
@@ -180,14 +210,9 @@ const Footer = () => {
                     }`}
                   >
                     {lng === "en" ? "EN" : "日本語"}
-                  </Link>
+                  </button>
                 ))}
               </div>
-            </div>
-            <div className="p-4 rounded-lg bg-base-100/50 backdrop-blur-sm border border-base-content/10">
-              <p className="text-xs text-base-content/60 leading-relaxed">
-                {t("footer.quote")}
-              </p>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 
 import Layout from "../../../components/layout"
 import { Seo } from "../../../components/seo"
@@ -275,3 +276,17 @@ const AboutPage = () => (
 export default AboutPage
 
 export const Head = () => <Seo title="Yuki Matsukura @SFC" />
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
