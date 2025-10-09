@@ -5,6 +5,7 @@ import StructuredData from "../components/structured-data"
 import HeroSection from "../components/hero-section"
 import AboutSection from "../components/about-section"
 import FeaturedProjects from "../components/featured-projects"
+import SkillProgress from "../components/skill-progress"
 import {
   AcademicCapIcon,
   BeakerIcon,
@@ -310,17 +311,35 @@ const IndexPage = () => {
           <h2 className="text-4xl font-bold">{t("skills.title")}</h2>
         </div>
 
+        {/* Main Skills with Progress Bars */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+            <SparklesIcon className="w-6 h-6 text-primary" />
+            {t("skills.expertSkills")}
+          </h3>
+          <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
+            {(t("skills.mainSkills", { returnObjects: true }) || []).map((skill, index) => (
+              <SkillProgress
+                key={index}
+                name={skill.name}
+                level={skill.level}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Other Skills */}
+        <div>
+          <h3 className="text-2xl font-semibold mb-6">Other Technologies</h3>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-6">
           {/* Languages */}
           <div className="card bg-base-200">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t("skills.languages")}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-primary badge-lg">Ruby</span>
                 <span className="badge badge-primary badge-lg">PHP</span>
-                <span className="badge badge-primary badge-lg">JavaScript</span>
-                <span className="badge badge-primary badge-lg">TypeScript</span>
-                <span className="badge badge-primary badge-lg">Python</span>
                 <span className="badge badge-primary badge-lg">Go</span>
                 <span className="badge badge-primary badge-lg">Java</span>
                 <span className="badge badge-primary badge-lg">Kotlin</span>
@@ -338,15 +357,9 @@ const IndexPage = () => {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t("skills.frameworks")}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-secondary badge-lg">
-                  Ruby on Rails
-                </span>
-                <span className="badge badge-secondary badge-lg">React</span>
-                <span className="badge badge-secondary badge-lg">Next.js</span>
                 <span className="badge badge-secondary badge-lg">Nuxt.js</span>
                 <span className="badge badge-secondary badge-lg">Vue.js</span>
                 <span className="badge badge-secondary badge-lg">Angular</span>
-                <span className="badge badge-secondary badge-lg">Gatsby</span>
                 <span className="badge badge-secondary badge-lg">Django</span>
                 <span className="badge badge-secondary badge-lg">FastAPI</span>
                 <span className="badge badge-secondary badge-lg">Laravel</span>
@@ -366,11 +379,7 @@ const IndexPage = () => {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t("skills.cloud")}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-accent badge-lg">AWS</span>
-                <span className="badge badge-accent badge-lg">GCP</span>
                 <span className="badge badge-accent badge-lg">Azure</span>
-                <span className="badge badge-accent badge-lg">Docker</span>
-                <span className="badge badge-accent badge-lg">Kubernetes</span>
                 <span className="badge badge-accent badge-lg">
                   GitHub Actions
                 </span>
@@ -390,10 +399,6 @@ const IndexPage = () => {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t("skills.database")}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-info badge-lg">MySQL</span>
-                <span className="badge badge-info badge-lg">PostgreSQL</span>
-                <span className="badge badge-info badge-lg">MongoDB</span>
-                <span className="badge badge-info badge-lg">Redis</span>
                 <span className="badge badge-info badge-lg">Elasticsearch</span>
                 <span className="badge badge-info badge-lg">DynamoDB</span>
                 <span className="badge badge-info badge-lg">Cassandra</span>
