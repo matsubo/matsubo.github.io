@@ -12,7 +12,9 @@
       "Bash(identify:*)",
       "Bash(sips:*)",
       "Bash(convert:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(env)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

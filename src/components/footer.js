@@ -7,10 +7,9 @@ const Footer = () => {
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
-    // Load theme from localStorage or default to light
-    const savedTheme = localStorage.getItem("theme") || "light"
-    document.documentElement.setAttribute("data-theme", savedTheme)
-    setIsDark(savedTheme === "dark")
+    // Read the current theme that was already set by gatsby-ssr.js
+    const currentTheme = document.documentElement.getAttribute("data-theme")
+    setIsDark(currentTheme === "dark")
   }, [])
 
   const handleThemeChange = (e) => {

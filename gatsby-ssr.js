@@ -16,19 +16,22 @@ exports.onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }) => {
       dangerouslySetInnerHTML={{
         __html: `
           (function() {
-            function getTheme() {
+            try {
               // Check localStorage first
               const savedTheme = localStorage.getItem('theme');
-              if (savedTheme) {
-                return savedTheme;
+              if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light' || savedTheme === 'cupcake')) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                return;
               }
-              
+
               // Fall back to system preference
               const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              return prefersDark ? 'dark' : 'cupcake';
+              const systemTheme = prefersDark ? 'dark' : 'cupcake';
+              document.documentElement.setAttribute('data-theme', systemTheme);
+            } catch (e) {
+              // Fallback to light theme if any error occurs
+              document.documentElement.setAttribute('data-theme', 'cupcake');
             }
-            
-            document.documentElement.setAttribute('data-theme', getTheme());
           })();
         `,
       }}
