@@ -619,4 +619,10 @@ const AboutPage = () => (
 
 export default AboutPage
 
-export const Head = () => <Seo title="Yuki Matsukura on research" />
+export const Head = () => (
+  <Seo
+    title="Research Laboratory Archive - Yuki Matsukura"
+    description="Academic research projects and publications from Hide Tokuda laboratory at Keio University. Context-aware systems, ubiquitous computing, and location-based services."
+    pathname="/ht/"
+  />
+)

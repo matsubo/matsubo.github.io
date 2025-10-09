@@ -140,4 +140,10 @@ const RailsPage = () => (
 
 export default RailsPage
 
-export const Head = () => <Seo title="Ruby on Rails Installation Guide" />
+export const Head = () => (
+  <Seo
+    title="Ruby on Rails Setup Guide - Complete Installation Tutorial"
+    description="Step-by-step guide for installing Ruby on Rails on Mac and Windows. Includes rbenv setup, Ruby installation, database configuration, and development environment setup."
+    pathname="/rails/"
+  />
+)

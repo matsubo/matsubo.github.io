@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Seo } from "../components/seo"
+import StructuredData from "../components/structured-data"
 import HeroSection from "../components/hero-section"
 import AboutSection from "../components/about-section"
 import FeaturedProjects from "../components/featured-projects"
@@ -696,7 +697,15 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <Seo />
+export const Head = () => (
+  <>
+    <Seo
+      title="Yuki Matsukura - CTO & Software Engineer | 20+ Years Experience"
+      description="Experienced CTO at Minedia with 20+ years in software engineering. Expert in scalable systems, Ruby on Rails, React, and team leadership. Former tech lead at Metaps and GREE."
+    />
+    <StructuredData />
+  </>
+)
 
 export const query = graphql`
   query ($language: String!) {

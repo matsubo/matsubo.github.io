@@ -767,4 +767,10 @@ const AboutPage = () => (
 
 export default AboutPage
 
-export const Head = () => <Seo title="Yuki Matsukura @SFC" />
+export const Head = () => (
+  <Seo
+    title="University Archive - Keio SFC - Yuki Matsukura"
+    description="Academic reports, projects, and coursework from Keio University Shonan Fujisawa Campus (2001-2005). Computer science, information systems, and network engineering studies."
+    pathname="/sfc/"
+  />
+)

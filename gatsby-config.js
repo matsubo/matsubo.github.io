@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `MATSUBO ON GITHUB`,
-    description: `web site of matsubo's public resource. Old archives.`,
-    author: `@matsubo`,
+    title: `Yuki Matsukura - CTO & Software Engineer`,
+    description: `Experienced CTO and Software Engineer with 20+ years building scalable systems. Currently leading technology at Minedia. Specializing in system architecture, team leadership, and innovative solutions.`,
+    author: `@matsubokkuri`,
     siteUrl: `https://matsubo.github.io/`,
+    image: `/og-image.png`,
+    twitterUsername: `@matsubokkuri`,
+    keywords: `CTO, Software Engineer, System Architecture, Ruby on Rails, React, Gatsby, Cloud Infrastructure, Team Leadership`,
   },
   plugins: [
     {
