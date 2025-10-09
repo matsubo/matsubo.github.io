@@ -8,7 +8,11 @@
       "Bash(bun pm ls:*)",
       "Bash(bun remove:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(identify:*)",
+      "Bash(sips:*)",
+      "Bash(convert:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []
