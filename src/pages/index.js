@@ -38,8 +38,8 @@ const IndexPage = () => {
         </div>
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body">
-            <h3 className="card-title text-3xl mb-4">
-              <span className="badge badge-primary badge-lg">{t("personality.mbti")}</span>
+            <h3 className="card-title text-3xl mb-4 flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+              <span className="badge badge-primary badge-lg whitespace-nowrap">{t("personality.mbti")}</span>
               <span>{t("personality.subtitle")}</span>
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
