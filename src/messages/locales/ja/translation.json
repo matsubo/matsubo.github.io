@@ -1,0 +1,282 @@
+{
+  "hero": {
+    "greeting": "こんにちは、",
+    "name": "松倉 友樹",
+    "role": "CTO & テクニカルリーダー",
+    "description": "スケーラブルなシステム構築とエンジニアリングチームのリーディングに情熱を注いでいます"
+  },
+  "about": {
+    "title": "自己紹介",
+    "paragraph1": "20年以上の経験を持つソフトウェアエンジニアで、スケーラブルなシステムと革新的なソリューションの構築に携わってきました。現在は、データテクノロジースタートアップのMinediaでCTOを務めており、約5億円の資金調達を実施しました。これまでのキャリアでは、決済手数料ゼロのSPIKEの開発をリードしたMetaps、ソーシャルゲーミングプラットフォームの開発を管理したGREEなど、複数の高成長企業で活躍してきました。",
+    "paragraph2": "慶應義塾大学湘南藤沢キャンパス（2005年）を卒業し、UCLA Extension（2006年）で学びました。深い技術的専門知識と戦略的思考を組み合わせたアプローチにより、高いエンジニアリング基準を維持しながらビジネスの成長を促進するシステムを構築しています。"
+  },
+  "personality": {
+    "title": "パーソナリティ & ワークスタイル",
+    "mbti": "INTP-A",
+    "subtitle": "論理学者 - 自己主張型",
+    "strengths": {
+      "title": "コアストレングス",
+      "logical": {
+        "title": "論理的分析:",
+        "description": "深い分析的思考と問題解決能力"
+      },
+      "strategic": {
+        "title": "戦略的ビジョン:",
+        "description": "長期的な計画とアーキテクチャ上の意思決定"
+      },
+      "innovation": {
+        "title": "イノベーションフォーカス:",
+        "description": "新しいソリューションの創造と新たな可能性の探求"
+      },
+      "understanding": {
+        "title": "個人理解:",
+        "description": "各チームメンバーの独自の強みを認識し活用する"
+      }
+    },
+    "leadership": {
+      "title": "リーダーシップアプローチ",
+      "description1": "INTP-A(自己主張型)タイプとして、技術的リーダーシップに自信とプレッシャー下での冷静さをもたらします。私のアプローチは、厳密な論理的思考とチームメンバーの成長と発展への真の配慮を組み合わせたものです。",
+      "description2": "複雑な技術的課題を分解し、明確な戦略的ロードマップを作成し、エンジニアが最高の仕事ができる環境を構築することが得意です。"
+    },
+    "note": "注:",
+    "noteText": "MBTI診断とAI分析に基づく。",
+    "fullAnalysis": "詳細分析"
+  },
+  "academic": {
+    "title": "学術 & 研究実績",
+    "papers": {
+      "title": "研究論文",
+      "ec": {
+        "title": "ECデータ分析による地域特性の理解",
+        "meta": "Springer出版 • 2023年",
+        "description": "eコマースデータを分析し、地域特性と消費者行動パターンを理解する研究。",
+        "button": "論文を見る"
+      },
+      "mugi": {
+        "title": "MUGI: アクティビティモデルの設計と実装",
+        "meta": "修士論文、慶應義塾大学 • 2005年",
+        "description": "位置情報と場所属性を利用したナビゲーションサービスのためのアクティビティモデルの設計と実装。",
+        "button": "PDFダウンロード"
+      }
+    },
+    "presentations": {
+      "title": "プレゼンテーション & 登壇",
+      "snowday": {
+        "title": "Snowday パネルディスカッション - データの未来",
+        "meta": "2023年",
+        "description": "MinediaのMinedsサービスの洞察を交えたデータエコシステムの未来についてのパネルディスカッション。",
+        "button": "記事を見る"
+      },
+      "cedec": {
+        "title": "ソーシャルゲーミングを実現するプラットフォーム",
+        "meta": "CEDEC 2012",
+        "description": "10億ユーザーのための魅力的なゲームの開発方法",
+        "button": "記事を見る"
+      }
+    }
+  },
+  "experience": {
+    "title": "職務経歴",
+    "minedia": {
+      "role": "CTO",
+      "company": "株式会社Minedia",
+      "period": "2018年 - 現在",
+      "items": [
+        "データテクノロジースタートアップの技術戦略と開発をリード",
+        "約5億円の資金調達を実施",
+        "地域ECデータ分析に関する研究を発表(Springer、2023年)",
+        "事業成長を支えるエンジニアリングチームを構築・拡大"
+      ]
+    },
+    "metaps": {
+      "role": "マネージャー",
+      "company": "株式会社メタップス",
+      "period": "2014年 - 2018年",
+      "items": [
+        "革新的な決済手数料ゼロのSPIKE開発をリード",
+        "プラットフォームをゼロから3ヶ月で構築・リリース",
+        "エンジニアリングチームと技術アーキテクチャの意思決定を管理"
+      ]
+    },
+    "gree": {
+      "role": "マネージャー",
+      "company": "グリー株式会社",
+      "period": "2011年 - 2013年",
+      "items": [
+        "社内ソーシャルゲーミングプラットフォームの開発を管理",
+        "CEDEC 2012でソーシャルゲーミングプラットフォーム戦略について発表",
+        "グローバルに数百万のユーザーにサービスを提供するプラットフォームをサポート"
+      ]
+    }
+  },
+  "skills": {
+    "title": "技術スキル",
+    "languages": "言語",
+    "frameworks": "フレームワーク",
+    "cloud": "クラウド & DevOps",
+    "database": "データベース & キャッシング",
+    "testing": "テスト & 品質",
+    "api": "API & 統合",
+    "infrastructure": "インフラ & サーバー",
+    "messageQueue": "メッセージキュー & ストリーミング",
+    "versionControl": "バージョン管理 & ツール",
+    "ai": "AI & 機械学習",
+    "expertSkills": "エキスパートレベル",
+    "mainSkills": [
+      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
+      { "name": "React", "level": 90, "category": "frameworks" },
+      { "name": "Ruby", "level": 95, "category": "languages" },
+      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
+      { "name": "AWS", "level": 85, "category": "cloud" },
+      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
+      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
+      { "name": "Redis", "level": 85, "category": "database" },
+      { "name": "Python", "level": 80, "category": "languages" },
+      { "name": "Next.js/Gatsby", "level": 85, "category": "frameworks" },
+      { "name": "GCP", "level": 75, "category": "cloud" },
+      { "name": "MongoDB", "level": 75, "category": "database" }
+    ]
+  },
+  "hobbies": {
+    "title": "趣味 & 個人的な興味",
+    "triathlon": {
+      "title": "トライアスロン",
+      "worldChampionship": "IRONMAN世界選手権2017出場",
+      "aiTools": "トレーニング分析のためのAI搭載ツールを開発",
+      "marathon": "フルマラソン PB: 2:58:41（2016東京マラソン）",
+      "openwater": "湘南オープンウォーター 10km 完泳",
+      "ironman703": "IRONMAN 70.3 アジア太平洋選手権（5:00:47）"
+    },
+    "writing": {
+      "title": "技術執筆",
+      "zenn": "Zennに88記事を投稿",
+      "blog": "19年続く技術ブログ(blog.teraren.com)",
+      "editor": "SFC CNSガイドの編集者として3年間、編集長を務める",
+      "gree": "GREEエンジニアブログ記事（はてなブックマーク2,221件）"
+    },
+    "certifications": {
+      "title": "資格",
+      "applied": "応用情報技術者試験 - 2013年",
+      "lpic": "LPIC レベル2 - 2004年",
+      "electrician": "第二種電気工事士 - 2021年",
+      "toeic": "TOEIC: 875"
+    }
+  },
+  "archive": {
+    "title": "アーカイブ",
+    "university": {
+      "title": "大学アーカイブ",
+      "description": "湘南藤沢キャンパス時代の学術レポートとプロジェクト。"
+    },
+    "lab": {
+      "title": "研究室アーカイブ",
+      "description": "徳田英幸研究室での学術研究。"
+    },
+    "rails": {
+      "title": "Ruby on Railsセットアップガイド",
+      "description": "Ruby on Railsの完全なインストールとセットアップガイド。"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "コラボレーションに興味がある、またはご挨拶したい方はお気軽にご連絡ください!"
+  },
+  "footer": {
+    "brand": {
+      "name": "松倉 友樹",
+      "description": "20年以上の経験を持つCTO & ソフトウェアエンジニア。スケーラブルなシステムと革新的なソリューションを構築しています。"
+    },
+    "links": {
+      "title": "アーカイブ",
+      "lab": "研究室",
+      "university": "大学アーカイブ",
+      "rails": "Railsセットアップガイド"
+    },
+    "preferences": {
+      "title": "設定",
+      "theme": "テーマ",
+      "language": "言語"
+    },
+    "quote": "スケーラブルなシステムの構築とオープンソースを通じた知識の共有。",
+    "copyright": "All rights reserved.",
+    "madeWith": "Gatsbyで ❤️ を込めて作成"
+  },
+  "projects": {
+    "title": "注目のプロジェクト",
+    "aiTools": {
+      "title": "AI搭載ツール",
+      "subtitle": "実用的なワークフローのための最新インテリジェントアプリケーション",
+      "moderator": {
+        "title": "AIモデレーター",
+        "subtitle": "AI搭載コンテンツモデレーションシステム",
+        "description": "高度なAIモデルを使用したインテリジェントなコンテンツフィルタリングとモデレーションにより、プラットフォーム全体で安全で適切なコンテンツを確保します。",
+        "button": "サイトを見る"
+      },
+      "triathlon": {
+        "title": "トライアスロンAIアナライザー",
+        "subtitle": "トライアスロントレーニングのパフォーマンス分析",
+        "description": "トライアスロントレーニングデータのAI搭載分析により、パフォーマンスの最適化とレース準備のための実用的な洞察を提供します。",
+        "button": "ライブサイトを見る"
+      }
+    },
+    "apiServices": {
+      "title": "APIサービスコレクション",
+      "subtitle": "日本データ向けの最新REST & GraphQL API",
+      "postcode": {
+        "title": "郵便番号API",
+        "subtitle": "高性能な日本郵便番号検索サービス",
+        "features": [
+          "REST & GraphQLサポート",
+          "90%以上のテストカバレッジ",
+          "多言語対応（日本語/英語）",
+          "Cloudflare最適化"
+        ],
+        "button": "サイトを見る"
+      },
+      "bank": {
+        "title": "銀行コードAPI",
+        "subtitle": "日本の金融機関コード",
+        "features": [
+          "完全な銀行コードデータベース",
+          "コード/名前による高速検索",
+          "金融機関情報",
+          "REST APIサポート"
+        ],
+        "button": "サイトを見る"
+      },
+      "corporation": {
+        "title": "法人API",
+        "subtitle": "企業登記情報",
+        "features": [
+          "法人番号検索",
+          "企業プロフィールデータ",
+          "登記詳細",
+          "ビジネス情報"
+        ],
+        "button": "サイトを見る"
+      },
+      "train": {
+        "title": "鉄道・駅API",
+        "subtitle": "鉄道と駅の情報",
+        "features": [
+          "駅データベース検索",
+          "鉄道路線情報",
+          "ルート計画データ",
+          "位置座標"
+        ],
+        "button": "サイトを見る"
+      },
+      "school": {
+        "title": "学校API",
+        "subtitle": "教育機関データベース",
+        "features": [
+          "学校情報検索",
+          "教育施設データ",
+          "機関分類",
+          "連絡先情報"
+        ],
+        "button": "サイトを見る"
+      }
+    }
+  }
+}

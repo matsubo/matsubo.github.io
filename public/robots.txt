@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://matsubo.github.io
+
+# Sitemaps
+Sitemap: https://matsubo.github.io/sitemap.xml

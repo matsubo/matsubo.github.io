@@ -1,0 +1,67 @@
+/* Around contents table */
+div.lv1 {
+
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* title */
+.bigtitle {
+	margin: 20 5 10 15;
+	font-size: 14pt;
+	color: #444444;
+	padding: 3px;
+	font-weight: bold;
+	
+	border-color: #0066CC;
+	border-width: 0 0 3 20;
+	border-style: solid;
+}
+
+/* contents */
+div.contents {
+	margin: 20 0 10 30;
+}
+
+/* koumoku */
+h2.sectitle {
+	font-weight: bold;
+	color: #444444;
+	font-size: 11pt;
+	text-decoration: underline;
+	margin-left: -5px;
+	margin-bottom: 5px;
+}
+
+/* Each title */
+.engfont {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 11pt;
+	letter-spacing: 2px;
+	font-family: "Verdana", "Arial";
+}
+
+/* copyright */
+.headfoot {
+	color: #FFFFFF;
+	background-color:#85a9b5;
+	font-family: "Verdana", "Arial";
+	font-size: 8pt;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* about hyper text */
+a:link { text-decoration: underline;}
+a:visited { text-decoration: underline;}
+a:hover { text-decoration: underline; font-weight: bold;}
+a:active { text-decoration: underline;}
+
+/* basic enviroment */
+body,td { font-size: 9pt; }

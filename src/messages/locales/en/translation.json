@@ -1,0 +1,282 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Yuki Matsukura",
+    "role": "CTO & Technical Leader",
+    "description": "Passionate about building scalable systems and leading engineering teams"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a software engineer with over 20 years of experience building scalable systems and innovative solutions. Currently serving as CTO at Minedia, a data technology startup where we raised approximately ¥500M in funding. My career has spanned multiple high-growth companies including Metaps, where I led the development of SPIKE (a zero-fee payment service), and GREE, where I managed social gaming platform development.",
+    "paragraph2": "I hold a degree from Keio University Shonan Fujisawa Campus (2005) and studied at UCLA Extension (2006). My approach combines deep technical expertise with strategic thinking, enabling me to build systems that drive business growth while maintaining high engineering standards."
+  },
+  "personality": {
+    "title": "Personality & Work Style",
+    "mbti": "INTP-A",
+    "subtitle": "Logician - Assertive Type",
+    "strengths": {
+      "title": "Core Strengths",
+      "logical": {
+        "title": "Logical Analysis:",
+        "description": "Deep analytical thinking and problem-solving capabilities"
+      },
+      "strategic": {
+        "title": "Strategic Vision:",
+        "description": "Long-term planning and architectural decision-making"
+      },
+      "innovation": {
+        "title": "Innovation Focus:",
+        "description": "Creating novel solutions and exploring new possibilities"
+      },
+      "understanding": {
+        "title": "Individual Understanding:",
+        "description": "Recognizing and leveraging each team member's unique strengths"
+      }
+    },
+    "leadership": {
+      "title": "Leadership Approach",
+      "description1": "As an INTP-A (Assertive) type, I bring confidence and calm under pressure to technical leadership. My approach combines rigorous logical thinking with genuine care for team members' growth and development.",
+      "description2": "I excel at breaking down complex technical challenges, creating clear strategic roadmaps, and building environments where engineers can do their best work."
+    },
+    "note": "Note:",
+    "noteText": "Based on MBTI assessment and AI analysis.",
+    "fullAnalysis": "Full Analysis"
+  },
+  "academic": {
+    "title": "Academic & Research Achievements",
+    "papers": {
+      "title": "Research Papers",
+      "ec": {
+        "title": "Understanding Regional Characteristics Through EC Data Analysis",
+        "meta": "Published in Springer • 2023",
+        "description": "Research analyzing e-commerce data to understand regional characteristics and consumer behavior patterns.",
+        "button": "View Publication"
+      },
+      "mugi": {
+        "title": "MUGI: Design and Implementation of Activity Models",
+        "meta": "Master's Thesis, Keio University • 2005",
+        "description": "Design and implementation of activity models using location information and place attributes for navigation services.",
+        "button": "Download PDF"
+      }
+    },
+    "presentations": {
+      "title": "Presentations & Speaking",
+      "snowday": {
+        "title": "Snowday Panel Discussion - Data Future",
+        "meta": "2023",
+        "description": "Panel discussion about the future of data ecosystems with insights from Minedia's Mineds service.",
+        "button": "View Article"
+      },
+      "cedec": {
+        "title": "Platform for Realizing Social Gaming",
+        "meta": "CEDEC 2012",
+        "description": "How to Develop Attractive Games for 1 Billion Users",
+        "button": "View Coverage"
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "minedia": {
+      "role": "CTO",
+      "company": "Minedia Inc.",
+      "period": "2018 - Present",
+      "items": [
+        "Leading technology strategy and development for data technology startup",
+        "Raised approximately ¥500M in funding",
+        "Published research on regional EC data analysis (Springer, 2023)",
+        "Built and scaled engineering team to support business growth"
+      ]
+    },
+    "metaps": {
+      "role": "Manager",
+      "company": "Metaps Inc.",
+      "period": "2014 - 2018",
+      "items": [
+        "Led development of SPIKE - a revolutionary zero-fee payment service",
+        "Built and launched the platform from scratch in 3 months",
+        "Managed engineering team and technical architecture decisions"
+      ]
+    },
+    "gree": {
+      "role": "Manager",
+      "company": "GREE Inc.",
+      "period": "2011 - 2013",
+      "items": [
+        "Managed development of in-house social gaming platform",
+        "Presented at CEDEC 2012 on social gaming platform strategy",
+        "Supported platform serving millions of users globally"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "cloud": "Cloud & DevOps",
+    "database": "Databases & Caching",
+    "testing": "Testing & Quality",
+    "api": "API & Integration",
+    "infrastructure": "Infrastructure & Servers",
+    "messageQueue": "Message Queue & Streaming",
+    "versionControl": "Version Control & Tools",
+    "ai": "AI & Machine Learning",
+    "expertSkills": "Expert Level",
+    "mainSkills": [
+      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
+      { "name": "React", "level": 90, "category": "frameworks" },
+      { "name": "Ruby", "level": 95, "category": "languages" },
+      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
+      { "name": "AWS", "level": 85, "category": "cloud" },
+      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
+      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
+      { "name": "Redis", "level": 85, "category": "database" },
+      { "name": "Python", "level": 80, "category": "languages" },
+      { "name": "Next.js/Gatsby", "level": 85, "category": "frameworks" },
+      { "name": "GCP", "level": 75, "category": "cloud" },
+      { "name": "MongoDB", "level": 75, "category": "database" }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies & Personal Interests",
+    "triathlon": {
+      "title": "Triathlon",
+      "worldChampionship": "IRONMAN World Championship 2017 participant",
+      "aiTools": "Developed AI-powered tools for training analysis",
+      "marathon": "Full Marathon PB: 2:58:41 (2016 Tokyo Marathon)",
+      "openwater": "Shonan Open Water 10km Complete",
+      "ironman703": "IRONMAN 70.3 Asia-Pacific Championship (5:00:47)"
+    },
+    "writing": {
+      "title": "Technical Writing",
+      "zenn": "88 articles published on Zenn",
+      "blog": "19-year tech blog (blog.teraren.com)",
+      "editor": "SFC CNS Guide editor for 3 years, served as Editor-in-Chief",
+      "gree": "GREE Engineers' Blog article (2,221 Hatena Bookmarks)"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "applied": "Applied Information Technology Engineer - 2013",
+      "lpic": "LPIC Level 2 - 2004",
+      "electrician": "Second-Class Electrician - 2021",
+      "toeic": "TOEIC: 875"
+    }
+  },
+  "archive": {
+    "title": "Archive",
+    "university": {
+      "title": "University Archive",
+      "description": "Academic reports and projects from Shonan Fujisawa Campus period."
+    },
+    "lab": {
+      "title": "Research Lab Archive",
+      "description": "Academic work from Hide Tokuda laboratory."
+    },
+    "rails": {
+      "title": "Ruby on Rails Setup Guide",
+      "description": "Complete installation and setup guide for Ruby on Rails."
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "description": "Interested in collaboration or just want to say hello? Feel free to reach out!"
+  },
+  "footer": {
+    "brand": {
+      "name": "Yuki Matsukura",
+      "description": "CTO & Software Engineer with 20+ years of experience building scalable systems and innovative solutions."
+    },
+    "links": {
+      "title": "Archive Links",
+      "lab": "Research Laboratory",
+      "university": "University Archive",
+      "rails": "Rails Setup Guide"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "theme": "Theme",
+      "language": "Language"
+    },
+    "quote": "Building scalable systems and sharing knowledge through open source contributions.",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with ❤️ using Gatsby"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "aiTools": {
+      "title": "AI-Powered Tools",
+      "subtitle": "Modern intelligent applications for real-world workflows",
+      "moderator": {
+        "title": "AI Moderator",
+        "subtitle": "AI-powered content moderation system",
+        "description": "Intelligent content filtering and moderation using advanced AI models to ensure safe and appropriate content across platforms.",
+        "button": "Visit site"
+      },
+      "triathlon": {
+        "title": "Triathlon AI Analyzer",
+        "subtitle": "Performance insights for triathlon training",
+        "description": "AI-powered analysis of triathlon training data providing actionable insights for performance optimization and race preparation.",
+        "button": "View live site"
+      }
+    },
+    "apiServices": {
+      "title": "API Services Collection",
+      "subtitle": "Modern REST & GraphQL APIs for Japanese data",
+      "postcode": {
+        "title": "Postcode API",
+        "subtitle": "High-performance Japanese postal code lookup service",
+        "features": [
+          "REST & GraphQL support",
+          "90%+ test coverage",
+          "Multilingual (JP/EN)",
+          "Cloudflare optimized"
+        ],
+        "button": "Visit site"
+      },
+      "bank": {
+        "title": "Bank Code API",
+        "subtitle": "Japanese banking institution codes",
+        "features": [
+          "Complete bank code database",
+          "Fast lookup by code/name",
+          "Financial institution info",
+          "REST API support"
+        ],
+        "button": "Visit site"
+      },
+      "corporation": {
+        "title": "Corporation API",
+        "subtitle": "Company registration information",
+        "features": [
+          "Corporate number search",
+          "Company profile data",
+          "Registration details",
+          "Business information"
+        ],
+        "button": "Visit site"
+      },
+      "train": {
+        "title": "Train & Station API",
+        "subtitle": "Railway and station information",
+        "features": [
+          "Station database search",
+          "Railway line information",
+          "Route planning data",
+          "Location coordinates"
+        ],
+        "button": "Visit site"
+      },
+      "school": {
+        "title": "School API",
+        "subtitle": "Educational institution database",
+        "features": [
+          "School information lookup",
+          "Educational facility data",
+          "Institution classification",
+          "Contact information"
+        ],
+        "button": "Visit site"
+      }
+    }
+  }
+}

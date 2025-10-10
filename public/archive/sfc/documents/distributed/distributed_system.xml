@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE course SYSTEM "-//SFC//DTD Distributes systems syllabus//EN" "https://matsubo.github.io/sfc/documents/distributed/syllabus.dtd">
+
+<course>
+	<control>
+		<title lang="japanese">分散処理系論</title>
+		<title lang="engish">Distributed System</title>
+		<code>47020</code>
+		<year>2002</year>
+		<term>秋</term>
+		<room>ο18</room>
+		<measure>2</measure>
+		<staff>
+			<teacher>
+				<name>萩野 達也</name>
+				<affiliation>環境情報学部</affiliation>
+				<email>hagino@tom.sfc.keio.ac.jp</email>
+			</teacher>
+		</staff>
+	</control>
+	
+	<class>
+		<abstract>
+		インターネットなどの分散環境におけるコンピュータ・システムについて取り扱います．
+		分散処理系の基本的概念として，クライアント・サーバやエージェントなどのモデル，
+		ユーザ認証，トランザクション，セキュリティについて説明します．
+		具体的には，ドメイン名サービス，電子メール，ファイル転送，ファイルの共有，
+		アカウントの管理，World Wide Webシステムなどについて取り上げます．
+		Web に関しては，HTTPだけでなく，HTML，CSS， XMLなどの文書形式についても説明し，
+		電子商取引における個人情報管理や，携帯電話やテレビにおけるWeb利用に関しても取り上げます． 
+		</abstract>
+		
+		<material>授業において指定します．</material>
+		
+		<schedule>
+			<lesson num="1">
+				<subject>分散システムとは</subject>
+				<date>2002/10/1</date>
+				<description>
+				分散処理についてその基本となるモデルについて説明します．
+				クライエント・サーバ・モデル，エージェント・モデルなどについて取り上げます．
+				現在もっともポピュラーに用いられている分散システムのWorld Wide Webについても説明する． 
+				</description>
+				<assignment />
+			</lesson>
+			
+			<lesson num="2">
+				<subject>DNSと電子メール</subject>
+				<date>2002/10/8</date>
+				<description>
+				DNS (Domain Name Service)について，その仕組みおよびプロトコルについて取り上げます．
+				電子メールに関連するプロトコルについて取り上げまず．SMTP (Simple Mail Transfer Protocol), 
+				POP (Post Office Protocol)などについて取り上げます．
+				また，電子メールの国際化，セキュリティについても取り上げます． 
+				</description>
+				<assignment />
+			</lesson>
+		</schedule>
+		
+		<!-- コピペの繰り返しなので授業情報は2回分載せてあります -->
+		
+		<evaluation>レポートと期末試験によって成績評価を行います．</evaluation>
+		
+		<other>
+		「システム・ソフトウェア」，「情報通信論」，「インターネット概論」，
+		「ネットワーク・プログラミング」を履修していることが望ましい． 
+		</other>
+	</class>
+	
+<!-- reference
+http://www.kanzaki.com/docs/html/doctype.html
+http://www.atmarkit.co.jp/fxml/rensai/rexml04/rexml04.html
+-->
+</course>

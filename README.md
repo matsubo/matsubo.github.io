@@ -1,77 +1,110 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  http://matsubo.github.io/ Created by Gatsby
-</h1>
+# Yuki Matsukura's Portfolio
 
-## 🚀 Quick start
+Personal portfolio website built with **Next.js 15** and deployed on GitHub Pages.
 
-1.  **Clone the site.**
+🌐 **Live Site**: [https://matsubo.github.io/](https://matsubo.github.io/)
 
-    Use git command to clone the repository
+## 🚀 Tech Stack
 
-    ```shell
-    git clone git@github.com:matsubo/matsubo.github.io.git
-    ```
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4 + DaisyUI
+- **Internationalization**: next-intl (English/Japanese)
+- **Icons**: Heroicons
+- **Package Manager**: Bun
+- **Deployment**: GitHub Pages (Static Export)
 
-2.  **Start developing.**
+## ✨ Features
 
-    Navigate into your new site’s directory and start it up.
+- ✅ Multi-language support (English/Japanese)
+- ✅ Dark/Light theme switching
+- ✅ SEO optimized (Meta tags, OGP, Twitter Cards)
+- ✅ Structured data (JSON-LD)
+- ✅ Sitemap & Robots.txt generation
+- ✅ Google Tag Manager integration
+- ✅ Fully responsive design
+- ✅ Accessibility (A11y) compliant
 
-    ```shell
-    cd matsubo.github.io
-    bun run develop
-    ```
+## 📦 Installation
 
-3.  **Open the code and start customizing!**
+```bash
+# Clone the repository
+git clone https://github.com/matsubo/matsubo.github.io.git
+cd matsubo.github.io
 
-    Your site is now running at http://localhost:8000!
+# Install dependencies
+bun install
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## 🛠️ Development
 
-4.  **Learn more**
+```bash
+# Start development server
+bun run dev
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+# Build for production
+bun run build
 
-## 📋 TODO - Portfolio Improvements
+# Preview production build
+bun run start
+```
 
-### Accessibility (A11y)
-- [x] **A11y-1**: キーボードナビゲーション対応の強化 ✅
-- [x] **A11y-2**: ARIA属性の追加（ランドマーク、ラベル、説明） ✅
-- [x] **A11y-3**: フォーカス表示の改善（アウトライン、スキップリンク） ✅
+The site will be available at [http://localhost:3000](http://localhost:3000)
 
-### Performance Optimization
-- [x] **PERF-1**: 画像の遅延読み込み最適化 ✅
-- [x] **PERF-2**: フォントの最適化（サブセット化、プリロード） ✅
-- [x] **PERF-3**: バンドルサイズの削減（コード分割、tree-shaking） ✅
+## 📁 Project Structure
 
-### SEO Enhancement
-- [x] **SEO-1**: メタディスクリプションの追加（各ページ） ✅
-- [x] **SEO-2**: Open Graph/Twitter Card対応 ✅
-- [x] **SEO-3**: 構造化データ（JSON-LD）の追加 ✅
-- [x] **SEO-4**: sitemap.xmlの生成 ✅
+```
+.
+├── src/
+│   ├── app/
+│   │   ├── [locale]/          # Locale-based pages
+│   │   │   ├── layout.tsx     # Locale layout with GTM
+│   │   │   └── page.tsx       # Homepage
+│   │   ├── layout.tsx         # Root layout
+│   │   └── globals.css        # Global styles
+│   ├── components/            # Reusable React components
+│   ├── i18n/
+│   │   └── request.ts         # i18n configuration
+│   ├── messages/              # Translation files
+│   │   ├── en/
+│   │   └── ja/
+│   └── middleware.ts          # Next.js middleware for i18n
+├── public/                    # Static assets
+├── next.config.mjs            # Next.js configuration
+├── tailwind.config.ts         # Tailwind CSS configuration
+├── next-sitemap.config.js     # Sitemap generation
+└── tsconfig.json              # TypeScript configuration
+```
 
-### Design & UX Improvements
-- [x] **UX-1**: スクロールアニメーションの追加（フェードイン、スライドイン） ✅
-- [x] **UX-2**: プロジェクトカードにホバーエフェクト強化 ✅
-- [x] **UX-3**: モバイル表示の最適化 ✅
-- [x] **UX-4**: ダークモード時のコントラスト改善 ✅
+## 🚀 Deployment
 
-### Feature Additions
-- [ ] **FEAT-1**: お問い合わせフォーム
-- [ ] **FEAT-2**: ブログ記事の統合
-- [ ] **FEAT-3**: プロジェクトのフィルタリング機能
-- [x] **FEAT-4**: スキルレベルの可視化（プログレスバー、チャート） ✅
+The site is automatically built and deployed to GitHub Pages when changes are pushed to the `main` branch.
 
-### Content Enhancement
-- [ ] **CONT-1**: 各プロジェクトの詳細ページ
-- [ ] **CONT-2**: 実績の数値化（GitHub stats連携など）
-- [ ] **CONT-3**: 推薦文やテスティモニアルの追加
+### Manual Deployment
+
+```bash
+# Build and prepare for deployment
+bun run deploy
+
+# The output will be in the `out/` directory
+```
+
+## 🌍 Internationalization
+
+The site supports English (default) and Japanese. Language files are located in `src/messages/`.
+
+- **English**: `/` or `/en`
+- **Japanese**: `/ja`
+
+## 📝 License
+
+© 2024 Yuki Matsukura. All rights reserved.
+
+## 👤 Author
+
+**Yuki Matsukura**
+- GitHub: [@matsubo](https://github.com/matsubo)
+- LinkedIn: [yukimatsukura](https://www.linkedin.com/in/yukimatsukura/)
+- X (Twitter): [@matsubokkuri](https://x.com/matsubokkuri)
+- Blog: [blog.teraren.com](https://blog.teraren.com/)
+- Zenn: [@matsubokkuri](https://zenn.dev/matsubokkuri)

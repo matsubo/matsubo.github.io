@@ -21,7 +21,8 @@
       "Bash(npm run build:*)",
       "Bash(curl:*)",
       "Bash(npm run clean:*)",
-      "Bash(npm run develop:*)"
+      "Bash(npm run develop:*)",
+      "Bash(bun run build:*)"
     ],
     "deny": [],
     "ask": []
