@@ -20,6 +20,9 @@ import {
   CpuChipIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import Image from 'next/image'
+import aiModeratorImg from '@/images/ai-moderator.png'
+import aiTriathlonImg from '@/images/ai-triathlon.png'
 
 export default function IndexPage() {
   const [locale, setLocale] = useState<string>('en')
@@ -130,12 +133,13 @@ function HeroSection() {
         <div className="mb-8">
           <div className="avatar mb-4">
             <div className="w-32 rounded-full">
-              <img
+              <Image
                 src="https://github.com/matsubo.png"
                 alt="Yuki Matsukura profile picture"
-                loading="eager"
                 width={128}
                 height={128}
+                priority
+                className="rounded-full"
               />
             </div>
           </div>
@@ -701,6 +705,13 @@ function ProjectsSection() {
           <p className="text-base-content/70 mb-6">{t('projects.aiTools.subtitle')}</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure>
+                <Image
+                  src={aiModeratorImg}
+                  alt="AI Moderator"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
               <div className="card-body">
                 <h4 className="card-title">{t('projects.aiTools.moderator.title')}</h4>
                 <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.moderator.subtitle')}</p>
@@ -719,6 +730,13 @@ function ProjectsSection() {
             </div>
 
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure>
+                <Image
+                  src={aiTriathlonImg}
+                  alt="AI Triathlon Training"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
               <div className="card-body">
                 <h4 className="card-title">{t('projects.aiTools.triathlon.title')}</h4>
                 <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.triathlon.subtitle')}</p>
