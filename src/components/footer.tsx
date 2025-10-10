@@ -20,15 +20,12 @@ export default function Footer() {
   }, [])
 
   const handleLanguageChange = (lng: string) => {
-    // Get the current path without the locale prefix
-    const pathWithoutLocale = pathname.replace(/^\/(en|ja)/, '') || '/'
+    // Save to localStorage
+    localStorage.setItem('preferred-locale', lng)
 
-    // Navigate to the new locale
-    if (lng === 'en') {
-      router.push(pathWithoutLocale)
-    } else {
-      router.push(`/${lng}${pathWithoutLocale}`)
-    }
+    // Dispatch custom event to trigger locale change
+    const event = new CustomEvent('localeChange', { detail: { locale: lng } })
+    window.dispatchEvent(event)
   }
 
   const handleThemeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -210,28 +207,6 @@ export default function Footer() {
           <p className="text-sm text-base-content/60">
             © {new Date().getFullYear()} {t("footer.brand.name")}. {t("footer.copyright")}
           </p>
-          <div className="flex items-center gap-6 text-sm text-base-content/60">
-            <a
-              href="https://blog.teraren.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-primary transition-colors duration-300"
-            >
-              Blog
-            </a>
-            <a
-              href="https://zenn.dev/matsubokkuri"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-primary transition-colors duration-300"
-            >
-              Zenn
-            </a>
-            <span className="text-base-content/40">•</span>
-            <span className="text-base-content/50">
-              {t("footer.madeWith")}
-            </span>
-          </div>
         </div>
       </div>
     </div>

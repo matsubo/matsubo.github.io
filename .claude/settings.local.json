@@ -22,7 +22,8 @@
       "Bash(curl:*)",
       "Bash(npm run clean:*)",
       "Bash(npm run develop:*)",
-      "Bash(bun run build:*)"
+      "Bash(bun run build:*)",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []
