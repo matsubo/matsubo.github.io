@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import Link from 'next/link'
 import Layout from '@/components/layout'
-import Image from 'next/image'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import {
   ChevronLeftIcon,
   CheckCircleIcon,
@@ -120,10 +120,9 @@ export default function AptanaCheckPage() {
                   を選択します。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={railsProjectImg}
                     alt="Rails Project Menu"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -143,10 +142,9 @@ export default function AptanaCheckPage() {
                   ボタンを押します。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaNewImg}
                     alt="New Rails Project"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -163,10 +161,9 @@ export default function AptanaCheckPage() {
                   右下に表示されているウィンドウに、以下のような出力が出ていれば成功です。下に表示されている青いバーが終了するまで待ちます。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={progressImg}
                     alt="Progress Bar"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -187,10 +184,9 @@ export default function AptanaCheckPage() {
                   を選択して、サーバを起動します。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaRunServerImg}
                     alt="Run Server"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -207,10 +203,9 @@ export default function AptanaCheckPage() {
                   Console画面に以下のような表示が出力されれば、成功です。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={serverConsoleImg}
                     alt="Server Console"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -253,10 +248,9 @@ export default function AptanaCheckPage() {
                   と表示されていれば、正常にセットアップが完了したことになります。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg mt-4">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaBrowserImg}
                     alt="Welcome aboard"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -271,10 +265,9 @@ export default function AptanaCheckPage() {
                 </h3>
                 <p className="mb-4">最後に、Aptana Studioを終了します。</p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaQuitImg}
                     alt="Quit Aptana"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>

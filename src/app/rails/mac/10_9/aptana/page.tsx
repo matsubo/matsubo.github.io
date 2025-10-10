@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import Link from 'next/link'
 import Layout from '@/components/layout'
-import Image from 'next/image'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import {
   ChevronLeftIcon,
   CodeBracketIcon,
@@ -136,10 +136,9 @@ export default function AptanaPage() {
                   ディレクトリをアプリケーションフォルダへドラッグアンドドロップします。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaMoveImg}
                     alt="Aptana move to Applications"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -160,10 +159,9 @@ export default function AptanaPage() {
                   を起動します。
                 </p>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaStartImg}
                     alt="Aptana start"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>
@@ -193,10 +191,9 @@ export default function AptanaPage() {
                   以下のような画面が表示されればインストールは成功しています：
                 </p>
                 <div className="bg-base-100 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={aptanaWindowImg}
                     alt="Aptana window"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>

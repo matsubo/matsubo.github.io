@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import Link from 'next/link'
 import Layout from '@/components/layout'
-import Image from 'next/image'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import { ChevronLeftIcon, CommandLineIcon } from '@heroicons/react/24/outline'
 import terminalImg from '@/images/terminal.png'
 
@@ -106,10 +106,9 @@ export default function HomebrewPage() {
                   ターミナルを立ち上げます
                 </h3>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={terminalImg}
                     alt="ターミナル"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>

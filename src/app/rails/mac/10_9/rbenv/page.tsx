@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import Link from 'next/link'
 import Layout from '@/components/layout'
-import Image from 'next/image'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import { ChevronLeftIcon, CommandLineIcon } from '@heroicons/react/24/outline'
 import brewInstallRbenvImg from '@/images/brew_install_rbenv.png'
 
@@ -109,10 +109,9 @@ export default function RbenvPage() {
                 </div>
                 <div className="divider">出力例</div>
                 <div className="bg-base-200 p-4 rounded-lg">
-                  <Image
+                  <ImageWithLightbox
                     src={brewInstallRbenvImg}
                     alt="rbenv インストール"
-                    className="rounded-lg shadow-md"
                   />
                 </div>
               </div>

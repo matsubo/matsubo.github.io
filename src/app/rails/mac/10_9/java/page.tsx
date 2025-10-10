@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import Link from 'next/link'
 import Layout from '@/components/layout'
-import Image from 'next/image'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import {
   ChevronLeftIcon,
   CodeBracketIcon,
@@ -131,10 +131,9 @@ export default function JavaPage() {
                     以下のようにバージョン番号が表示されれば、既にインストールされているのでここでJavaのインストールをする必要は有りません。
                   </p>
                   <div className="bg-base-200 p-4 rounded-lg mt-4">
-                    <Image
+                    <ImageWithLightbox
                       src={javaImg}
                       alt="java version"
-                      className="rounded-lg shadow-md"
                     />
                   </div>
                 </div>
@@ -184,10 +183,9 @@ export default function JavaPage() {
                     「同意して無料ダウンロードを開始」ボタンをクリックすると、ダウンロードが開始されるためデスクトップなどの適当な場所へファイルを保存します。
                   </p>
                   <div className="bg-base-200 p-4 rounded-lg mt-4">
-                    <Image
+                    <ImageWithLightbox
                       src={javaDownloadImg}
                       alt="java download"
-                      className="rounded-lg shadow-md"
                     />
                   </div>
                 </div>
@@ -207,10 +205,9 @@ export default function JavaPage() {
                     <div>
                       <p className="font-semibold mb-2">インストーラーを起動</p>
                       <div className="bg-base-200 p-4 rounded-lg">
-                        <Image
+                        <ImageWithLightbox
                           src={javaInstallerImg}
                           alt="java installer"
-                          className="rounded-lg shadow-md"
                         />
                       </div>
                     </div>
@@ -218,10 +215,9 @@ export default function JavaPage() {
                     <div>
                       <p className="font-semibold mb-2">ライセンス契約に同意</p>
                       <div className="bg-base-200 p-4 rounded-lg">
-                        <Image
+                        <ImageWithLightbox
                           src={javaAgreementImg}
                           alt="java agreement"
-                          className="rounded-lg shadow-md"
                         />
                       </div>
                     </div>
@@ -231,10 +227,9 @@ export default function JavaPage() {
                         セキュリティ警告（必要に応じて）
                       </p>
                       <div className="bg-base-200 p-4 rounded-lg">
-                        <Image
+                        <ImageWithLightbox
                           src={javaWarningImg}
                           alt="java warning"
-                          className="rounded-lg shadow-md"
                         />
                       </div>
                     </div>
@@ -242,10 +237,9 @@ export default function JavaPage() {
                     <div>
                       <p className="font-semibold mb-2">インストール完了</p>
                       <div className="bg-base-200 p-4 rounded-lg">
-                        <Image
+                        <ImageWithLightbox
                           src={javaInstalledImg}
                           alt="java installed"
-                          className="rounded-lg shadow-md"
                         />
                       </div>
                     </div>
