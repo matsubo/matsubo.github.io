@@ -915,6 +915,10 @@ function HobbiesSection() {
                   <span>{t('hobbies.triathlon.marathon')}</span>
                 </li>
                 <li className="flex items-start gap-2">
+                  <span className="text-warning">🏃‍♂️</span>
+                  <span>{t('hobbies.triathlon.olympicDistance')}</span>
+                </li>
+                <li className="flex items-start gap-2">
                   <span className="text-info">🏊</span>
                   <span>{t('hobbies.triathlon.openwater')}</span>
                 </li>
