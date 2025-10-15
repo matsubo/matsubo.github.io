@@ -89,8 +89,6 @@ export default function IndexPage() {
 }
 
 function MainContent() {
-  const t = useTranslations()
-
   return (
     <>
       {/* Hero Section */}

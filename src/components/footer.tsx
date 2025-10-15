@@ -2,14 +2,11 @@
 
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
-import { useRouter, usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
 export default function Footer() {
   const t = useTranslations()
   const locale = useLocale()
-  const router = useRouter()
-  const pathname = usePathname()
   const [isDark, setIsDark] = useState(false)
   const languages = ['en', 'ja']
 

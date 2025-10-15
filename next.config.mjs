@@ -49,30 +49,6 @@ const nextConfig = {
     }
     return config
   },
-
-  // Headers for better caching
-  async headers() {
-    return [
-      {
-        source: "/:all*(svg|jpg|png|webp|gif|ico)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/_next/static/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-    ]
-  },
 }
 
 export default nextConfig
