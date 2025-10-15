@@ -59,8 +59,20 @@ jobs:
       - name: Build with Next.js
         run: bun run build
 
+      - name: Verify build output
+        run: |
+          echo "Checking if out directory exists..."
+          ls -la
+          if [ -d "out" ]; then
+            echo "out directory found"
+            ls -la out
+          else
+            echo "ERROR: out directory not found!"
+            exit 1
+          fi
+
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
