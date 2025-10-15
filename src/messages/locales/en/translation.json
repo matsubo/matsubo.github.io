@@ -277,6 +277,80 @@
         ],
         "button": "Visit site"
       }
+    },
+    "pastProjects": {
+      "title": "Past Major Projects",
+      "subtitle": "Notable service developments from my career (no longer in operation)",
+      "mineds": {
+        "title": "Mineds - Online Qualitative Research Service",
+        "company": "Minedia Inc.",
+        "period": "2018 - Present",
+        "role": "CTO / Tech Lead",
+        "description": "Developed a platform to streamline online qualitative research. Built a system enabling user interviews, group discussions, and behavioral observations to be conducted online. Implemented real-time recording and analysis features to achieve DX in research operations.",
+        "tech": "Ruby on Rails, React, WebRTC, AWS"
+      },
+      "gas": {
+        "title": "City Gas Retail Platform",
+        "company": "Metaps Inc.",
+        "period": "March - September 2016",
+        "role": "Development Lead",
+        "description": "In response to city gas deregulation, developed a system for city gas retail application processing and integration with gas pipeline companies. Built a multi-tenant SaaS platform enabling multiple retail operators to use the service. Realized online workflow from application to gas meter opening.",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API"
+      },
+      "recall": {
+        "title": "Product Recall Collection System",
+        "company": "Metaps Inc.",
+        "period": "January - March 2016",
+        "role": "Development Lead",
+        "description": "Developed a system to accept web-based product recall applications and integrate with multiple logistics companies. Implemented inventory coordination with logistics warehouses, delivery tracking, and automatic customer notifications. Built as a SaaS platform for multiple manufacturers.",
+        "tech": "Ruby on Rails, PostgreSQL, REST API Integration"
+      },
+      "spike": {
+        "title": "SPIKE - Zero-Fee Payment Service",
+        "company": "Metaps Inc.",
+        "period": "2014 - 2015",
+        "role": "Lead Engineer",
+        "description": "Developed and launched from scratch in 3 months an innovative service with zero payment fees. Built a payment platform for EC businesses supporting credit cards, bank transfers, and convenience store payments. Achieved security measures and PCI DSS compliance.",
+        "tech": "Ruby on Rails, MySQL, Redis, AWS, Payment API Integration"
+      },
+      "gree": {
+        "title": "GREE Smartphone Adaptation",
+        "company": "GREE Inc.",
+        "period": "2011",
+        "role": "Engineer",
+        "description": "Developed and implemented a method to adapt existing mobile sites for smartphones in 1 hour. Achieved user agent detection, responsive design, and touch UI optimization. The tech blog post about this method received over 2,200 Hatena Bookmarks and generated significant industry attention.",
+        "tech": "PHP, JavaScript, Mobile Web",
+        "links": {
+          "blog": "https://labs.gree.jp/blog/2011/04/3282/",
+          "blogLabel": "GREE Labs Blog Post",
+          "hatena": "https://b.hatena.ne.jp/entry/s/labs.gree.jp/blog/2011/04/3282/",
+          "hatenaLabel": "Hatena Bookmarks"
+        }
+      },
+      "cyta": {
+        "title": "Cyta.jp - C2C Learning Platform",
+        "company": "Coach United Inc.",
+        "period": "2009 - 2011",
+        "role": "Development Leader",
+        "description": "Developed a C2C learning service platform from requirements definition. Built from scratch including teacher-student matching, lesson booking, payments, points system, and blog features. Also implemented instructor compensation management and student review systems.",
+        "tech": "Ruby on Rails, MySQL, AWS, Payment API"
+      },
+      "teraren": {
+        "title": "teraren.com - 1TB Storage Rental Server",
+        "company": "Personal Project",
+        "period": "2000s",
+        "role": "Founder/Developer",
+        "description": "Rental server service providing large 1TB storage capacity. Implemented custom file management system, FTP access, and web-based control panel. Achieved long-term stable operation and served numerous users.",
+        "tech": "Linux, Apache, MySQL, PHP"
+      },
+      "emoji": {
+        "title": "Emoji Sprite - OSS Library",
+        "company": "Open Source Project",
+        "period": "2010s",
+        "role": "Author",
+        "description": "Published as OSS a JavaScript library for efficiently displaying emojis as sprite images. Achieved performance optimization and cross-browser compatibility. Published on GitHub and gained numerous stars from the community.",
+        "tech": "JavaScript, CSS, Canvas API"
+      }
     }
   }
 }

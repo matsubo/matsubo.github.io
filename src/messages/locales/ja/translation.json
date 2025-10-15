@@ -277,6 +277,80 @@
         ],
         "button": "サイトを見る"
       }
+    },
+    "pastProjects": {
+      "title": "過去の主要プロジェクト",
+      "subtitle": "現在稼働していないが、過去に達成したサービス開発",
+      "mineds": {
+        "title": "Mineds - オンライン定性調査サービス",
+        "company": "株式会社マインディア",
+        "period": "2018年 - 現在",
+        "role": "CTO / テックリード",
+        "description": "オンラインでの定性調査を効率化するプラットフォームを開発。ユーザーインタビュー、グループディスカッション、行動観察などをオンラインで実施できるシステムを構築。リアルタイムでの記録、分析機能を実装し、調査業務のDXを実現。",
+        "tech": "Ruby on Rails, React, WebRTC, AWS"
+      },
+      "gas": {
+        "title": "都市ガス小売り受付プラットフォーム",
+        "company": "株式会社メタップス",
+        "period": "2016年3月 - 9月",
+        "role": "開発リード",
+        "description": "都市ガス自由化に伴い、都市ガスの小売り受付申し込みシステムと都市ガス導管会社とのシステム連携を実現。マルチテナント対応のSaaSとして提供し、複数の小売事業者が利用可能なプラットフォームを構築。申込から開栓までのオンラインワークフローを実現。",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API"
+      },
+      "recall": {
+        "title": "リコール商品回収システム",
+        "company": "株式会社メタップス",
+        "period": "2016年1月 - 3月",
+        "role": "開発リード",
+        "description": "Webでリコール商品の回収申し込みを受け付け、複数の物流会社と連携するシステムを開発。物流倉庫との在庫連携、配送状況の追跡、顧客への自動通知機能を実装。SaaSとして提供し、複数のメーカーが利用可能なプラットフォームを構築。",
+        "tech": "Ruby on Rails, PostgreSQL, REST API連携"
+      },
+      "spike": {
+        "title": "SPIKE - 決済手数料無料サービス",
+        "company": "株式会社メタップス",
+        "period": "2014年 - 2015年",
+        "role": "リードエンジニア",
+        "description": "決済手数料が0円という革新的なサービスを3ヶ月でゼロから開発してリリース。クレジットカード決済、銀行振込、コンビニ決済に対応し、EC事業者向けの決済プラットフォームを構築。セキュリティ対策、PCI DSS準拠を実現。",
+        "tech": "Ruby on Rails, MySQL, Redis, AWS, 決済API連携"
+      },
+      "gree": {
+        "title": "GREEスマートフォン対応",
+        "company": "グリー株式会社",
+        "period": "2011年",
+        "role": "エンジニア",
+        "description": "既存の携帯サイトを1時間でスマートフォン対応にする手法を開発・実装。ユーザーエージェント判定、レスポンシブデザイン、タッチUI最適化を実現。この手法についてGREE Labsブログに執筆したテックブログ記事は、はてなブックマークで2,200件以上ブックマークされ、大きな反響を呼んだ。",
+        "tech": "PHP, JavaScript, Mobile Web",
+        "links": {
+          "blog": "https://labs.gree.jp/blog/2011/04/3282/",
+          "blogLabel": "GREE Labsブログ記事",
+          "hatena": "https://b.hatena.ne.jp/entry/s/labs.gree.jp/blog/2011/04/3282/",
+          "hatenaLabel": "はてなブックマーク"
+        }
+      },
+      "cyta": {
+        "title": "Cyta.jp - C2C習い事プラットフォーム",
+        "company": "コーチ・ユナイテッド株式会社",
+        "period": "2009年 - 2011年",
+        "role": "開発リーダー",
+        "description": "C2Cの習い事サービスプラットフォームを要件定義から開発。講師と生徒のマッチング、レッスン予約、決済、ポイントシステム、ブログ機能などを0から構築。講師向け報酬管理、生徒向けレビューシステムも実装。",
+        "tech": "Ruby on Rails, MySQL, AWS, 決済API"
+      },
+      "teraren": {
+        "title": "teraren.com - 1TBストレージレンタルサーバ",
+        "company": "個人プロジェクト",
+        "period": "2000年代",
+        "role": "創設者/開発者",
+        "description": "大容量1TBのストレージを提供するレンタルサーバーサービス。独自のファイル管理システム、FTPアクセス、Webベースのコントロールパネルを実装。長期間の安定運用を実現し、多数のユーザーにサービスを提供。",
+        "tech": "Linux, Apache, MySQL, PHP"
+      },
+      "emoji": {
+        "title": "Emoji Sprite - OSSライブラリ",
+        "company": "オープンソースプロジェクト",
+        "period": "2010年代",
+        "role": "作者",
+        "description": "絵文字をスプライト画像として効率的に表示するためのJavaScriptライブラリをOSSとして公開。パフォーマンス最適化、クロスブラウザ対応を実現。GitHubで公開し、コミュニティから多数のスターを獲得。",
+        "tech": "JavaScript, CSS, Canvas API"
+      }
     }
   }
 }

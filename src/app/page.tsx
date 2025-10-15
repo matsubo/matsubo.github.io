@@ -23,6 +23,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import aiModeratorImg from '@/images/ai-moderator.png'
 import aiTriathlonImg from '@/images/ai-triathlon.png'
+import minedsImg from '@/images/mineds.webp'
+import gasPlatformImg from '@/images/gas-platform.png'
+import recallSystemImg from '@/images/recall-system.png'
+import spikeImg from '@/images/spike.webp'
+import greeSmartphoneImg from '@/images/gree-smartphone.webp'
+import cytaImg from '@/images/cyta.webp'
+import terarenImg from '@/images/teraren.webp'
+import emojiSpriteImg from '@/images/emoji-sprite.webp'
 
 export default function IndexPage() {
   const [locale, setLocale] = useState<string>('en')
@@ -755,7 +763,7 @@ function ProjectsSection() {
         </div>
 
         {/* API Services */}
-        <div>
+        <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-2">{t('projects.apiServices.title')}</h3>
           <p className="text-base-content/70 mb-6">{t('projects.apiServices.subtitle')}</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -875,6 +883,215 @@ function ProjectsSection() {
                   >
                     {t('projects.apiServices.school.button')}
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Past Projects */}
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">{t('projects.pastProjects.title')}</h3>
+          <p className="text-base-content/70 mb-6">{t('projects.pastProjects.subtitle')}</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Mineds */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={minedsImg}
+                  alt="Mineds"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.mineds.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.mineds.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.mineds.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.mineds.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.mineds.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.mineds.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Gas Platform */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={gasPlatformImg}
+                  alt="City Gas Retail Platform"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.gas.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.gas.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.gas.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.gas.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.gas.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.gas.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Recall System */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={recallSystemImg}
+                  alt="Product Recall System"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.recall.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.recall.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.recall.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.recall.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.recall.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.recall.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* SPIKE */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={spikeImg}
+                  alt="SPIKE Payment Service"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.spike.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.spike.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.spike.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.spike.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.spike.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.spike.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* GREE Smartphone */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={greeSmartphoneImg}
+                  alt="GREE Smartphone Adaptation"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.gree.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.gree.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.gree.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.gree.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.gree.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.gree.tech')}</p>
+                </div>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href={t('projects.pastProjects.gree.links.blog')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.gree.links.blogLabel')}
+                  </a>
+                  <a
+                    href={t('projects.pastProjects.gree.links.hatena')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.gree.links.hatenaLabel')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Cyta.jp */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  alt="Cyta.jp Learning Platform"
+                  src={cytaImg}
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.cyta.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.cyta.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.cyta.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.cyta.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.cyta.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.cyta.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* teraren.com */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={terarenImg}
+                  alt="teraren.com Rental Server"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.teraren.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.teraren.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.teraren.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.teraren.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.teraren.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.teraren.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Emoji Sprite */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={emojiSpriteImg}
+                  alt="Emoji Sprite OSS Library"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.emoji.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.emoji.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.emoji.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.emoji.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.emoji.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.emoji.tech')}</p>
                 </div>
               </div>
             </div>
