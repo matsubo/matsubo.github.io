@@ -15,8 +15,11 @@
     "start": "next start",
     "postbuild": "next-sitemap",
     "export": "next build",
-    "deploy": "next build && touch out/.nojekyll && echo 'matsubo.github.io' > out/CNAME",
-    "clean": "rm -rf .next out"
+    "deploy": "bun run clean && bun run build && touch out/.nojekyll",
+    "clean": "rm -rf .next out",
+    "analyze": "ANALYZE=true next build",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
