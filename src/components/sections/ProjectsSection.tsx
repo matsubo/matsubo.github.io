@@ -44,7 +44,7 @@ export function ProjectsSection() {
               <div className="card-body">
                 <h4 className="card-title">{t('projects.aiTools.moderator.title')}</h4>
                 <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.moderator.subtitle')}</p>
-                <p className="text-base-content/80">{t('projects.aiTools.moderator.description')}</p>
+                <p className="text-base-content/80 whitespace-pre-line">{t('projects.aiTools.moderator.description')}</p>
                 <div className="card-actions justify-end mt-4">
                   <a
                     href="https://ai-moderator.com/"
@@ -69,7 +69,7 @@ export function ProjectsSection() {
               <div className="card-body">
                 <h4 className="card-title">{t('projects.aiTools.triathlon.title')}</h4>
                 <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.triathlon.subtitle')}</p>
-                <p className="text-base-content/80">{t('projects.aiTools.triathlon.description')}</p>
+                <p className="text-base-content/80 whitespace-pre-line">{t('projects.aiTools.triathlon.description')}</p>
                 <div className="card-actions justify-end mt-4">
                   <a
                     href="https://triathlon.teraren.com/"

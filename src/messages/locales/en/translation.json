@@ -208,15 +208,17 @@
       "subtitle": "Modern intelligent applications for real-world workflows",
       "moderator": {
         "title": "AI Moderator",
-        "subtitle": "AI-powered content moderation system",
-        "description": "Intelligent content filtering and moderation using advanced AI models to ensure safe and appropriate content across platforms.",
-        "button": "Visit site"
+        "subtitle": "Highly Customizable Content Moderation System",
+        "description": "A flexible content moderation system that enables selection of optimal AI models based on specific use cases. Customers can freely configure system prompts and instructions for each organization, achieving moderation that perfectly aligns with industry-specific content guidelines and corporate policies.\n\nEmploys a multi-model architecture that integrates multiple AI models including OpenAI API in a unified management system. Flexibly switches between models with different characteristics—precision-focused, speed-focused, or cost-focused—depending on needs.\n\nFeatured in Nikkei as an emerging moderation service, it differentiates itself through complete customizability, providing ideal solutions for niche industries and companies with specialized content requirements.",
+        "button": "Visit site",
+        "tech": "OpenAI API, Custom AI Models, React, Node.js"
       },
       "triathlon": {
         "title": "Triathlon AI Analyzer",
-        "subtitle": "Performance insights for triathlon training",
-        "description": "AI-powered analysis of triathlon training data providing actionable insights for performance optimization and race preparation.",
-        "button": "View live site"
+        "subtitle": "AI-Powered Training Analysis & Coaching Platform",
+        "description": "A comprehensive platform providing support through a dual-AI analysis system with race result data from major Japanese races published as open source on GitHub. The race analysis engine powered by GPT-4o-mini provides free rankings, deviation scores, training advice, and race reviews.\n\nPremium features include a personal coach AI using Gemini 2.5 Pro that generates daily training plans and provides detailed consultation based on comprehensive profiles and goals.\n\nAchieves outstanding cost performance compared to TrainingPeaks and Strava, offering transparent training support through specialized analysis for the Japanese racing environment and an open-source data foundation.",
+        "button": "View live site",
+        "tech": "GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data"
       }
     },
     "apiServices": {
