@@ -47,7 +47,7 @@ export function ProjectsSection() {
                 <p className="text-base-content/80 whitespace-pre-line">{t('projects.aiTools.moderator.description')}</p>
                 <div className="card-actions justify-end mt-4">
                   <a
-                    href="https://ai-moderator.com/"
+                    href="https://ai-moderator.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-sm"
