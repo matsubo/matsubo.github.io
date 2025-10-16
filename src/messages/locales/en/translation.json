@@ -79,7 +79,7 @@
     "title": "Professional Experience",
     "minedia": {
       "role": "CTO",
-      "company": "Minedia Inc.",
+      "company": "Minedia, Inc.",
       "period": "2018 - Present",
       "items": [
         "Leading technology strategy and development for data technology startup",
@@ -90,7 +90,7 @@
     },
     "metaps": {
       "role": "Manager",
-      "company": "Metaps Inc.",
+      "company": "Metaps, Inc.",
       "period": "2014 - 2018",
       "items": [
         "Led development of SPIKE - a revolutionary zero-fee payment service",
@@ -283,7 +283,7 @@
       "subtitle": "Notable service developments from my career",
       "mineds": {
         "title": "Mineds - Online Qualitative Research Service",
-        "company": "Minedia Inc.",
+        "company": "Minedia, Inc.",
         "period": "2018 - Present",
         "role": "CTO / Tech Lead",
         "description": "Developed a platform to streamline online qualitative research. Built a system enabling user interviews, group discussions, and behavioral observations to be conducted online. Implemented real-time recording and analysis features to achieve DX in research operations.",
@@ -291,7 +291,7 @@
       },
       "gas": {
         "title": "City Gas Retail Platform",
-        "company": "Metaps Inc.",
+        "company": "Metaps, Inc.",
         "period": "March - September 2016",
         "role": "Development Lead",
         "description": "In response to city gas deregulation, developed a system for city gas retail application processing and integration with gas pipeline companies. Built a multi-tenant SaaS platform enabling multiple retail operators to use the service. Realized online workflow from application to gas meter opening.",
@@ -299,7 +299,7 @@
       },
       "recall": {
         "title": "Product Recall Collection System",
-        "company": "Metaps Inc.",
+        "company": "Metaps, Inc.",
         "period": "January - March 2016",
         "role": "Development Lead",
         "description": "Developed a system to accept web-based product recall applications and integrate with multiple logistics companies. Implemented inventory coordination with logistics warehouses, delivery tracking, and automatic customer notifications. Built as a SaaS platform for multiple manufacturers.",
@@ -307,7 +307,7 @@
       },
       "spike": {
         "title": "SPIKE - Zero-Fee Payment Service",
-        "company": "Metaps Inc.",
+        "company": "Metaps, Inc.",
         "period": "2014 - 2015",
         "role": "Lead Engineer",
         "description": "Developed and launched from scratch in 3 months an innovative service with zero payment fees. Built a payment platform for EC businesses supporting credit cards, bank transfers, and convenience store payments. Achieved security measures and PCI DSS compliance.",

@@ -36,9 +36,9 @@ export function HobbiesSection() {
               </h3>
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2"><span className="text-info">📝</span><span>{t('hobbies.writing.zenn')}</span></li>
-                <li className="flex items-start gap-2"><span className="text-info">📝</span><span>{t('hobbies.writing.blog')}</span></li>
-                <li className="flex items-start gap-2"><span className="text-info">📚</span><span>{t('hobbies.writing.editor')}</span></li>
-                <li className="flex items-start gap-2"><span className="text-warning">🔥</span><a href="https://labs.gree.jp/blog/2011/04/3282/" target="_blank" rel="noopener noreferrer" className="link link-primary hover:link-accent">{t('hobbies.writing.gree')}</a></li>
+                <li className="flex items-start gap-2"><span className="text-info">📝</span><a href="https://blog.teraren.com/" rel="noopener noreferrer" className="link link-primary hover:link-accent">{t('hobbies.writing.blog')}</a></li>
+                <li className="flex items-start gap-2"><span className="text-info">📚</span><a href="https://cns-guide.sfc.keio.ac.jp/2004/misc/editors.html" rel="noopener noreferrer" className="link link-primary hover:link-accent">{t('hobbies.writing.editor')}</a></li>
+                <li className="flex items-start gap-2"><span className="text-warning">🔥</span><a href="https://labs.gree.jp/blog/2011/04/3282/" rel="noopener noreferrer" className="link link-primary hover:link-accent">{t('hobbies.writing.gree')}</a></li>
               </ul>
             </div>
           </div>

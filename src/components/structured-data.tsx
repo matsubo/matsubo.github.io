@@ -10,7 +10,7 @@ export default function StructuredData() {
     jobTitle: "CTO & Software Engineer",
     worksFor: {
       "@type": "Organization",
-      name: "Minedia Inc.",
+      name: "Minedia, Inc.",
     },
     alumniOf: [
       {
@@ -65,7 +65,7 @@ export default function StructuredData() {
       jobTitle: "CTO & Software Engineer",
       worksFor: {
         "@type": "Organization",
-        name: "Minedia Inc.",
+        name: "Minedia, Inc.",
       },
     },
   }
