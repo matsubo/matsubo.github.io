@@ -1,0 +1,170 @@
+# Yuki Matsukura (松倉 友樹)
+
+## Overview
+Yuki Matsukura is a CTO and technical leader with over 20 years of experience in software engineering. He specializes in building scalable systems and leading engineering teams. Currently serving as CTO at Minedia Inc., a data technology startup that raised approximately 500 million yen in funding.
+
+## Current Position
+- **Company**: Minedia Inc. (株式会社Minedia)
+- **Role**: CTO (Chief Technology Officer)
+- **Period**: 2018 - Present
+- **Responsibilities**:
+  - Leading technical strategy and development
+  - Building and scaling engineering teams
+  - Published research on regional EC data analysis (Springer, 2023)
+
+## Education
+- **Keio University Shonan Fujisawa Campus (SFC)** - Graduated 2005
+- **UCLA Extension** - 2006
+
+## Professional Experience
+
+### Minedia Inc. - CTO (2018 - Present)
+- Lead technical strategy and development for data technology startup
+- Successfully raised approximately 500 million yen in funding
+- Published research on understanding regional characteristics through EC data analysis (Springer, 2023)
+- Built and scaled engineering team to support business growth
+
+### Metaps Inc. - Manager (2014 - 2018)
+- Led development of SPIKE, an innovative payment service with zero transaction fees
+- Built and launched platform from scratch in 3 months
+- Managed engineering team and technical architecture decisions
+
+### GREE Inc. - Manager (2011 - 2013)
+- Managed development of internal social gaming platform
+- Presented social gaming platform strategy at CEDEC 2012
+- Supported platform serving millions of users globally
+
+## Technical Skills
+
+### Expert Level (90%+)
+- **Languages**: Ruby (95%), JavaScript/TypeScript (90%)
+- **Frameworks**: Ruby on Rails (95%), React (90%)
+- **Databases**: MySQL/PostgreSQL (90%)
+
+### Advanced Level (80-89%)
+- **Languages**: Python (80%)
+- **Cloud & DevOps**: AWS (85%), Docker/Kubernetes (85%), Redis (85%)
+- **Frameworks**: Next.js/Gatsby (85%)
+
+### Proficient Level (75-79%)
+- **Cloud**: GCP (75%)
+- **Databases**: MongoDB (75%)
+
+## Personality & Work Style
+- **MBTI Type**: INTP-A (Logician - Assertive)
+- **Core Strengths**:
+  - Logical Analysis: Deep analytical thinking and problem-solving
+  - Strategic Vision: Long-term planning and architectural decision-making
+  - Innovation Focus: Creating new solutions and exploring possibilities
+  - Individual Understanding: Recognizing and leveraging unique strengths of team members
+
+## Research & Publications
+
+### Academic Papers
+1. **Understanding Regional Characteristics through EC Data Analysis**
+   - Publisher: Springer
+   - Year: 2023
+   - Focus: Analyzing e-commerce data to understand regional characteristics and consumer behavior patterns
+
+2. **MUGI: Design and Implementation of Activity Model**
+   - Type: Master's Thesis
+   - Institution: Keio University
+   - Year: 2005
+   - Focus: Design and implementation of activity model for navigation services using location and place attributes
+
+### Presentations & Speaking Engagements
+- **Snowday Panel Discussion** - The Future of Data (2023)
+- **CEDEC 2012** - Platform for Social Gaming: "How to develop engaging games for 1 billion users"
+
+## Writing & Publications
+- **Zenn**: 88 technical articles published
+- **Technical Blog**: 19 years of continuous blogging at blog.teraren.com
+- **SFC CNS Guide**: Editor for 3 years, served as Editor-in-Chief
+- **GREE Engineers Blog**: Article with 2,221 Hatena Bookmarks
+
+## Hobbies & Personal Interests
+
+### Triathlon
+- **IRONMAN World Championship 2017** - Competed
+- **Marathon Personal Best**: 2:58:41 (2016 Tokyo Marathon)
+- **Olympic Distance PB**: 2:11:55 (2018 Tokyo Triathlon Watarase Tournament)
+- **Open Water**: Completed Shonan Open Water 10km
+- **IRONMAN 70.3**: Asia-Pacific Championship (5:00:47)
+- Developed AI-powered tools for training analysis
+
+### Certifications
+- Applied Information Technology Engineer Examination - 2013
+- LPIC Level 2 - 2004
+- Second Class Electrician - 2021
+- TOEIC: 875
+
+## Notable Projects
+
+### AI-Powered Tools
+1. **AI Moderator**
+   - Flexible content moderation system with customizable AI models
+   - Multi-model architecture supporting OpenAI API and other AI models
+   - Featured in Nikkei newspaper
+   - Tech: OpenAI API, Custom AI Models, React, Node.js
+
+2. **Triathlon AI Analyzer**
+   - AI-powered training analysis and coaching platform
+   - Two-tier AI analysis system (GPT-4o-mini and Gemini 2.5 Pro)
+   - Open source race result data on GitHub
+   - Tech: GPT-4o-mini, Gemini 2.5 Pro, React, Python
+
+### API Services Collection
+- **Postcode API**: High-performance Japanese postal code search service
+- **Bank Code API**: Japanese financial institution code database
+- **Corporation API**: Corporate registration information
+- **Train/Station API**: Railway and station information
+- **School API**: Educational institution database
+
+### Past Major Projects
+1. **Mineds** - Online Qualitative Research Service (2018-Present)
+   - Tech: Ruby on Rails, React, WebRTC, AWS
+
+2. **City Gas Retail Platform** - Metaps (2016)
+   - Multi-tenant SaaS for gas retail application processing
+   - Tech: Ruby on Rails, PostgreSQL, AWS, REST API
+
+3. **Recall Product Recovery System** - Metaps (2016)
+   - Product recall management system with logistics integration
+   - Tech: Ruby on Rails, PostgreSQL, REST API
+
+4. **SPIKE** - Zero Transaction Fee Payment Service - Metaps (2014-2015)
+   - Built from scratch to launch in 3 months
+   - Tech: Ruby on Rails, MySQL, Redis, AWS, Payment API
+
+5. **GREE Smartphone Support** - GREE (2011)
+   - Developed method to make mobile sites smartphone-compatible in 1 hour
+   - Tech blog article received 2,200+ Hatena Bookmarks
+   - Tech: PHP, JavaScript, Mobile Web
+
+6. **Cyta.jp** - C2C Learning Platform - Coach United (2009-2011)
+   - Built from requirements to launch
+   - Tech: Ruby on Rails, MySQL, AWS, Payment API
+
+7. **teraren.com** - 1TB Storage Rental Server (2000s)
+   - Personal project providing large-capacity storage
+   - Tech: Linux, Apache, MySQL, PHP
+
+8. **Emoji Sprite** - OSS Library (2010s)
+   - JavaScript library for efficient emoji display
+   - Open source project with significant GitHub stars
+   - Tech: JavaScript, CSS, Canvas API
+
+## Contact & Social Media
+- **GitHub**: [@matsubo](https://github.com/matsubo)
+- **LinkedIn**: [yukimatsukura](https://www.linkedin.com/in/yukimatsukura/)
+- **X (Twitter)**: [@matsubokkuri](https://x.com/matsubokkuri)
+- **Blog**: [blog.teraren.com](https://blog.teraren.com/)
+- **Zenn**: [@matsubokkuri](https://zenn.dev/matsubokkuri)
+- **Website**: [https://matsubo.github.io/](https://matsubo.github.io/)
+
+## Philosophy
+"Building scalable systems and sharing knowledge through open source."
+
+---
+
+This portfolio website is built with Next.js 15, TypeScript, and Tailwind CSS, deployed on GitHub Pages.
