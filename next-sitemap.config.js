@@ -1,21 +1,22 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://matsubo.github.io',
+  siteUrl: "https://matsubo.github.io",
   generateRobotsTxt: true,
   generateIndexSitemap: false,
+  outDir: "./out",
   robotsTxtOptions: {
     policies: [
       {
-        userAgent: '*',
-        allow: '/',
+        userAgent: "*",
+        allow: "/",
       },
     ],
   },
   transform: async (config, path) => {
     return {
       loc: path,
-      changefreq: 'monthly',
-      priority: path === '/' ? 0.7 : 0.3,
+      changefreq: "monthly",
+      priority: path === "/" ? 0.7 : 0.3,
       lastmod: new Date().toISOString(),
     }
   },
