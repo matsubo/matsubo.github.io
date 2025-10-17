@@ -145,7 +145,7 @@
       "aiTools": "Developed AI-powered tools for training analysis",
       "marathon": "Full Marathon PB: 2:58:41 (2016 Tokyo Marathon)",
       "olympicDistance": "Olympic Distance PB: 2:11:55 (2018 Tokyo Watarase Triathlon)",
-      "openwater": "Shonan Open Water 10km Complete",
+      "openwater": "Shonan Open Water 10km Complete (Aug 2014)",
       "ironman703": "IRONMAN 70.3 Asia-Pacific Championship (5:00:47)"
     },
     "writing": {
@@ -352,6 +352,20 @@
         "role": "Author",
         "description": "Published as OSS a JavaScript library for efficiently displaying emojis as sprite images. Achieved performance optimization and cross-browser compatibility. Published on GitHub and gained numerous stars from the community.",
         "tech": "JavaScript, CSS, Canvas API"
+      },
+      "covid19": {
+        "title": "COVID-19 Case Visualization System",
+        "company": "Personal Project",
+        "period": "2020 - 2022",
+        "role": "Developer",
+        "description": "Developed an automated system to collect open data on COVID-19 cases published by prefectures, visualize them as graphs, and automatically post daily updates to Twitter and WordPress. Crawled data every 10 minutes and immediately notified when new cases appeared. Supported multiple prefectures including Kanagawa, achieving over 2 years of continuous operation. Implemented in Ruby with Docker environment. Gained experiential understanding of challenges in open government data.",
+        "tech": "Ruby, Docker, Twitter API, WordPress API, Gruff (Graph Library)",
+        "links": {
+          "site": "https://covid19.teraren.com/",
+          "siteLabel": "Visit Site",
+          "github": "https://github.com/matsubo/covid19-daily-tweet",
+          "githubLabel": "GitHub Repository"
+        }
       }
     }
   }

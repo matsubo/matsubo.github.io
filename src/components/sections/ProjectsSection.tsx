@@ -13,6 +13,7 @@ import greeSmartphoneImg from '@/images/gree-smartphone.webp'
 import cytaImg from '@/images/cyta.webp'
 import terarenImg from '@/images/teraren.webp'
 import emojiSpriteImg from '@/images/emoji-sprite.webp'
+import covid19DailyImg from '@/images/covid19-daily.webp'
 
 export function ProjectsSection() {
   const t = useTranslations()
@@ -415,6 +416,47 @@ export function ProjectsSection() {
                 <p className="text-sm text-base-content/80">{t('projects.pastProjects.emoji.description')}</p>
                 <div className="mt-2">
                   <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.emoji.tech')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* COVID-19 Daily Tweet */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <Image
+                  src={covid19DailyImg}
+                  alt="COVID-19 Case Visualization System"
+                  className="w-full h-48 object-cover brightness-75 hover:brightness-100 transition-all duration-300"
+                />
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.covid19.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.covid19.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.covid19.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.covid19.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.covid19.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.covid19.tech')}</p>
+                </div>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href={t('projects.pastProjects.covid19.links.site')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.covid19.links.siteLabel')}
+                  </a>
+                  <a
+                    href={t('projects.pastProjects.covid19.links.github')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.covid19.links.githubLabel')}
+                  </a>
                 </div>
               </div>
             </div>

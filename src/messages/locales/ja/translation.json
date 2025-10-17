@@ -145,7 +145,7 @@
       "aiTools": "トレーニング分析のためのAI搭載ツールを開発",
       "marathon": "フルマラソン PB: 2:58:41（2016東京マラソン）",
       "olympicDistance": "オリンピックディスタンス PB: 2:11:55（2018東京都トライアスロン渡良瀬大会）",
-      "openwater": "湘南オープンウォーター 10km 完泳",
+      "openwater": "湘南オープンウォーター 10km 完泳（2014/8）",
       "ironman703": "IRONMAN 70.3 アジア太平洋選手権（5:00:47）"
     },
     "writing": {
@@ -352,6 +352,20 @@
         "role": "作者",
         "description": "絵文字をスプライト画像として効率的に表示するためのJavaScriptライブラリをOSSとして公開。パフォーマンス最適化、クロスブラウザ対応を実現。GitHubで公開し、コミュニティから多数のスターを獲得。",
         "tech": "JavaScript, CSS, Canvas API"
+      },
+      "covid19": {
+        "title": "COVID-19陽性者数可視化システム",
+        "company": "個人プロジェクト",
+        "period": "2020年 - 2022年",
+        "role": "開発者",
+        "description": "各都道府県が公開するCOVID-19陽性者数のオープンデータを自動収集し、グラフ化してTwitterとWordPressに毎日自動投稿するシステムを開発。10分に1回データをクロールし、新規陽性者が出た場合に即座に通知。神奈川県をはじめとする複数の都道府県に対応し、2年以上の長期運用を実現。Rubyで実装し、Dockerで環境を構築。行政データのオープン化の課題を体験的に理解する機会となった。",
+        "tech": "Ruby, Docker, Twitter API, WordPress API, Gruff (Graph Library)",
+        "links": {
+          "site": "https://covid19.teraren.com/",
+          "siteLabel": "サイトを見る",
+          "github": "https://github.com/matsubo/covid19-daily-tweet",
+          "githubLabel": "GitHubリポジトリ"
+        }
       }
     }
   }
