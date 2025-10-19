@@ -10,12 +10,12 @@ import {
   CodeBracketIcon,
   ArrowDownTrayIcon,
 } from '@heroicons/react/24/outline'
-import javaImg from '@/images/java.png'
-import javaDownloadImg from '@/images/java_download.png'
-import javaInstallerImg from '@/images/java_installer.png'
-import javaAgreementImg from '@/images/java_agreement.png'
-import javaWarningImg from '@/images/java_warning.png'
-import javaInstalledImg from '@/images/java_installed.png'
+import javaImg from '@/images/tutorials/java.png'
+import javaDownloadImg from '@/images/tutorials/java_download.png'
+import javaInstallerImg from '@/images/tutorials/java_installer.png'
+import javaAgreementImg from '@/images/tutorials/java_agreement.png'
+import javaWarningImg from '@/images/tutorials/java_warning.png'
+import javaInstalledImg from '@/images/tutorials/java_installed.png'
 
 export default function JavaPage() {
   const [locale, setLocale] = useState<string>('en')

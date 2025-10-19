@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Layout from '@/components/layout'
 import ImageWithLightbox from '@/components/ImageWithLightbox'
 import { ChevronLeftIcon, CommandLineIcon } from '@heroicons/react/24/outline'
-import brewInstallRbenvImg from '@/images/brew_install_rbenv.png'
+import brewInstallRbenvImg from '@/images/tutorials/brew_install_rbenv.png'
 
 export default function RbenvPage() {
   const [locale, setLocale] = useState<string>('en')

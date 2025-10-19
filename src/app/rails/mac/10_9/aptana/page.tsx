@@ -10,9 +10,9 @@ import {
   CodeBracketIcon,
   ArrowDownTrayIcon,
 } from '@heroicons/react/24/outline'
-import aptanaMoveImg from '@/images/aptana_move.png'
-import aptanaStartImg from '@/images/aptana_start.png'
-import aptanaWindowImg from '@/images/aptana_window.png'
+import aptanaMoveImg from '@/images/tutorials/aptana_move.png'
+import aptanaStartImg from '@/images/tutorials/aptana_start.png'
+import aptanaWindowImg from '@/images/tutorials/aptana_window.png'
 
 export default function AptanaPage() {
   const [locale, setLocale] = useState<string>('en')

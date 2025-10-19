@@ -10,13 +10,13 @@ import {
   CheckCircleIcon,
   RocketLaunchIcon,
 } from '@heroicons/react/24/outline'
-import railsProjectImg from '@/images/rails_project.png'
-import aptanaNewImg from '@/images/aptana_new.png'
-import progressImg from '@/images/progress.png'
-import aptanaRunServerImg from '@/images/aptana_run_server.png'
-import serverConsoleImg from '@/images/server_console.png'
-import aptanaBrowserImg from '@/images/aptana_browser.png'
-import aptanaQuitImg from '@/images/aptana_quit.png'
+import railsProjectImg from '@/images/tutorials/rails_project.png'
+import aptanaNewImg from '@/images/tutorials/aptana_new.png'
+import progressImg from '@/images/tutorials/progress.png'
+import aptanaRunServerImg from '@/images/tutorials/aptana_run_server.png'
+import serverConsoleImg from '@/images/tutorials/server_console.png'
+import aptanaBrowserImg from '@/images/tutorials/aptana_browser.png'
+import aptanaQuitImg from '@/images/tutorials/aptana_quit.png'
 
 export default function AptanaCheckPage() {
   const [locale, setLocale] = useState<string>('en')
