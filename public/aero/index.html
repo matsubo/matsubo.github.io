@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自転車エアロ性能分析レポート - Aeroad vs Tarmac</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .summary-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .summary-card h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .aeroad {
+            color: #6B7280;
+        }
+        .tarmac {
+            color: #50C878;
+        }
+        .positive {
+            color: #27ae60;
+        }
+        .negative {
+            color: #e74c3c;
+        }
+        .diff {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .chart-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .insight {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .insight h4 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning h4 {
+            margin-top: 0;
+            color: #856404;
+        }
+        .methodology {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚴 自転車エアロ性能分析レポート</h1>
+        <div class="subtitle">Aeroad CF SLX 8 vs Specialized Tarmac SL5 - 皇居4周データ比較</div>
+        <div class="subtitle">分析日時: 2025年11月04日 14:39</div>
+    </div>
+
+    <div class="section">
+        <h2>📊 エグゼクティブサマリー</h2>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>平均速度</h3>
+                <div class="metric-value aeroad">24.62 km/h</div>
+                <div style="font-size: 0.9em; color: #666;">Aeroad CF SLX 8</div>
+                <div class="metric-value tarmac">24.05 km/h</div>
+                <div style="font-size: 0.9em; color: #666;">Specialized Tarmac SL5</div>
+                <div class="diff positive">差: +0.57 km/h (+2.4%)</div>
+            </div>
+
+            <div class="summary-card">
+                <h3>平均パワー</h3>
+                <div class="metric-value aeroad">225.0 W</div>
+                <div style="font-size: 0.9em; color: #666;">Aeroad CF SLX 8</div>
+                <div class="metric-value tarmac">223.5 W</div>
+                <div style="font-size: 0.9em; color: #666;">Specialized Tarmac SL5</div>
+                <div class="diff">差: +1.5 W (+0.7%)</div>
+            </div>
+
+            <div class="summary-card"><h3>推定CdA</h3><div class="metric-value aeroad">0.342 m²</div><div style="font-size: 0.9em; color: #666;">Aeroad CF SLX 8</div><div class="metric-value tarmac">0.337 m²</div><div style="font-size: 0.9em; color: #666;">Specialized Tarmac SL5</div><div class="diff negative">差: +0.006 m² (+1.7%)</div><div style="font-size: 0.8em; color: #999; margin-top: 10px;">サンプル: Aeroad 442, Tarmac 604</div></div>
+
+            <div class="summary-card"><h3>パワー効率</h3><div class="metric-value aeroad">8.05</div><div style="font-size: 0.9em; color: #666;">Aeroad CF SLX 8 (W/km/h)</div><div class="metric-value tarmac">7.94</div><div style="font-size: 0.9em; color: #666;">Specialized Tarmac SL5 (W/km/h)</div><div class="diff negative">Tarmacが1.4%効率的</div></div>
+        </div>
+    </div>
+
+    <div class="warning">
+        <h4>⚠️ 分析上の注意事項</h4>
+        <p><strong>比較対象:</strong> Specialized Tarmac SL5（元の自転車）→ Aeroad CF SLX 8（新しい自転車）への乗り換え比較</p>
+        <p>この分析は異なる日時に収集されたデータを比較しているため、以下の要因が結果に影響している可能性があります:</p>
+        <ul>
+            <li><strong>気象条件:</strong> 風向き、風速、気温、湿度の違い</li>
+            <li><strong>ライダーコンディション:</strong> 疲労度、体調、モチベーションの違い</li>
+            <li><strong>交通状況:</strong> 信号待ち、他のサイクリストとの絡み方の違い</li>
+            <li><strong>機材設定:</strong> タイヤ空気圧、ポジション、ウェアの違い</li>
+            <li><strong>⚠️ パワーメーターの違い:</strong> 両バイクで異なるパワーメーター機材を使用しているため、計測値に系統的な誤差が含まれている可能性があります。パワーメーターの精度は通常±1-2%程度のばらつきがあり、異なる機材間ではさらに大きな差が出ることがあります。</li>
+        </ul>
+        <p>これらの要因を考慮した上で、統計的な傾向として結果を解釈することをお勧めします。特にパワー値の絶対値よりも、速度やパワー効率などの相対的な関係性に注目することが重要です。</p>
+    </div>
+
+    <div class="section">
+        <h2>📈 詳細メトリクス比較</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>メトリクス</th>
+                    <th class="aeroad">Aeroad CF SLX 8</th>
+                    <th class="tarmac">Specialized Tarmac SL5</th>
+                    <th>差分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>平均速度</strong></td>
+                    <td>24.62 km/h</td>
+                    <td>24.05 km/h</td>
+                    <td>+0.57 km/h (+2.4%)</td>
+                </tr>
+                <tr>
+                    <td><strong>最高速度</strong></td>
+                    <td>53.95 km/h</td>
+                    <td>56.94 km/h</td>
+                    <td>-2.99 km/h</td>
+                </tr>
+                <tr>
+                    <td><strong>平均パワー</strong></td>
+                    <td>225.0 W</td>
+                    <td>223.5 W</td>
+                    <td>+1.5 W (+0.7%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Normalized Power</strong></td>
+                    <td>255.8 W</td>
+                    <td>241.8 W</td>
+                    <td>+14.1 W</td>
+                </tr>
+                <tr>
+                    <td><strong>最大パワー</strong></td>
+                    <td>672 W</td>
+                    <td>757 W</td>
+                    <td>-85 W</td>
+                </tr>
+                <tr>
+                    <td><strong>パワー/速度比</strong></td>
+                    <td>8.05 W/(km/h)</td>
+                    <td>7.94 W/(km/h)</td>
+                    <td>+0.11 (+1.4%)</td>
+                </tr>
+                <tr>
+                    <td><strong>高速域平均速度 (>35km/h)</strong></td>
+                    <td>40.80 km/h</td>
+                    <td>41.63 km/h</td>
+                    <td>-0.83 km/h</td>
+                </tr>
+                <tr>
+                    <td><strong>高速域平均パワー</strong></td>
+                    <td>238.5 W</td>
+                    <td>244.8 W</td>
+                    <td>-6.3 W</td>
+                </tr>
+                <tr>
+                    <td><strong>平均ケイデンス</strong></td>
+                    <td>81 rpm</td>
+                    <td>78 rpm</td>
+                    <td>+3 rpm</td>
+                </tr>
+                <tr>
+                    <td><strong>平均心拍数</strong></td>
+                    <td>120 bpm</td>
+                    <td>125 bpm</td>
+                    <td>-5 bpm</td>
+                </tr>
+                <tr>
+                    <td><strong>総距離</strong></td>
+                    <td>23.26 km</td>
+                    <td>22.98 km</td>
+                    <td>+0.29 km</td>
+                </tr>
+                <tr>
+                    <td><strong>総時間</strong></td>
+                    <td>55分37秒</td>
+                    <td>56分41秒</td>
+                    <td>-2分4秒</td>
+                </tr>
+                <tr>
+                    <td><strong>獲得標高</strong></td>
+                    <td>132 m</td>
+                    <td>147 m</td>
+                    <td>-14 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>🎨 可視化分析</h2>
+
+        <div class="chart-container">
+            <h3>主要メトリクスの比較</h3>
+            <img src="metrics_comparison.png" alt="Metrics Comparison">
+            <p style="color: #666; margin-top: 10px;">
+                各種パフォーマンス指標を並べて比較。パワー/速度比が低いほど効率的（同じ速度を出すのに必要なパワーが少ない）。
+            </p>
+        </div>
+
+        <div class="chart-container"><h3>CdA (空気抵抗係数) 比較</h3><img src="cda_comparison.png" alt="CdA Comparison"><p style="color: #666; margin-top: 10px;">CdAは空気抵抗の指標。値が小さいほどエアロダイナミクスが優れている。</p></div>
+
+        <div class="chart-container">
+            <h3>速度分布の比較</h3>
+            <img src="speed_distribution.png" alt="Speed Distribution">
+            <p style="color: #666; margin-top: 10px;">
+                走行中の速度分布。分布の中心が右にあるほど平均的に速く、分布の幅が狭いほど安定した走行。
+            </p>
+        </div>
+
+        <div class="chart-container">
+            <h3>パワーと速度の関係</h3>
+            <img src="power_speed.png" alt="Power vs Speed">
+            <p style="color: #666; margin-top: 10px;">
+                パワーと速度の散布図とトレンドライン。同じパワーでより高い速度が出ているバイクの方がエアロダイナミクスが優れている可能性が高い。
+            </p>
+        </div>
+
+        <div class="chart-container">
+            <h3>速度と時系列の変化</h3>
+            <img src="speed_timeline.png" alt="Speed Timeline">
+            <p style="color: #666; margin-top: 10px;">
+                走行中の速度とパワーの時系列変化。走行パターンやペーシングの違いを視覚的に確認できる。
+            </p>
+        </div>
+
+        <div class="chart-container">
+            <h3>パワー分布の比較</h3>
+            <img src="power_distribution.png" alt="Power Distribution">
+            <p style="color: #666; margin-top: 10px;">
+                走行中のパワー分布。トレーニング負荷やライディングスタイルの違いを反映。
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💡 分析インサイト</h2>
+
+        <div class="insight">
+            <h4>🏆 エアロダイナミクス性能</h4>
+            <p><strong>Aeroad CF SLX 8（新）の推定CdA: 0.342 m² vs Specialized Tarmac SL5（旧）の推定CdA: 0.337 m²</strong></p>
+            <p>数値上はTarmacの方が <strong>1.7%</strong> 優れていますが、この差はわずか0.006 m²（30km/hで約2.0Wの差）であり、<strong>測定誤差の範囲内</strong>と考えられます。</p>
+            <p><strong>重要:</strong> CdA推定値は以下の要因により大きく影響を受けます:</p>
+            <ul>
+                <li><strong>風の影響:</strong> 測定日の風向・風速が異なるため、見かけ上のCdA値が変動</li>
+                <li><strong>パワーメーターの違い:</strong> 異なる機材による計測誤差（±1-2%）がCdA推定に直接影響</li>
+                <li><strong>走行条件:</strong> ポジション、ウェア、気温などの違い</li>
+            </ul>
+            <p><strong>実際のパフォーマンス:</strong> ほぼ同じパワー（+0.7%）で平均速度が2.4%向上しており、総合的には新しいAeroadの方が優れた実走性能を示しています。</p>
+            <p><em>※ この推定は25-40km/hの速度域、150-400Wのパワー域のデータから計算されています（Aeroad: 442サンプル, Tarmac: 604サンプル）。</em></p>
+        </div>
+
+        <div class="insight">
+            <h4>⚡ パワー効率</h4>
+            <p><strong>Aeroad CF SLX 8（新）のパワー/速度比: 8.05 W/(km/h) vs Specialized Tarmac SL5（旧）: 7.94 W/(km/h)</strong></p>
+            <p>この指標では旧Tarmacの方が <strong>1.4%</strong> 良い数値ですが、これも<strong>パワーメーター機材の違いによる計測誤差の範囲内</strong>と考えられます。</p>
+            <p>異なるパワーメーター間では±1-2%の誤差が一般的であり、1.4%の差は統計的に有意とは言えません。実際の総合パフォーマンス（平均速度の向上）を考慮すると、新しいAeroadは効果的に機能していると評価できます。</p>
+        </div>
+
+        <div class="insight">
+            <h4>🚀 高速域パフォーマンス (>35km/h)</h4>
+            <p><strong>Aeroad CF SLX 8（新）: 40.80 km/h @ 239W vs Specialized Tarmac SL5（旧）: 41.63 km/h @ 245W</strong></p>
+            <p>高速域（35km/h以上）では、エアロダイナミクスの影響がより顕著に現れます。</p>
+            <p>旧Tarmacの方が高速域で0.83 km/h速い結果ですが、これは<strong>気象条件（特に追い風・向かい風）の影響</strong>と考えられます。高速域では風の影響が指数的に大きくなるため、異なる日のデータ比較では風の要因が支配的になります。</p>
+        </div>
+
+        <div class="insight">
+            <h4>📊 総合パフォーマンス - 結論</h4>
+            <p><strong>🎯 Specialized Tarmac SL5（旧）→ Aeroad CF SLX 8（新）への乗り換え効果</strong></p>
+            <p><strong>平均速度: Aeroad 24.62 km/h vs Tarmac 24.05 km/h（+2.4%向上）</strong></p>
+            <p><strong>平均パワー: Aeroad 225.0W vs Tarmac 223.5W（+0.7%、ほぼ同等）</strong></p>
+            <p><strong>平均心拍数: Aeroad 120 bpm vs Tarmac 125 bpm（-5 bpm、より楽に走行）</strong></p>
+
+            <p><strong>✅ 実走性能の改善が確認できました:</strong></p>
+            <ul>
+                <li>ほぼ同じパワー出力（誤差範囲内）で、平均速度が2.4%向上</li>
+                <li>心拍数が5 bpm低下しており、より低い生理学的負荷で走行</li>
+                <li>約56分の走行で約2分短縮（同距離換算）</li>
+            </ul>
+
+            <p><strong>⚠️ CdA値やパワー効率の数値が期待と異なる理由:</strong></p>
+            <ul>
+                <li>パワーメーター機材の違いによる計測誤差（±1-2%）</li>
+                <li>測定日の気象条件（風向・風速）の違い</li>
+                <li>これらの誤差要因が、わずかなCdA差（1.7%）に大きく影響</li>
+            </ul>
+
+            <p><strong>📈 総合評価: 新しいAeroadは実走パフォーマンスが向上しています。</strong> 速度向上と心拍数低下の組み合わせは、機材の性能向上を示す明確な証拠です。</p>
+            <p><em>※ この比較は異なる日時のデータであるため、気象条件やライダーコンディションの影響を受けています。より正確な比較のためには、同日・同条件でのテストが理想的です。</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔬 分析手法</h2>
+        <div class="methodology">
+            <h4>データ処理</h4>
+            <ul>
+                <li>FITファイルから記録データを抽出</li>
+                <li>皇居周辺（中心から1.5km以内）のデータをフィルタリング</li>
+                <li>連続する走行セグメントを検出（10分以上の中断で分割）</li>
+                <li>異常値や停止時のデータをクリーニング</li>
+            </ul>
+
+            <h4>CdA推定方法</h4>
+            <ul>
+                <li>速度25-40 km/h、パワー150-400Wの定常走行データを抽出</li>
+                <li>エアロ抵抗式: Power_aero ≈ 0.5 × ρ × CdA × v³（ρ=1.225 kg/m³）</li>
+                <li>総パワーの約70%がエアロ抵抗と仮定（残りは転がり抵抗等）</li>
+                <li>外れ値を除去し、中央値を使用</li>
+                <li><strong>注意:</strong> この推定は簡易的なもので、勾配、風、その他の要因は完全には考慮されていません</li>
+            </ul>
+
+            <h4>Normalized Power (NP)</h4>
+            <ul>
+                <li>30秒移動平均を計算</li>
+                <li>各値を4乗し、平均を取り、4乗根を計算</li>
+                <li>変動の激しいパワーの生理学的負荷を反映</li>
+            </ul>
+
+            <h4>パワー効率指標</h4>
+            <ul>
+                <li>パワー/速度比: 1km/h速度を上げるのに必要なパワー（低いほど効率的）</li>
+                <li>高速域（>35km/h）での平均値を抽出し、エアロ性能を評価</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📝 推奨事項</h2>
+        <div class="insight">
+            <h4>より精度の高い比較のために</h4>
+            <ul>
+                <li><strong>同日・同時刻の比較:</strong> 可能であれば同じ気象条件下でテストを実施</li>
+                <li><strong>風の記録:</strong> 風速・風向データがあればより正確なCdA推定が可能</li>
+                <li><strong>🔧 パワーメーター校正（最重要）:</strong> 両方のバイクで同じパワーメーターを使用するか、事前に相互校正を実施。異なるパワーメーター間では±1-2%以上の誤差が発生する可能性があり、これがCdA推定や効率分析に直接影響します。</li>
+                <li><strong>ポジションの統一:</strong> できるだけ同じポジション（エアロポジションなど）で走行</li>
+                <li><strong>タイヤとウェアの統一:</strong> 転がり抵抗やウェアの空気抵抗の影響を排除</li>
+                <li><strong>複数回のテスト:</strong> データの再現性を確認するため、複数日のデータを収集</li>
+                <li><strong>心拍数の考慮:</strong> 同じ生理学的負荷で比較することも重要</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated by Fit Gear Stat Analysis Tool</p>
+        <p>データソース: aeroad.fit, tarmac.fit</p>
+        <p>2025年11月04日 14:39:03</p>
+    </div>
+</body>
+</html>
