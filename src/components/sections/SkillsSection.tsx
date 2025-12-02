@@ -41,14 +41,11 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.languages')}</h3>
               <div className="flex flex-wrap gap-2">
+                <span className="badge badge-primary badge-lg">Ruby</span>
+                <span className="badge badge-primary badge-lg">Python</span>
+                <span className="badge badge-primary badge-lg">TypeScript</span>
                 <span className="badge badge-primary badge-lg">PHP</span>
-                <span className="badge badge-primary badge-lg">Go</span>
                 <span className="badge badge-primary badge-lg">Java</span>
-                <span className="badge badge-primary badge-lg">Kotlin</span>
-                <span className="badge badge-primary badge-lg">Swift</span>
-                <span className="badge badge-primary badge-lg">C</span>
-                <span className="badge badge-primary badge-lg">C++</span>
-                <span className="badge badge-primary badge-lg">Rust</span>
                 <span className="badge badge-primary badge-lg">Shell/Bash</span>
               </div>
             </div>
@@ -57,13 +54,10 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.frameworks')}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-secondary badge-lg">Nuxt.js</span>
-                <span className="badge badge-secondary badge-lg">Vue.js</span>
-                <span className="badge badge-secondary badge-lg">Angular</span>
-                <span className="badge badge-secondary badge-lg">Django</span>
-                <span className="badge badge-secondary badge-lg">FastAPI</span>
-                <span className="badge badge-secondary badge-lg">Laravel</span>
-                <span className="badge badge-secondary badge-lg">Express.js</span>
+                <span className="badge badge-secondary badge-lg">Ruby on Rails</span>
+                <span className="badge badge-secondary badge-lg">Next.js</span>
+                <span className="badge badge-secondary badge-lg">Astro</span>
+                <span className="badge badge-secondary badge-lg">WordPress</span>
                 <span className="badge badge-secondary badge-lg">Flutter</span>
                 <span className="badge badge-secondary badge-lg">React Native</span>
               </div>
@@ -73,12 +67,12 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.cloud')}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-accent badge-lg">Azure</span>
+                <span className="badge badge-accent badge-lg">Docker</span>
+                <span className="badge badge-accent badge-lg">ECS</span>
+                <span className="badge badge-accent badge-lg">Fargate</span>
                 <span className="badge badge-accent badge-lg">GitHub Actions</span>
                 <span className="badge badge-accent badge-lg">CircleCI</span>
-                <span className="badge badge-accent badge-lg">Jenkins</span>
                 <span className="badge badge-accent badge-lg">Terraform</span>
-                <span className="badge badge-accent badge-lg">Ansible</span>
                 <span className="badge badge-accent badge-lg">Cloudflare</span>
                 <span className="badge badge-accent badge-lg">Vercel</span>
                 <span className="badge badge-accent badge-lg">Netlify</span>
@@ -89,10 +83,10 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.database')}</h3>
               <div className="flex flex-wrap gap-2">
+                <span className="badge badge-info badge-lg">MySQL</span>
+                <span className="badge badge-info badge-lg">Redis</span>
                 <span className="badge badge-info badge-lg">Elasticsearch</span>
                 <span className="badge badge-info badge-lg">DynamoDB</span>
-                <span className="badge badge-info badge-lg">Cassandra</span>
-                <span className="badge badge-info badge-lg">Memcached</span>
                 <span className="badge badge-info badge-lg">SQLite</span>
               </div>
             </div>
@@ -121,6 +115,7 @@ export function SkillsSection() {
                 <span className="badge badge-success badge-lg">GraphQL</span>
                 <span className="badge badge-success badge-lg">gRPC</span>
                 <span className="badge badge-success badge-lg">WebSocket</span>
+                <span className="badge badge-success badge-lg">WebRTC</span>
                 <span className="badge badge-success badge-lg">OpenAPI</span>
                 <span className="badge badge-success badge-lg">Swagger</span>
                 <span className="badge badge-success badge-lg">Postman</span>
@@ -132,8 +127,10 @@ export function SkillsSection() {
               <h3 className="card-title text-xl mb-4">{t('skills.infrastructure')}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-lg">Linux</span>
+                <span className="badge badge-lg">Debian</span>
                 <span className="badge badge-lg">Ubuntu</span>
                 <span className="badge badge-lg">CentOS</span>
+                <span className="badge badge-lg">TCP/IP</span>
                 <span className="badge badge-lg">Nginx</span>
                 <span className="badge badge-lg">Apache</span>
                 <span className="badge badge-lg">Load Balancer</span>
@@ -161,7 +158,6 @@ export function SkillsSection() {
                 <span className="badge badge-lg">GitHub</span>
                 <span className="badge badge-lg">GitLab</span>
                 <span className="badge badge-lg">Bitbucket</span>
-                <span className="badge badge-lg">SVN</span>
                 <span className="badge badge-lg">VS Code</span>
                 <span className="badge badge-lg">Vim</span>
               </div>

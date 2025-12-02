@@ -1,16 +1,17 @@
 # Yuki Matsukura (松倉 友樹)
 
 ## Overview
-Yuki Matsukura is a CTO and technical leader with over 20 years of experience in software engineering. He specializes in building scalable systems and leading engineering teams. Currently serving as CTO at Minedia Inc., a data technology startup that raised approximately 500 million yen in funding.
+Yuki Matsukura is a CTO and software engineer with over 20 years of experience building scalable systems and innovative solutions. Currently serving as CTO at Minedia Inc., a data technology startup that raised approximately ¥500M in funding. His career spans multiple high-growth companies including Metaps (developed SPIKE payment service) and GREE (managed social gaming platform).
 
 ## Current Position
 - **Company**: Minedia Inc. (株式会社Minedia)
 - **Role**: CTO (Chief Technology Officer)
 - **Period**: 2018 - Present
 - **Responsibilities**:
-  - Leading technical strategy and development
-  - Building and scaling engineering teams
+  - Leading technology strategy and development for data technology startup
+  - Raised approximately ¥500M in funding
   - Published research on regional EC data analysis (Springer, 2023)
+  - Built and scaled engineering team to support business growth
 
 ## Education
 - **Keio University Shonan Fujisawa Campus (SFC)** - Graduated 2005
@@ -19,140 +20,228 @@ Yuki Matsukura is a CTO and technical leader with over 20 years of experience in
 ## Professional Experience
 
 ### Minedia Inc. - CTO (2018 - Present)
-- Lead technical strategy and development for data technology startup
-- Successfully raised approximately 500 million yen in funding
-- Published research on understanding regional characteristics through EC data analysis (Springer, 2023)
+- Leading technology strategy and development for data technology startup
+- Raised approximately ¥500M in funding
+- Published research on regional EC data analysis (Springer, 2023)
 - Built and scaled engineering team to support business growth
 
 ### Metaps Inc. - Manager (2014 - 2018)
-- Led development of SPIKE, an innovative payment service with zero transaction fees
-- Built and launched platform from scratch in 3 months
+- Led development of SPIKE - a revolutionary zero-fee payment service
+- Built and launched the platform from scratch in 3 months
 - Managed engineering team and technical architecture decisions
 
 ### GREE Inc. - Manager (2011 - 2013)
-- Managed development of internal social gaming platform
-- Presented social gaming platform strategy at CEDEC 2012
+- Managed development of in-house social gaming platform
+- Presented at CEDEC 2012 on social gaming platform strategy
 - Supported platform serving millions of users globally
 
 ## Technical Skills
 
-### Expert Level (90%+)
-- **Languages**: Ruby (95%), JavaScript/TypeScript (90%)
-- **Frameworks**: Ruby on Rails (95%), React (90%)
-- **Databases**: MySQL/PostgreSQL (90%)
+### Expert Level (85-95%)
+- **Languages**: Ruby (95%), JavaScript/TypeScript (90%), Python (80%)
+- **Frameworks**: Ruby on Rails (95%), React (90%), Next.js/Astro (85%)
+- **Databases**: MySQL/PostgreSQL (90%), Redis (85%)
+- **Cloud & DevOps**: AWS (85%), Docker/Kubernetes (85%)
 
-### Advanced Level (80-89%)
-- **Languages**: Python (80%)
-- **Cloud & DevOps**: AWS (85%), Docker/Kubernetes (85%), Redis (85%)
-- **Frameworks**: Next.js/Gatsby (85%)
-
-### Proficient Level (75-79%)
+### Proficient Level (75%)
 - **Cloud**: GCP (75%)
 - **Databases**: MongoDB (75%)
+
+### Other Technologies
+- **Languages**: PHP, Java, Shell/Bash
+- **Frameworks**: WordPress, Flutter, React Native
+- **Cloud & DevOps**: ECS, Fargate, GitHub Actions, CircleCI, Terraform, Cloudflare, Vercel, Netlify
+- **Databases**: Elasticsearch, DynamoDB, SQLite
+- **Testing**: Jest, RSpec, Pytest, Mocha, Chai, Selenium, Cypress, Playwright, JUnit
+- **API**: REST, GraphQL, gRPC, WebSocket, WebRTC, OpenAPI, Swagger, Postman
+- **Infrastructure**: Linux, Debian, Ubuntu, CentOS, TCP/IP, Nginx, Apache, Load Balancer, CDN
+- **Message Queue**: RabbitMQ, Kafka, SQS, SNS, Pub/Sub
+- **Version Control**: Git, GitHub, GitLab, Bitbucket, VS Code, Vim
+- **AI & ML**: OpenAI, Anthropic, Groq, LangChain, TensorFlow, PyTorch, scikit-learn
 
 ## Personality & Work Style
 - **MBTI Type**: INTP-A (Logician - Assertive)
 - **Core Strengths**:
-  - Logical Analysis: Deep analytical thinking and problem-solving
+  - Logical Analysis: Deep analytical thinking and problem-solving capabilities
   - Strategic Vision: Long-term planning and architectural decision-making
-  - Innovation Focus: Creating new solutions and exploring possibilities
-  - Individual Understanding: Recognizing and leveraging unique strengths of team members
+  - Innovation Focus: Creating novel solutions and exploring new possibilities
+  - Individual Understanding: Recognizing and leveraging each team member's unique strengths
+- **Leadership Approach**: Combines rigorous logical thinking with genuine care for team members' growth and development. Excels at breaking down complex technical challenges, creating clear strategic roadmaps, and building environments where engineers can do their best work.
 
-## Research & Publications
+## Academic & Research Achievements
 
-### Academic Papers
-1. **Understanding Regional Characteristics through EC Data Analysis**
+### Research Papers
+1. **Understanding Regional Characteristics Through EC Data Analysis**
    - Publisher: Springer
    - Year: 2023
-   - Focus: Analyzing e-commerce data to understand regional characteristics and consumer behavior patterns
+   - Focus: Research analyzing e-commerce data to understand regional characteristics and consumer behavior patterns
+   - URL: https://link.springer.com/chapter/10.1007/978-3-031-34668-2_26
 
-2. **MUGI: Design and Implementation of Activity Model**
+2. **MUGI: Design and Implementation of Activity Models**
    - Type: Master's Thesis
    - Institution: Keio University
    - Year: 2005
-   - Focus: Design and implementation of activity model for navigation services using location and place attributes
+   - Focus: Design and implementation of activity models using location information and place attributes for navigation services
 
 ### Presentations & Speaking Engagements
-- **Snowday Panel Discussion** - The Future of Data (2023)
-- **CEDEC 2012** - Platform for Social Gaming: "How to develop engaging games for 1 billion users"
+- **Snowday Panel Discussion** - Data Future (2023)
+- **CEDEC 2012** - Platform for Realizing Social Gaming: "How to Develop Attractive Games for 1 Billion Users"
+- **CodeZine** - ORM Library Feature Comparison in PHP (April 15, 2011)
+- **GREE Labs Blog** - How to Make Mobile Sites Smartphone-Ready in 1 Hour (April 25, 2011, 2,221 Hatena Bookmarks - All-time #1)
 
 ## Writing & Publications
 - **Zenn**: 88 technical articles published
-- **Technical Blog**: 19 years of continuous blogging at blog.teraren.com
+- **Technical Blog**: 25-year tech blog at blog.teraren.com
 - **SFC CNS Guide**: Editor for 3 years, served as Editor-in-Chief
-- **GREE Engineers Blog**: Article with 2,221 Hatena Bookmarks
+- **GREE Engineers Blog**: Article with 2,221 Hatena Bookmarks (all-time most bookmarked post)
+
+## Featured Projects
+
+### AI-Powered Tools
+
+#### AI Moderator
+- **URL**: https://ai-moderator.teraren.com/
+- **Description**: Highly customizable content moderation system with multi-model architecture
+- **Features**:
+  - Flexible content moderation with customizable AI models
+  - Multi-model architecture supporting OpenAI API and other AI models
+  - Organization-specific system prompts and instructions
+  - Featured in Nikkei newspaper
+- **Tech Stack**: OpenAI API, Custom AI Models, React, Node.js
+
+#### Triathlon AI Analyzer
+- **URL**: https://triathlon.teraren.com/
+- **Description**: AI-powered training analysis and coaching platform for triathletes
+- **Features**:
+  - Two-tier AI analysis system (GPT-4o-mini and Gemini 2.5 Pro)
+  - Race result data from major Japanese races (open source on GitHub)
+  - Free rankings, deviation scores, training advice, race reviews
+  - Premium personal coach AI with daily training plans
+  - Cost-effective alternative to TrainingPeaks and Strava
+- **Tech Stack**: GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data
+
+### API Services Collection
+
+All APIs provide high-performance Japanese data services with modern REST & GraphQL support:
+
+1. **Postcode API** (https://postcode.teraren.com/)
+   - High-performance Japanese postal code lookup service
+   - REST & GraphQL support, 90%+ test coverage
+   - Multilingual (JP/EN), Cloudflare optimized
+
+2. **Bank Code API** (https://bank.teraren.com/)
+   - Japanese banking institution codes database
+   - Complete bank code database with fast lookup
+
+3. **Corporation API** (https://corporation.teraren.com/)
+   - Company registration information
+   - Corporate number search with company profile data
+
+4. **Train & Station API** (https://train.teraren.com/)
+   - Railway and station information database
+   - Station search, railway line information, route planning data
+
+5. **School API** (https://school.teraren.com/)
+   - Educational institution database
+   - School information lookup with institution classification
+
+### Past Major Projects
+
+#### Mineds - Online Qualitative Research Service (2018-Present)
+- **Company**: Minedia, Inc.
+- **Role**: CTO / Tech Lead
+- **Description**: Platform for streamlining online qualitative research with real-time recording and analysis features
+- **Tech Stack**: Ruby on Rails, React, WebRTC, AWS
+
+#### City Gas Retail Platform (March - September 2016)
+- **Company**: Metaps, Inc.
+- **Role**: Development Lead
+- **Description**: Multi-tenant SaaS platform for city gas retail application processing following gas deregulation
+- **Tech Stack**: Ruby on Rails, PostgreSQL, AWS, REST API
+
+#### Product Recall Collection System (January - March 2016)
+- **Company**: Metaps, Inc.
+- **Role**: Development Lead
+- **Description**: Web-based product recall system with logistics integration and automatic notifications
+- **Tech Stack**: Ruby on Rails, PostgreSQL, REST API Integration
+
+#### SPIKE - Zero-Fee Payment Service (2014-2015)
+- **Company**: Metaps, Inc.
+- **Role**: Lead Engineer
+- **Description**: Built from scratch in 3 months. Revolutionary zero-fee payment platform with PCI DSS compliance
+- **Tech Stack**: Ruby on Rails, MySQL, Redis, AWS, Payment API Integration
+
+#### GREE Smartphone Adaptation (2011)
+- **Company**: GREE Inc.
+- **Role**: Engineer
+- **Description**: Developed method to adapt mobile sites for smartphones in 1 hour. Tech blog article received 2,200+ Hatena Bookmarks
+- **Tech Stack**: PHP, JavaScript, Mobile Web
+- **Links**:
+  - Blog: https://labs.gree.jp/blog/2011/04/3282/
+  - Hatena: https://b.hatena.ne.jp/entry/s/labs.gree.jp/blog/2011/04/3282/
+
+#### Cyta.jp - C2C Learning Platform (2009-2011)
+- **Company**: Coach United Inc.
+- **Role**: Development Leader
+- **Description**: Built from scratch including teacher-student matching, lesson booking, payments, and points system
+- **Tech Stack**: Ruby on Rails, MySQL, AWS, Payment API
+
+#### teraren.com - 1TB Storage Rental Server (2000s)
+- **Role**: Founder/Developer
+- **Description**: Personal project providing large-capacity storage rental service
+- **Tech Stack**: Linux, Apache, MySQL, PHP
+
+#### Emoji Sprite - OSS Library (2010s)
+- **Role**: Author
+- **Description**: JavaScript library for efficiently displaying emojis as sprite images. Published on GitHub with numerous stars
+- **Tech Stack**: JavaScript, CSS, Canvas API
+
+#### COVID-19 Case Visualization System (2020-2022)
+- **Role**: Developer
+- **Description**: Automated system to collect and visualize COVID-19 case data, with daily Twitter/WordPress posts. 2+ years continuous operation
+- **Tech Stack**: Ruby, Docker, Twitter API, WordPress API, Gruff (Graph Library)
+- **Links**:
+  - Site: https://covid19.teraren.com/
+  - GitHub: https://github.com/matsubo/covid19-daily-tweet
+
+#### SFC CNS Guide - Editor-in-Chief (2002-2005)
+- **Company**: Keio University Shonan Fujisawa Campus
+- **Role**: Editor / Editor-in-Chief
+- **Description**: Served as Editor-in-Chief of IT handbook for SFC students. Led editorial team management, writer coordination, and publication
+- **Tech Stack**: Technical Writing, Desktop Publishing, Team Management
 
 ## Hobbies & Personal Interests
 
 ### Triathlon
 - **IRONMAN World Championship 2017** - Competed
-- **Marathon Personal Best**: 2:58:41 (2016 Tokyo Marathon)
-- **Olympic Distance PB**: 2:11:55 (2018 Tokyo Triathlon Watarase Tournament)
-- **Open Water**: Completed Shonan Open Water 10km
+- **Full Marathon PB**: 2:58:41 (2016 Tokyo Marathon)
+- **Olympic Distance PB**: 2:11:55 (2018 Tokyo Watarase Triathlon)
+- **Open Water**: Shonan Open Water 10km Complete (Aug 2014)
 - **IRONMAN 70.3**: Asia-Pacific Championship (5:00:47)
 - Developed AI-powered tools for training analysis
 
+### Technical Writing
+- **Zenn**: 88 articles published (https://zenn.dev/matsubokkuri)
+- **Blog**: 25-year tech blog (https://blog.teraren.com/)
+
+### DIY & Home Projects
+Practical DIY projects for home renovation and repairs:
+- DIY Installation of LIXIL Touchless Faucet (https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish)
+- DIY Repair of Panasonic Built-in Dishwasher (https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer)
+
+### Travel
+Exploring cultures and history around the world (18+ years documented):
+- Turkey Journey (https://diary.teraren.com/posts/2022-10-02-turkey)
+- Central Europe - Vienna, Salzburg, Prague (https://diary.teraren.com/posts/2018-07-24-vienna-praha)
+- Maldives (https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli)
+- Croatia - Zagreb, Rastoke (https://diary.teraren.com/posts/2019-07-11-zagreb-croatia)
+- All travels: https://diary.teraren.com/travel/
+
 ### Certifications
-- Applied Information Technology Engineer Examination - 2013
+- Applied Information Technology Engineer - 2013
 - LPIC Level 2 - 2004
-- Second Class Electrician - 2021
+- Second-Class Electrician - 2021
 - TOEIC: 875
-
-## Notable Projects
-
-### AI-Powered Tools
-1. **AI Moderator**
-   - Flexible content moderation system with customizable AI models
-   - Multi-model architecture supporting OpenAI API and other AI models
-   - Featured in Nikkei newspaper
-   - Tech: OpenAI API, Custom AI Models, React, Node.js
-
-2. **Triathlon AI Analyzer**
-   - AI-powered training analysis and coaching platform
-   - Two-tier AI analysis system (GPT-4o-mini and Gemini 2.5 Pro)
-   - Open source race result data on GitHub
-   - Tech: GPT-4o-mini, Gemini 2.5 Pro, React, Python
-
-### API Services Collection
-- **Postcode API**: High-performance Japanese postal code search service
-- **Bank Code API**: Japanese financial institution code database
-- **Corporation API**: Corporate registration information
-- **Train/Station API**: Railway and station information
-- **School API**: Educational institution database
-
-### Past Major Projects
-1. **Mineds** - Online Qualitative Research Service (2018-Present)
-   - Tech: Ruby on Rails, React, WebRTC, AWS
-
-2. **City Gas Retail Platform** - Metaps (2016)
-   - Multi-tenant SaaS for gas retail application processing
-   - Tech: Ruby on Rails, PostgreSQL, AWS, REST API
-
-3. **Recall Product Recovery System** - Metaps (2016)
-   - Product recall management system with logistics integration
-   - Tech: Ruby on Rails, PostgreSQL, REST API
-
-4. **SPIKE** - Zero Transaction Fee Payment Service - Metaps (2014-2015)
-   - Built from scratch to launch in 3 months
-   - Tech: Ruby on Rails, MySQL, Redis, AWS, Payment API
-
-5. **GREE Smartphone Support** - GREE (2011)
-   - Developed method to make mobile sites smartphone-compatible in 1 hour
-   - Tech blog article received 2,200+ Hatena Bookmarks
-   - Tech: PHP, JavaScript, Mobile Web
-
-6. **Cyta.jp** - C2C Learning Platform - Coach United (2009-2011)
-   - Built from requirements to launch
-   - Tech: Ruby on Rails, MySQL, AWS, Payment API
-
-7. **teraren.com** - 1TB Storage Rental Server (2000s)
-   - Personal project providing large-capacity storage
-   - Tech: Linux, Apache, MySQL, PHP
-
-8. **Emoji Sprite** - OSS Library (2010s)
-   - JavaScript library for efficient emoji display
-   - Open source project with significant GitHub stars
-   - Tech: JavaScript, CSS, Canvas API
 
 ## Contact & Social Media
 - **GitHub**: [@matsubo](https://github.com/matsubo)
@@ -163,8 +252,8 @@ Yuki Matsukura is a CTO and technical leader with over 20 years of experience in
 - **Website**: [https://matsubo.github.io/](https://matsubo.github.io/)
 
 ## Philosophy
-"Building scalable systems and sharing knowledge through open source."
+"Building scalable systems and sharing knowledge through open source contributions."
 
 ---
 
-This portfolio website is built with Next.js 15, TypeScript, and Tailwind CSS, deployed on GitHub Pages.
+This portfolio website is built with Next.js 15, TypeScript, Tailwind CSS, and deployed on GitHub Pages.

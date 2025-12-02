@@ -72,6 +72,18 @@
         "meta": "CEDEC 2012",
         "description": "How to Develop Attractive Games for 1 Billion Users",
         "button": "View Coverage"
+      },
+      "codezine": {
+        "title": "ORM Library Feature Comparison in PHP",
+        "meta": "CodeZine • April 15, 2011",
+        "description": "Comprehensive comparison of various ORM libraries for PHP development, analyzing features and performance benchmarks. This article examines advantages and disadvantages to help architects select appropriate ORM libraries, covering improved database schema maintainability and reduced SQL dependency.",
+        "button": "View Article"
+      },
+      "greeLabs": {
+        "title": "How to Make Mobile Sites Smartphone-Ready in 1 Hour",
+        "meta": "GREE Tech Blog • April 25, 2011 • 2,221 Hatena Bookmarks (All-time #1)",
+        "description": "Detailed guide on adapting existing mobile websites for smartphones. Covers 8 steps from UTF-8/HTML5 conversion, jQuery Mobile integration, emoji replacement, to HTML5 validation. This article became the all-time most bookmarked post on GREE Tech Blog, demonstrating its significant impact on the Japanese developer community.",
+        "button": "View Article"
       }
     }
   },
@@ -132,7 +144,7 @@
       { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
       { "name": "Redis", "level": 85, "category": "database" },
       { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Gatsby", "level": 85, "category": "frameworks" },
+      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
       { "name": "GCP", "level": 75, "category": "cloud" },
       { "name": "MongoDB", "level": 75, "category": "database" }
     ]
@@ -151,9 +163,50 @@
     "writing": {
       "title": "Technical Writing",
       "zenn": "88 articles published on Zenn",
-      "blog": "19-year tech blog (blog.teraren.com)",
-      "editor": "SFC CNS Guide editor for 3 years, served as Editor-in-Chief",
-      "gree": "GREE Engineers' Blog article (2,221 Hatena Bookmarks)"
+      "blog": "25-year tech blog (blog.teraren.com)"
+    },
+    "diy": {
+      "title": "DIY & Home Projects",
+      "description": "Practical DIY projects for home renovation and repairs. Leveraging technical expertise to tackle everything from faucet installation to appliance repairs.",
+      "projects": [
+        {
+          "title": "DIY Installation of LIXIL Touchless Faucet",
+          "url": "https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish",
+          "description": "Successfully installed touchless water faucet system"
+        },
+        {
+          "title": "DIY Repair of Panasonic Built-in Dishwasher",
+          "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
+          "description": "Built-in dishwasher repair project"
+        }
+      ]
+    },
+    "travel": {
+      "title": "Travel",
+      "description": "Exploring cultures and history around the world. Over 18 years of travel memories documented.",
+      "allTravels": "View All Travel Stories",
+      "destinations": [
+        {
+          "title": "Turkey Journey",
+          "url": "https://diary.teraren.com/posts/2022-10-02-turkey",
+          "description": "Istanbul, Cappadocia"
+        },
+        {
+          "title": "Central Europe",
+          "url": "https://diary.teraren.com/posts/2018-07-24-vienna-praha",
+          "description": "Vienna, Salzburg, Prague"
+        },
+        {
+          "title": "Maldives",
+          "url": "https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli",
+          "description": "Olhuveli Beach & Spa Resort"
+        },
+        {
+          "title": "Croatia",
+          "url": "https://diary.teraren.com/posts/2019-07-11-zagreb-croatia",
+          "description": "Zagreb, Rastoke region"
+        }
+      ]
     },
     "certifications": {
       "title": "Certifications",
@@ -366,6 +419,15 @@
           "github": "https://github.com/matsubo/covid19-daily-tweet",
           "githubLabel": "GitHub Repository"
         }
+      },
+      "sfcCns": {
+        "title": "SFC CNS Guide - Editor-in-Chief",
+        "company": "Keio University Shonan Fujisawa Campus",
+        "period": "2002 - 2005",
+        "role": "Editor / Editor-in-Chief",
+        "description": "Served as editor for 3 years and Editor-in-Chief of the 'SFC CNS Guide,' an IT handbook for students at Keio University SFC. Systematically compiled technical information including Campus Network System (CNS) usage, programming, web design, and multimedia production. Led annual revisions to establish it as a widely-used resource from freshmen to advanced students. Oversaw the entire process including editorial team management, writer coordination, layout design, and print distribution.",
+        "tech": "Technical Writing, Desktop Publishing, Team Management",
+        "image": "placeholder"
       }
     }
   }

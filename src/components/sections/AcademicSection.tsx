@@ -73,6 +73,30 @@ export function AcademicSection() {
                 </div>
               </div>
             </div>
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h4 className="card-title">{t('academic.presentations.codezine.title')}</h4>
+                <p className="text-sm text-base-content/70">{t('academic.presentations.codezine.meta')}</p>
+                <p className="mt-2">{t('academic.presentations.codezine.description')}</p>
+                <div className="card-actions mt-4">
+                  <a href="https://codezine.jp/article/detail/5858" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    {t('academic.presentations.codezine.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h4 className="card-title">{t('academic.presentations.greeLabs.title')}</h4>
+                <p className="text-sm text-base-content/70">{t('academic.presentations.greeLabs.meta')}</p>
+                <p className="mt-2">{t('academic.presentations.greeLabs.description')}</p>
+                <div className="card-actions mt-4">
+                  <a href="https://labs.gree.jp/blog/2011/04/3282/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    {t('academic.presentations.greeLabs.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

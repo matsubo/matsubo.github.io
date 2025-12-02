@@ -460,6 +460,27 @@ export function ProjectsSection() {
                 </div>
               </div>
             </div>
+
+            {/* SFC CNS Guide */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure className="bg-base-300">
+                <div className="w-full h-48 flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
+                  <span className="text-white text-6xl">📚</span>
+                </div>
+              </figure>
+              <div className="card-body">
+                <h4 className="card-title">{t('projects.pastProjects.sfcCns.title')}</h4>
+                <div className="flex flex-wrap gap-2 text-xs mb-2">
+                  <span className="badge badge-primary">{t('projects.pastProjects.sfcCns.period')}</span>
+                  <span className="badge badge-secondary">{t('projects.pastProjects.sfcCns.company')}</span>
+                </div>
+                <p className="text-sm font-semibold text-accent">{t('projects.pastProjects.sfcCns.role')}</p>
+                <p className="text-sm text-base-content/80">{t('projects.pastProjects.sfcCns.description')}</p>
+                <div className="mt-2">
+                  <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.sfcCns.tech')}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -72,6 +72,18 @@
         "meta": "CEDEC 2012",
         "description": "10億ユーザーのための魅力的なゲームの開発方法",
         "button": "記事を見る"
+      },
+      "codezine": {
+        "title": "PHPでの「ORMライブラリ」機能比較",
+        "meta": "CodeZine • 2011年4月15日",
+        "description": "PHP開発におけるORM（Object-Relational Mapping）について、各種ORMライブラリの機能とパフォーマンスベンチマークを比較。アーキテクトがORMライブラリを選定する際の判断材料として、メリットとデメリットを分析した記事。",
+        "button": "記事を見る"
+      },
+      "greeLabs": {
+        "title": "1時間で携帯サイトをスマートフォン対応にする方法",
+        "meta": "GREE Tech Blog • 2011年4月25日 • はてなブックマーク2,221件（歴代1位）",
+        "description": "既存の携帯向けウェブサイトをスマートフォンに対応させるための実装手順を解説。UTF-8化・HTML5化からjQuery Mobileの導入、絵文字の置き換え、HTML5バリデーション対応まで、8つのステップで「スマートフォンで使いやすいサイト」へ変換する方法を詳しく紹介。GREE Tech Blog歴代1位の反響を呼んだ記事。",
+        "button": "記事を見る"
       }
     }
   },
@@ -132,7 +144,7 @@
       { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
       { "name": "Redis", "level": 85, "category": "database" },
       { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Gatsby", "level": 85, "category": "frameworks" },
+      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
       { "name": "GCP", "level": 75, "category": "cloud" },
       { "name": "MongoDB", "level": 75, "category": "database" }
     ]
@@ -151,9 +163,50 @@
     "writing": {
       "title": "技術執筆",
       "zenn": "Zennに88記事を投稿",
-      "blog": "19年続く技術ブログ(blog.teraren.com)",
-      "editor": "SFC CNSガイドの編集者として3年間、編集長を務める",
-      "gree": "GREEエンジニアブログ記事（はてなブックマーク2,221件）"
+      "blog": "25年続く技術ブログ(blog.teraren.com)"
+    },
+    "diy": {
+      "title": "DIY & 家づくり",
+      "description": "自宅のリフォームや修理をDIYで実践。技術者としての知識を活かし、水栓の取り付けから家電修理まで幅広く挑戦。",
+      "projects": [
+        {
+          "title": "LIXILナビッシュをDIY取り付け",
+          "url": "https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish",
+          "description": "タッチレス水栓の取り付けに挑戦"
+        },
+        {
+          "title": "Panasonicビルトイン食洗機をDIY修理",
+          "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
+          "description": "ビルトイン食洗機の修理プロジェクト"
+        }
+      ]
+    },
+    "travel": {
+      "title": "旅行",
+      "description": "世界各地を旅して、文化や歴史を体験。18年以上にわたる旅の記録を公開。",
+      "allTravels": "全ての旅行記を見る",
+      "destinations": [
+        {
+          "title": "トルコ周遊",
+          "url": "https://diary.teraren.com/posts/2022-10-02-turkey",
+          "description": "イスタンブール、カッパドキア"
+        },
+        {
+          "title": "中欧旅行",
+          "url": "https://diary.teraren.com/posts/2018-07-24-vienna-praha",
+          "description": "ウィーン、ザルツブルク、プラハ"
+        },
+        {
+          "title": "モルディブ",
+          "url": "https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli",
+          "description": "Olhuveli Beach & Spa Resort"
+        },
+        {
+          "title": "クロアチア",
+          "url": "https://diary.teraren.com/posts/2019-07-11-zagreb-croatia",
+          "description": "ザグレブ、Rastoke地域"
+        }
+      ]
     },
     "certifications": {
       "title": "資格",
@@ -366,6 +419,15 @@
           "github": "https://github.com/matsubo/covid19-daily-tweet",
           "githubLabel": "GitHubリポジトリ"
         }
+      },
+      "sfcCns": {
+        "title": "SFC CNSガイド - 編集長",
+        "company": "慶應義塾大学湘南藤沢キャンパス",
+        "period": "2002年 - 2005年",
+        "role": "編集者 / 編集長",
+        "description": "慶應義塾大学SFCの学生向けIT活用ガイドブック「SFC CNSガイド」の編集に3年間携わり、編集長を務める。キャンパスネットワークシステム（CNS）の使い方、プログラミング、Webデザイン、マルチメディア制作など、学生が必要とする技術情報を体系的にまとめた冊子を制作。毎年改訂を重ね、新入生から上級生まで幅広く活用される資料として定着させた。編集チームのマネジメント、執筆者との調整、レイアウトデザイン、印刷・配布までの全工程を統括。",
+        "tech": "Technical Writing, Desktop Publishing, Team Management",
+        "image": "placeholder"
       }
     }
   }

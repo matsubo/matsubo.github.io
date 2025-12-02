@@ -1,6 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
-import { HeartIcon, TrophyIcon, DocumentTextIcon } from '@heroicons/react/24/outline'
+import { HeartIcon, TrophyIcon, DocumentTextIcon, WrenchScrewdriverIcon, GlobeAltIcon } from '@heroicons/react/24/outline'
 
 export function HobbiesSection() {
   const t = useTranslations()
@@ -37,9 +37,55 @@ export function HobbiesSection() {
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2"><span className="text-info">📝</span><a href="https://zenn.dev/matsubokkuri" rel="noopener noreferrer" className="link">{t('hobbies.writing.zenn')}</a></li>
                 <li className="flex items-start gap-2"><span className="text-info">📝</span><a href="https://blog.teraren.com/" rel="noopener noreferrer" className="link">{t('hobbies.writing.blog')}</a></li>
-                <li className="flex items-start gap-2"><span className="text-info">📚</span><a href="https://cns-guide.sfc.keio.ac.jp/2004/misc/editors.html" rel="noopener noreferrer" className="link">{t('hobbies.writing.editor')}</a></li>
-                <li className="flex items-start gap-2"><span className="text-warning">🔥</span><a href="https://labs.gree.jp/blog/2011/04/3282/" rel="noopener noreferrer" className="link">{t('hobbies.writing.gree')}</a></li>
               </ul>
+            </div>
+          </div>
+          <div className="card bg-base-200">
+            <div className="card-body">
+              <h3 className="card-title flex items-center gap-2">
+                <WrenchScrewdriverIcon className="w-6 h-6 text-success" />
+                {t('hobbies.diy.title')}
+              </h3>
+              <p className="text-sm mt-2">{t('hobbies.diy.description')}</p>
+              <ul className="space-y-2 mt-4">
+                {t.raw('hobbies.diy.projects').map((project: any, index: number) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-success">🔧</span>
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="link">
+                      {project.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="card bg-base-200">
+            <div className="card-body">
+              <h3 className="card-title flex items-center gap-2">
+                <GlobeAltIcon className="w-6 h-6 text-warning" />
+                {t('hobbies.travel.title')}
+              </h3>
+              <p className="text-sm mt-2">{t('hobbies.travel.description')}</p>
+              <ul className="space-y-2 mt-4">
+                {t.raw('hobbies.travel.destinations').map((destination: any, index: number) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-warning">✈️</span>
+                    <a href={destination.url} target="_blank" rel="noopener noreferrer" className="link">
+                      {destination.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4">
+                <a
+                  href="https://diary.teraren.com/travel/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline btn-sm w-full"
+                >
+                  {t('hobbies.travel.allTravels')}
+                </a>
+              </div>
             </div>
           </div>
           <div className="card bg-base-200">

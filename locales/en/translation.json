@@ -132,7 +132,7 @@
       { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
       { "name": "Redis", "level": 85, "category": "database" },
       { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Gatsby", "level": 85, "category": "frameworks" },
+      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
       { "name": "GCP", "level": 75, "category": "cloud" },
       { "name": "MongoDB", "level": 75, "category": "database" }
     ]

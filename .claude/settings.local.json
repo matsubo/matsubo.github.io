@@ -26,7 +26,10 @@
       "Bash(timeout:*)",
       "Bash(do echo \"=== $file ===\" git show 4fb9a48ea0a281de7013b6e028ba0c4f3663ae2f:src/pages/sfc/documents/$file.js)",
       "Bash(git ls-tree:*)",
-      "Read(//dev/**)"
+      "Read(//dev/**)",
+      "WebFetch(domain:labs.gree.jp)",
+      "WebFetch(domain:diary.teraren.com)",
+      "WebFetch(domain:je1wfv.teraren.com)"
     ],
     "deny": [],
     "ask": []
