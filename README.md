@@ -11,8 +11,8 @@ Personal portfolio website built with **Next.js 15** and deployed on GitHub Page
 - **Styling**: Tailwind CSS 4 + DaisyUI
 - **Internationalization**: next-intl (English/Japanese)
 - **Icons**: Heroicons
-- **Package Manager**: Bun
-- **Deployment**: GitHub Pages (Static Export)
+- Package Manager: Bun
+- **Deployment**: GitHub Pages (Static Site Generation / SSG)
 
 ## ✨ Features
 

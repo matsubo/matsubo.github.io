@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable Static Site Generation (SSG)
   output: "export",
   images: {
     unoptimized: true,
