@@ -142,8 +142,6 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.messageQueue')}</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="badge badge-error badge-lg">RabbitMQ</span>
-                <span className="badge badge-error badge-lg">Kafka</span>
                 <span className="badge badge-error badge-lg">SQS</span>
                 <span className="badge badge-error badge-lg">SNS</span>
                 <span className="badge badge-error badge-lg">Pub/Sub</span>
@@ -170,10 +168,8 @@ export function SkillsSection() {
                 <span className="badge badge-primary badge-lg">OpenAI</span>
                 <span className="badge badge-primary badge-lg">Anthropic</span>
                 <span className="badge badge-primary badge-lg">Groq</span>
+                <span className="badge badge-primary badge-lg">Vertex AI</span>
                 <span className="badge badge-primary badge-lg">LangChain</span>
-                <span className="badge badge-primary badge-lg">TensorFlow</span>
-                <span className="badge badge-primary badge-lg">PyTorch</span>
-                <span className="badge badge-primary badge-lg">scikit-learn</span>
               </div>
             </div>
           </div>

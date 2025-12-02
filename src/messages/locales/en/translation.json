@@ -160,10 +160,25 @@
       "openwater": "Shonan Open Water 10km Complete (Aug 2014)",
       "ironman703": "IRONMAN 70.3 Asia-Pacific Championship (5:00:47)"
     },
-    "writing": {
-      "title": "Technical Writing",
-      "zenn": "88 articles published on Zenn",
-      "blog": "25-year tech blog (blog.teraren.com)"
+    "amateurRadio": {
+      "title": "Amateur Radio",
+      "callSign": "JE1WFV",
+      "description": "Enjoying technology and nature through amateur radio. Main activities include APRS, SOTA, and digital simple radio.",
+      "activities": [
+        {
+          "title": "APRS (Automatic Packet Reporting System)",
+          "description": "Position reporting system combining radio and GPS"
+        },
+        {
+          "title": "SOTA (Summits On The Air)",
+          "description": "Amateur radio operation from mountain summits"
+        },
+        {
+          "title": "Digital Simple Radio",
+          "description": "Digital radio for business and leisure use"
+        }
+      ],
+      "website": "https://je1wfv.teraren.com/"
     },
     "diy": {
       "title": "DIY & Home Projects",
@@ -178,6 +193,26 @@
           "title": "DIY Repair of Panasonic Built-in Dishwasher",
           "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
           "description": "Built-in dishwasher repair project"
+        },
+        {
+          "title": "Home Temperature Monitoring System with Raspberry Pi",
+          "url": "https://zenn.dev/minedia/articles/8cdda8c874e3795225bc",
+          "description": "IoT-based temperature monitoring system"
+        },
+        {
+          "title": "Wood Deck Construction",
+          "url": "https://teraren.com/blog/wood-deck/",
+          "description": "DIY wood deck built in backyard"
+        },
+        {
+          "title": "Downlight Replacement",
+          "url": "https://teraren.com/blog/downlight-living/",
+          "description": "DIY replacement of living room downlights"
+        },
+        {
+          "title": "Daikin Air Conditioner Deep Cleaning",
+          "url": "https://teraren.com/blog/daikin-karaie-howto/",
+          "description": "Comprehensive AC maintenance project"
         }
       ]
     },
@@ -349,8 +384,8 @@
         "company": "Metaps, Inc.",
         "period": "March - September 2016",
         "role": "Development Lead",
-        "description": "In response to city gas deregulation, developed a system for city gas retail application processing and integration with gas pipeline companies. Built a multi-tenant SaaS platform enabling multiple retail operators to use the service. Realized online workflow from application to gas meter opening.",
-        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API"
+        "description": "In response to city gas deregulation, developed a system for city gas retail application processing and integration with gas pipeline companies. Designed as a multi-tenant SaaS platform, enabling multiple retail operators to independently use the service while maintaining data isolation for each tenant and providing a shared functional foundation. Realized online workflow from application to gas meter opening.",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API, Multi-tenant SaaS"
       },
       "recall": {
         "title": "Product Recall Collection System",

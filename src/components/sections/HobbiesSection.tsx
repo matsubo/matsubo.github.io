@@ -1,6 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
-import { HeartIcon, TrophyIcon, DocumentTextIcon, WrenchScrewdriverIcon, GlobeAltIcon } from '@heroicons/react/24/outline'
+import { HeartIcon, TrophyIcon, WrenchScrewdriverIcon, GlobeAltIcon, SignalIcon } from '@heroicons/react/24/outline'
 
 export function HobbiesSection() {
   const t = useTranslations()
@@ -31,13 +31,34 @@ export function HobbiesSection() {
           <div className="card bg-base-200">
             <div className="card-body">
               <h3 className="card-title flex items-center gap-2">
-                <DocumentTextIcon className="w-6 h-6 text-info" />
-                {t('hobbies.writing.title')}
+                <SignalIcon className="w-6 h-6 text-error" />
+                {t('hobbies.amateurRadio.title')}
               </h3>
+              <p className="text-sm mt-2">
+                <strong>Call Sign:</strong> {t('hobbies.amateurRadio.callSign')}
+              </p>
+              <p className="text-sm mt-2">{t('hobbies.amateurRadio.description')}</p>
               <ul className="space-y-2 mt-4">
-                <li className="flex items-start gap-2"><span className="text-info">📝</span><a href="https://zenn.dev/matsubokkuri" rel="noopener noreferrer" className="link">{t('hobbies.writing.zenn')}</a></li>
-                <li className="flex items-start gap-2"><span className="text-info">📝</span><a href="https://blog.teraren.com/" rel="noopener noreferrer" className="link">{t('hobbies.writing.blog')}</a></li>
+                {t.raw('hobbies.amateurRadio.activities').map((activity: any, index: number) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-error">📻</span>
+                    <div>
+                      <strong>{activity.title}</strong>
+                      <p className="text-xs text-base-content/70">{activity.description}</p>
+                    </div>
+                  </li>
+                ))}
               </ul>
+              <div className="mt-4">
+                <a
+                  href={t('hobbies.amateurRadio.website')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline btn-sm w-full"
+                >
+                  Visit Website
+                </a>
+              </div>
             </div>
           </div>
           <div className="card bg-base-200">

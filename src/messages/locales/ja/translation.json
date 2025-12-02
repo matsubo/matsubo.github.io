@@ -160,10 +160,25 @@
       "openwater": "湘南オープンウォーター 10km 完泳（2014/8）",
       "ironman703": "IRONMAN 70.3 アジア太平洋選手権（5:00:47）"
     },
-    "writing": {
-      "title": "技術執筆",
-      "zenn": "Zennに88記事を投稿",
-      "blog": "25年続く技術ブログ(blog.teraren.com)"
+    "amateurRadio": {
+      "title": "アマチュア無線",
+      "callSign": "JE1WFV",
+      "description": "アマチュア無線を通じて、技術と自然を楽しむ。APRS、SOTA、デジタル簡易無線をメインに活動。",
+      "activities": [
+        {
+          "title": "APRS (自動位置情報伝送システム)",
+          "description": "無線とGPSを組み合わせた位置情報システム"
+        },
+        {
+          "title": "SOTA (山頂からの無線運用)",
+          "description": "登山とアマチュア無線を組み合わせたアクティビティ"
+        },
+        {
+          "title": "デジタル簡易無線",
+          "description": "デジタル方式の業務・レジャー用無線"
+        }
+      ],
+      "website": "https://je1wfv.teraren.com/"
     },
     "diy": {
       "title": "DIY & 家づくり",
@@ -178,6 +193,26 @@
           "title": "Panasonicビルトイン食洗機をDIY修理",
           "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
           "description": "ビルトイン食洗機の修理プロジェクト"
+        },
+        {
+          "title": "Raspberry Pi で作る自宅内温度モニタリングシステム",
+          "url": "https://zenn.dev/minedia/articles/8cdda8c874e3795225bc",
+          "description": "IoTを活用した温度監視システム"
+        },
+        {
+          "title": "ウッドデッキ製作記録",
+          "url": "https://teraren.com/blog/wood-deck/",
+          "description": "自宅庭にウッドデッキをDIYで製作"
+        },
+        {
+          "title": "ダウンライト交換",
+          "url": "https://teraren.com/blog/downlight-living/",
+          "description": "リビングのダウンライトをDIY交換"
+        },
+        {
+          "title": "ダイキンエアコン「カライエ」分解洗浄",
+          "url": "https://teraren.com/blog/daikin-karaie-howto/",
+          "description": "エアコンの本格的なメンテナンス"
         }
       ]
     },
@@ -349,8 +384,8 @@
         "company": "株式会社メタップス",
         "period": "2016年3月 - 9月",
         "role": "開発リード",
-        "description": "都市ガス自由化に伴い、都市ガスの小売り受付申し込みシステムと都市ガス導管会社とのシステム連携を実現。マルチテナント対応のSaaSとして提供し、複数の小売事業者が利用可能なプラットフォームを構築。申込から開栓までのオンラインワークフローを実現。",
-        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API"
+        "description": "都市ガス自由化に伴い、都市ガスの小売り受付申し込みシステムと都市ガス導管会社とのシステム連携を実現。マルチテナント対応のSaaSとして設計し、複数の小売事業者が独立して利用可能なプラットフォームを構築。各テナントごとにデータを分離しながら、共通の機能基盤を提供。申込から開栓までのオンラインワークフローを実現。",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API, Multi-tenant SaaS"
       },
       "recall": {
         "title": "リコール商品回収システム",
