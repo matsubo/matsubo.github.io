@@ -108,3 +108,8 @@ The site supports English (default) and Japanese. Language files are located in 
 - X (Twitter): [@matsubokkuri](https://x.com/matsubokkuri)
 - Blog: [blog.teraren.com](https://blog.teraren.com/)
 - Zenn: [@matsubokkuri](https://zenn.dev/matsubokkuri)
+
+## 🔗 Projects & Links
+
+- [Emoji Sprite](https://github.com/matsubo/emoji-sprite) - Emoji sprite generator
+- [CNS Guide 2004](https://cns-guide.sfc.keio.ac.jp/2004/) - Keio SFC CNS Guide

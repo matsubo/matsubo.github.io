@@ -377,7 +377,11 @@
         "period": "2018 - Present",
         "role": "CTO / Tech Lead",
         "description": "Developed a platform to streamline online qualitative research. Built a system enabling user interviews, group discussions, and behavioral observations to be conducted online. Implemented real-time recording and analysis features to achieve DX in research operations.",
-        "tech": "Ruby on Rails, React, WebRTC, AWS"
+        "tech": "Ruby on Rails, React, WebRTC, AWS",
+        "links": {
+          "site": "https://corporate.minedia.com/",
+          "siteLabel": "Visit Site"
+        }
       },
       "gas": {
         "title": "City Gas Retail Platform",
@@ -439,7 +443,11 @@
         "period": "2010s",
         "role": "Author",
         "description": "Published as OSS a JavaScript library for efficiently displaying emojis as sprite images. Achieved performance optimization and cross-browser compatibility. Published on GitHub and gained numerous stars from the community.",
-        "tech": "JavaScript, CSS, Canvas API"
+        "tech": "JavaScript, CSS, Canvas API",
+        "links": {
+          "github": "https://github.com/matsubo/emoji-sprite",
+          "githubLabel": "GitHub Repository"
+        }
       },
       "covid19": {
         "title": "COVID-19 Case Visualization System",
@@ -462,7 +470,11 @@
         "role": "Editor / Editor-in-Chief",
         "description": "Served as editor for 3 years and Editor-in-Chief of the 'SFC CNS Guide,' an IT handbook for students at Keio University SFC. Systematically compiled technical information including Campus Network System (CNS) usage, programming, web design, and multimedia production. Led annual revisions to establish it as a widely-used resource from freshmen to advanced students. Oversaw the entire process including editorial team management, writer coordination, layout design, and print distribution.",
         "tech": "Technical Writing, Desktop Publishing, Team Management",
-        "image": "placeholder"
+        "image": "placeholder",
+        "links": {
+          "site": "https://cns-guide.sfc.keio.ac.jp/2004/",
+          "siteLabel": "Visit Site"
+        }
       }
     }
   }

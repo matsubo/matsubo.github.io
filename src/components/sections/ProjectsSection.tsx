@@ -238,6 +238,16 @@ export function ProjectsSection() {
                 <div className="mt-2">
                   <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.mineds.tech')}</p>
                 </div>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href={t('projects.pastProjects.mineds.links.site')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.mineds.links.siteLabel')}
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -417,6 +427,16 @@ export function ProjectsSection() {
                 <div className="mt-2">
                   <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.emoji.tech')}</p>
                 </div>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href={t('projects.pastProjects.emoji.links.github')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.emoji.links.githubLabel')}
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -478,6 +498,16 @@ export function ProjectsSection() {
                 <p className="text-sm text-base-content/80">{t('projects.pastProjects.sfcCns.description')}</p>
                 <div className="mt-2">
                   <p className="text-xs text-base-content/60"><strong>Tech:</strong> {t('projects.pastProjects.sfcCns.tech')}</p>
+                </div>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href={t('projects.pastProjects.sfcCns.links.site')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.pastProjects.sfcCns.links.siteLabel')}
+                  </a>
                 </div>
               </div>
             </div>

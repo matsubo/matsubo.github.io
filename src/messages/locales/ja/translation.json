@@ -377,7 +377,11 @@
         "period": "2018年 - 現在",
         "role": "CTO / テックリード",
         "description": "オンラインでの定性調査を効率化するプラットフォームを開発。ユーザーインタビュー、グループディスカッション、行動観察などをオンラインで実施できるシステムを構築。リアルタイムでの記録、分析機能を実装し、調査業務のDXを実現。",
-        "tech": "Ruby on Rails, React, WebRTC, AWS"
+        "tech": "Ruby on Rails, React, WebRTC, AWS",
+        "links": {
+          "site": "https://corporate.minedia.com/",
+          "siteLabel": "サイトを見る"
+        }
       },
       "gas": {
         "title": "都市ガス小売り受付プラットフォーム",
@@ -439,7 +443,11 @@
         "period": "2010年代",
         "role": "作者",
         "description": "絵文字をスプライト画像として効率的に表示するためのJavaScriptライブラリをOSSとして公開。パフォーマンス最適化、クロスブラウザ対応を実現。GitHubで公開し、コミュニティから多数のスターを獲得。",
-        "tech": "JavaScript, CSS, Canvas API"
+        "tech": "JavaScript, CSS, Canvas API",
+        "links": {
+          "github": "https://github.com/matsubo/emoji-sprite",
+          "githubLabel": "GitHubリポジトリ"
+        }
       },
       "covid19": {
         "title": "COVID-19陽性者数可視化システム",
@@ -462,7 +470,11 @@
         "role": "編集者 / 編集長",
         "description": "慶應義塾大学SFCの学生向けIT活用ガイドブック「SFC CNSガイド」の編集に3年間携わり、編集長を務める。キャンパスネットワークシステム（CNS）の使い方、プログラミング、Webデザイン、マルチメディア制作など、学生が必要とする技術情報を体系的にまとめた冊子を制作。毎年改訂を重ね、新入生から上級生まで幅広く活用される資料として定着させた。編集チームのマネジメント、執筆者との調整、レイアウトデザイン、印刷・配布までの全工程を統括。",
         "tech": "Technical Writing, Desktop Publishing, Team Management",
-        "image": "placeholder"
+        "image": "placeholder",
+        "links": {
+          "site": "https://cns-guide.sfc.keio.ac.jp/2004/",
+          "siteLabel": "サイトを見る"
+        }
       }
     }
   }
