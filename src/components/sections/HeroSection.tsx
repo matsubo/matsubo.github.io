@@ -1,80 +1,49 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { GlobeAltIcon } from '@heroicons/react/24/outline'
 
 export function HeroSection() {
-  const heroRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (heroRef.current) {
-        const scrollY = window.scrollY
-        const parallaxElements = heroRef.current.querySelectorAll('[data-parallax]')
-        parallaxElements.forEach((el) => {
-          const speed = parseFloat((el as HTMLElement).dataset.parallax || '0')
-          ;(el as HTMLElement).style.transform = `translateY(${scrollY * speed}px)`
-        })
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
-    <section ref={heroRef} className="relative py-24 px-4 overflow-hidden bg-gradient-to-br from-base-100 via-base-100 to-base-200">
-      {/* Decorative geometric elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 border-4 border-primary opacity-10 rotate-12 animate-parallax-float" data-parallax="0.1" />
-      <div className="absolute bottom-32 left-10 w-24 h-24 bg-secondary opacity-5 -rotate-6 animate-parallax-float" data-parallax="-0.05" style={{ animationDelay: '1s' }} />
-
-      <div className="max-w-6xl mx-auto relative">
-        {/* Avatar with dramatic styling */}
-        <div className="mb-12 flex justify-center animate-fade-in">
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full opacity-20 blur-2xl animate-glow-pulse" />
-            <div className="relative w-36 h-36 rounded-full border-4 border-primary p-1 layer-shadow-xl">
-              <Image
-                src="https://github.com/matsubo.png"
-                alt="Yuki Matsukura profile picture"
-                width={144}
-                height={144}
-                priority
-                className="rounded-full object-cover"
-              />
-            </div>
+    <section className="py-16 px-4 bg-base-100 border-b border-base-300">
+      <div className="max-w-4xl mx-auto">
+        {/* Avatar */}
+        <div className="mb-8 flex justify-center">
+          <div className="w-32 h-32 rounded-full border-2 border-base-300 overflow-hidden">
+            <Image
+              src="https://github.com/matsubo.png"
+              alt="Yuki Matsukura profile picture"
+              width={128}
+              height={128}
+              priority
+              className="object-cover"
+            />
           </div>
         </div>
 
-        {/* Hero text with asymmetric layout */}
-        <div className="text-center space-y-6">
-          <div className="space-y-2 animate-fade-in-up animation-delay-100">
-            <h1 className="section-header text-6xl md:text-8xl text-base-content">
-              Yuki Matsukura
-            </h1>
-            <div className="flex items-center justify-center gap-3 flex-wrap">
-              <span className="code-accent text-primary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-current rounded">
-                CTO
-              </span>
-              <span className="text-2xl text-base-content/40">/</span>
-              <span className="code-accent text-primary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-current rounded">
-                Software Engineer
-              </span>
-            </div>
+        {/* Main info */}
+        <div className="text-center space-y-4">
+          <h1 className="section-header text-4xl md:text-5xl text-base-content">
+            Yuki Matsukura
+          </h1>
+
+          <div className="flex items-center justify-center gap-3 flex-wrap text-lg md:text-xl text-base-content/70">
+            <span>CTO</span>
+            <span>•</span>
+            <span>Software Engineer</span>
           </div>
 
-          <p className="section-subtitle text-xl md:text-2xl text-base-content/80 max-w-3xl mx-auto animate-fade-in-up animation-delay-200">
+          <p className="section-subtitle text-lg text-base-content/70 max-w-2xl mx-auto">
             Building scalable systems and innovative solutions for 20+ years
           </p>
 
-          {/* Social Links with neo-brutalist styling */}
-          <nav className="flex flex-wrap justify-center gap-4 mt-12 animate-fade-in-up animation-delay-300" data-parallax="0.05">
+          {/* Social Links */}
+          <nav className="flex flex-wrap justify-center gap-3 pt-6">
             <a
               href="https://github.com/matsubo"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
+              className="btn btn-sm btn-outline"
             >
               GitHub
             </a>
@@ -82,7 +51,7 @@ export function HeroSection() {
               href="https://www.linkedin.com/in/yukimatsukura/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
+              className="btn btn-sm btn-outline"
             >
               LinkedIn
             </a>
@@ -90,7 +59,7 @@ export function HeroSection() {
               href="https://x.com/matsubokkuri"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
+              className="btn btn-sm btn-outline"
             >
               X (Twitter)
             </a>
@@ -98,25 +67,22 @@ export function HeroSection() {
               href="https://blog.teraren.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider gap-2"
+              className="btn btn-sm btn-outline gap-2"
             >
-              <GlobeAltIcon className="w-5 h-5" />
+              <GlobeAltIcon className="w-4 h-4" />
               Blog
             </a>
             <a
               href="https://zenn.dev/matsubokkuri"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
+              className="btn btn-sm btn-outline"
             >
               Zenn
             </a>
           </nav>
         </div>
       </div>
-
-      {/* Bottom accent */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
     </section>
   )
 }
