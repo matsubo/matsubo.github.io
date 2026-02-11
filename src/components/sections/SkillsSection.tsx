@@ -46,137 +46,137 @@ export function SkillsSection() {
         <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up animation-delay-300">
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.languages')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.languages')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Ruby</span>
-                <span className="badge-neo text-primary border-primary">Python</span>
-                <span className="badge-neo text-primary border-primary">TypeScript</span>
-                <span className="badge-neo text-primary border-primary">PHP</span>
-                <span className="badge-neo text-primary border-primary">Java</span>
-                <span className="badge-neo text-primary border-primary">Shell/Bash</span>
+                <span className="badge-neo text-base-content border-base-content">Ruby</span>
+                <span className="badge-neo text-base-content border-base-content">Python</span>
+                <span className="badge-neo text-base-content border-base-content">TypeScript</span>
+                <span className="badge-neo text-base-content border-base-content">PHP</span>
+                <span className="badge-neo text-base-content border-base-content">Java</span>
+                <span className="badge-neo text-base-content border-base-content">Shell/Bash</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.frameworks')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.frameworks')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Ruby on Rails</span>
-                <span className="badge-neo text-primary border-primary">Next.js</span>
-                <span className="badge-neo text-primary border-primary">Astro</span>
-                <span className="badge-neo text-primary border-primary">WordPress</span>
-                <span className="badge-neo text-primary border-primary">Flutter</span>
-                <span className="badge-neo text-primary border-primary">React Native</span>
+                <span className="badge-neo text-base-content border-base-content">Ruby on Rails</span>
+                <span className="badge-neo text-base-content border-base-content">Next.js</span>
+                <span className="badge-neo text-base-content border-base-content">Astro</span>
+                <span className="badge-neo text-base-content border-base-content">WordPress</span>
+                <span className="badge-neo text-base-content border-base-content">Flutter</span>
+                <span className="badge-neo text-base-content border-base-content">React Native</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.cloud')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.cloud')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Docker</span>
-                <span className="badge-neo text-primary border-primary">ECS</span>
-                <span className="badge-neo text-primary border-primary">Fargate</span>
-                <span className="badge-neo text-primary border-primary">GitHub Actions</span>
-                <span className="badge-neo text-primary border-primary">CircleCI</span>
-                <span className="badge-neo text-primary border-primary">Terraform</span>
-                <span className="badge-neo text-primary border-primary">Cloudflare</span>
-                <span className="badge-neo text-primary border-primary">Vercel</span>
-                <span className="badge-neo text-primary border-primary">Netlify</span>
+                <span className="badge-neo text-base-content border-base-content">Docker</span>
+                <span className="badge-neo text-base-content border-base-content">ECS</span>
+                <span className="badge-neo text-base-content border-base-content">Fargate</span>
+                <span className="badge-neo text-base-content border-base-content">GitHub Actions</span>
+                <span className="badge-neo text-base-content border-base-content">CircleCI</span>
+                <span className="badge-neo text-base-content border-base-content">Terraform</span>
+                <span className="badge-neo text-base-content border-base-content">Cloudflare</span>
+                <span className="badge-neo text-base-content border-base-content">Vercel</span>
+                <span className="badge-neo text-base-content border-base-content">Netlify</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.database')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.database')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">MySQL</span>
-                <span className="badge-neo text-primary border-primary">Redis</span>
-                <span className="badge-neo text-primary border-primary">Elasticsearch</span>
-                <span className="badge-neo text-primary border-primary">DynamoDB</span>
-                <span className="badge-neo text-primary border-primary">SQLite</span>
+                <span className="badge-neo text-base-content border-base-content">MySQL</span>
+                <span className="badge-neo text-base-content border-base-content">Redis</span>
+                <span className="badge-neo text-base-content border-base-content">Elasticsearch</span>
+                <span className="badge-neo text-base-content border-base-content">DynamoDB</span>
+                <span className="badge-neo text-base-content border-base-content">SQLite</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.testing')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.testing')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Jest</span>
-                <span className="badge-neo text-primary border-primary">RSpec</span>
-                <span className="badge-neo text-primary border-primary">Pytest</span>
-                <span className="badge-neo text-primary border-primary">Mocha</span>
-                <span className="badge-neo text-primary border-primary">Chai</span>
-                <span className="badge-neo text-primary border-primary">Selenium</span>
-                <span className="badge-neo text-primary border-primary">Cypress</span>
-                <span className="badge-neo text-primary border-primary">Playwright</span>
-                <span className="badge-neo text-primary border-primary">JUnit</span>
+                <span className="badge-neo text-base-content border-base-content">Jest</span>
+                <span className="badge-neo text-base-content border-base-content">RSpec</span>
+                <span className="badge-neo text-base-content border-base-content">Pytest</span>
+                <span className="badge-neo text-base-content border-base-content">Mocha</span>
+                <span className="badge-neo text-base-content border-base-content">Chai</span>
+                <span className="badge-neo text-base-content border-base-content">Selenium</span>
+                <span className="badge-neo text-base-content border-base-content">Cypress</span>
+                <span className="badge-neo text-base-content border-base-content">Playwright</span>
+                <span className="badge-neo text-base-content border-base-content">JUnit</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.api')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.api')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">REST</span>
-                <span className="badge-neo text-primary border-primary">GraphQL</span>
-                <span className="badge-neo text-primary border-primary">gRPC</span>
-                <span className="badge-neo text-primary border-primary">WebSocket</span>
-                <span className="badge-neo text-primary border-primary">WebRTC</span>
-                <span className="badge-neo text-primary border-primary">OpenAPI</span>
-                <span className="badge-neo text-primary border-primary">Swagger</span>
-                <span className="badge-neo text-primary border-primary">Postman</span>
+                <span className="badge-neo text-base-content border-base-content">REST</span>
+                <span className="badge-neo text-base-content border-base-content">GraphQL</span>
+                <span className="badge-neo text-base-content border-base-content">gRPC</span>
+                <span className="badge-neo text-base-content border-base-content">WebSocket</span>
+                <span className="badge-neo text-base-content border-base-content">WebRTC</span>
+                <span className="badge-neo text-base-content border-base-content">OpenAPI</span>
+                <span className="badge-neo text-base-content border-base-content">Swagger</span>
+                <span className="badge-neo text-base-content border-base-content">Postman</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.infrastructure')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.infrastructure')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Linux</span>
-                <span className="badge-neo text-primary border-primary">Debian</span>
-                <span className="badge-neo text-primary border-primary">Ubuntu</span>
-                <span className="badge-neo text-primary border-primary">CentOS</span>
-                <span className="badge-neo text-primary border-primary">TCP/IP</span>
-                <span className="badge-neo text-primary border-primary">Nginx</span>
-                <span className="badge-neo text-primary border-primary">Apache</span>
-                <span className="badge-neo text-primary border-primary">Load Balancer</span>
-                <span className="badge-neo text-primary border-primary">CDN</span>
+                <span className="badge-neo text-base-content border-base-content">Linux</span>
+                <span className="badge-neo text-base-content border-base-content">Debian</span>
+                <span className="badge-neo text-base-content border-base-content">Ubuntu</span>
+                <span className="badge-neo text-base-content border-base-content">CentOS</span>
+                <span className="badge-neo text-base-content border-base-content">TCP/IP</span>
+                <span className="badge-neo text-base-content border-base-content">Nginx</span>
+                <span className="badge-neo text-base-content border-base-content">Apache</span>
+                <span className="badge-neo text-base-content border-base-content">Load Balancer</span>
+                <span className="badge-neo text-base-content border-base-content">CDN</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.messageQueue')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.messageQueue')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">SQS</span>
-                <span className="badge-neo text-primary border-primary">SNS</span>
-                <span className="badge-neo text-primary border-primary">Pub/Sub</span>
+                <span className="badge-neo text-base-content border-base-content">SQS</span>
+                <span className="badge-neo text-base-content border-base-content">SNS</span>
+                <span className="badge-neo text-base-content border-base-content">Pub/Sub</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.versionControl')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.versionControl')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">Git</span>
-                <span className="badge-neo text-primary border-primary">GitHub</span>
-                <span className="badge-neo text-primary border-primary">GitLab</span>
-                <span className="badge-neo text-primary border-primary">Bitbucket</span>
-                <span className="badge-neo text-primary border-primary">VS Code</span>
-                <span className="badge-neo text-primary border-primary">Vim</span>
+                <span className="badge-neo text-base-content border-base-content">Git</span>
+                <span className="badge-neo text-base-content border-base-content">GitHub</span>
+                <span className="badge-neo text-base-content border-base-content">GitLab</span>
+                <span className="badge-neo text-base-content border-base-content">Bitbucket</span>
+                <span className="badge-neo text-base-content border-base-content">VS Code</span>
+                <span className="badge-neo text-base-content border-base-content">Vim</span>
               </div>
             </div>
           </div>
           <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
             <div className="card-body p-6">
-              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.ai')}</h3>
+              <h3 className="section-header text-2xl mb-4 text-base-content">{t('skills.ai')}</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-neo text-primary border-primary">OpenAI</span>
-                <span className="badge-neo text-primary border-primary">Anthropic</span>
-                <span className="badge-neo text-primary border-primary">Groq</span>
-                <span className="badge-neo text-primary border-primary">Vertex AI</span>
-                <span className="badge-neo text-primary border-primary">LangChain</span>
+                <span className="badge-neo text-base-content border-base-content">OpenAI</span>
+                <span className="badge-neo text-base-content border-base-content">Anthropic</span>
+                <span className="badge-neo text-base-content border-base-content">Groq</span>
+                <span className="badge-neo text-base-content border-base-content">Vertex AI</span>
+                <span className="badge-neo text-base-content border-base-content">LangChain</span>
               </div>
             </div>
           </div>
