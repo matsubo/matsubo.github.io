@@ -309,6 +309,28 @@
         "tech": "GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data"
       }
     },
+    "pwaApps": {
+      "title": "プログレッシブウェブアプリ",
+      "subtitle": "アウトドア活動向けオフライン対応ユーティリティアプリケーション",
+      "sotaPeakFinder": {
+        "title": "SOTA Peak Finder",
+        "subtitle": "アマチュア無線運用のための山頂検索ツール",
+        "description": "SOTA（Summits On The Air）アクティベーター向けに、アマチュア無線運用のための山頂を特定・検索できるプログレッシブウェブアプリです。山頂データをキャッシュしてオフラインで動作するため、インターネット接続のない山岳地帯での使用に最適です。",
+        "button": "アプリを起動"
+      },
+      "offlineQth": {
+        "title": "Offline QTH Locator",
+        "subtitle": "アマチュア無線グリッドスクエア計算ツール",
+        "description": "アマチュア無線運用者向けに、GPS座標からQTHロケーター（メイデンヘッドグリッドスクエア）を計算・変換するオフライン対応ツールです。VHF/UHF運用やコンテストに必須のツールで、インターネット接続なしで完全に動作します。",
+        "button": "アプリを起動"
+      },
+      "marathonPace": {
+        "title": "Marathon Pace Calculator",
+        "subtitle": "ランニングペース・ラップタイム計算ツール",
+        "description": "ランナーやトライアスリート向けの包括的なペース計算ツールです。様々なレース距離に対する目標ペース、ラップタイム、完走タイムを計算できます。完全オフラインで動作するため、トレーニングランやレース中の使用に最適です。",
+        "button": "アプリを起動"
+      }
+    },
     "apiServices": {
       "title": "APIサービスコレクション",
       "subtitle": "日本データ向けの最新REST & GraphQL API",

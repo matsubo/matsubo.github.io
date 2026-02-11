@@ -309,6 +309,28 @@
         "tech": "GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data"
       }
     },
+    "pwaApps": {
+      "title": "Progressive Web Apps",
+      "subtitle": "Offline-capable utility applications for outdoor activities",
+      "sotaPeakFinder": {
+        "title": "SOTA Peak Finder",
+        "subtitle": "Summit locator for amateur radio operations",
+        "description": "A Progressive Web App designed for SOTA (Summits On The Air) activators to identify and locate summits for amateur radio operations. Works offline with cached summit data, making it perfect for use in remote mountain locations without internet connectivity.",
+        "button": "Launch app"
+      },
+      "offlineQth": {
+        "title": "Offline QTH Locator",
+        "subtitle": "Ham radio grid square calculator",
+        "description": "An offline-capable tool for amateur radio operators to calculate and convert QTH locators (Maidenhead grid squares) from GPS coordinates. Essential for VHF/UHF operations and contesting, with full functionality without internet connection.",
+        "button": "Launch app"
+      },
+      "marathonPace": {
+        "title": "Marathon Pace Calculator",
+        "subtitle": "Running pace and split time calculator",
+        "description": "A comprehensive pace calculator for runners and triathletes. Calculate target paces, split times, and finish times for various race distances. Works completely offline, making it ideal for use during training runs and races.",
+        "button": "Launch app"
+      }
+    },
     "apiServices": {
       "title": "API Services Collection",
       "subtitle": "Modern REST & GraphQL APIs for Japanese data",

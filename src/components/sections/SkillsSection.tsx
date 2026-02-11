@@ -7,169 +7,176 @@ export function SkillsSection() {
   const t = useTranslations()
 
   return (
-    <section className="py-16 px-4 bg-base-100">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-3 mb-8">
-          <CodeBracketIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">{t('skills.title')}</h2>
+    <section className="py-20 px-4 bg-base-200 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-10 left-0 w-72 h-72 bg-secondary opacity-5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 right-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl" />
+
+      <div className="max-w-6xl mx-auto relative">
+        <div className="flex items-center gap-4 mb-12 animate-fade-in-up">
+          <CodeBracketIcon className="w-10 h-10 text-primary" />
+          <h2 className="section-header text-5xl md:text-6xl text-base-content">{t('skills.title')}</h2>
         </div>
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            <SparklesIcon className="w-6 h-6 text-primary" />
+        <div className="mb-16 animate-fade-in-up animation-delay-100">
+          <h3 className="section-header text-3xl md:text-4xl mb-8 flex items-center gap-3 text-base-content">
+            <SparklesIcon className="w-8 h-8 text-secondary" />
             {t('skills.expertSkills')}
           </h3>
-          <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
             {Array.isArray(t.raw('skills.mainSkills')) &&
               t.raw('skills.mainSkills').map((skill: any, index: number) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium">{skill.name}</span>
-                    <span className="text-sm text-base-content/70">{skill.level}%</span>
+                <div key={index} className="group">
+                  <div className="flex justify-between mb-2">
+                    <span className="code-accent text-base font-semibold text-base-content">{skill.name}</span>
+                    <span className="code-accent text-sm font-bold text-primary">{skill.level}%</span>
                   </div>
-                  <div className="w-full bg-base-300 rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full transition-all duration-500" style={{ width: `${skill.level}%` }}></div>
+                  <div className="relative h-3 bg-base-300 border-2 border-neutral overflow-hidden">
+                    <div
+                      className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out group-hover:brightness-110"
+                      style={{ width: `${skill.level}%`, animationDelay: `${index * 100}ms` }}
+                    />
                   </div>
                 </div>
               ))}
           </div>
         </div>
-        <div>
-          <h3 className="text-2xl font-semibold mb-6">Other Technologies</h3>
+        <div className="animate-fade-in-up animation-delay-200">
+          <h3 className="section-header text-3xl md:text-4xl mb-8 text-base-content">Other Technologies</h3>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.languages')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-primary badge-lg">Ruby</span>
-                <span className="badge badge-primary badge-lg">Python</span>
-                <span className="badge badge-primary badge-lg">TypeScript</span>
-                <span className="badge badge-primary badge-lg">PHP</span>
-                <span className="badge badge-primary badge-lg">Java</span>
-                <span className="badge badge-primary badge-lg">Shell/Bash</span>
+        <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up animation-delay-300">
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.languages')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Ruby</span>
+                <span className="badge-neo text-primary border-primary">Python</span>
+                <span className="badge-neo text-primary border-primary">TypeScript</span>
+                <span className="badge-neo text-primary border-primary">PHP</span>
+                <span className="badge-neo text-primary border-primary">Java</span>
+                <span className="badge-neo text-primary border-primary">Shell/Bash</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.frameworks')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-secondary badge-lg">Ruby on Rails</span>
-                <span className="badge badge-secondary badge-lg">Next.js</span>
-                <span className="badge badge-secondary badge-lg">Astro</span>
-                <span className="badge badge-secondary badge-lg">WordPress</span>
-                <span className="badge badge-secondary badge-lg">Flutter</span>
-                <span className="badge badge-secondary badge-lg">React Native</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.frameworks')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Ruby on Rails</span>
+                <span className="badge-neo text-primary border-primary">Next.js</span>
+                <span className="badge-neo text-primary border-primary">Astro</span>
+                <span className="badge-neo text-primary border-primary">WordPress</span>
+                <span className="badge-neo text-primary border-primary">Flutter</span>
+                <span className="badge-neo text-primary border-primary">React Native</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.cloud')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-accent badge-lg">Docker</span>
-                <span className="badge badge-accent badge-lg">ECS</span>
-                <span className="badge badge-accent badge-lg">Fargate</span>
-                <span className="badge badge-accent badge-lg">GitHub Actions</span>
-                <span className="badge badge-accent badge-lg">CircleCI</span>
-                <span className="badge badge-accent badge-lg">Terraform</span>
-                <span className="badge badge-accent badge-lg">Cloudflare</span>
-                <span className="badge badge-accent badge-lg">Vercel</span>
-                <span className="badge badge-accent badge-lg">Netlify</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.cloud')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Docker</span>
+                <span className="badge-neo text-primary border-primary">ECS</span>
+                <span className="badge-neo text-primary border-primary">Fargate</span>
+                <span className="badge-neo text-primary border-primary">GitHub Actions</span>
+                <span className="badge-neo text-primary border-primary">CircleCI</span>
+                <span className="badge-neo text-primary border-primary">Terraform</span>
+                <span className="badge-neo text-primary border-primary">Cloudflare</span>
+                <span className="badge-neo text-primary border-primary">Vercel</span>
+                <span className="badge-neo text-primary border-primary">Netlify</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.database')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-info badge-lg">MySQL</span>
-                <span className="badge badge-info badge-lg">Redis</span>
-                <span className="badge badge-info badge-lg">Elasticsearch</span>
-                <span className="badge badge-info badge-lg">DynamoDB</span>
-                <span className="badge badge-info badge-lg">SQLite</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.database')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">MySQL</span>
+                <span className="badge-neo text-primary border-primary">Redis</span>
+                <span className="badge-neo text-primary border-primary">Elasticsearch</span>
+                <span className="badge-neo text-primary border-primary">DynamoDB</span>
+                <span className="badge-neo text-primary border-primary">SQLite</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.testing')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-warning badge-lg">Jest</span>
-                <span className="badge badge-warning badge-lg">RSpec</span>
-                <span className="badge badge-warning badge-lg">Pytest</span>
-                <span className="badge badge-warning badge-lg">Mocha</span>
-                <span className="badge badge-warning badge-lg">Chai</span>
-                <span className="badge badge-warning badge-lg">Selenium</span>
-                <span className="badge badge-warning badge-lg">Cypress</span>
-                <span className="badge badge-warning badge-lg">Playwright</span>
-                <span className="badge badge-warning badge-lg">JUnit</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.testing')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Jest</span>
+                <span className="badge-neo text-primary border-primary">RSpec</span>
+                <span className="badge-neo text-primary border-primary">Pytest</span>
+                <span className="badge-neo text-primary border-primary">Mocha</span>
+                <span className="badge-neo text-primary border-primary">Chai</span>
+                <span className="badge-neo text-primary border-primary">Selenium</span>
+                <span className="badge-neo text-primary border-primary">Cypress</span>
+                <span className="badge-neo text-primary border-primary">Playwright</span>
+                <span className="badge-neo text-primary border-primary">JUnit</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.api')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-success badge-lg">REST</span>
-                <span className="badge badge-success badge-lg">GraphQL</span>
-                <span className="badge badge-success badge-lg">gRPC</span>
-                <span className="badge badge-success badge-lg">WebSocket</span>
-                <span className="badge badge-success badge-lg">WebRTC</span>
-                <span className="badge badge-success badge-lg">OpenAPI</span>
-                <span className="badge badge-success badge-lg">Swagger</span>
-                <span className="badge badge-success badge-lg">Postman</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.api')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">REST</span>
+                <span className="badge-neo text-primary border-primary">GraphQL</span>
+                <span className="badge-neo text-primary border-primary">gRPC</span>
+                <span className="badge-neo text-primary border-primary">WebSocket</span>
+                <span className="badge-neo text-primary border-primary">WebRTC</span>
+                <span className="badge-neo text-primary border-primary">OpenAPI</span>
+                <span className="badge-neo text-primary border-primary">Swagger</span>
+                <span className="badge-neo text-primary border-primary">Postman</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.infrastructure')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-lg">Linux</span>
-                <span className="badge badge-lg">Debian</span>
-                <span className="badge badge-lg">Ubuntu</span>
-                <span className="badge badge-lg">CentOS</span>
-                <span className="badge badge-lg">TCP/IP</span>
-                <span className="badge badge-lg">Nginx</span>
-                <span className="badge badge-lg">Apache</span>
-                <span className="badge badge-lg">Load Balancer</span>
-                <span className="badge badge-lg">CDN</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.infrastructure')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Linux</span>
+                <span className="badge-neo text-primary border-primary">Debian</span>
+                <span className="badge-neo text-primary border-primary">Ubuntu</span>
+                <span className="badge-neo text-primary border-primary">CentOS</span>
+                <span className="badge-neo text-primary border-primary">TCP/IP</span>
+                <span className="badge-neo text-primary border-primary">Nginx</span>
+                <span className="badge-neo text-primary border-primary">Apache</span>
+                <span className="badge-neo text-primary border-primary">Load Balancer</span>
+                <span className="badge-neo text-primary border-primary">CDN</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.messageQueue')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-error badge-lg">SQS</span>
-                <span className="badge badge-error badge-lg">SNS</span>
-                <span className="badge badge-error badge-lg">Pub/Sub</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.messageQueue')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">SQS</span>
+                <span className="badge-neo text-primary border-primary">SNS</span>
+                <span className="badge-neo text-primary border-primary">Pub/Sub</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.versionControl')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-lg">Git</span>
-                <span className="badge badge-lg">GitHub</span>
-                <span className="badge badge-lg">GitLab</span>
-                <span className="badge badge-lg">Bitbucket</span>
-                <span className="badge badge-lg">VS Code</span>
-                <span className="badge badge-lg">Vim</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.versionControl')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">Git</span>
+                <span className="badge-neo text-primary border-primary">GitHub</span>
+                <span className="badge-neo text-primary border-primary">GitLab</span>
+                <span className="badge-neo text-primary border-primary">Bitbucket</span>
+                <span className="badge-neo text-primary border-primary">VS Code</span>
+                <span className="badge-neo text-primary border-primary">Vim</span>
               </div>
             </div>
           </div>
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">{t('skills.ai')}</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge badge-primary badge-lg">OpenAI</span>
-                <span className="badge badge-primary badge-lg">Anthropic</span>
-                <span className="badge badge-primary badge-lg">Groq</span>
-                <span className="badge badge-primary badge-lg">Vertex AI</span>
-                <span className="badge badge-primary badge-lg">LangChain</span>
+          <div className="card bg-base-100 border-3 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card-body p-6">
+              <h3 className="section-header text-2xl mb-4 text-primary">{t('skills.ai')}</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="badge-neo text-primary border-primary">OpenAI</span>
+                <span className="badge-neo text-primary border-primary">Anthropic</span>
+                <span className="badge-neo text-primary border-primary">Groq</span>
+                <span className="badge-neo text-primary border-primary">Vertex AI</span>
+                <span className="badge-neo text-primary border-primary">LangChain</span>
               </div>
             </div>
           </div>

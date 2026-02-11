@@ -19,39 +19,42 @@ export function ProjectsSection() {
   const t = useTranslations()
 
   return (
-    <section className="py-16 px-4 bg-base-200">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-3 mb-8">
-          <RocketLaunchIcon className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold">{t('projects.title')}</h2>
+    <section className="py-20 px-4 bg-base-100 relative overflow-hidden">
+      {/* Decorative background */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl" />
+
+      <div className="max-w-6xl mx-auto relative">
+        <div className="flex items-center gap-4 mb-12 animate-fade-in-up">
+          <RocketLaunchIcon className="w-10 h-10 text-secondary" />
+          <h2 className="section-header text-5xl md:text-6xl text-base-content">{t('projects.title')}</h2>
         </div>
 
         {/* AI Tools */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-2 flex items-center gap-2">
-            <CpuChipIcon className="w-6 h-6 text-secondary" />
+        <div className="mb-16 animate-fade-in-up animation-delay-100">
+          <h3 className="section-header text-3xl md:text-4xl mb-3 flex items-center gap-3 text-base-content">
+            <CpuChipIcon className="w-8 h-8 text-primary" />
             {t('projects.aiTools.title')}
           </h3>
-          <p className="text-base-content/70 mb-6">{t('projects.aiTools.subtitle')}</p>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
-              <figure>
+          <p className="section-subtitle text-lg text-base-content/60 mb-8">{t('projects.aiTools.subtitle')}</p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="card bg-base-200 border-2 border-primary layer-shadow-xl card-hover-lift overflow-hidden">
+              <figure className="card-image-zoom">
                 <Image
                   src={aiModeratorImg}
                   alt="AI Moderator"
-                  className="w-full h-48 object-cover brightness-75 hover:brightness-100 transition-all duration-300"
+                  className="w-full h-56 object-cover"
                 />
               </figure>
-              <div className="card-body">
-                <h4 className="card-title">{t('projects.aiTools.moderator.title')}</h4>
-                <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.moderator.subtitle')}</p>
-                <p className="text-base-content/80 whitespace-pre-line">{t('projects.aiTools.moderator.description')}</p>
-                <div className="card-actions justify-end mt-4">
+              <div className="card-body p-6">
+                <h4 className="section-header text-2xl mb-2 text-base-content">{t('projects.aiTools.moderator.title')}</h4>
+                <p className="code-accent text-sm text-primary font-semibold mb-3">{t('projects.aiTools.moderator.subtitle')}</p>
+                <p className="section-subtitle text-base text-base-content/70 whitespace-pre-line">{t('projects.aiTools.moderator.description')}</p>
+                <div className="card-actions justify-end mt-6">
                   <a
                     href="https://ai-moderator.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary border-2 border-primary font-mono text-xs uppercase tracking-wider btn-glow"
                   >
                     {t('projects.aiTools.moderator.button')}
                   </a>
@@ -59,26 +62,92 @@ export function ProjectsSection() {
               </div>
             </div>
 
-            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
-              <figure>
+            <div className="card bg-base-200 border-2 border-primary layer-shadow-xl card-hover-lift overflow-hidden">
+              <figure className="card-image-zoom">
                 <Image
                   src={aiTriathlonImg}
                   alt="AI Triathlon Training"
-                  className="w-full h-48 object-cover brightness-75 hover:brightness-100 transition-all duration-300"
+                  className="w-full h-56 object-cover"
                 />
               </figure>
-              <div className="card-body">
-                <h4 className="card-title">{t('projects.aiTools.triathlon.title')}</h4>
-                <p className="text-sm text-secondary font-semibold">{t('projects.aiTools.triathlon.subtitle')}</p>
-                <p className="text-base-content/80 whitespace-pre-line">{t('projects.aiTools.triathlon.description')}</p>
-                <div className="card-actions justify-end mt-4">
+              <div className="card-body p-6">
+                <h4 className="section-header text-2xl mb-2 text-base-content">{t('projects.aiTools.triathlon.title')}</h4>
+                <p className="code-accent text-sm text-primary font-semibold mb-3">{t('projects.aiTools.triathlon.subtitle')}</p>
+                <p className="section-subtitle text-base text-base-content/70 whitespace-pre-line">{t('projects.aiTools.triathlon.description')}</p>
+                <div className="card-actions justify-end mt-6">
                   <a
                     href="https://triathlon.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary border-2 border-primary font-mono text-xs uppercase tracking-wider btn-glow"
                   >
                     {t('projects.aiTools.triathlon.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* PWA Apps */}
+        <div className="mb-16 animate-fade-in-up animation-delay-200">
+          <h3 className="section-header text-3xl md:text-4xl mb-3 text-base-content">
+            {t('projects.pwaApps.title')}
+          </h3>
+          <p className="section-subtitle text-lg text-base-content/60 mb-8">{t('projects.pwaApps.subtitle')}</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* SOTA Peak Finder */}
+            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
+              <div className="card-body p-6">
+                <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.sotaPeakFinder.title')}</h4>
+                <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.sotaPeakFinder.subtitle')}</p>
+                <p className="section-subtitle text-sm text-base-content/70 leading-relaxed mb-4">{t('projects.pwaApps.sotaPeakFinder.description')}</p>
+                <div className="card-actions justify-end mt-auto">
+                  <a
+                    href="https://matsubo.github.io/sota-peak-finder/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-primary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                  >
+                    {t('projects.pwaApps.sotaPeakFinder.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Offline QTH */}
+            <div className="card bg-base-200 border-2 border-secondary layer-shadow-lg card-hover-lift">
+              <div className="card-body p-6">
+                <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.offlineQth.title')}</h4>
+                <p className="code-accent text-xs text-secondary font-semibold mb-3">{t('projects.pwaApps.offlineQth.subtitle')}</p>
+                <p className="section-subtitle text-sm text-base-content/70 leading-relaxed mb-4">{t('projects.pwaApps.offlineQth.description')}</p>
+                <div className="card-actions justify-end mt-auto">
+                  <a
+                    href="https://matsubo.github.io/offline-qth/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-secondary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                  >
+                    {t('projects.pwaApps.offlineQth.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Marathon Pace */}
+            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
+              <div className="card-body p-6">
+                <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.marathonPace.title')}</h4>
+                <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.marathonPace.subtitle')}</p>
+                <p className="section-subtitle text-sm text-base-content/70 leading-relaxed mb-4">{t('projects.pwaApps.marathonPace.description')}</p>
+                <div className="card-actions justify-end mt-auto">
+                  <a
+                    href="https://matsubo.github.io/marathon-pace/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-primary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                  >
+                    {t('projects.pwaApps.marathonPace.button')}
                   </a>
                 </div>
               </div>
