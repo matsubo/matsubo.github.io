@@ -32,7 +32,7 @@ export function SkillsSection() {
                   </div>
                   <div className="relative h-3 bg-base-300 border-2 border-neutral overflow-hidden">
                     <div
-                      className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out group-hover:brightness-110"
+                      className="absolute inset-y-0 left-0 bg-primary transition-all duration-1000 ease-out group-hover:brightness-110"
                       style={{ width: `${skill.level}%`, animationDelay: `${index * 100}ms` }}
                     />
                   </div>

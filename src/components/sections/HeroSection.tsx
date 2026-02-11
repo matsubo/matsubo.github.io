@@ -51,22 +51,21 @@ export function HeroSection() {
         <div className="text-center space-y-6">
           <div className="space-y-2 animate-fade-in-up animation-delay-100">
             <h1 className="section-header text-6xl md:text-8xl text-base-content">
-              Yuki <span className="text-shimmer">Matsukura</span>
+              Yuki Matsukura
             </h1>
             <div className="flex items-center justify-center gap-3 flex-wrap">
-              <span className="code-accent text-primary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-primary rounded">
+              <span className="code-accent text-primary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-current rounded">
                 CTO
               </span>
-              <span className="text-2xl text-accent">/</span>
-              <span className="code-accent text-secondary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-secondary rounded">
+              <span className="text-2xl text-base-content/40">/</span>
+              <span className="code-accent text-primary text-lg md:text-xl font-semibold px-4 py-1 border-2 border-current rounded">
                 Software Engineer
               </span>
             </div>
           </div>
 
           <p className="section-subtitle text-xl md:text-2xl text-base-content/80 max-w-3xl mx-auto animate-fade-in-up animation-delay-200">
-            Building <span className="font-bold text-primary">scalable systems</span> and{' '}
-            <span className="font-bold text-secondary">innovative solutions</span> for 20+ years
+            Building scalable systems and innovative solutions for 20+ years
           </p>
 
           {/* Social Links with neo-brutalist styling */}
@@ -83,7 +82,7 @@ export function HeroSection() {
               href="https://www.linkedin.com/in/yukimatsukura/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline btn-primary border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider btn-glow"
+              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
             >
               LinkedIn
             </a>
@@ -99,7 +98,7 @@ export function HeroSection() {
               href="https://blog.teraren.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline btn-secondary border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider gap-2"
+              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider gap-2"
             >
               <GlobeAltIcon className="w-5 h-5" />
               Blog
@@ -108,7 +107,7 @@ export function HeroSection() {
               href="https://zenn.dev/matsubokkuri"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary border-2 border-secondary transition-all duration-300 font-mono text-sm uppercase tracking-wider btn-glow"
+              className="btn btn-outline border-2 transition-all duration-300 font-mono text-sm uppercase tracking-wider"
             >
               Zenn
             </a>

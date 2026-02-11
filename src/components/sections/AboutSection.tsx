@@ -17,7 +17,7 @@ export function AboutSection() {
             <h2 className="section-header text-5xl md:text-6xl text-base-content mb-4">
               {t('about.title')}
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary" />
+            <div className="w-24 h-1 bg-primary" />
           </div>
 
           {/* Content with refined typography */}

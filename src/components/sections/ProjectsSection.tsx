@@ -107,7 +107,7 @@ export function ProjectsSection() {
                     href="https://matsubo.github.io/sota-peak-finder/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-primary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
                   >
                     {t('projects.pwaApps.sotaPeakFinder.button')}
                   </a>
@@ -116,17 +116,17 @@ export function ProjectsSection() {
             </div>
 
             {/* Offline QTH */}
-            <div className="card bg-base-200 border-2 border-secondary layer-shadow-lg card-hover-lift">
+            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
               <div className="card-body p-6">
                 <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.offlineQth.title')}</h4>
-                <p className="code-accent text-xs text-secondary font-semibold mb-3">{t('projects.pwaApps.offlineQth.subtitle')}</p>
+                <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.offlineQth.subtitle')}</p>
                 <p className="section-subtitle text-sm text-base-content/70 leading-relaxed mb-4">{t('projects.pwaApps.offlineQth.description')}</p>
                 <div className="card-actions justify-end mt-auto">
                   <a
                     href="https://matsubo.github.io/offline-qth/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-secondary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
                   >
                     {t('projects.pwaApps.offlineQth.button')}
                   </a>
@@ -145,7 +145,7 @@ export function ProjectsSection() {
                     href="https://matsubo.github.io/marathon-pace/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-primary btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
                   >
                     {t('projects.pwaApps.marathonPace.button')}
                   </a>
