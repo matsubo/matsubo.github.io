@@ -37,27 +37,16 @@ Yuki Matsukura is a CTO and software engineer with over 20 years of experience b
 
 ## Technical Skills
 
-### Expert Level (85-95%)
-- **Languages**: Ruby (95%), JavaScript/TypeScript (90%), Python (80%)
-- **Frameworks**: Ruby on Rails (95%), React (90%), Next.js/Astro (85%)
-- **Databases**: MySQL/PostgreSQL (90%), Redis (85%)
-- **Cloud & DevOps**: AWS (85%), Docker/Kubernetes (85%)
-
-### Proficient Level (75%)
-- **Cloud**: GCP (75%)
-- **Databases**: MongoDB (75%)
-
-### Other Technologies
-- **Languages**: PHP, Java, Shell/Bash
-- **Frameworks**: WordPress, Flutter, React Native
-- **Cloud & DevOps**: ECS, Fargate, GitHub Actions, CircleCI, Terraform, Cloudflare, Vercel, Netlify
-- **Databases**: Elasticsearch, DynamoDB, SQLite
+- **Languages**: Ruby, Python, JavaScript, TypeScript, PHP, Java, Shell/Bash
+- **Frameworks**: Ruby on Rails, React, Next.js, Astro, WordPress, Flutter, React Native
+- **Cloud & DevOps**: AWS, GCP, Docker, Kubernetes, ECS, Fargate, GitHub Actions, CircleCI, Terraform, Cloudflare, Vercel, Netlify
+- **Databases**: MySQL, PostgreSQL, Redis, MongoDB, Elasticsearch, DynamoDB, SQLite
 - **Testing**: Jest, RSpec, Pytest, Mocha, Chai, Selenium, Cypress, Playwright, JUnit
 - **API**: REST, GraphQL, gRPC, WebSocket, WebRTC, OpenAPI, Swagger, Postman
 - **Infrastructure**: Linux, Debian, Ubuntu, CentOS, TCP/IP, Nginx, Apache, Load Balancer, CDN
-- **Message Queue**: RabbitMQ, Kafka, SQS, SNS, Pub/Sub
+- **Message Queue**: SQS, SNS, Pub/Sub
 - **Version Control**: Git, GitHub, GitLab, Bitbucket, VS Code, Vim
-- **AI & ML**: OpenAI, Anthropic, Groq, LangChain, TensorFlow, PyTorch, scikit-learn
+- **AI & ML**: OpenAI, Anthropic, Groq, Vertex AI, LangChain
 
 ## Personality & Work Style
 - **MBTI Type**: INTP-A (Logician - Assertive)

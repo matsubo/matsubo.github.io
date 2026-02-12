@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { CodeBracketIcon, SparklesIcon } from '@heroicons/react/24/outline'
+import { CodeBracketIcon } from '@heroicons/react/24/outline'
 
 export function SkillsSection() {
   const t = useTranslations()
@@ -13,29 +13,6 @@ export function SkillsSection() {
           <CodeBracketIcon className="w-8 h-8 text-primary" />
           <h2 className="text-4xl font-bold">{t('skills.title')}</h2>
         </div>
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            <SparklesIcon className="w-6 h-6 text-primary" />
-            {t('skills.expertSkills')}
-          </h3>
-          <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-            {Array.isArray(t.raw('skills.mainSkills')) &&
-              t.raw('skills.mainSkills').map((skill: any, index: number) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium">{skill.name}</span>
-                    <span className="text-sm text-base-content/70">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-base-300 rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full transition-all duration-500" style={{ width: `${skill.level}%` }}></div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div>
-          <h3 className="text-2xl font-semibold mb-6">Other Technologies</h3>
-        </div>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card bg-base-200">
             <div className="card-body">
@@ -43,6 +20,7 @@ export function SkillsSection() {
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-primary badge-lg">Ruby</span>
                 <span className="badge badge-primary badge-lg">Python</span>
+                <span className="badge badge-primary badge-lg">JavaScript</span>
                 <span className="badge badge-primary badge-lg">TypeScript</span>
                 <span className="badge badge-primary badge-lg">PHP</span>
                 <span className="badge badge-primary badge-lg">Java</span>
@@ -55,6 +33,7 @@ export function SkillsSection() {
               <h3 className="card-title text-xl mb-4">{t('skills.frameworks')}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-secondary badge-lg">Ruby on Rails</span>
+                <span className="badge badge-secondary badge-lg">React</span>
                 <span className="badge badge-secondary badge-lg">Next.js</span>
                 <span className="badge badge-secondary badge-lg">Astro</span>
                 <span className="badge badge-secondary badge-lg">WordPress</span>
@@ -67,7 +46,10 @@ export function SkillsSection() {
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">{t('skills.cloud')}</h3>
               <div className="flex flex-wrap gap-2">
+                <span className="badge badge-accent badge-lg">AWS</span>
+                <span className="badge badge-accent badge-lg">GCP</span>
                 <span className="badge badge-accent badge-lg">Docker</span>
+                <span className="badge badge-accent badge-lg">Kubernetes</span>
                 <span className="badge badge-accent badge-lg">ECS</span>
                 <span className="badge badge-accent badge-lg">Fargate</span>
                 <span className="badge badge-accent badge-lg">GitHub Actions</span>
@@ -84,7 +66,9 @@ export function SkillsSection() {
               <h3 className="card-title text-xl mb-4">{t('skills.database')}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-info badge-lg">MySQL</span>
+                <span className="badge badge-info badge-lg">PostgreSQL</span>
                 <span className="badge badge-info badge-lg">Redis</span>
+                <span className="badge badge-info badge-lg">MongoDB</span>
                 <span className="badge badge-info badge-lg">Elasticsearch</span>
                 <span className="badge badge-info badge-lg">DynamoDB</span>
                 <span className="badge badge-info badge-lg">SQLite</span>

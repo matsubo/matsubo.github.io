@@ -120,22 +120,7 @@
     "infrastructure": "Infrastructure & Servers",
     "messageQueue": "Message Queue & Streaming",
     "versionControl": "Version Control & Tools",
-    "ai": "AI & Machine Learning",
-    "expertSkills": "Expert Level",
-    "mainSkills": [
-      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
-      { "name": "React", "level": 90, "category": "frameworks" },
-      { "name": "Ruby", "level": 95, "category": "languages" },
-      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
-      { "name": "AWS", "level": 85, "category": "cloud" },
-      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
-      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
-      { "name": "Redis", "level": 85, "category": "database" },
-      { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
-      { "name": "GCP", "level": 75, "category": "cloud" },
-      { "name": "MongoDB", "level": 75, "category": "database" }
-    ]
+    "ai": "AI & Machine Learning"
   },
   "hobbies": {
     "title": "Hobbies & Personal Interests",
