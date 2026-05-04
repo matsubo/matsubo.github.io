@@ -72,6 +72,18 @@
         "meta": "CEDEC 2012",
         "description": "How to Develop Attractive Games for 1 Billion Users",
         "button": "View Coverage"
+      },
+      "codezine": {
+        "title": "ORM Library Feature Comparison in PHP",
+        "meta": "CodeZine • April 15, 2011",
+        "description": "Comprehensive comparison of various ORM libraries for PHP development, analyzing features and performance benchmarks. This article examines advantages and disadvantages to help architects select appropriate ORM libraries, covering improved database schema maintainability and reduced SQL dependency.",
+        "button": "View Article"
+      },
+      "greeLabs": {
+        "title": "How to Make Mobile Sites Smartphone-Ready in 1 Hour",
+        "meta": "GREE Tech Blog • April 25, 2011 • 2,221 Hatena Bookmarks (All-time #1)",
+        "description": "Detailed guide on adapting existing mobile websites for smartphones. Covers 8 steps from UTF-8/HTML5 conversion, jQuery Mobile integration, emoji replacement, to HTML5 validation. This article became the all-time most bookmarked post on GREE Tech Blog, demonstrating its significant impact on the Japanese developer community.",
+        "button": "View Article"
       }
     }
   },
@@ -145,15 +157,91 @@
       "aiTools": "Developed AI-powered tools for training analysis",
       "marathon": "Full Marathon PB: 2:58:41 (2016 Tokyo Marathon)",
       "olympicDistance": "Olympic Distance PB: 2:11:55 (2018 Tokyo Watarase Triathlon)",
-      "openwater": "Shonan Open Water 10km Complete",
+      "openwater": "Shonan Open Water 10km Complete (Aug 2014)",
       "ironman703": "IRONMAN 70.3 Asia-Pacific Championship (5:00:47)"
     },
-    "writing": {
-      "title": "Technical Writing",
-      "zenn": "88 articles published on Zenn",
-      "blog": "19-year tech blog (blog.teraren.com)",
-      "editor": "SFC CNS Guide editor for 3 years, served as Editor-in-Chief",
-      "gree": "GREE Engineers' Blog article (2,221 Hatena Bookmarks)"
+    "amateurRadio": {
+      "title": "Amateur Radio",
+      "callSign": "JE1WFV",
+      "description": "Enjoying technology and nature through amateur radio. Main activities include APRS, SOTA, and digital simple radio.",
+      "activities": [
+        {
+          "title": "APRS (Automatic Packet Reporting System)",
+          "description": "Position reporting system combining radio and GPS"
+        },
+        {
+          "title": "SOTA (Summits On The Air)",
+          "description": "Amateur radio operation from mountain summits"
+        },
+        {
+          "title": "Digital Simple Radio",
+          "description": "Digital radio for business and leisure use"
+        }
+      ],
+      "website": "https://je1wfv.teraren.com/"
+    },
+    "diy": {
+      "title": "DIY & Home Projects",
+      "description": "Practical DIY projects for home renovation and repairs. Leveraging technical expertise to tackle everything from faucet installation to appliance repairs.",
+      "projects": [
+        {
+          "title": "DIY Installation of LIXIL Touchless Faucet",
+          "url": "https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish",
+          "description": "Successfully installed touchless water faucet system"
+        },
+        {
+          "title": "DIY Repair of Panasonic Built-in Dishwasher",
+          "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
+          "description": "Built-in dishwasher repair project"
+        },
+        {
+          "title": "Home Temperature Monitoring System with Raspberry Pi",
+          "url": "https://zenn.dev/minedia/articles/8cdda8c874e3795225bc",
+          "description": "IoT-based temperature monitoring system"
+        },
+        {
+          "title": "Wood Deck Construction",
+          "url": "https://teraren.com/blog/wood-deck/",
+          "description": "DIY wood deck built in backyard"
+        },
+        {
+          "title": "Downlight Replacement",
+          "url": "https://teraren.com/blog/downlight-living/",
+          "description": "DIY replacement of living room downlights"
+        },
+        {
+          "title": "Daikin Air Conditioner Deep Cleaning",
+          "url": "https://teraren.com/blog/daikin-karaie-howto/",
+          "description": "Comprehensive AC maintenance project"
+        }
+      ]
+    },
+    "travel": {
+      "title": "Travel",
+      "description": "Exploring cultures and history around the world. Over 18 years of travel memories documented.",
+      "allTravels": "View All Travel Stories",
+      "destinations": [
+        {
+          "title": "Turkey Journey",
+          "url": "https://diary.teraren.com/posts/2022-10-02-turkey",
+          "description": "Istanbul, Cappadocia"
+        },
+        {
+          "title": "Central Europe",
+          "url": "https://diary.teraren.com/posts/2018-07-24-vienna-praha",
+          "description": "Vienna, Salzburg, Prague"
+        },
+        {
+          "title": "Maldives",
+          "url": "https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli",
+          "description": "Olhuveli Beach & Spa Resort"
+        },
+        {
+          "title": "Croatia",
+          "url": "https://diary.teraren.com/posts/2019-07-11-zagreb-croatia",
+          "description": "Zagreb, Rastoke region"
+        }
+      ]
     },
     "certifications": {
       "title": "Certifications",
@@ -208,15 +296,39 @@
       "subtitle": "Modern intelligent applications for real-world workflows",
       "moderator": {
         "title": "AI Moderator",
-        "subtitle": "AI-powered content moderation system",
-        "description": "Intelligent content filtering and moderation using advanced AI models to ensure safe and appropriate content across platforms.",
-        "button": "Visit site"
+        "subtitle": "Highly Customizable Content Moderation System",
+        "description": "A flexible content moderation system that enables selection of optimal AI models based on specific use cases. Customers can freely configure system prompts and instructions for each organization, achieving moderation that perfectly aligns with industry-specific content guidelines and corporate policies.\n\nEmploys a multi-model architecture that integrates multiple AI models including OpenAI API in a unified management system. Flexibly switches between models with different characteristics—precision-focused, speed-focused, or cost-focused—depending on needs.\n\nFeatured in Nikkei as an emerging moderation service, it differentiates itself through complete customizability, providing ideal solutions for niche industries and companies with specialized content requirements.",
+        "button": "Visit site",
+        "tech": "OpenAI API, Custom AI Models, React, Node.js"
       },
       "triathlon": {
-        "title": "Triathlon AI Analyzer",
-        "subtitle": "Performance insights for triathlon training",
-        "description": "AI-powered analysis of triathlon training data providing actionable insights for performance optimization and race preparation.",
-        "button": "View live site"
+        "title": "AI TRI+",
+        "subtitle": "AI-Powered Training Plans & Race Result Analysis Platform",
+        "description": "A comprehensive AI coaching platform built on a database of 2,444+ Japanese triathlon events, 3.5M+ race result records, and 1.25M+ athlete profiles—published as open source on GitHub.\n\nThe race analysis engine generates rankings, percentile-based deviation scores, strength/weakness diagnostics, training advice, and race reviews. The AI coach generates personalized training plans from 100+ data points, with periodization (base → specialty → competition → recovery), power/HR zone optimization, and dynamic adjustment based on fatigue and motivation. A 24/7 AI chatbot answers coaching questions, and plans sync with Google/Apple Calendar via a drag-and-drop interface.\n\nA REST API with OpenAPI specification and MCP (Model Context Protocol) support exposes the platform's data to AI assistants like Claude.\n\nFree tier offers race analysis and an initial plan; Premium adds unlimited goals, continuous plan regeneration, chat support, and performance prediction—at roughly 1/200 of traditional coaching pricing.",
+        "button": "View live site",
+        "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
+      }
+    },
+    "pwaApps": {
+      "title": "Progressive Web Apps",
+      "subtitle": "Offline-capable utility applications for outdoor activities",
+      "sotaPeakFinder": {
+        "title": "SOTA Peak Finder",
+        "subtitle": "Summit locator for amateur radio operations",
+        "description": "A Progressive Web App designed for SOTA (Summits On The Air) activators to identify and locate summits for amateur radio operations. Works offline with cached summit data, making it perfect for use in remote mountain locations without internet connectivity.",
+        "button": "Launch app"
+      },
+      "offlineQth": {
+        "title": "Offline QTH Locator",
+        "subtitle": "Ham radio grid square calculator",
+        "description": "An offline-capable tool for amateur radio operators to calculate and convert QTH locators (Maidenhead grid squares) from GPS coordinates. Essential for VHF/UHF operations and contesting, with full functionality without internet connection.",
+        "button": "Launch app"
+      },
+      "marathonPace": {
+        "title": "Marathon Pace Calculator",
+        "subtitle": "Running pace and split time calculator",
+        "description": "A comprehensive pace calculator for runners and triathletes. Calculate target paces, split times, and finish times for various race distances. Works completely offline, making it ideal for use during training runs and races.",
+        "button": "Launch app"
       }
     },
     "apiServices": {
@@ -276,6 +388,152 @@
           "Contact information"
         ],
         "button": "Visit site"
+      },
+      "dam": {
+        "title": "Dam API",
+        "subtitle": "Japanese dam database",
+        "features": [
+          "Nationwide dam information",
+          "Specifications & location data",
+          "Search by river/prefecture",
+          "REST API support"
+        ],
+        "button": "Visit site"
+      },
+      "seireki": {
+        "title": "Japanese Era API",
+        "subtitle": "Era ↔ Western calendar conversion",
+        "features": [
+          "Era name to year conversion",
+          "Reiwa/Heisei/Showa support",
+          "Bidirectional lookup",
+          "REST API support"
+        ],
+        "button": "Visit site"
+      },
+      "inkan": {
+        "title": "Inkan Generator",
+        "subtitle": "Japanese hanko/seal image generator",
+        "features": [
+          "Generate seal (inkan) images",
+          "Customizable name & style",
+          "Browser-based",
+          "Free to use"
+        ],
+        "button": "Visit site"
+      }
+    },
+    "ossTools": {
+      "title": "OSS Tools",
+      "subtitle": "Open source tools I've built and maintain",
+      "voiceMemoStt": {
+        "title": "voice-memo-stt",
+        "subtitle": "Go CLI to transcribe macOS Voice Memos",
+        "description": "A Go CLI tool (vmt) that transcribes macOS Voice Memos recordings using pluggable STT engines. Supports CLI, TUI, and Alfred Workflow interfaces. Ships with ElevenLabs Scribe.",
+        "button": "View on GitHub"
+      },
+      "claudeCodeMaxUsage": {
+        "title": "claude-code-max-usage",
+        "subtitle": "Claude Code Max usage display for tmux/Starship",
+        "description": "Displays Claude Code (Max Plan) API usage in your tmux status bar or Starship prompt. Shows 5-hour and 7-day utilization as compact, color-coded progress bars. Pure bash + jq + curl.",
+        "button": "View on GitHub"
+      }
+    },
+    "pastProjects": {
+      "title": "Past Major Projects",
+      "subtitle": "Notable service developments from my career",
+      "mineds": {
+        "title": "Mineds - Online Qualitative Research Service",
+        "company": "Minedia, Inc.",
+        "period": "2018 - Present",
+        "role": "CTO / Tech Lead",
+        "description": "Developed a platform to streamline online qualitative research. Built a system enabling user interviews, group discussions, and behavioral observations to be conducted online. Implemented real-time recording and analysis features to achieve DX in research operations.",
+        "tech": "Ruby on Rails, React, WebRTC, AWS"
+      },
+      "gas": {
+        "title": "City Gas Retail Platform",
+        "company": "Metaps, Inc.",
+        "period": "March - September 2016",
+        "role": "Development Lead",
+        "description": "In response to city gas deregulation, developed a system for city gas retail application processing and integration with gas pipeline companies. Designed as a multi-tenant SaaS platform, enabling multiple retail operators to independently use the service while maintaining data isolation for each tenant and providing a shared functional foundation. Realized online workflow from application to gas meter opening.",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API, Multi-tenant SaaS"
+      },
+      "recall": {
+        "title": "Product Recall Collection System",
+        "company": "Metaps, Inc.",
+        "period": "January - March 2016",
+        "role": "Development Lead",
+        "description": "Developed a system to accept web-based product recall applications and integrate with multiple logistics companies. Implemented inventory coordination with logistics warehouses, delivery tracking, and automatic customer notifications. Built as a SaaS platform for multiple manufacturers.",
+        "tech": "Ruby on Rails, PostgreSQL, REST API Integration"
+      },
+      "spike": {
+        "title": "SPIKE - Zero-Fee Payment Service",
+        "company": "Metaps, Inc.",
+        "period": "2014 - 2015",
+        "role": "Lead Engineer",
+        "description": "Developed and launched from scratch in 3 months an innovative service with zero payment fees. Built a payment platform for EC businesses supporting credit cards, bank transfers, and convenience store payments. Achieved security measures and PCI DSS compliance.",
+        "tech": "Ruby on Rails, MySQL, Redis, AWS, Payment API Integration"
+      },
+      "gree": {
+        "title": "GREE Smartphone Adaptation",
+        "company": "GREE Inc.",
+        "period": "2011",
+        "role": "Engineer",
+        "description": "Developed and implemented a method to adapt existing mobile sites for smartphones in 1 hour. Achieved user agent detection, responsive design, and touch UI optimization. The tech blog post about this method received over 2,200 Hatena Bookmarks and generated significant industry attention.",
+        "tech": "PHP, JavaScript, Mobile Web",
+        "links": {
+          "blog": "https://labs.gree.jp/blog/2011/04/3282/",
+          "blogLabel": "GREE Labs Blog Post",
+          "hatena": "https://b.hatena.ne.jp/entry/s/labs.gree.jp/blog/2011/04/3282/",
+          "hatenaLabel": "Hatena Bookmarks"
+        }
+      },
+      "cyta": {
+        "title": "Cyta.jp - C2C Learning Platform",
+        "company": "Coach United Inc.",
+        "period": "2009 - 2011",
+        "role": "Development Leader",
+        "description": "Developed a C2C learning service platform from requirements definition. Built from scratch including teacher-student matching, lesson booking, payments, points system, and blog features. Also implemented instructor compensation management and student review systems.",
+        "tech": "Ruby on Rails, MySQL, AWS, Payment API"
+      },
+      "teraren": {
+        "title": "teraren.com - 1TB Storage Rental Server",
+        "company": "Personal Project",
+        "period": "2000s",
+        "role": "Founder/Developer",
+        "description": "Rental server service providing large 1TB storage capacity. Implemented custom file management system, FTP access, and web-based control panel. Achieved long-term stable operation and served numerous users.",
+        "tech": "Linux, Apache, MySQL, PHP"
+      },
+      "emoji": {
+        "title": "Emoji Sprite - OSS Library",
+        "company": "Open Source Project",
+        "period": "2010s",
+        "role": "Author",
+        "description": "Published as OSS a JavaScript library for efficiently displaying emojis as sprite images. Achieved performance optimization and cross-browser compatibility. Published on GitHub and gained numerous stars from the community.",
+        "tech": "JavaScript, CSS, Canvas API"
+      },
+      "covid19": {
+        "title": "COVID-19 Case Visualization System",
+        "company": "Personal Project",
+        "period": "2020 - 2022",
+        "role": "Developer",
+        "description": "Developed an automated system to collect open data on COVID-19 cases published by prefectures, visualize them as graphs, and automatically post daily updates to Twitter and WordPress. Crawled data every 10 minutes and immediately notified when new cases appeared. Supported multiple prefectures including Kanagawa, achieving over 2 years of continuous operation. Implemented in Ruby with Docker environment. Gained experiential understanding of challenges in open government data.",
+        "tech": "Ruby, Docker, Twitter API, WordPress API, Gruff (Graph Library)",
+        "links": {
+          "site": "https://covid19.teraren.com/",
+          "siteLabel": "Visit Site",
+          "github": "https://github.com/matsubo/covid19-daily-tweet",
+          "githubLabel": "GitHub Repository"
+        }
+      },
+      "sfcCns": {
+        "title": "SFC CNS Guide - Editor-in-Chief",
+        "company": "Keio University Shonan Fujisawa Campus",
+        "period": "2002 - 2005",
+        "role": "Editor / Editor-in-Chief",
+        "description": "Served as editor for 3 years and Editor-in-Chief of the 'SFC CNS Guide,' an IT handbook for students at Keio University SFC. Systematically compiled technical information including Campus Network System (CNS) usage, programming, web design, and multimedia production. Led annual revisions to establish it as a widely-used resource from freshmen to advanced students. Oversaw the entire process including editorial team management, writer coordination, layout design, and print distribution.",
+        "tech": "Technical Writing, Desktop Publishing, Team Management",
+        "image": "placeholder"
       }
     }
   }

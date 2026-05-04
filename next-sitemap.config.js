@@ -11,6 +11,9 @@ module.exports = {
         allow: "/",
       },
     ],
+    additionalSitemaps: [
+      "https://matsubo.github.io/sotea-peak-finder/sitemap-index.xml",
+    ],
   },
   transform: async (config, path) => {
     return {

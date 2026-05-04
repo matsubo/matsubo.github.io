@@ -76,7 +76,7 @@ export function ProjectsSection() {
                 <p className="section-subtitle text-base text-base-content/70 whitespace-pre-line">{t('projects.aiTools.triathlon.description')}</p>
                 <div className="card-actions justify-end mt-6">
                   <a
-                    href="https://triathlon.teraren.com/"
+                    href="https://ai-triathlon-result.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary border-2 border-primary font-mono text-xs uppercase tracking-wider btn-glow"
@@ -275,6 +275,123 @@ export function ProjectsSection() {
                     className="btn btn-outline btn-sm"
                   >
                     {t('projects.apiServices.school.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Dam API */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.apiServices.dam.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.apiServices.dam.subtitle')}</p>
+                <ul className="text-sm space-y-1 mt-2">
+                  {Array.isArray(t.raw('projects.apiServices.dam.features')) &&
+                    t.raw('projects.apiServices.dam.features').map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    ))}
+                </ul>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://dam.teraren.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.apiServices.dam.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Seireki API */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.apiServices.seireki.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.apiServices.seireki.subtitle')}</p>
+                <ul className="text-sm space-y-1 mt-2">
+                  {Array.isArray(t.raw('projects.apiServices.seireki.features')) &&
+                    t.raw('projects.apiServices.seireki.features').map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    ))}
+                </ul>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://seireki.teraren.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.apiServices.seireki.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Inkan Generator */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.apiServices.inkan.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.apiServices.inkan.subtitle')}</p>
+                <ul className="text-sm space-y-1 mt-2">
+                  {Array.isArray(t.raw('projects.apiServices.inkan.features')) &&
+                    t.raw('projects.apiServices.inkan.features').map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    ))}
+                </ul>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://inkan.teraren.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.apiServices.inkan.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* OSS Tools */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold mb-2">{t('projects.ossTools.title')}</h3>
+          <p className="text-base-content/70 mb-6">{t('projects.ossTools.subtitle')}</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* voice-memo-stt */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.ossTools.voiceMemoStt.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.ossTools.voiceMemoStt.subtitle')}</p>
+                <p className="text-sm text-base-content/80 mt-2">{t('projects.ossTools.voiceMemoStt.description')}</p>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://github.com/matsubo/voice-memo-stt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.ossTools.voiceMemoStt.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* claude-code-max-usage */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.ossTools.claudeCodeMaxUsage.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.ossTools.claudeCodeMaxUsage.subtitle')}</p>
+                <p className="text-sm text-base-content/80 mt-2">{t('projects.ossTools.claudeCodeMaxUsage.description')}</p>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://github.com/matsubo/claude-code-max-usage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.ossTools.claudeCodeMaxUsage.button')}
                   </a>
                 </div>
               </div>

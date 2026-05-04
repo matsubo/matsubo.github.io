@@ -72,6 +72,18 @@
         "meta": "CEDEC 2012",
         "description": "10億ユーザーのための魅力的なゲームの開発方法",
         "button": "記事を見る"
+      },
+      "codezine": {
+        "title": "PHPでの「ORMライブラリ」機能比較",
+        "meta": "CodeZine • 2011年4月15日",
+        "description": "PHP開発におけるORM（Object-Relational Mapping）について、各種ORMライブラリの機能とパフォーマンスベンチマークを比較。アーキテクトがORMライブラリを選定する際の判断材料として、メリットとデメリットを分析した記事。",
+        "button": "記事を見る"
+      },
+      "greeLabs": {
+        "title": "1時間で携帯サイトをスマートフォン対応にする方法",
+        "meta": "GREE Tech Blog • 2011年4月25日 • はてなブックマーク2,221件（歴代1位）",
+        "description": "既存の携帯向けウェブサイトをスマートフォンに対応させるための実装手順を解説。UTF-8化・HTML5化からjQuery Mobileの導入、絵文字の置き換え、HTML5バリデーション対応まで、8つのステップで「スマートフォンで使いやすいサイト」へ変換する方法を詳しく紹介。GREE Tech Blog歴代1位の反響を呼んだ記事。",
+        "button": "記事を見る"
       }
     }
   },
@@ -145,15 +157,91 @@
       "aiTools": "トレーニング分析のためのAI搭載ツールを開発",
       "marathon": "フルマラソン PB: 2:58:41（2016東京マラソン）",
       "olympicDistance": "オリンピックディスタンス PB: 2:11:55（2018東京都トライアスロン渡良瀬大会）",
-      "openwater": "湘南オープンウォーター 10km 完泳",
+      "openwater": "湘南オープンウォーター 10km 完泳（2014/8）",
       "ironman703": "IRONMAN 70.3 アジア太平洋選手権（5:00:47）"
     },
-    "writing": {
-      "title": "技術執筆",
-      "zenn": "Zennに88記事を投稿",
-      "blog": "19年続く技術ブログ(blog.teraren.com)",
-      "editor": "SFC CNSガイドの編集者として3年間、編集長を務める",
-      "gree": "GREEエンジニアブログ記事（はてなブックマーク2,221件）"
+    "amateurRadio": {
+      "title": "アマチュア無線",
+      "callSign": "JE1WFV",
+      "description": "アマチュア無線を通じて、技術と自然を楽しむ。APRS、SOTA、デジタル簡易無線をメインに活動。",
+      "activities": [
+        {
+          "title": "APRS (自動位置情報伝送システム)",
+          "description": "無線とGPSを組み合わせた位置情報システム"
+        },
+        {
+          "title": "SOTA (山頂からの無線運用)",
+          "description": "登山とアマチュア無線を組み合わせたアクティビティ"
+        },
+        {
+          "title": "デジタル簡易無線",
+          "description": "デジタル方式の業務・レジャー用無線"
+        }
+      ],
+      "website": "https://je1wfv.teraren.com/"
+    },
+    "diy": {
+      "title": "DIY & 家づくり",
+      "description": "自宅のリフォームや修理をDIYで実践。技術者としての知識を活かし、水栓の取り付けから家電修理まで幅広く挑戦。",
+      "projects": [
+        {
+          "title": "LIXILナビッシュをDIY取り付け",
+          "url": "https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish",
+          "description": "タッチレス水栓の取り付けに挑戦"
+        },
+        {
+          "title": "Panasonicビルトイン食洗機をDIY修理",
+          "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
+          "description": "ビルトイン食洗機の修理プロジェクト"
+        },
+        {
+          "title": "Raspberry Pi で作る自宅内温度モニタリングシステム",
+          "url": "https://zenn.dev/minedia/articles/8cdda8c874e3795225bc",
+          "description": "IoTを活用した温度監視システム"
+        },
+        {
+          "title": "ウッドデッキ製作記録",
+          "url": "https://teraren.com/blog/wood-deck/",
+          "description": "自宅庭にウッドデッキをDIYで製作"
+        },
+        {
+          "title": "ダウンライト交換",
+          "url": "https://teraren.com/blog/downlight-living/",
+          "description": "リビングのダウンライトをDIY交換"
+        },
+        {
+          "title": "ダイキンエアコン「カライエ」分解洗浄",
+          "url": "https://teraren.com/blog/daikin-karaie-howto/",
+          "description": "エアコンの本格的なメンテナンス"
+        }
+      ]
+    },
+    "travel": {
+      "title": "旅行",
+      "description": "世界各地を旅して、文化や歴史を体験。18年以上にわたる旅の記録を公開。",
+      "allTravels": "全ての旅行記を見る",
+      "destinations": [
+        {
+          "title": "トルコ周遊",
+          "url": "https://diary.teraren.com/posts/2022-10-02-turkey",
+          "description": "イスタンブール、カッパドキア"
+        },
+        {
+          "title": "中欧旅行",
+          "url": "https://diary.teraren.com/posts/2018-07-24-vienna-praha",
+          "description": "ウィーン、ザルツブルク、プラハ"
+        },
+        {
+          "title": "モルディブ",
+          "url": "https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli",
+          "description": "Olhuveli Beach & Spa Resort"
+        },
+        {
+          "title": "クロアチア",
+          "url": "https://diary.teraren.com/posts/2019-07-11-zagreb-croatia",
+          "description": "ザグレブ、Rastoke地域"
+        }
+      ]
     },
     "certifications": {
       "title": "資格",
@@ -208,15 +296,39 @@
       "subtitle": "実用的なワークフローのための最新インテリジェントアプリケーション",
       "moderator": {
         "title": "AIモデレーター",
-        "subtitle": "AI搭載コンテンツモデレーションシステム",
-        "description": "高度なAIモデルを使用したインテリジェントなコンテンツフィルタリングとモデレーションにより、プラットフォーム全体で安全で適切なコンテンツを確保します。",
-        "button": "サイトを見る"
+        "subtitle": "柔軟にカスタマイズ可能なコンテンツモデレーションシステム",
+        "description": "複数のAIモデルから用途に応じて最適なモデルを選択できる、柔軟性の高いコンテンツモデレーションシステムです。顧客企業ごとにシステムプロンプトとインストラクションを自由にカスタマイズでき、業界特有のコンテンツガイドラインや企業ポリシーに完全に適合したモデレーションを実現します。\n\nマルチモデルアーキテクチャを採用し、OpenAI APIをはじめとする複数のAIモデルを統合管理。精度重視、速度重視、コスト重視など、ニーズに応じて異なる特性を持つモデルを柔軟に切り替え可能です。\n\n日経新聞でも取り上げられた新興モデレーションサービスとして、完全なカスタマイズ性を強みに、ニッチな業界や特殊なコンテンツ要件を持つ企業に最適なソリューションを提供しています。",
+        "button": "サイトを見る",
+        "tech": "OpenAI API, Custom AI Models, React, Node.js"
       },
       "triathlon": {
-        "title": "トライアスロンAIアナライザー",
-        "subtitle": "トライアスロントレーニングのパフォーマンス分析",
-        "description": "トライアスロントレーニングデータのAI搭載分析により、パフォーマンスの最適化とレース準備のための実用的な洞察を提供します。",
-        "button": "ライブサイトを見る"
+        "title": "AI TRI+",
+        "subtitle": "AIトレーニングプラン＆レースリザルト分析プラットフォーム",
+        "description": "国内トライアスロン2,444大会以上、レースリザルト350万件以上、選手プロフィール125万件以上のデータベースを基盤としたAIコーチングプラットフォーム。データはGitHubでオープンソース公開。\n\nレース分析エンジンは、ランキング、パーセンタイルベースの偏差値、強み・弱み診断、トレーニングアドバイス、レース振り返りを生成。AIコーチは100以上のデータポイントから個別化トレーニングプランを作成し、ピリオダイゼーション（ベース→専門→試合→回復）、パワー／心拍ゾーン最適化、疲労・モチベーションに応じた動的調整に対応。24時間対応のAIチャットボットがコーチング質問に答え、ドラッグ＆ドロップのカレンダーUIでGoogleカレンダー／Appleカレンダーと同期。\n\nOpenAPI仕様準拠のREST APIとMCP（Model Context Protocol）対応により、Claude等のAIアシスタントからもデータ参照が可能。\n\nフリープランではレース分析と初回プラン生成、プレミアムプランではゴール無制限、プラン再生成、チャットサポート、パフォーマンス予測を提供。従来のコーチング料金の約1/200という圧倒的なコストパフォーマンスを実現。",
+        "button": "ライブサイトを見る",
+        "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
+      }
+    },
+    "pwaApps": {
+      "title": "プログレッシブウェブアプリ",
+      "subtitle": "アウトドア活動向けオフライン対応ユーティリティアプリケーション",
+      "sotaPeakFinder": {
+        "title": "SOTA Peak Finder",
+        "subtitle": "アマチュア無線運用のための山頂検索ツール",
+        "description": "SOTA（Summits On The Air）アクティベーター向けに、アマチュア無線運用のための山頂を特定・検索できるプログレッシブウェブアプリです。山頂データをキャッシュしてオフラインで動作するため、インターネット接続のない山岳地帯での使用に最適です。",
+        "button": "アプリを起動"
+      },
+      "offlineQth": {
+        "title": "Offline QTH Locator",
+        "subtitle": "アマチュア無線グリッドスクエア計算ツール",
+        "description": "アマチュア無線運用者向けに、GPS座標からQTHロケーター（メイデンヘッドグリッドスクエア）を計算・変換するオフライン対応ツールです。VHF/UHF運用やコンテストに必須のツールで、インターネット接続なしで完全に動作します。",
+        "button": "アプリを起動"
+      },
+      "marathonPace": {
+        "title": "Marathon Pace Calculator",
+        "subtitle": "ランニングペース・ラップタイム計算ツール",
+        "description": "ランナーやトライアスリート向けの包括的なペース計算ツールです。様々なレース距離に対する目標ペース、ラップタイム、完走タイムを計算できます。完全オフラインで動作するため、トレーニングランやレース中の使用に最適です。",
+        "button": "アプリを起動"
       }
     },
     "apiServices": {
@@ -276,6 +388,152 @@
           "連絡先情報"
         ],
         "button": "サイトを見る"
+      },
+      "dam": {
+        "title": "ダムAPI",
+        "subtitle": "日本のダムデータベース",
+        "features": [
+          "全国のダム情報",
+          "諸元・位置データ",
+          "河川・都道府県別検索",
+          "REST APIサポート"
+        ],
+        "button": "サイトを見る"
+      },
+      "seireki": {
+        "title": "和暦・西暦API",
+        "subtitle": "和暦と西暦の相互変換",
+        "features": [
+          "元号から西暦への変換",
+          "令和・平成・昭和に対応",
+          "双方向ルックアップ",
+          "REST APIサポート"
+        ],
+        "button": "サイトを見る"
+      },
+      "inkan": {
+        "title": "印鑑ジェネレーター",
+        "subtitle": "印鑑画像生成サービス",
+        "features": [
+          "印鑑画像の生成",
+          "氏名・スタイルのカスタマイズ",
+          "ブラウザ完結",
+          "無料で利用可"
+        ],
+        "button": "サイトを見る"
+      }
+    },
+    "ossTools": {
+      "title": "OSSツール",
+      "subtitle": "自分で開発・メンテナンスしているOSS",
+      "voiceMemoStt": {
+        "title": "voice-memo-stt",
+        "subtitle": "macOSボイスメモ文字起こしCLI",
+        "description": "macOSのボイスメモを文字起こしするGo製CLIツール（vmt）。プラガブルなSTTエンジンに対応し、CLI/TUI/Alfred Workflowで利用可能。ElevenLabs Scribeに対応。",
+        "button": "GitHubで見る"
+      },
+      "claudeCodeMaxUsage": {
+        "title": "claude-code-max-usage",
+        "subtitle": "tmux/StarshipでClaude Code Maxの使用量表示",
+        "description": "Claude Code (Maxプラン) のAPI使用量をtmuxステータスバーまたはStarshipプロンプトに表示。5時間／7日間の使用率をカラーコード付きプログレスバーで可視化。Pure bash + jq + curl。",
+        "button": "GitHubで見る"
+      }
+    },
+    "pastProjects": {
+      "title": "過去の主要プロジェクト",
+      "subtitle": "過去に達成したサービス開発",
+      "mineds": {
+        "title": "Mineds - オンライン定性調査サービス",
+        "company": "株式会社マインディア",
+        "period": "2018年 - 現在",
+        "role": "CTO / テックリード",
+        "description": "オンラインでの定性調査を効率化するプラットフォームを開発。ユーザーインタビュー、グループディスカッション、行動観察などをオンラインで実施できるシステムを構築。リアルタイムでの記録、分析機能を実装し、調査業務のDXを実現。",
+        "tech": "Ruby on Rails, React, WebRTC, AWS"
+      },
+      "gas": {
+        "title": "都市ガス小売り受付プラットフォーム",
+        "company": "株式会社メタップス",
+        "period": "2016年3月 - 9月",
+        "role": "開発リード",
+        "description": "都市ガス自由化に伴い、都市ガスの小売り受付申し込みシステムと都市ガス導管会社とのシステム連携を実現。マルチテナント対応のSaaSとして設計し、複数の小売事業者が独立して利用可能なプラットフォームを構築。各テナントごとにデータを分離しながら、共通の機能基盤を提供。申込から開栓までのオンラインワークフローを実現。",
+        "tech": "Ruby on Rails, PostgreSQL, AWS, REST API, Multi-tenant SaaS"
+      },
+      "recall": {
+        "title": "リコール商品回収システム",
+        "company": "株式会社メタップス",
+        "period": "2016年1月 - 3月",
+        "role": "開発リード",
+        "description": "Webでリコール商品の回収申し込みを受け付け、複数の物流会社と連携するシステムを開発。物流倉庫との在庫連携、配送状況の追跡、顧客への自動通知機能を実装。SaaSとして提供し、複数のメーカーが利用可能なプラットフォームを構築。",
+        "tech": "Ruby on Rails, PostgreSQL, REST API連携"
+      },
+      "spike": {
+        "title": "SPIKE - 決済手数料無料サービス",
+        "company": "株式会社メタップス",
+        "period": "2014年 - 2015年",
+        "role": "リードエンジニア",
+        "description": "決済手数料が0円という革新的なサービスを3ヶ月でゼロから開発してリリース。クレジットカード決済、銀行振込、コンビニ決済に対応し、EC事業者向けの決済プラットフォームを構築。セキュリティ対策、PCI DSS準拠を実現。",
+        "tech": "Ruby on Rails, MySQL, Redis, AWS, 決済API連携"
+      },
+      "gree": {
+        "title": "GREEスマートフォン対応",
+        "company": "グリー株式会社",
+        "period": "2011年",
+        "role": "エンジニア",
+        "description": "既存の携帯サイトを1時間でスマートフォン対応にする手法を開発・実装。ユーザーエージェント判定、レスポンシブデザイン、タッチUI最適化を実現。この手法についてGREE Labsブログに執筆したテックブログ記事は、はてなブックマークで2,200件以上ブックマークされ、大きな反響を呼んだ。",
+        "tech": "PHP, JavaScript, Mobile Web",
+        "links": {
+          "blog": "https://labs.gree.jp/blog/2011/04/3282/",
+          "blogLabel": "GREE Labsブログ記事",
+          "hatena": "https://b.hatena.ne.jp/entry/s/labs.gree.jp/blog/2011/04/3282/",
+          "hatenaLabel": "はてなブックマーク"
+        }
+      },
+      "cyta": {
+        "title": "Cyta.jp - C2C習い事プラットフォーム",
+        "company": "コーチ・ユナイテッド株式会社",
+        "period": "2009年 - 2011年",
+        "role": "開発リーダー",
+        "description": "C2Cの習い事サービスプラットフォームを要件定義から開発。講師と生徒のマッチング、レッスン予約、決済、ポイントシステム、ブログ機能などを0から構築。講師向け報酬管理、生徒向けレビューシステムも実装。",
+        "tech": "Ruby on Rails, MySQL, AWS, 決済API"
+      },
+      "teraren": {
+        "title": "teraren.com - 1TBストレージレンタルサーバ",
+        "company": "個人プロジェクト",
+        "period": "2000年代",
+        "role": "創設者/開発者",
+        "description": "大容量1TBのストレージを提供するレンタルサーバーサービス。独自のファイル管理システム、FTPアクセス、Webベースのコントロールパネルを実装。長期間の安定運用を実現し、多数のユーザーにサービスを提供。",
+        "tech": "Linux, Apache, MySQL, PHP"
+      },
+      "emoji": {
+        "title": "Emoji Sprite - OSSライブラリ",
+        "company": "オープンソースプロジェクト",
+        "period": "2010年代",
+        "role": "作者",
+        "description": "絵文字をスプライト画像として効率的に表示するためのJavaScriptライブラリをOSSとして公開。パフォーマンス最適化、クロスブラウザ対応を実現。GitHubで公開し、コミュニティから多数のスターを獲得。",
+        "tech": "JavaScript, CSS, Canvas API"
+      },
+      "covid19": {
+        "title": "COVID-19陽性者数可視化システム",
+        "company": "個人プロジェクト",
+        "period": "2020年 - 2022年",
+        "role": "開発者",
+        "description": "各都道府県が公開するCOVID-19陽性者数のオープンデータを自動収集し、グラフ化してTwitterとWordPressに毎日自動投稿するシステムを開発。10分に1回データをクロールし、新規陽性者が出た場合に即座に通知。神奈川県をはじめとする複数の都道府県に対応し、2年以上の長期運用を実現。Rubyで実装し、Dockerで環境を構築。行政データのオープン化の課題を体験的に理解する機会となった。",
+        "tech": "Ruby, Docker, Twitter API, WordPress API, Gruff (Graph Library)",
+        "links": {
+          "site": "https://covid19.teraren.com/",
+          "siteLabel": "サイトを見る",
+          "github": "https://github.com/matsubo/covid19-daily-tweet",
+          "githubLabel": "GitHubリポジトリ"
+        }
+      },
+      "sfcCns": {
+        "title": "SFC CNSガイド - 編集長",
+        "company": "慶應義塾大学湘南藤沢キャンパス",
+        "period": "2002年 - 2005年",
+        "role": "編集者 / 編集長",
+        "description": "慶應義塾大学SFCの学生向けIT活用ガイドブック「SFC CNSガイド」の編集に3年間携わり、編集長を務める。キャンパスネットワークシステム（CNS）の使い方、プログラミング、Webデザイン、マルチメディア制作など、学生が必要とする技術情報を体系的にまとめた冊子を制作。毎年改訂を重ね、新入生から上級生まで幅広く活用される資料として定着させた。編集チームのマネジメント、執筆者との調整、レイアウトデザイン、印刷・配布までの全工程を統括。",
+        "tech": "Technical Writing, Desktop Publishing, Team Management",
+        "image": "placeholder"
       }
     }
   }

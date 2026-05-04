@@ -302,11 +302,11 @@
         "tech": "OpenAI API, Custom AI Models, React, Node.js"
       },
       "triathlon": {
-        "title": "Triathlon AI Analyzer",
-        "subtitle": "AI-Powered Training Analysis & Coaching Platform",
-        "description": "A comprehensive platform providing support through a dual-AI analysis system with race result data from major Japanese races published as open source on GitHub. The race analysis engine powered by GPT-4o-mini provides free rankings, deviation scores, training advice, and race reviews.\n\nPremium features include a personal coach AI using Gemini 2.5 Pro that generates daily training plans and provides detailed consultation based on comprehensive profiles and goals.\n\nAchieves outstanding cost performance compared to TrainingPeaks and Strava, offering transparent training support through specialized analysis for the Japanese racing environment and an open-source data foundation.",
+        "title": "AI TRI+",
+        "subtitle": "AI-Powered Training Plans & Race Result Analysis Platform",
+        "description": "A comprehensive AI coaching platform built on a database of 2,444+ Japanese triathlon events, 3.5M+ race result records, and 1.25M+ athlete profiles—published as open source on GitHub.\n\nThe race analysis engine generates rankings, percentile-based deviation scores, strength/weakness diagnostics, training advice, and race reviews. The AI coach generates personalized training plans from 100+ data points, with periodization (base → specialty → competition → recovery), power/HR zone optimization, and dynamic adjustment based on fatigue and motivation. A 24/7 AI chatbot answers coaching questions, and plans sync with Google/Apple Calendar via a drag-and-drop interface.\n\nA REST API with OpenAPI specification and MCP (Model Context Protocol) support exposes the platform's data to AI assistants like Claude.\n\nFree tier offers race analysis and an initial plan; Premium adds unlimited goals, continuous plan regeneration, chat support, and performance prediction—at roughly 1/200 of traditional coaching pricing.",
         "button": "View live site",
-        "tech": "GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data"
+        "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
       }
     },
     "pwaApps": {
@@ -388,6 +388,55 @@
           "Contact information"
         ],
         "button": "Visit site"
+      },
+      "dam": {
+        "title": "Dam API",
+        "subtitle": "Japanese dam database",
+        "features": [
+          "Nationwide dam information",
+          "Specifications & location data",
+          "Search by river/prefecture",
+          "REST API support"
+        ],
+        "button": "Visit site"
+      },
+      "seireki": {
+        "title": "Japanese Era API",
+        "subtitle": "Era ↔ Western calendar conversion",
+        "features": [
+          "Era name to year conversion",
+          "Reiwa/Heisei/Showa support",
+          "Bidirectional lookup",
+          "REST API support"
+        ],
+        "button": "Visit site"
+      },
+      "inkan": {
+        "title": "Inkan Generator",
+        "subtitle": "Japanese hanko/seal image generator",
+        "features": [
+          "Generate seal (inkan) images",
+          "Customizable name & style",
+          "Browser-based",
+          "Free to use"
+        ],
+        "button": "Visit site"
+      }
+    },
+    "ossTools": {
+      "title": "OSS Tools",
+      "subtitle": "Open source tools I've built and maintain",
+      "voiceMemoStt": {
+        "title": "voice-memo-stt",
+        "subtitle": "Go CLI to transcribe macOS Voice Memos",
+        "description": "A Go CLI tool (vmt) that transcribes macOS Voice Memos recordings using pluggable STT engines. Supports CLI, TUI, and Alfred Workflow interfaces. Ships with ElevenLabs Scribe.",
+        "button": "View on GitHub"
+      },
+      "claudeCodeMaxUsage": {
+        "title": "claude-code-max-usage",
+        "subtitle": "Claude Code Max usage display for tmux/Starship",
+        "description": "Displays Claude Code (Max Plan) API usage in your tmux status bar or Starship prompt. Shows 5-hour and 7-day utilization as compact, color-coded progress bars. Pure bash + jq + curl.",
+        "button": "View on GitHub"
       }
     },
     "pastProjects": {
