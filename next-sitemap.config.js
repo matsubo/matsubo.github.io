@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: "https://matsubo.github.io",
   generateRobotsTxt: true,
-  generateIndexSitemap: false,
+  generateIndexSitemap: true,
   outDir: "./out",
   exclude: ["/icon.png", "/apple-icon.png", "/favicon.ico", "/manifest.webmanifest"],
   robotsTxtOptions: {
