@@ -4,6 +4,7 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: "./out",
+  exclude: ["/icon.png", "/apple-icon.png", "/favicon.ico", "/manifest.webmanifest"],
   robotsTxtOptions: {
     policies: [
       {
@@ -12,7 +13,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      "https://matsubo.github.io/sotea-peak-finder/sitemap-index.xml",
+      "https://matsubo.github.io/sota-peak-finder/sitemap-index.xml",
     ],
   },
   transform: async (config, path) => {
