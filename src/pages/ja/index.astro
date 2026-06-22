@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Hero from '../../components/sections/Hero.astro'
+
+const lang = 'ja' as const
+---
+
+<Layout
+  lang={lang}
+  path="/"
+  title="松倉 友樹 - CTO & ソフトウェアエンジニア | 20年以上の経験"
+  description="マインディアのCTO。20年以上のソフトウェアエンジニアリング経験。スケーラブルなシステム、Ruby on Rails、React、チームリーディングのエキスパート。"
+>
+  <Hero lang={lang} />
+</Layout>
