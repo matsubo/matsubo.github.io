@@ -1,0 +1,47 @@
+---
+import { Icon } from 'astro-icon/components'
+import { useTranslations, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const groups: { key: string; badge: string; items: string[] }[] = [
+  { key: 'languages', badge: 'badge-primary', items: ['Ruby', 'Python', 'JavaScript', 'TypeScript', 'PHP', 'Java', 'Shell/Bash'] },
+  { key: 'frameworks', badge: 'badge-secondary', items: ['Ruby on Rails', 'React', 'Next.js', 'Astro', 'WordPress', 'Flutter', 'React Native'] },
+  { key: 'cloud', badge: 'badge-accent', items: ['AWS', 'GCP', 'Docker', 'Kubernetes', 'ECS', 'Fargate', 'GitHub Actions', 'CircleCI', 'Terraform', 'Cloudflare', 'Vercel', 'Netlify'] },
+  { key: 'database', badge: 'badge-info', items: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Elasticsearch', 'DynamoDB', 'SQLite'] },
+  { key: 'testing', badge: 'badge-warning', items: ['Jest', 'RSpec', 'Pytest', 'Mocha', 'Chai', 'Selenium', 'Cypress', 'Playwright', 'JUnit'] },
+  { key: 'api', badge: 'badge-success', items: ['REST', 'GraphQL', 'gRPC', 'WebSocket', 'WebRTC', 'OpenAPI', 'Swagger', 'Postman'] },
+  { key: 'infrastructure', badge: '', items: ['Linux', 'Debian', 'Ubuntu', 'CentOS', 'TCP/IP', 'Nginx', 'Apache', 'Load Balancer', 'CDN'] },
+  { key: 'messageQueue', badge: 'badge-error', items: ['SQS', 'SNS', 'Pub/Sub'] },
+  { key: 'versionControl', badge: '', items: ['Git', 'GitHub', 'GitLab', 'Bitbucket', 'VS Code', 'Vim'] },
+  { key: 'ai', badge: 'badge-primary', items: ['OpenAI', 'Anthropic', 'Groq', 'Vertex AI', 'LangChain'] },
+]
+---
+
+<section class="py-16 px-4 bg-base-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <Icon name="heroicons:code-bracket" class="w-8 h-8 text-primary" />
+      <h2 class="text-4xl font-bold">{t('skills.title')}</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      {groups.map((group) => (
+        <div class="card bg-base-200">
+          <div class="card-body">
+            <h3 class="card-title text-xl mb-4">{t(`skills.${group.key}`)}</h3>
+            <div class="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <span class={`badge ${group.badge} badge-lg`}>{item}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

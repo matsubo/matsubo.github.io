@@ -1,0 +1,46 @@
+---
+import { Icon } from 'astro-icon/components'
+import { useTranslations, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const jobs = [
+  { key: 'minedia', badge: 'badge-primary' },
+  { key: 'metaps', badge: 'badge-secondary' },
+  { key: 'gree', badge: 'badge-secondary' },
+] as const
+---
+
+<section class="py-16 px-4 bg-base-200">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <Icon name="heroicons:briefcase" class="w-8 h-8 text-primary" />
+      <h2 class="text-4xl font-bold">{t('experience.title')}</h2>
+    </div>
+    <div class="space-y-8">
+      {jobs.map((job) => (
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 class="card-title text-2xl">{t(`experience.${job.key}.role`)}</h3>
+                <p class="text-lg font-semibold text-primary">{t(`experience.${job.key}.company`)}</p>
+              </div>
+              <div class={`badge ${job.badge} badge-lg`}>{t(`experience.${job.key}.period`)}</div>
+            </div>
+            <ul class="list-disc list-inside space-y-2 text-base-content/80">
+              {(t.raw<string[]>(`experience.${job.key}.items`) ?? []).map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

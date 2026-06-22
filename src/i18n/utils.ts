@@ -8,23 +8,30 @@ export const defaultLocale: Locale = 'en'
 
 const dictionaries: Record<Locale, unknown> = { en, ja }
 
+function resolve(dict: unknown, key: string): unknown {
+  return key
+    .split('.')
+    .reduce<unknown>((obj, part) => (obj && typeof obj === 'object' ? (obj as Record<string, unknown>)[part] : undefined), dict)
+}
+
+export interface Translator {
+  (key: string): string
+  /** Raw accessor for arrays/objects in the dictionary (e.g. feature lists). */
+  raw<T = unknown>(key: string): T
+}
+
 /**
  * Build-time translation accessor. Resolves a dotted key path against the
  * locale dictionary, falling back to the default locale, then to the key.
  */
-export function useTranslations(locale: Locale) {
+export function useTranslations(locale: Locale): Translator {
   const dict = dictionaries[locale] ?? dictionaries[defaultLocale]
-  return function t(key: string): string {
-    const value = key
-      .split('.')
-      .reduce<unknown>((obj, part) => (obj && typeof obj === 'object' ? (obj as Record<string, unknown>)[part] : undefined), dict)
+  const t = ((key: string) => {
+    const value = resolve(dict, key)
     return typeof value === 'string' ? value : key
-  }
-}
-
-/** Raw accessor for arrays/objects in the dictionary (e.g. feature lists). */
-export function getMessages(locale: Locale): unknown {
-  return dictionaries[locale] ?? dictionaries[defaultLocale]
+  }) as Translator
+  t.raw = <T = unknown>(key: string) => resolve(dict, key) as T
+  return t
 }
 
 /**

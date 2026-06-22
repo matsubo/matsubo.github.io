@@ -1,0 +1,106 @@
+---
+import { Icon } from 'astro-icon/components'
+import { useTranslations, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const papers = [
+  { key: 'ec', href: 'https://link.springer.com/chapter/10.1007/978-3-031-34668-2_26' },
+  { key: 'mugi', href: '/paper/200502_thesis.pdf' },
+]
+
+const presentations = [
+  { key: 'snowday', href: 'https://dev.classmethod.jp/articles/snowday-report-hone/' },
+  { key: 'cedec', href: 'https://gigazine.net/news/20120829-gree-strategy-cedec2012/' },
+  { key: 'codezine', href: 'https://codezine.jp/article/detail/5858' },
+  { key: 'greeLabs', href: 'https://labs.gree.jp/blog/2011/04/3282/' },
+]
+
+const patents = [
+  { key: 'surveyServer', href: 'https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6755427/15/ja' },
+  { key: 'qualitative', href: 'https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6676809/15/ja' },
+]
+---
+
+<section class="py-16 px-4 bg-base-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <Icon name="heroicons:academic-cap" class="w-8 h-8 text-primary" />
+      <h2 class="text-4xl font-bold">{t('academic.title')}</h2>
+    </div>
+
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+        <Icon name="heroicons:document-text" class="w-6 h-6 text-secondary" />
+        {t('academic.papers.title')}
+      </h3>
+      <div class="space-y-4">
+        {papers.map((paper) => (
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h4 class="card-title">{t(`academic.papers.${paper.key}.title`)}</h4>
+              <p class="text-sm text-base-content/70">{t(`academic.papers.${paper.key}.meta`)}</p>
+              <p class="mt-2">{t(`academic.papers.${paper.key}.description`)}</p>
+              <div class="card-actions mt-4">
+                <a href={paper.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  {t(`academic.papers.${paper.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+        <Icon name="heroicons:beaker" class="w-6 h-6 text-secondary" />
+        {t('academic.presentations.title')}
+      </h3>
+      <div class="space-y-4">
+        {presentations.map((item) => (
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h4 class="card-title">{t(`academic.presentations.${item.key}.title`)}</h4>
+              <p class="text-sm text-base-content/70">{t(`academic.presentations.${item.key}.meta`)}</p>
+              <p class="mt-2">{t(`academic.presentations.${item.key}.description`)}</p>
+              <div class="card-actions mt-4">
+                <a href={item.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  {t(`academic.presentations.${item.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+        <Icon name="heroicons:light-bulb" class="w-6 h-6 text-secondary" />
+        {t('academic.patents.title')}
+      </h3>
+      <div class="space-y-4">
+        {patents.map((patent) => (
+          <div class="card bg-base-200">
+            <div class="card-body">
+              <h4 class="card-title">{t(`academic.patents.${patent.key}.title`)}</h4>
+              <p class="text-sm text-base-content/70">{t(`academic.patents.${patent.key}.meta`)}</p>
+              <p class="mt-2">{t(`academic.patents.${patent.key}.description`)}</p>
+              <div class="card-actions mt-4">
+                <a href={patent.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  {t(`academic.patents.${patent.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

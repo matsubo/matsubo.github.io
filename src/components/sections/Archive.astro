@@ -1,0 +1,35 @@
+---
+import { useTranslations, localizePath, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const links = [
+  { path: '/sfc/', key: 'university' },
+  { path: '/ht/', key: 'lab' },
+  { path: '/rails/', key: 'rails' },
+] as const
+---
+
+<section class="py-16 px-4 bg-base-200">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">{t('archive.title')}</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      {links.map((link) => (
+        <a
+          href={localizePath(link.path, lang)}
+          class="card bg-base-100 hover:bg-base-300 hover:shadow-2xl transition-all duration-300 group"
+        >
+          <div class="card-body">
+            <h3 class="card-title group-hover:text-primary transition-colors">{t(`archive.${link.key}.title`)}</h3>
+            <p class="text-base-content/70">{t(`archive.${link.key}.description`)}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

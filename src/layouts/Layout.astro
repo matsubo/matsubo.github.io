@@ -3,6 +3,7 @@ import '@fontsource-variable/fraunces'
 import '@fontsource-variable/hanken-grotesk'
 import '../styles/global.css'
 import BaseHead from '../components/BaseHead.astro'
+import Footer from '../components/Footer.astro'
 import { type Locale } from '../i18n/utils'
 
 interface Props {
@@ -18,6 +19,15 @@ const { title, description, lang, path = '/' } = Astro.props
 <!doctype html>
 <html lang={lang} data-theme="editorial">
   <head>
+    <!-- Apply the saved theme before paint to avoid a flash of the wrong theme. -->
+    <script is:inline>
+      ;(function () {
+        try {
+          var t = localStorage.getItem('theme')
+          if (t) document.documentElement.setAttribute('data-theme', t)
+        } catch (e) {}
+      })()
+    </script>
     <BaseHead title={title} description={description} lang={lang} path={path} />
     <!-- Google Tag Manager -->
     <script is:inline>
@@ -48,5 +58,7 @@ const { title, description, lang, path = '/' } = Astro.props
     <main id="main-content" class="flex-grow">
       <slot />
     </main>
+
+    <Footer lang={lang} path={path} />
   </body>
 </html>

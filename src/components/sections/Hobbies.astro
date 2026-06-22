@@ -1,0 +1,118 @@
+---
+import { Icon } from 'astro-icon/components'
+import { useTranslations, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const activities = t.raw<{ title: string; description: string }[]>('hobbies.amateurRadio.activities') ?? []
+const diyProjects = t.raw<{ title: string; url: string }[]>('hobbies.diy.projects') ?? []
+const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.destinations') ?? []
+---
+
+<section class="py-16 px-4 bg-base-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <Icon name="heroicons:heart" class="w-8 h-8 text-primary" />
+      <h2 class="text-4xl font-bold">{t('hobbies.title')}</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:trophy" class="w-6 h-6 text-warning" />
+            {t('hobbies.triathlon.title')}
+          </h3>
+          <ul class="space-y-2 mt-4">
+            <li class="flex items-start gap-2"><span class="text-warning">🏆</span><span>{t('hobbies.triathlon.worldChampionship')}</span></li>
+            <li class="flex items-start gap-2"><span class="text-warning">🏃</span><span>{t('hobbies.triathlon.marathon')}</span></li>
+            <li class="flex items-start gap-2"><span class="text-warning">🏃‍♂️</span><span>{t('hobbies.triathlon.olympicDistance')}</span></li>
+            <li class="flex items-start gap-2"><span class="text-info">🏊</span><span>{t('hobbies.triathlon.openwater')}</span></li>
+            <li class="flex items-start gap-2"><span class="text-warning">🚴</span><span>{t('hobbies.triathlon.ironman703')}</span></li>
+            <li class="flex items-start gap-2"><span class="text-info">💡</span><span>{t('hobbies.triathlon.aiTools')}</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:signal" class="w-6 h-6 text-error" />
+            {t('hobbies.amateurRadio.title')}
+          </h3>
+          <p class="text-sm mt-2"><strong>Call Sign:</strong> {t('hobbies.amateurRadio.callSign')}</p>
+          <p class="text-sm mt-2">{t('hobbies.amateurRadio.description')}</p>
+          <ul class="space-y-2 mt-4">
+            {activities.map((activity) => (
+              <li class="flex items-start gap-2">
+                <span class="text-error">📻</span>
+                <div>
+                  <strong>{activity.title}</strong>
+                  <p class="text-xs text-base-content/70">{activity.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div class="mt-4">
+            <a href={t('hobbies.amateurRadio.website')} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
+              Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:wrench-screwdriver" class="w-6 h-6 text-success" />
+            {t('hobbies.diy.title')}
+          </h3>
+          <p class="text-sm mt-2">{t('hobbies.diy.description')}</p>
+          <ul class="space-y-2 mt-4">
+            {diyProjects.map((project) => (
+              <li class="flex items-start gap-2">
+                <span class="text-success">🔧</span>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" class="link">{project.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:globe-alt" class="w-6 h-6 text-warning" />
+            {t('hobbies.travel.title')}
+          </h3>
+          <p class="text-sm mt-2">{t('hobbies.travel.description')}</p>
+          <ul class="space-y-2 mt-4">
+            {destinations.map((destination) => (
+              <li class="flex items-start gap-2">
+                <span class="text-warning">✈️</span>
+                <a href={destination.url} target="_blank" rel="noopener noreferrer" class="link">{destination.title}</a>
+              </li>
+            ))}
+          </ul>
+          <div class="mt-4">
+            <a href="https://diary.teraren.com/travel/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
+              {t('hobbies.travel.allTravels')}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body">
+          <h3 class="card-title">{t('hobbies.certifications.title')}</h3>
+          <ul class="space-y-2 mt-4 text-sm">
+            <li>• {t('hobbies.certifications.applied')}</li>
+            <li>• {t('hobbies.certifications.lpic')}</li>
+            <li>• {t('hobbies.certifications.electrician')}</li>
+            <li>• {t('hobbies.certifications.toeic')}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
