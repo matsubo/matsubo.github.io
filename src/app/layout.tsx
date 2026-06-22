@@ -1,5 +1,23 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Fraunces, Hanken_Grotesk } from 'next/font/google'
+
+// Display serif with optical character — used for the name and section headings.
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-fraunces',
+  display: 'swap',
+})
+
+// Refined grotesk for body and UI.
+const hanken = Hanken_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-hanken',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Yuki Matsukura - CTO & Software Engineer | 20+ Years Experience',
@@ -45,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="editorial" className={`${fraunces.variable} ${hanken.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{
