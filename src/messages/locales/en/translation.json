@@ -85,6 +85,21 @@
         "description": "Detailed guide on adapting existing mobile websites for smartphones. Covers 8 steps from UTF-8/HTML5 conversion, jQuery Mobile integration, emoji replacement, to HTML5 validation. This article became the all-time most bookmarked post on GREE Tech Blog, demonstrating its significant impact on the Japanese developer community.",
         "button": "View Article"
       }
+    },
+    "patents": {
+      "title": "Patents",
+      "surveyServer": {
+        "title": "Survey and Analysis Server and Program",
+        "meta": "Patent No. 6755427 • Granted 2020 • Minedia, Inc.",
+        "description": "An invention for a purchase-information system that collects and analyzes panelists' email data to extract product purchase information and grant rewards based on it. Registered as a co-inventor.",
+        "button": "View Patent"
+      },
+      "qualitative": {
+        "title": "System, Method, and Program for Supporting Qualitative Research",
+        "meta": "Patent No. 6676809 • Granted 2020 • Minedia, Inc.",
+        "description": "An invention for a system, method, and program that efficiently support qualitative consumer research. Registered as a co-inventor.",
+        "button": "View Patent"
+      }
     }
   },
   "experience": {
@@ -349,6 +364,17 @@
           "Educational facility data",
           "Institution classification",
           "Contact information"
+        ],
+        "button": "Visit site"
+      },
+      "seireki": {
+        "title": "Japanese Era API",
+        "subtitle": "Gengo / Western calendar conversion",
+        "features": [
+          "Japanese era ⇄ Western year conversion",
+          "Era (gengo) metadata",
+          "Date formatting support",
+          "JSON API responses"
         ],
         "button": "Visit site"
       }

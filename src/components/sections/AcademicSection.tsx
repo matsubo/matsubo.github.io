@@ -1,6 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
-import { AcademicCapIcon, DocumentTextIcon, BeakerIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, DocumentTextIcon, BeakerIcon, LightBulbIcon } from '@heroicons/react/24/outline'
 
 export function AcademicSection() {
   const t = useTranslations()
@@ -93,6 +93,38 @@ export function AcademicSection() {
                 <div className="card-actions mt-4">
                   <a href="https://labs.gree.jp/blog/2011/04/3282/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
                     {t('academic.presentations.greeLabs.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-12">
+          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+            <LightBulbIcon className="w-6 h-6 text-secondary" />
+            {t('academic.patents.title')}
+          </h3>
+          <div className="space-y-4">
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h4 className="card-title">{t('academic.patents.surveyServer.title')}</h4>
+                <p className="text-sm text-base-content/70">{t('academic.patents.surveyServer.meta')}</p>
+                <p className="mt-2">{t('academic.patents.surveyServer.description')}</p>
+                <div className="card-actions mt-4">
+                  <a href="https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6755427/15/ja" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    {t('academic.patents.surveyServer.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h4 className="card-title">{t('academic.patents.qualitative.title')}</h4>
+                <p className="text-sm text-base-content/70">{t('academic.patents.qualitative.meta')}</p>
+                <p className="mt-2">{t('academic.patents.qualitative.description')}</p>
+                <div className="card-actions mt-4">
+                  <a href="https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6676809/15/ja" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    {t('academic.patents.qualitative.button')}
                   </a>
                 </div>
               </div>

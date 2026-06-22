@@ -210,6 +210,30 @@ export function ProjectsSection() {
                 </div>
               </div>
             </div>
+
+            {/* Japanese Era (Seireki) API */}
+            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <div className="card-body">
+                <h4 className="card-title text-lg">{t('projects.apiServices.seireki.title')}</h4>
+                <p className="text-sm text-secondary font-semibold">{t('projects.apiServices.seireki.subtitle')}</p>
+                <ul className="text-sm space-y-1 mt-2">
+                  {Array.isArray(t.raw('projects.apiServices.seireki.features')) &&
+                    t.raw('projects.apiServices.seireki.features').map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    ))}
+                </ul>
+                <div className="card-actions justify-end mt-4">
+                  <a
+                    href="https://seireki.teraren.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    {t('projects.apiServices.seireki.button')}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
