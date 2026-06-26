@@ -1,0 +1,179 @@
+---
+import { Icon } from 'astro-icon/components'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/ror/"
+  title="Ruby on Railsのインストール | Yuki Matsukura"
+  description="Ruby on Railsのライブラリをインストールします。Ruby on RailsはRuby Gemsと呼ばれるライブラリ管理アプリケーションによって提供されています。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>Ruby on Railsのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-primary badge-lg">Step 5</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:command-line" class="h-12 w-12 text-primary" />
+          Ruby on Railsのインストール
+        </h1>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          Ruby on Railsのライブラリをインストールします。Ruby on Railsは
+          <a
+            href="https://rubygems.org/"
+            class="link link-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ruby Gems
+          </a>
+          と呼ばれるライブラリ管理アプリケーションによって提供されています。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- Step 1: Install Rails -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">1</div>
+            Ruby on Railsをインストール
+          </h3>
+          <p class="mb-4">ターミナルで以下のコマンドを実行します：</p>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>gem install rails</code></pre>
+          </div>
+          <div class="alert alert-warning mt-4">
+            <Icon name="heroicons:clock" class="h-6 w-6" />
+            <div>
+              <p class="font-semibold mb-2">時間がかかります</p>
+              <p>
+                Ruby on
+                Railsは様々なライブラリに依存しており、上記コマンドを実行すると依存しているライブラリもインストールされます。依存しているライブラリがたくさんあるので、インストールには時間がかかります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Verify Installation -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">2</div>
+            インストールの確認
+          </h3>
+          <p class="mb-4">
+            インストールが完了したら、以下のコマンドで確認します：
+          </p>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>gem list</code></pre>
+          </div>
+          <div class="alert alert-success mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>
+              <code class="badge badge-outline mx-1">rails</code>
+              という表記があったらインストールは成功しています。
+            </span>
+          </div>
+          <div class="divider">Tip</div>
+          <div class="alert alert-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+              <p class="font-semibold mb-2">railsを見つけやすくする</p>
+              <p>
+                railsを見つけづらい場合は、
+                <code class="badge badge-outline mx-1">
+                  gem list | grep rails
+                </code>
+                と入力するとrailsが含まれた行だけ表示出来ます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Completion Card -->
+      <div class="card bg-success text-success-content shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Ruby on Railsのインストール完了！
+          </h3>
+          <p class="text-lg">
+            お疲れ様でした！これでRuby on Railsの環境が整いました。 次はAptana
+            Studioをインストールして、実際に開発を始めましょう。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/ruby/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップ
+      </a>
+      <a href="/rails/mac/10_9/java/" class="btn btn-primary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>

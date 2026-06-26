@@ -1,0 +1,128 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import Layout from '@/layouts/Layout.astro'
+import brewInstallRbenvImg from '@/images/tutorials/brew_install_rbenv.png'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/rbenv/"
+  title="rbenvのインストール | Yuki Matsukura"
+  description="ruby自体を管理するためのアプリケーションをインストールし、設定します。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>rbenvのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-primary badge-lg">Step 3</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:command-line" class="h-12 w-12 text-primary" />
+          rbenvのインストール
+        </h1>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          ruby自体を管理するためのアプリケーションをインストールし、設定します。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- Step 1: Install rbenv -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">1</div>
+            rbenvをインストール
+          </h3>
+          <p class="mb-4">ターミナルで以下のコマンドを実行します：</p>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>brew install rbenv ruby-build</code></pre>
+          </div>
+          <div class="divider">出力例</div>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={brewInstallRbenvImg} alt="rbenv インストール" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Configure rbenv -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">2</div>
+            rbenvの設定を書き込み
+          </h3>
+          <p class="mb-4">以下のコマンドを順番に実行します：</p>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>cd</code></pre>
+            <pre data-prefix="%"><code>echo &apos;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&apos; &gt;&gt; .bash_profile</code></pre>
+            <pre data-prefix="%"><code>echo &apos;if which rbenv &gt; /dev/null; then eval &quot;$(rbenv init -)&quot;; fi&apos; &gt;&gt; .bash_profile</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Reload Settings -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">3</div>
+            設定を再読み込み
+          </h3>
+          <p class="mb-4">
+            以下のコマンドで設定を再読み込みします（上記の設定を行った直後のみ必要）：
+          </p>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>source .bash_profile</code></pre>
+          </div>
+          <div class="alert alert-success mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>何も出力されなければ成功です。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/homebrew/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップ
+      </a>
+      <a href="/rails/mac/10_9/ruby/" class="btn btn-primary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>

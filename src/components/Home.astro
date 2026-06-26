@@ -1,0 +1,28 @@
+---
+import Hero from './sections/Hero.astro'
+import About from './sections/About.astro'
+import Personality from './sections/Personality.astro'
+import Academic from './sections/Academic.astro'
+import Experience from './sections/Experience.astro'
+import Skills from './sections/Skills.astro'
+import Projects from './sections/Projects.astro'
+import Hobbies from './sections/Hobbies.astro'
+import Archive from './sections/Archive.astro'
+import { type Locale } from '../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+---
+
+<Hero lang={lang} />
+<About lang={lang} />
+<Personality lang={lang} />
+<Academic lang={lang} />
+<Experience lang={lang} />
+<Skills lang={lang} />
+<Projects lang={lang} />
+<Hobbies lang={lang} />
+<Archive lang={lang} />

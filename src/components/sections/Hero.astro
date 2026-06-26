@@ -1,0 +1,98 @@
+---
+import { Icon } from 'astro-icon/components'
+import { useTranslations, type Locale } from '../../i18n/utils'
+
+interface Props {
+  lang: Locale
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/matsubo', accent: false },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/yukimatsukura/', accent: false },
+  { label: 'X', href: 'https://x.com/matsubokkuri', accent: false },
+  { label: 'Zenn', href: 'https://zenn.dev/matsubokkuri', accent: true },
+]
+
+const meta = [
+  { k: 'LOCATION', v: 'Tokyo, JP' },
+  { k: 'FOCUS', v: 'LLM · RAG · IoT · Digital Twin' },
+  { k: 'EXPERIENCE', v: '20+ years' },
+]
+---
+
+<section class="relative overflow-hidden">
+  <!-- atmospheric accent glow -->
+  <div
+    class="pointer-events-none absolute inset-0 -z-0"
+    style="background-image: radial-gradient(60% 50% at 85% 0%, oklch(63% 0.18 262 / 0.18), transparent 70%);"
+  >
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 pt-20 pb-16 md:pt-28 md:pb-24">
+    <p class="kicker animate-fade-in-up mb-8 flex items-center gap-3">
+      <span class="text-primary">01</span>
+      <span class="inline-block h-px w-8 bg-primary/60"></span>
+      <span class="text-base-content/60">PORTFOLIO · 2026</span>
+    </p>
+
+    <div class="grid gap-12 md:grid-cols-12 md:gap-8 items-end">
+      <!-- Left: identity -->
+      <div class="md:col-span-8">
+        <h1 class="animate-fade-in-up animation-delay-100 font-display font-extrabold leading-[0.95] tracking-[-0.03em] text-[clamp(2.25rem,6vw,4.25rem)] text-base-content">
+          {t('hero.name')}
+        </h1>
+        <p class="animate-fade-in-up animation-delay-200 mt-6 text-2xl md:text-3xl font-semibold text-primary">
+          {t('hero.role')}
+        </p>
+        <p class="animate-fade-in-up animation-delay-300 mt-5 max-w-xl text-lg leading-relaxed text-base-content/70">
+          {t('hero.description')}
+        </p>
+
+        <nav class="animate-fade-in-up animation-delay-400 mt-9 flex flex-wrap gap-2.5">
+          {socials.map((s) => (
+            <a
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class={`font-mono text-sm px-4 py-2 border transition-colors ${
+                s.accent
+                  ? 'border-primary bg-primary text-primary-content hover:bg-transparent hover:text-primary'
+                  : 'border-base-content/25 text-base-content/80 hover:border-primary hover:text-primary'
+              }`}
+            >
+              {s.label}
+              <span class="opacity-50">↗</span>
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      <!-- Right: portrait + spec block -->
+      <div class="md:col-span-4 animate-fade-in-up animation-delay-300">
+        <div class="flex items-center gap-5 md:flex-col md:items-start">
+          <img
+            src="https://github.com/matsubo.png"
+            alt="Yuki Matsukura"
+            width="96"
+            height="96"
+            loading="eager"
+            class="h-24 w-24 rounded-full border border-primary/40"
+          />
+          <dl class="flex-1 w-full">
+            {meta.map((row, i) => (
+              <div class={`flex justify-between gap-4 py-2 ${i === 0 ? '' : 'border-t border-base-content/10'}`}>
+                <dt class="font-mono text-[0.68rem] uppercase tracking-widest text-base-content/45">{row.k}</dt>
+                <dd class="font-mono text-[0.78rem] text-base-content/85 text-right">{row.v}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="hairline mt-16"></div>
+  </div>
+</section>

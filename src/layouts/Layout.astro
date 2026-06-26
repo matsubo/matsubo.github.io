@@ -1,0 +1,72 @@
+---
+import '@fontsource-variable/archivo'
+import '@fontsource-variable/hanken-grotesk'
+import '@fontsource/space-mono/400.css'
+import '@fontsource/space-mono/700.css'
+import '../styles/global.css'
+import BaseHead from '../components/BaseHead.astro'
+import StructuredData from '../components/StructuredData.astro'
+import Footer from '../components/Footer.astro'
+import { type Locale } from '../i18n/utils'
+
+interface Props {
+  title: string
+  description: string
+  lang: Locale
+  path?: string
+}
+
+const { title, description, lang, path = '/' } = Astro.props
+
+// Tutorial archives (rails/sfc/ht) are English-only — they have no per-locale
+// variant, so suppress hreflang alternates and point the language switcher home.
+const localized = !/^\/(rails|sfc|ht)(\/|$)/.test(path)
+---
+
+<!doctype html>
+<html lang={lang} data-theme="fieldmanual">
+  <head>
+    <!-- Apply the saved theme before paint to avoid a flash of the wrong theme. -->
+    <script is:inline>
+      ;(function () {
+        try {
+          var t = localStorage.getItem('theme')
+          if (t) document.documentElement.setAttribute('data-theme', t)
+        } catch (e) {}
+      })()
+    </script>
+    <BaseHead title={title} description={description} lang={lang} path={path} localized={localized} />
+    {localized && <StructuredData />}
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-M2JT5C2T')
+    </script>
+  </head>
+  <body class="min-h-screen bg-base-100 flex flex-col">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M2JT5C2T"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <a href="#main-content" class="skip-link btn btn-primary btn-sm">Skip to main content</a>
+
+    <main id="main-content" class="flex-grow">
+      <slot />
+    </main>
+
+    <Footer lang={lang} path={path} localized={localized} />
+  </body>
+</html>

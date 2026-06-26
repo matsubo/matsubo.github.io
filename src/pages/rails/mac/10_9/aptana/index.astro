@@ -1,0 +1,155 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import Layout from '@/layouts/Layout.astro'
+import aptanaMoveImg from '@/images/tutorials/aptana_move.png'
+import aptanaStartImg from '@/images/tutorials/aptana_start.png'
+import aptanaWindowImg from '@/images/tutorials/aptana_window.png'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/aptana/"
+  title="Aptana Studioのインストール | Yuki Matsukura"
+  description="Aptana Studioは統合開発環境（IDE）です。Ruby on Railsの開発を効率的に行うことができます。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>Aptana Studioのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-secondary badge-lg">Aptana - Step 2</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:code-bracket" class="h-12 w-12 text-secondary" />
+          Aptana Studioのインストール
+        </h1>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          Aptana Studioは統合開発環境（IDE）です。Ruby on
+          Railsの開発を効率的に行うことができます。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- Step 1: Download -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">1</div>
+            Aptana Studio 3をダウンロード
+          </h3>
+          <p class="mb-4">
+            以下のサイトへアクセスし、Aptana Studio 3をダウンロードします：
+          </p>
+          <a
+            href="https://www.aptana.com/products/studio3/download"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-lg btn-secondary gap-2"
+          >
+            <Icon name="heroicons:arrow-down-tray" class="h-6 w-6" />
+            Aptana公式サイトへ
+          </a>
+        </div>
+      </div>
+
+      <!-- Step 2: Install -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">2</div>
+            アプリケーションフォルダへ移動
+          </h3>
+          <p class="mb-4">
+            ダウンロードしたファイルを開いて、
+            <code class="badge badge-outline">Aptana Studio 3</code>
+            ディレクトリをアプリケーションフォルダへドラッグアンドドロップします。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={aptanaMoveImg} alt="Aptana move to Applications" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Launch -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">3</div>
+            Aptana Studio 3を起動
+          </h3>
+          <p class="mb-4">
+            Spotlightまたは、
+            <code class="badge badge-outline">アプリケーション</code>
+            ディレクトリから
+            <code class="badge badge-outline">Aptana Studio 3</code>
+            を起動します。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={aptanaStartImg} alt="Aptana start" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4: Verify -->
+      <div class="card bg-success text-success-content shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            インストール完了の確認
+          </h3>
+          <p class="text-lg mb-4">
+            以下のような画面が表示されればインストールは成功しています：
+          </p>
+          <div class="bg-base-100 p-4 rounded-lg">
+            <Image src={aptanaWindowImg} alt="Aptana window" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/java/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップ
+      </a>
+      <a href="/rails/mac/10_9/aptana_check/" class="btn btn-secondary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>

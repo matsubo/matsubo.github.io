@@ -2,8 +2,8 @@
   "hero": {
     "greeting": "こんにちは、",
     "name": "松倉 友樹",
-    "role": "CTO & テクニカルリーダー",
-    "description": "スケーラブルなシステム構築とエンジニアリングチームのリーディングに情熱を注いでいます"
+    "role": "ソフトウェアエンジニア",
+    "description": "エンジニアリング、研究開発、そして数々の個人プロジェクト — 20年以上のものづくり。"
   },
   "about": {
     "title": "自己紹介",
@@ -39,7 +39,7 @@
       "description2": "複雑な技術的課題を分解し、明確な戦略的ロードマップを作成し、エンジニアが最高の仕事ができる環境を構築することが得意です。"
     },
     "note": "注:",
-    "noteText": "MBTI診断とAI分析に基づく。",
+    "noteText": "MBTI診断とLLM分析に基づく。",
     "fullAnalysis": "詳細分析"
   },
   "academic": {
@@ -84,6 +84,21 @@
         "meta": "GREE Tech Blog • 2011年4月25日 • はてなブックマーク2,221件（歴代1位）",
         "description": "既存の携帯向けウェブサイトをスマートフォンに対応させるための実装手順を解説。UTF-8化・HTML5化からjQuery Mobileの導入、絵文字の置き換え、HTML5バリデーション対応まで、8つのステップで「スマートフォンで使いやすいサイト」へ変換する方法を詳しく紹介。GREE Tech Blog歴代1位の反響を呼んだ記事。",
         "button": "記事を見る"
+      }
+    },
+    "patents": {
+      "title": "特許",
+      "surveyServer": {
+        "title": "調査・解析サーバ及びプログラム",
+        "meta": "特許第6755427号 • 2020年登録 • 株式会社マインディア",
+        "description": "パネラーのメールデータを収集・解析して商品の購買情報を取得し、購買情報に応じた特典を付与する購買情報利用システムに関する発明。共同発明者として登録。",
+        "button": "特許情報を見る"
+      },
+      "qualitative": {
+        "title": "定性調査を支援するためのシステム、方法、及びプログラム",
+        "meta": "特許第6676809号 • 2020年登録 • 株式会社マインディア",
+        "description": "消費者の定性調査を効率的に支援するためのシステム・方法・プログラムに関する発明。共同発明者として登録。",
+        "button": "特許情報を見る"
       }
     }
   },
@@ -132,29 +147,14 @@
     "infrastructure": "インフラ & サーバー",
     "messageQueue": "メッセージキュー & ストリーミング",
     "versionControl": "バージョン管理 & ツール",
-    "ai": "AI & 機械学習",
-    "expertSkills": "エキスパートレベル",
-    "mainSkills": [
-      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
-      { "name": "React", "level": 90, "category": "frameworks" },
-      { "name": "Ruby", "level": 95, "category": "languages" },
-      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
-      { "name": "AWS", "level": 85, "category": "cloud" },
-      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
-      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
-      { "name": "Redis", "level": 85, "category": "database" },
-      { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
-      { "name": "GCP", "level": 75, "category": "cloud" },
-      { "name": "MongoDB", "level": 75, "category": "database" }
-    ]
+    "ai": "LLM & 機械学習"
   },
   "hobbies": {
     "title": "趣味 & 個人的な興味",
     "triathlon": {
       "title": "トライアスロン",
       "worldChampionship": "IRONMAN世界選手権2017出場",
-      "aiTools": "トレーニング分析のためのAI搭載ツールを開発",
+      "aiTools": "トレーニング分析のためのLLM搭載ツールを開発",
       "marathon": "フルマラソン PB: 2:58:41（2016東京マラソン）",
       "olympicDistance": "オリンピックディスタンス PB: 2:11:55（2018東京都トライアスロン渡良瀬大会）",
       "openwater": "湘南オープンウォーター 10km 完泳（2014/8）",
@@ -182,7 +182,7 @@
     },
     "diy": {
       "title": "DIY & 家づくり",
-      "description": "自宅のリフォームや修理をDIYで実践。技術者としての知識を活かし、水栓の取り付けから家電修理まで幅広く挑戦。",
+      "description": "自宅のリフォームや修理をDIYで実践。技術者としての知識を活かし、水栓の取り付けから家電修理、クルマの整備まで幅広く挑戦。",
       "projects": [
         {
           "title": "LIXILナビッシュをDIY取り付け",
@@ -292,19 +292,19 @@
   "projects": {
     "title": "注目のプロジェクト",
     "aiTools": {
-      "title": "AI搭載ツール",
+      "title": "LLM搭載ツール",
       "subtitle": "実用的なワークフローのための最新インテリジェントアプリケーション",
       "moderator": {
         "title": "AIモデレーター",
         "subtitle": "柔軟にカスタマイズ可能なコンテンツモデレーションシステム",
-        "description": "複数のAIモデルから用途に応じて最適なモデルを選択できる、柔軟性の高いコンテンツモデレーションシステムです。顧客企業ごとにシステムプロンプトとインストラクションを自由にカスタマイズでき、業界特有のコンテンツガイドラインや企業ポリシーに完全に適合したモデレーションを実現します。\n\nマルチモデルアーキテクチャを採用し、OpenAI APIをはじめとする複数のAIモデルを統合管理。精度重視、速度重視、コスト重視など、ニーズに応じて異なる特性を持つモデルを柔軟に切り替え可能です。\n\n日経新聞でも取り上げられた新興モデレーションサービスとして、完全なカスタマイズ性を強みに、ニッチな業界や特殊なコンテンツ要件を持つ企業に最適なソリューションを提供しています。",
+        "description": "複数のLLMから用途に応じて最適なモデルを選択できる、柔軟性の高いコンテンツモデレーションシステムです。顧客企業ごとにシステムプロンプトとインストラクションを自由にカスタマイズでき、業界特有のコンテンツガイドラインや企業ポリシーに完全に適合したモデレーションを実現します。\n\nマルチモデルアーキテクチャを採用し、OpenAI APIをはじめとする複数のLLMを統合管理。精度重視、速度重視、コスト重視など、ニーズに応じて異なる特性を持つモデルを柔軟に切り替え可能です。\n\n日経新聞でも取り上げられた新興モデレーションサービスとして、完全なカスタマイズ性を強みに、ニッチな業界や特殊なコンテンツ要件を持つ企業に最適なソリューションを提供しています。",
         "button": "サイトを見る",
-        "tech": "OpenAI API, Custom AI Models, React, Node.js"
+        "tech": "OpenAI API, Custom LLMs, React, Node.js"
       },
       "triathlon": {
         "title": "AI TRI+",
-        "subtitle": "AIトレーニングプラン＆レースリザルト分析プラットフォーム",
-        "description": "国内トライアスロン2,444大会以上、レースリザルト350万件以上、選手プロフィール125万件以上のデータベースを基盤としたAIコーチングプラットフォーム。データはGitHubでオープンソース公開。\n\nレース分析エンジンは、ランキング、パーセンタイルベースの偏差値、強み・弱み診断、トレーニングアドバイス、レース振り返りを生成。AIコーチは100以上のデータポイントから個別化トレーニングプランを作成し、ピリオダイゼーション（ベース→専門→試合→回復）、パワー／心拍ゾーン最適化、疲労・モチベーションに応じた動的調整に対応。24時間対応のAIチャットボットがコーチング質問に答え、ドラッグ＆ドロップのカレンダーUIでGoogleカレンダー／Appleカレンダーと同期。\n\nOpenAPI仕様準拠のREST APIとMCP（Model Context Protocol）対応により、Claude等のAIアシスタントからもデータ参照が可能。\n\nフリープランではレース分析と初回プラン生成、プレミアムプランではゴール無制限、プラン再生成、チャットサポート、パフォーマンス予測を提供。従来のコーチング料金の約1/200という圧倒的なコストパフォーマンスを実現。",
+        "subtitle": "LLMトレーニングプラン＆レースリザルト分析プラットフォーム",
+        "description": "国内トライアスロン2,444大会以上、レースリザルト350万件以上、選手プロフィール125万件以上のデータベースを基盤としたLLMコーチングプラットフォーム。データはGitHubでオープンソース公開。\n\nレース分析エンジンは、ランキング、パーセンタイルベースの偏差値、強み・弱み診断、トレーニングアドバイス、レース振り返りを生成。LLMコーチは100以上のデータポイントから個別化トレーニングプランを作成し、ピリオダイゼーション（ベース→専門→試合→回復）、パワー／心拍ゾーン最適化、疲労・モチベーションに応じた動的調整に対応。24時間対応のLLMチャットボットがコーチング質問に答え、ドラッグ＆ドロップのカレンダーUIでGoogleカレンダー／Appleカレンダーと同期。\n\nOpenAPI仕様準拠のREST APIとMCP（Model Context Protocol）対応により、Claude等のLLMアシスタントからもデータ参照が可能。\n\nフリープランではレース分析と初回プラン生成、プレミアムプランではゴール無制限、プラン再生成、チャットサポート、パフォーマンス予測を提供。従来のコーチング料金の約1/200という圧倒的なコストパフォーマンスを実現。",
         "button": "ライブサイトを見る",
         "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
       }
@@ -448,7 +448,11 @@
         "period": "2018年 - 現在",
         "role": "CTO / テックリード",
         "description": "オンラインでの定性調査を効率化するプラットフォームを開発。ユーザーインタビュー、グループディスカッション、行動観察などをオンラインで実施できるシステムを構築。リアルタイムでの記録、分析機能を実装し、調査業務のDXを実現。",
-        "tech": "Ruby on Rails, React, WebRTC, AWS"
+        "tech": "Ruby on Rails, React, WebRTC, AWS",
+        "links": {
+          "site": "https://corporate.minedia.com/",
+          "siteLabel": "サイトを見る"
+        }
       },
       "gas": {
         "title": "都市ガス小売り受付プラットフォーム",
@@ -510,7 +514,11 @@
         "period": "2010年代",
         "role": "作者",
         "description": "絵文字をスプライト画像として効率的に表示するためのJavaScriptライブラリをOSSとして公開。パフォーマンス最適化、クロスブラウザ対応を実現。GitHubで公開し、コミュニティから多数のスターを獲得。",
-        "tech": "JavaScript, CSS, Canvas API"
+        "tech": "JavaScript, CSS, Canvas API",
+        "links": {
+          "github": "https://github.com/matsubo/emoji-sprite",
+          "githubLabel": "GitHubリポジトリ"
+        }
       },
       "covid19": {
         "title": "COVID-19陽性者数可視化システム",
@@ -533,7 +541,11 @@
         "role": "編集者 / 編集長",
         "description": "慶應義塾大学SFCの学生向けIT活用ガイドブック「SFC CNSガイド」の編集に3年間携わり、編集長を務める。キャンパスネットワークシステム（CNS）の使い方、プログラミング、Webデザイン、マルチメディア制作など、学生が必要とする技術情報を体系的にまとめた冊子を制作。毎年改訂を重ね、新入生から上級生まで幅広く活用される資料として定着させた。編集チームのマネジメント、執筆者との調整、レイアウトデザイン、印刷・配布までの全工程を統括。",
         "tech": "Technical Writing, Desktop Publishing, Team Management",
-        "image": "placeholder"
+        "image": "placeholder",
+        "links": {
+          "site": "https://cns-guide.sfc.keio.ac.jp/2004/",
+          "siteLabel": "サイトを見る"
+        }
       }
     }
   }

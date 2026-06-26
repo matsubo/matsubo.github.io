@@ -1,0 +1,248 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import Layout from '@/layouts/Layout.astro'
+import railsProjectImg from '@/images/tutorials/rails_project.png'
+import aptanaNewImg from '@/images/tutorials/aptana_new.png'
+import progressImg from '@/images/tutorials/progress.png'
+import aptanaRunServerImg from '@/images/tutorials/aptana_run_server.png'
+import serverConsoleImg from '@/images/tutorials/server_console.png'
+import aptanaBrowserImg from '@/images/tutorials/aptana_browser.png'
+import aptanaQuitImg from '@/images/tutorials/aptana_quit.png'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/aptana_check/"
+  title="Ruby on Railsの動作確認 | Yuki Matsukura"
+  description="Aptana StudioでRuby on Railsのプロジェクトを作成し、Ruby on Railsを起動してみます。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>Ruby on Railsの動作確認</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-secondary badge-lg">Aptana - Step 3</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:check-circle" class="h-12 w-12 text-secondary" />
+          Ruby on Railsの動作確認
+        </h1>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          Aptana StudioでRuby on Railsのプロジェクトを作成し、Ruby on
+          Railsを起動してみます。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- Step 1: Create Project -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">1</div>
+            Railsプロジェクトを作成
+          </h3>
+          <p class="mb-4">
+            Aptana Studioを立ち上げ、
+            <code class="badge badge-outline">File</code> →
+            <code class="badge badge-outline">New</code> →
+            <code class="badge badge-outline">Rails Project</code>
+            を選択します。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={railsProjectImg} alt="Rails Project Menu" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Configure Project -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">2</div>
+            プロジェクト名を入力
+          </h3>
+          <p class="mb-4">
+            <code class="badge badge-outline">Name</code>
+            にプロジェクト名を入力し、
+            <code class="badge badge-outline">Finish</code>
+            ボタンを押します。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={aptanaNewImg} alt="New Rails Project" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Wait for Progress -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">3</div>
+            プロジェクト作成を待つ
+          </h3>
+          <p class="mb-4">
+            右下に表示されているウィンドウに、以下のような出力が出ていれば成功です。下に表示されている青いバーが終了するまで待ちます。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={progressImg} alt="Progress Bar" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4: Run Server -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4 flex items-center gap-2">
+            <div class="badge badge-secondary">4</div>
+            <Icon name="heroicons:rocket-launch" class="h-6 w-6" />
+            サーバを起動
+          </h3>
+          <p class="mb-4">
+            <code class="badge badge-outline">App Explorer</code>
+            タブのギアの形をしたアイコンから、
+            <code class="badge badge-outline">Run Server</code>
+            を選択して、サーバを起動します。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={aptanaRunServerImg} alt="Run Server" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5: Check Console -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">5</div>
+            コンソールの出力を確認
+          </h3>
+          <p class="mb-4">
+            Console画面に以下のような表示が出力されれば、成功です。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={serverConsoleImg} alt="Server Console" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 6: Open Browser -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">6</div>
+            ブラウザで確認
+          </h3>
+          <p class="mb-4">
+            ブラウザで以下のページを開き、ページが表示されることを確認します：
+          </p>
+          <a
+            href="http://0.0.0.0:3000/"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-lg btn-secondary gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              />
+            </svg>
+            http://0.0.0.0:3000/
+          </a>
+          <p class="mt-6">
+            以下のような、<strong>&quot;Welcome aboard&quot;</strong>
+            と表示されていれば、正常にセットアップが完了したことになります。
+          </p>
+          <div class="bg-base-200 p-4 rounded-lg mt-4">
+            <Image src={aptanaBrowserImg} alt="Welcome aboard" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 7: Quit Aptana -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-secondary">7</div>
+            Aptana Studioを終了
+          </h3>
+          <p class="mb-4">最後に、Aptana Studioを終了します。</p>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={aptanaQuitImg} alt="Quit Aptana" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Completion Card -->
+      <div class="card bg-gradient-to-r from-success to-info text-white shadow-xl">
+        <div class="card-body items-center text-center">
+          <div class="flex justify-center mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-20 h-20"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold mb-4">
+            完了おめでとうございます！
+          </h3>
+          <p class="text-xl mb-2">
+            Ruby on Railsの開発環境のセットアップが完了しました！
+          </p>
+          <p class="text-lg opacity-90">
+            これでRuby on Railsを使った開発をスタートできます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/aptana/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップ
+      </a>
+      <a href="/rails/mac/10_9/" class="btn btn-primary gap-2">
+        <Icon name="heroicons:check-circle" class="h-5 w-5" />
+        ステップ一覧に戻る
+      </a>
+    </div>
+  </div>
+</Layout>

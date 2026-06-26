@@ -1,0 +1,22 @@
+---
+interface Props {
+  /** Two-digit section index, e.g. "02". */
+  num: string
+  /** Short uppercase mono label, e.g. "ABOUT". */
+  kicker: string
+  /** Section title (display font). */
+  title: string
+  centered?: boolean
+}
+
+const { num, kicker, title, centered = false } = Astro.props
+---
+
+<header class={`mb-12 ${centered ? 'text-center' : ''}`}>
+  <p class={`kicker mb-3 ${centered ? 'justify-center flex items-center gap-3' : ''}`}>
+    <span class="text-primary">{num}</span>
+    <span class="inline-block h-px w-8 bg-primary/60 align-middle"></span>
+    <span class="text-base-content/60">{kicker}</span>
+  </p>
+  <h2 class="text-4xl md:text-5xl font-bold text-base-content">{title}</h2>
+</header>
