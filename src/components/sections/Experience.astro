@@ -1,5 +1,6 @@
 ---
 import { useTranslations, type Locale } from '../../i18n/utils'
+import SectionHeader from '@/components/SectionHeader.astro'
 
 interface Props {
   lang: Locale
@@ -13,10 +14,7 @@ const jobs = ['minedia', 'metaps', 'gree'] as const
 
 <section class="py-20 md:py-24 px-4">
   <div class="max-w-6xl mx-auto">
-    <header class="mb-12">
-      <p class="kicker mb-3">05 — EXPERIENCE</p>
-      <h2 class="text-4xl md:text-5xl font-bold text-base-content">{t('experience.title')}</h2>
-    </header>
+    <SectionHeader num="05" kicker="EXPERIENCE" title={t('experience.title')} />
 
     <div class="space-y-5">
       {jobs.map((job) => (

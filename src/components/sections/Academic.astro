@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
 import { useTranslations, type Locale } from '../../i18n/utils'
+import SectionHeader from '@/components/SectionHeader.astro'
 
 interface Props {
   lang: Locale
@@ -27,12 +28,9 @@ const patents = [
 ]
 ---
 
-<section class="py-16 px-4 bg-base-100">
+<section class="py-20 md:py-24 px-4 bg-base-100">
   <div class="max-w-6xl mx-auto">
-    <div class="flex items-center gap-3 mb-8">
-      <Icon name="heroicons:academic-cap" class="w-8 h-8 text-primary" />
-      <h2 class="text-4xl font-bold">{t('academic.title')}</h2>
-    </div>
+    <SectionHeader num="04" kicker="RESEARCH" title={t('academic.title')} />
 
     <div class="mb-12">
       <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
@@ -41,7 +39,7 @@ const patents = [
       </h3>
       <div class="space-y-4">
         {papers.map((paper) => (
-          <div class="card bg-base-200">
+          <div class="card fm-card card-hover-lift">
             <div class="card-body">
               <h4 class="card-title">{t(`academic.papers.${paper.key}.title`)}</h4>
               <p class="text-sm text-base-content/70">{t(`academic.papers.${paper.key}.meta`)}</p>
@@ -64,7 +62,7 @@ const patents = [
       </h3>
       <div class="space-y-4">
         {presentations.map((item) => (
-          <div class="card bg-base-200">
+          <div class="card fm-card card-hover-lift">
             <div class="card-body">
               <h4 class="card-title">{t(`academic.presentations.${item.key}.title`)}</h4>
               <p class="text-sm text-base-content/70">{t(`academic.presentations.${item.key}.meta`)}</p>
@@ -87,7 +85,7 @@ const patents = [
       </h3>
       <div class="space-y-4">
         {patents.map((patent) => (
-          <div class="card bg-base-200">
+          <div class="card fm-card card-hover-lift">
             <div class="card-body">
               <h4 class="card-title">{t(`academic.patents.${patent.key}.title`)}</h4>
               <p class="text-sm text-base-content/70">{t(`academic.patents.${patent.key}.meta`)}</p>

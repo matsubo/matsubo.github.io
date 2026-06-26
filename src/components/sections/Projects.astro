@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
 import { useTranslations, type Locale } from '../../i18n/utils'
+import SectionHeader from '@/components/SectionHeader.astro'
 
 import aiModeratorImg from '../../images/projects/ai-moderator.png'
 import aiTriathlonImg from '../../images/projects/ai-triathlon.png'
@@ -50,12 +51,9 @@ const pastProjects = [
 ]
 ---
 
-<section class="py-16 px-4 bg-base-200">
+<section class="py-20 md:py-24 px-4 bg-base-200">
   <div class="max-w-6xl mx-auto">
-    <div class="flex items-center gap-3 mb-8">
-      <Icon name="heroicons:rocket-launch" class="w-8 h-8 text-primary" />
-      <h2 class="text-4xl font-bold">{t('projects.title')}</h2>
-    </div>
+    <SectionHeader num="07" kicker="WORK" title={t('projects.title')} />
 
     <!-- AI Tools -->
     <div class="mb-12">
@@ -66,7 +64,7 @@ const pastProjects = [
       <p class="text-base-content/70 mb-6">{t('projects.aiTools.subtitle')}</p>
       <div class="grid md:grid-cols-2 gap-6">
         {aiTools.map((tool) => (
-          <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+          <div class="card fm-card card-hover-lift">
             <figure>
               <Image src={tool.img} alt={tool.alt} class="w-full h-48 object-cover brightness-75 hover:brightness-100 transition-all duration-300" />
             </figure>
@@ -91,7 +89,7 @@ const pastProjects = [
       <p class="text-base-content/70 mb-6">{t('projects.apiServices.subtitle')}</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {apiServices.map((api) => (
-          <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+          <div class="card fm-card card-hover-lift">
             <div class="card-body">
               <h4 class="card-title text-lg">{t(`projects.apiServices.${api.key}.title`)}</h4>
               <p class="text-sm text-secondary font-semibold">{t(`projects.apiServices.${api.key}.subtitle`)}</p>
@@ -117,7 +115,7 @@ const pastProjects = [
       <p class="text-base-content/70 mb-6">{t('projects.pastProjects.subtitle')}</p>
       <div class="grid md:grid-cols-2 gap-6">
         {pastProjects.map((proj) => (
-          <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+          <div class="card fm-card card-hover-lift">
             <figure class="bg-base-300">
               {proj.img ? (
                 <Image src={proj.img} alt={proj.alt} class="w-full h-48 object-cover brightness-75 hover:brightness-100 transition-all duration-300" />

@@ -1,5 +1,6 @@
 ---
 import { useTranslations, type Locale } from '../../i18n/utils'
+import SectionHeader from '@/components/SectionHeader.astro'
 
 interface Props {
   lang: Locale
@@ -15,14 +16,14 @@ const links = [
 ] as const
 ---
 
-<section class="py-16 px-4 bg-base-200">
+<section class="py-20 md:py-24 px-4 bg-base-200">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">{t('archive.title')}</h2>
+    <SectionHeader num="09" kicker="ARCHIVE" title={t('archive.title')} centered />
     <div class="grid md:grid-cols-2 gap-6">
       {links.map((link) => (
         <a
           href={link.path}
-          class="card bg-base-100 hover:bg-base-300 hover:shadow-2xl transition-all duration-300 group"
+          class="card fm-card card-hover-lift duration-300 group"
         >
           <div class="card-body">
             <h3 class="card-title group-hover:text-primary transition-colors">{t(`archive.${link.key}.title`)}</h3>
