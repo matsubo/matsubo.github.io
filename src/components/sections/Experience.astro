@@ -1,5 +1,4 @@
 ---
-import { Icon } from 'astro-icon/components'
 import { useTranslations, type Locale } from '../../i18n/utils'
 
 interface Props {
@@ -9,37 +8,37 @@ interface Props {
 const { lang } = Astro.props
 const t = useTranslations(lang)
 
-const jobs = [
-  { key: 'minedia', badge: 'badge-primary' },
-  { key: 'metaps', badge: 'badge-secondary' },
-  { key: 'gree', badge: 'badge-secondary' },
-] as const
+const jobs = ['minedia', 'metaps', 'gree'] as const
 ---
 
-<section class="py-16 px-4 bg-base-200">
+<section class="py-20 md:py-24 px-4">
   <div class="max-w-6xl mx-auto">
-    <div class="flex items-center gap-3 mb-8">
-      <Icon name="heroicons:briefcase" class="w-8 h-8 text-primary" />
-      <h2 class="text-4xl font-bold">{t('experience.title')}</h2>
-    </div>
-    <div class="space-y-8">
+    <header class="mb-12">
+      <p class="kicker mb-3">05 — EXPERIENCE</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-base-content">{t('experience.title')}</h2>
+    </header>
+
+    <div class="space-y-5">
       {jobs.map((job) => (
-        <div class="card bg-base-100 shadow-xl">
-          <div class="card-body">
-            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
-              <div>
-                <h3 class="card-title text-2xl">{t(`experience.${job.key}.role`)}</h3>
-                <p class="text-lg font-semibold text-primary">{t(`experience.${job.key}.company`)}</p>
-              </div>
-              <div class={`badge ${job.badge} badge-lg`}>{t(`experience.${job.key}.period`)}</div>
+        <article class="card-hover-lift border border-base-content/12 bg-base-200/50 rounded p-6 md:p-8 hover:border-primary/40">
+          <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+            <div>
+              <h3 class="text-2xl font-bold font-display text-base-content">{t(`experience.${job}.role`)}</h3>
+              <p class="text-primary font-semibold mt-1">{t(`experience.${job}.company`)}</p>
             </div>
-            <ul class="list-disc list-inside space-y-2 text-base-content/80">
-              {(t.raw<string[]>(`experience.${job.key}.items`) ?? []).map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
+            <span class="font-mono text-xs uppercase tracking-wider border border-base-content/20 px-3 py-1 text-base-content/70 whitespace-nowrap">
+              {t(`experience.${job}.period`)}
+            </span>
           </div>
-        </div>
+          <ul class="space-y-2.5 text-base-content/75">
+            {(t.raw<string[]>(`experience.${job}.items`) ?? []).map((item) => (
+              <li class="flex gap-3">
+                <span class="text-primary/70 font-mono text-sm mt-1 select-none">—</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
       ))}
     </div>
   </div>

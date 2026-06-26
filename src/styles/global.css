@@ -2,99 +2,129 @@
 
 @plugin "daisyui";
 
-/* Editorial theme — warm off-white paper, ink text, a single deep-teal accent. */
+/*
+ * "Field Manual" — a builder's technical dossier.
+ * Warm near-black canvas, off-white text, a single signal-amber accent,
+ * monospace metadata, hairline rules, a faint engineering grid.
+ */
 @plugin "daisyui/theme" {
-	name: "editorial";
+	name: "fieldmanual";
 	default: true;
-	prefersdark: false;
-	color-scheme: light;
-
-	--color-base-100: oklch(98.6% 0.006 85);
-	--color-base-200: oklch(96.4% 0.008 85);
-	--color-base-300: oklch(92.6% 0.011 85);
-	--color-base-content: oklch(24% 0.018 250);
-
-	--color-primary: oklch(50% 0.083 195);
-	--color-primary-content: oklch(98% 0.012 195);
-	--color-secondary: oklch(55% 0.04 225);
-	--color-secondary-content: oklch(98% 0.01 225);
-	--color-accent: oklch(70% 0.115 68);
-	--color-accent-content: oklch(22% 0.03 68);
-	--color-neutral: oklch(26% 0.02 250);
-	--color-neutral-content: oklch(96% 0.008 85);
-
-	--color-info: oklch(60% 0.09 230);
-	--color-success: oklch(60% 0.13 155);
-	--color-warning: oklch(75% 0.13 75);
-	--color-error: oklch(58% 0.18 25);
-
-	--radius-selector: 0.5rem;
-	--radius-field: 0.5rem;
-	--radius-box: 0.85rem;
-	--size-selector: 0.25rem;
-	--size-field: 0.25rem;
-	--border: 1px;
-	--depth: 1;
-	--noise: 0;
-}
-
-/* Dark counterpart of the editorial theme. */
-@plugin "daisyui/theme" {
-	name: "editorial-dark";
-	default: false;
 	prefersdark: true;
 	color-scheme: dark;
 
-	--color-base-100: oklch(22% 0.012 250);
-	--color-base-200: oklch(25.5% 0.013 250);
-	--color-base-300: oklch(30% 0.015 250);
-	--color-base-content: oklch(92% 0.01 85);
+	--color-base-100: oklch(18% 0.007 265);
+	--color-base-200: oklch(21.5% 0.008 265);
+	--color-base-300: oklch(26% 0.009 265);
+	--color-base-content: oklch(93% 0.008 255);
 
-	--color-primary: oklch(70% 0.1 190);
-	--color-primary-content: oklch(20% 0.02 190);
-	--color-secondary: oklch(70% 0.05 220);
-	--color-secondary-content: oklch(20% 0.02 220);
-	--color-accent: oklch(76% 0.12 70);
-	--color-accent-content: oklch(20% 0.03 70);
-	--color-neutral: oklch(30% 0.015 250);
-	--color-neutral-content: oklch(92% 0.01 85);
+	--color-primary: oklch(63% 0.18 262);
+	--color-primary-content: oklch(98% 0.012 262);
+	--color-secondary: oklch(78% 0.09 232);
+	--color-secondary-content: oklch(20% 0.03 232);
+	--color-accent: oklch(70% 0.15 255);
+	--color-accent-content: oklch(98% 0.012 255);
+	--color-neutral: oklch(26% 0.009 265);
+	--color-neutral-content: oklch(93% 0.008 255);
 
-	--color-info: oklch(70% 0.09 230);
-	--color-success: oklch(70% 0.13 155);
-	--color-warning: oklch(80% 0.13 75);
+	--color-info: oklch(74% 0.1 235);
+	--color-success: oklch(74% 0.13 155);
+	--color-warning: oklch(80% 0.13 85);
 	--color-error: oklch(68% 0.17 25);
 
-	--radius-selector: 0.5rem;
-	--radius-field: 0.5rem;
-	--radius-box: 0.85rem;
+	--radius-selector: 0.25rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.4rem;
 	--size-selector: 0.25rem;
 	--size-field: 0.25rem;
 	--border: 1px;
-	--depth: 1;
+	--depth: 0;
+	--noise: 0;
+}
+
+/* Light counterpart — warm paper, ink, same signal accent. */
+@plugin "daisyui/theme" {
+	name: "fieldmanual-light";
+	default: false;
+	prefersdark: false;
+	color-scheme: light;
+
+	--color-base-100: oklch(96.5% 0.004 255);
+	--color-base-200: oklch(93% 0.006 255);
+	--color-base-300: oklch(88% 0.008 255);
+	--color-base-content: oklch(22% 0.011 265);
+
+	--color-primary: oklch(50% 0.19 262);
+	--color-primary-content: oklch(98% 0.01 262);
+	--color-secondary: oklch(52% 0.1 232);
+	--color-secondary-content: oklch(98% 0.01 232);
+	--color-accent: oklch(50% 0.19 262);
+	--color-accent-content: oklch(98% 0.01 262);
+	--color-neutral: oklch(22% 0.011 265);
+	--color-neutral-content: oklch(96% 0.006 255);
+
+	--color-info: oklch(50% 0.12 235);
+	--color-success: oklch(52% 0.13 155);
+	--color-warning: oklch(60% 0.13 85);
+	--color-error: oklch(55% 0.18 25);
+
+	--radius-selector: 0.25rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.4rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1px;
+	--depth: 0;
 	--noise: 0;
 }
 
 @theme {
 	--font-sans: "Hanken Grotesk Variable", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", system-ui, sans-serif;
-	--font-display: "Fraunces Variable", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+	--font-display: "Archivo Variable", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+	--font-mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
-/* Body uses the grotesk; headings use the display serif for an editorial voice. */
 body {
 	font-family: var(--font-sans);
+	/* Faint engineering grid that sits behind everything. */
+	background-color: var(--color-base-100);
+	background-image:
+		linear-gradient(to right, color-mix(in oklch, var(--color-base-content) 5%, transparent) 1px, transparent 1px),
+		linear-gradient(to bottom, color-mix(in oklch, var(--color-base-content) 5%, transparent) 1px, transparent 1px);
+	background-size: 64px 64px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-family: var(--font-display);
-	letter-spacing: -0.015em;
+	letter-spacing: -0.02em;
+}
+
+/* Monospace "kicker" label used for section numbers and metadata. */
+.kicker {
+	font-family: var(--font-mono);
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 0.72rem;
+	color: var(--color-primary);
+}
+
+.font-mono {
+	font-family: var(--font-mono);
+}
+
+/* Hairline divider in the accent-tinted ink. */
+.hairline {
+	height: 1px;
+	background: color-mix(in oklch, var(--color-base-content) 18%, transparent);
 }
 
 /* Accessibility: focus styles */
 *:focus-visible {
-	outline: 3px solid var(--color-primary);
+	outline: 2px solid var(--color-primary);
 	outline-offset: 2px;
-	border-radius: 0.25rem;
+	border-radius: 0.2rem;
 }
 
 /* Skip link */
@@ -111,11 +141,11 @@ h2 {
 	transform: translateY(0);
 }
 
-/* Scroll / entrance animations */
+/* Entrance animations */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
-		transform: translateY(30px);
+		transform: translateY(28px);
 	}
 	to {
 		opacity: 1;
@@ -133,52 +163,38 @@ h2 {
 }
 
 .animate-fade-in-up {
-	animation: fadeInUp 0.6s ease-out both;
+	animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-fade-in {
-	animation: fadeIn 0.6s ease-out both;
+	animation: fadeIn 0.7s ease-out both;
 }
 
 .animation-delay-100 {
-	animation-delay: 0.1s;
+	animation-delay: 0.08s;
 }
 .animation-delay-200 {
-	animation-delay: 0.2s;
+	animation-delay: 0.16s;
 }
 .animation-delay-300 {
-	animation-delay: 0.3s;
+	animation-delay: 0.24s;
 }
 .animation-delay-400 {
-	animation-delay: 0.4s;
+	animation-delay: 0.32s;
 }
 .animation-delay-500 {
-	animation-delay: 0.5s;
+	animation-delay: 0.4s;
 }
 
-/* Card hover effects */
+/* Card hover — crisp lift, no soft glow (keeps the utilitarian feel). */
 .card-hover-lift {
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
 }
 
 .card-hover-lift:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	transform: translateY(-4px);
 }
 
-.card-image-zoom {
-	overflow: hidden;
-}
-
-.card-image-zoom img {
-	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-image-zoom:hover img {
-	transform: scale(1.05);
-}
-
-/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,
@@ -189,28 +205,13 @@ h2 {
 	}
 }
 
-/* Mobile optimizations */
 @media (max-width: 768px) {
-	@keyframes fadeInUp {
-		from {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
+	body {
+		background-size: 40px 40px;
 	}
-
-	.card-hover-lift:hover {
-		transform: translateY(-4px);
-	}
-
 	.btn {
 		min-height: 44px;
-		min-width: 44px;
 	}
-
 	body {
 		-webkit-text-size-adjust: 100%;
 		text-size-adjust: 100%;
