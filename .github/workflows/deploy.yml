@@ -49,6 +49,9 @@ jobs:
       - name: Build with Astro
         run: bun run build
 
+      - name: Verify pages & internal links
+        run: bun run test:dist
+
       - name: Disable Jekyll (serve _astro/* assets)
         run: touch dist/.nojekyll
 
