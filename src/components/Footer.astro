@@ -5,9 +5,10 @@ import LanguageSwitcher from './LanguageSwitcher.astro'
 interface Props {
   lang: Locale
   path?: string
+  localized?: boolean
 }
 
-const { lang, path = '/' } = Astro.props
+const { lang, path = '/', localized = true } = Astro.props
 const t = useTranslations(lang)
 const year = new Date().getFullYear()
 
@@ -97,7 +98,7 @@ const quickLinks = [
           </div>
           <div class="flex items-center gap-4">
             <span class="text-sm text-base-content/70">{t('footer.preferences.language')}</span>
-            <LanguageSwitcher lang={lang} path={path} />
+            <LanguageSwitcher lang={lang} path={path} localized={localized} />
           </div>
         </div>
       </div>

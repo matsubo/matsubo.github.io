@@ -7,9 +7,11 @@ interface Props {
   lang: Locale
   /** Logical path without locale prefix, e.g. '/' or '/rails/'. Used for hreflang alternates. */
   path?: string
+  /** Whether this page has per-locale variants (emit hreflang alternates). */
+  localized?: boolean
 }
 
-const { title, description, lang, path = '/' } = Astro.props
+const { title, description, lang, path = '/', localized = true } = Astro.props
 const canonical = new URL(Astro.url.pathname, Astro.site).href
 const ogImage = new URL('/og-image.png', Astro.site).href
 const enHref = new URL(localizePath(path, 'en'), Astro.site).href
@@ -18,12 +20,18 @@ const jaHref = new URL(localizePath(path, 'ja'), Astro.site).href
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
-<link rel="alternate" hreflang="en" href={enHref} />
-<link rel="alternate" hreflang="ja" href={jaHref} />
-<link rel="alternate" hreflang="x-default" href={enHref} />
+{localized && (
+  <>
+    <link rel="alternate" hreflang="en" href={enHref} />
+    <link rel="alternate" hreflang="ja" href={jaHref} />
+    <link rel="alternate" hreflang="x-default" href={enHref} />
+  </>
+)}
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
