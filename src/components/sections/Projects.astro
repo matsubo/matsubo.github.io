@@ -25,7 +25,13 @@ const t = useTranslations(lang)
 
 const aiTools = [
   { key: 'moderator', img: aiModeratorImg, alt: 'AI Moderator', href: 'https://ai-moderator.teraren.com/' },
-  { key: 'triathlon', img: aiTriathlonImg, alt: 'AI Triathlon Training', href: 'https://triathlon.teraren.com/' },
+  { key: 'triathlon', img: aiTriathlonImg, alt: 'AI TRI+', href: 'https://ai-triathlon-result.teraren.com/' },
+]
+
+const pwaApps = [
+  { key: 'sotaPeakFinder', href: 'https://matsubo.github.io/sota-peak-finder/' },
+  { key: 'offlineQth', href: 'https://matsubo.github.io/offline-qth/' },
+  { key: 'marathonPace', href: 'https://matsubo.github.io/marathon-pace/' },
 ]
 
 const apiServices = [
@@ -34,7 +40,14 @@ const apiServices = [
   { key: 'corporation', href: 'https://corporation.teraren.com/' },
   { key: 'train', href: 'https://train.teraren.com/' },
   { key: 'school', href: 'https://school.teraren.com/' },
+  { key: 'dam', href: 'https://dam.teraren.com/' },
   { key: 'seireki', href: 'https://seireki.teraren.com/' },
+  { key: 'inkan', href: 'https://inkan.teraren.com/' },
+]
+
+const ossTools = [
+  { key: 'voiceMemoStt', href: 'https://github.com/matsubo/voice-memo-stt' },
+  { key: 'claudeCodeMaxUsage', href: 'https://github.com/matsubo/claude-code-max-usage' },
 ]
 
 const pastProjects = [
@@ -83,6 +96,28 @@ const pastProjects = [
       </div>
     </div>
 
+    <!-- Progressive Web Apps -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-2">{t('projects.pwaApps.title')}</h3>
+      <p class="text-base-content/70 mb-6">{t('projects.pwaApps.subtitle')}</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {pwaApps.map((app) => (
+          <div class="card fm-card card-hover-lift">
+            <div class="card-body">
+              <h4 class="card-title text-lg">{t(`projects.pwaApps.${app.key}.title`)}</h4>
+              <p class="text-sm text-secondary font-semibold">{t(`projects.pwaApps.${app.key}.subtitle`)}</p>
+              <p class="text-sm text-base-content/80 mt-2">{t(`projects.pwaApps.${app.key}.description`)}</p>
+              <div class="card-actions justify-end mt-4">
+                <a href={app.href} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  {t(`projects.pwaApps.${app.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
     <!-- API Services -->
     <div class="mb-12">
       <h3 class="text-2xl font-semibold mb-2">{t('projects.apiServices.title')}</h3>
@@ -101,6 +136,28 @@ const pastProjects = [
               <div class="card-actions justify-end mt-4">
                 <a href={api.href} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                   {t(`projects.apiServices.${api.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- OSS Tools -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-2">{t('projects.ossTools.title')}</h3>
+      <p class="text-base-content/70 mb-6">{t('projects.ossTools.subtitle')}</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        {ossTools.map((tool) => (
+          <div class="card fm-card card-hover-lift">
+            <div class="card-body">
+              <h4 class="card-title text-lg">{t(`projects.ossTools.${tool.key}.title`)}</h4>
+              <p class="text-sm text-secondary font-semibold">{t(`projects.ossTools.${tool.key}.subtitle`)}</p>
+              <p class="text-sm text-base-content/80 mt-2">{t(`projects.ossTools.${tool.key}.description`)}</p>
+              <div class="card-actions justify-end mt-4">
+                <a href={tool.href} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  {t(`projects.ossTools.${tool.key}.button`)}
                 </a>
               </div>
             </div>

@@ -302,11 +302,33 @@
         "tech": "OpenAI API, Custom LLMs, React, Node.js"
       },
       "triathlon": {
-        "title": "トライアスロンAIアナライザー",
-        "subtitle": "LLM搭載トレーニング分析＆コーチングプラットフォーム",
-        "description": "国内主要トライアスロンレースのリザルトデータをGitHubでオープンソースとして公開し、2層のLLM分析システムで包括的なサポートを提供するプラットフォームです。GPT-4o-miniを採用したレース分析エンジンが、ランキング、偏差値、トレーニングアドバイス、レース振り返りを無料で提供。\n\n有料機能ではGemini 2.5 Proを活用したパーソナルコーチLLMが、詳細なプロフィールと目標に基づいて毎日のトレーニングプラン作成と細かな相談に対応します。\n\nTrainingPeaks、Stravaと比較して圧倒的なコストパフォーマンスを実現し、日本のレース環境に特化した分析とオープンソースのデータ基盤により、透明性の高いトレーニングサポートを提供しています。",
+        "title": "AI TRI+",
+        "subtitle": "LLMトレーニングプラン＆レースリザルト分析プラットフォーム",
+        "description": "国内トライアスロン2,444大会以上、レースリザルト350万件以上、選手プロフィール125万件以上のデータベースを基盤としたLLMコーチングプラットフォーム。データはGitHubでオープンソース公開。\n\nレース分析エンジンは、ランキング、パーセンタイルベースの偏差値、強み・弱み診断、トレーニングアドバイス、レース振り返りを生成。LLMコーチは100以上のデータポイントから個別化トレーニングプランを作成し、ピリオダイゼーション（ベース→専門→試合→回復）、パワー／心拍ゾーン最適化、疲労・モチベーションに応じた動的調整に対応。24時間対応のLLMチャットボットがコーチング質問に答え、ドラッグ＆ドロップのカレンダーUIでGoogleカレンダー／Appleカレンダーと同期。\n\nOpenAPI仕様準拠のREST APIとMCP（Model Context Protocol）対応により、Claude等のLLMアシスタントからもデータ参照が可能。\n\nフリープランではレース分析と初回プラン生成、プレミアムプランではゴール無制限、プラン再生成、チャットサポート、パフォーマンス予測を提供。従来のコーチング料金の約1/200という圧倒的なコストパフォーマンスを実現。",
         "button": "ライブサイトを見る",
-        "tech": "GPT-4o-mini, Gemini 2.5 Pro, React, Python, Open Source Data"
+        "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
+      }
+    },
+    "pwaApps": {
+      "title": "プログレッシブウェブアプリ",
+      "subtitle": "アウトドア活動向けオフライン対応ユーティリティアプリケーション",
+      "sotaPeakFinder": {
+        "title": "SOTA Peak Finder",
+        "subtitle": "アマチュア無線運用のための山頂検索ツール",
+        "description": "SOTA（Summits On The Air）アクティベーター向けに、アマチュア無線運用のための山頂を特定・検索できるプログレッシブウェブアプリです。山頂データをキャッシュしてオフラインで動作するため、インターネット接続のない山岳地帯での使用に最適です。",
+        "button": "アプリを起動"
+      },
+      "offlineQth": {
+        "title": "Offline QTH Locator",
+        "subtitle": "アマチュア無線グリッドスクエア計算ツール",
+        "description": "アマチュア無線運用者向けに、GPS座標からQTHロケーター（メイデンヘッドグリッドスクエア）を計算・変換するオフライン対応ツールです。VHF/UHF運用やコンテストに必須のツールで、インターネット接続なしで完全に動作します。",
+        "button": "アプリを起動"
+      },
+      "marathonPace": {
+        "title": "Marathon Pace Calculator",
+        "subtitle": "ランニングペース・ラップタイム計算ツール",
+        "description": "ランナーやトライアスリート向けの包括的なペース計算ツールです。様々なレース距離に対する目標ペース、ラップタイム、完走タイムを計算できます。完全オフラインで動作するため、トレーニングランやレース中の使用に最適です。",
+        "button": "アプリを起動"
       }
     },
     "apiServices": {
@@ -367,16 +389,54 @@
         ],
         "button": "サイトを見る"
       },
-      "seireki": {
-        "title": "和暦API",
-        "subtitle": "元号・西暦変換データベース",
+      "dam": {
+        "title": "ダムAPI",
+        "subtitle": "日本のダムデータベース",
         "features": [
-          "和暦・西暦の相互変換",
-          "元号情報の取得",
-          "日付フォーマット対応",
-          "JSON形式で提供"
+          "全国のダム情報",
+          "諸元・位置データ",
+          "河川・都道府県別検索",
+          "REST APIサポート"
         ],
         "button": "サイトを見る"
+      },
+      "seireki": {
+        "title": "和暦・西暦API",
+        "subtitle": "和暦と西暦の相互変換",
+        "features": [
+          "元号から西暦への変換",
+          "令和・平成・昭和に対応",
+          "双方向ルックアップ",
+          "REST APIサポート"
+        ],
+        "button": "サイトを見る"
+      },
+      "inkan": {
+        "title": "印鑑ジェネレーター",
+        "subtitle": "印鑑画像生成サービス",
+        "features": [
+          "印鑑画像の生成",
+          "氏名・スタイルのカスタマイズ",
+          "ブラウザ完結",
+          "無料で利用可"
+        ],
+        "button": "サイトを見る"
+      }
+    },
+    "ossTools": {
+      "title": "OSSツール",
+      "subtitle": "自分で開発・メンテナンスしているOSS",
+      "voiceMemoStt": {
+        "title": "voice-memo-stt",
+        "subtitle": "macOSボイスメモ文字起こしCLI",
+        "description": "macOSのボイスメモを文字起こしするGo製CLIツール（vmt）。プラガブルなSTTエンジンに対応し、CLI/TUI/Alfred Workflowで利用可能。ElevenLabs Scribeに対応。",
+        "button": "GitHubで見る"
+      },
+      "claudeCodeMaxUsage": {
+        "title": "claude-code-max-usage",
+        "subtitle": "tmux/StarshipでClaude Code Maxの使用量表示",
+        "description": "Claude Code (Maxプラン) のAPI使用量をtmuxステータスバーまたはStarshipプロンプトに表示。5時間／7日間の使用率をカラーコード付きプログレスバーで可視化。Pure bash + jq + curl。",
+        "button": "GitHubで見る"
       }
     },
     "pastProjects": {
