@@ -22,6 +22,45 @@ const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.des
       <div class="card fm-card card-hover-lift">
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:wrench-screwdriver" class="w-6 h-6 text-success" />
+            {t('hobbies.diy.title')}
+          </h3>
+          <p class="text-sm mt-2">{t('hobbies.diy.description')}</p>
+          <ul class="space-y-2 mt-4">
+            {diyProjects.map((project) => (
+              <li class="flex items-start gap-2">
+                <span class="text-success">🔧</span>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" class="link">{project.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div class="card fm-card card-hover-lift">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            <Icon name="heroicons:globe-alt" class="w-6 h-6 text-warning" />
+            {t('hobbies.travel.title')}
+          </h3>
+          <p class="text-sm mt-2">{t('hobbies.travel.description')}</p>
+          <ul class="space-y-2 mt-4">
+            {destinations.map((destination) => (
+              <li class="flex items-start gap-2">
+                <span class="text-warning">✈️</span>
+                <a href={destination.url} target="_blank" rel="noopener noreferrer" class="link">{destination.title}</a>
+              </li>
+            ))}
+          </ul>
+          <div class="mt-4">
+            <a href="https://diary.teraren.com/travel/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
+              {t('hobbies.travel.allTravels')}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card fm-card card-hover-lift">
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
             <Icon name="heroicons:trophy" class="w-6 h-6 text-warning" />
             {t('hobbies.triathlon.title')}
           </h3>
@@ -57,45 +96,6 @@ const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.des
           <div class="mt-4">
             <a href={t('hobbies.amateurRadio.website')} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
               Visit Website
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card fm-card card-hover-lift">
-        <div class="card-body">
-          <h3 class="card-title flex items-center gap-2">
-            <Icon name="heroicons:wrench-screwdriver" class="w-6 h-6 text-success" />
-            {t('hobbies.diy.title')}
-          </h3>
-          <p class="text-sm mt-2">{t('hobbies.diy.description')}</p>
-          <ul class="space-y-2 mt-4">
-            {diyProjects.map((project) => (
-              <li class="flex items-start gap-2">
-                <span class="text-success">🔧</span>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" class="link">{project.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div class="card fm-card card-hover-lift">
-        <div class="card-body">
-          <h3 class="card-title flex items-center gap-2">
-            <Icon name="heroicons:globe-alt" class="w-6 h-6 text-warning" />
-            {t('hobbies.travel.title')}
-          </h3>
-          <p class="text-sm mt-2">{t('hobbies.travel.description')}</p>
-          <ul class="space-y-2 mt-4">
-            {destinations.map((destination) => (
-              <li class="flex items-start gap-2">
-                <span class="text-warning">✈️</span>
-                <a href={destination.url} target="_blank" rel="noopener noreferrer" class="link">{destination.title}</a>
-              </li>
-            ))}
-          </ul>
-          <div class="mt-4">
-            <a href="https://diary.teraren.com/travel/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
-              {t('hobbies.travel.allTravels')}
             </a>
           </div>
         </div>
