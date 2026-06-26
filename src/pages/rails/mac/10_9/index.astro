@@ -1,0 +1,199 @@
+---
+import { Icon } from 'astro-icon/components'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/"
+  title="Ruby on Rails on Mac OS X 10.9 Mavericks | Yuki Matsukura"
+  description="Step-by-step Ruby on Rails installation guide for Mac OS X 10.9 Mavericks, covering Command Line Tools, homebrew, rbenv, Ruby, Rails and Aptana Studio."
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li>Mac OS X 10.9</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-5xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <h1 class="text-5xl font-bold mb-4 flex items-center gap-3">
+        <Icon name="heroicons:command-line" class="h-12 w-12 text-primary" />
+        Mac OS X 10.9 (Mavericks)
+      </h1>
+      <div class="alert alert-warning">
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <span>上から順番にインストールを進めてください。</span>
+      </div>
+    </div>
+
+    <!-- Ruby on Rails Installation Steps -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+        <Icon name="heroicons:cube" class="h-8 w-8 text-primary" />
+        Ruby on Railsのインストール
+      </h2>
+      <div class="space-y-4">
+        <a href="command_line_tools" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-primary badge-lg">1</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  Command Line Toolsのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  Mac OS
+                  Xでソフトウェア開発を行う際に必要になる一般的なライブラリをインストールします。30分程度かかります。
+                </p>
+              </div>
+              <div class="badge badge-outline">~30分</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="homebrew" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-primary badge-lg">2</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  homebrewのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  rubyenvをインストールするためのアプリケーションをインストールします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="rbenv" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-primary badge-lg">3</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  rbenvのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  ruby自体を管理するアプリケーションをインストールし、設定します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="ruby" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-primary badge-lg">4</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  Rubyのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  Ruby自体のインストールを行います。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="ror" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-primary badge-lg">5</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  Ruby on Railsのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  Ruby on Railsのライブラリをインストールします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Aptana Studio Installation Steps -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+        <Icon name="heroicons:code-bracket" class="h-8 w-8 text-secondary" />
+        Aptana Studioのインストール
+      </h2>
+      <div class="space-y-4">
+        <a href="java" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-secondary badge-lg">1</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  Javaのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  Aptanaが依存しているJavaをインストールします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="aptana" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-secondary badge-lg">2</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  Aptana Studioのインストール
+                </h3>
+                <p class="text-base-content/70">
+                  Aptana Studioをダウンロードし、インストール、起動します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="aptana_check" class="card bg-base-100 shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+          <div class="card-body">
+            <div class="flex items-start gap-4">
+              <div class="badge badge-secondary badge-lg">3</div>
+              <div class="flex-1">
+                <h3 class="card-title text-xl mb-2">
+                  <Icon name="heroicons:check-circle" class="h-6 w-6 inline mr-2" />
+                  Ruby on Railsの動作確認
+                </h3>
+                <p class="text-base-content/70">
+                  Aptana StudioからRuby on
+                  Railsプロジェクトを作成して動作確認をします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Back Button -->
+    <div class="flex justify-start">
+      <a href="/rails/mac/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        戻る
+      </a>
+    </div>
+  </div>
+</Layout>

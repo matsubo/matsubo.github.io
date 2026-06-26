@@ -1,0 +1,219 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import Layout from '@/layouts/Layout.astro'
+import javaImg from '@/images/tutorials/java.png'
+import javaDownloadImg from '@/images/tutorials/java_download.png'
+import javaInstallerImg from '@/images/tutorials/java_installer.png'
+import javaAgreementImg from '@/images/tutorials/java_agreement.png'
+import javaWarningImg from '@/images/tutorials/java_warning.png'
+import javaInstalledImg from '@/images/tutorials/java_installed.png'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/java/"
+  title="Javaのインストール | Yuki Matsukura"
+  description="AptanaはJavaに依存しているため、Javaがインストールされていない場合は、Javaをインストールします。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>Javaのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-secondary badge-lg">Aptana - Step 1</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:code-bracket" class="h-12 w-12 text-secondary" />
+          Javaのインストール
+        </h1>
+      </div>
+      <div class="alert alert-info">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-current shrink-0 w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>
+          AptanaはJavaに依存しているため、Javaがインストールされていない場合は、Javaをインストールします。
+        </span>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <!-- Check Java -->
+      <div>
+        <h2 class="text-3xl font-bold mb-6">
+          Javaがインストールされているか確認
+        </h2>
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <p class="mb-4">ターミナルで以下のコマンドを実行します：</p>
+            <div class="mockup-code">
+              <pre data-prefix="%"><code>java -version</code></pre>
+            </div>
+            <p class="mt-4">
+              以下のようにバージョン番号が表示されれば、既にインストールされているのでここでJavaのインストールをする必要は有りません。
+            </p>
+            <div class="bg-base-200 p-4 rounded-lg mt-4">
+              <Image src={javaImg} alt="java version" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download and Install -->
+      <div>
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+          <Icon name="heroicons:arrow-down-tray" class="h-8 w-8 text-secondary" />
+          Javaのダウンロードとインストール
+        </h2>
+
+        <!-- Step 1: Download -->
+        <div class="card bg-base-100 shadow-lg mb-6">
+          <div class="card-body">
+            <h3 class="card-title text-2xl mb-4">
+              <div class="badge badge-secondary">1</div>
+              Javaをダウンロード
+            </h3>
+            <p class="mb-4">
+              以下のサイトへアクセスし、Javaをダウンロードします：
+            </p>
+            <a
+              href="http://java.com/ja/download/"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-lg btn-secondary gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+              </svg>
+              Java公式サイトへ
+            </a>
+            <p class="mt-4">
+              「同意して無料ダウンロードを開始」ボタンをクリックすると、ダウンロードが開始されるためデスクトップなどの適当な場所へファイルを保存します。
+            </p>
+            <div class="bg-base-200 p-4 rounded-lg mt-4">
+              <Image src={javaDownloadImg} alt="java download" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Install -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title text-2xl mb-4">
+              <div class="badge badge-secondary">2</div>
+              インストールを実行
+            </h3>
+            <p class="mb-4">
+              保存したファイルを開き、表示された内容通りに進んで行けばインストールを完了できます。
+            </p>
+            <div class="space-y-6">
+              <div>
+                <p class="font-semibold mb-2">インストーラーを起動</p>
+                <div class="bg-base-200 p-4 rounded-lg">
+                  <Image src={javaInstallerImg} alt="java installer" />
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div>
+                <p class="font-semibold mb-2">ライセンス契約に同意</p>
+                <div class="bg-base-200 p-4 rounded-lg">
+                  <Image src={javaAgreementImg} alt="java agreement" />
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div>
+                <p class="font-semibold mb-2">
+                  セキュリティ警告（必要に応じて）
+                </p>
+                <div class="bg-base-200 p-4 rounded-lg">
+                  <Image src={javaWarningImg} alt="java warning" />
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div>
+                <p class="font-semibold mb-2">インストール完了</p>
+                <div class="bg-base-200 p-4 rounded-lg">
+                  <Image src={javaInstalledImg} alt="java installed" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Verify -->
+        <div class="card bg-success text-success-content shadow-lg mt-6">
+          <div class="card-body">
+            <h3 class="card-title text-2xl mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              インストールの確認
+            </h3>
+            <p class="text-lg mb-4">
+              再度、以下を入力してバージョン番号が表示されるかを確認します：
+            </p>
+            <div class="mockup-code bg-base-100 text-base-content">
+              <pre data-prefix="%"><code>java -version</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/ror" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップ
+      </a>
+      <a href="/rails/mac/10_9/aptana" class="btn btn-secondary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>

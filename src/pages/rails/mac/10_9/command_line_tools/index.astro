@@ -1,0 +1,140 @@
+---
+import { Icon } from 'astro-icon/components'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/command_line_tools/"
+  title="Command Line Toolsのインストール | Yuki Matsukura"
+  description="Command Line Toolsとは、Mac OS上でソフトウェアをコンパイルするために必要なライブラリやコマンドが収録されたツールセットです。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>Command Line Toolsのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-primary badge-lg">Step 1</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:command-line" class="h-12 w-12 text-primary" />
+          Command Line Toolsのインストール
+        </h1>
+      </div>
+      <div class="alert alert-warning mb-6">
+        <Icon name="heroicons:clock" class="h-6 w-6" />
+        <div>
+          <p class="font-semibold">所要時間: 約30分</p>
+          <p>
+            このステップは時間がかかります。余裕を持って作業してください。
+          </p>
+        </div>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          Command Line Toolsとは、Mac
+          OS上でソフトウェアをコンパイルするために必要なライブラリやコマンドが収録されたツールセットです。
+        </p>
+        <p class="text-lg">
+          一般的に、Mac
+          OS上でソフトウェア開発を行う場合は必要になるツールです。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- External Reference -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">インストール方法</h3>
+          <div class="alert alert-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+              <p class="mb-2">
+                以下のWebサイトを参照し、Command Line
+                Toolsをダウンロードしてインストールしてください：
+              </p>
+              <a
+                href="http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xcode.html"
+                class="link link-primary font-semibold break-all"
+                target="_blank"
+                rel="noreferrer"
+              >
+                http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/install_xcode.html
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Important Notes -->
+      <div class="card bg-warning text-warning-content shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+              />
+            </svg>
+            重要な注意事項
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li>インストールには30分程度かかります</li>
+            <li>
+              ダウンロードサイズが大きいため、安定したインターネット接続が必要です
+            </li>
+            <li>インストール中は他の作業を避けてください</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        ステップ一覧に戻る
+      </a>
+      <a href="/rails/mac/10_9/homebrew" class="btn btn-primary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>

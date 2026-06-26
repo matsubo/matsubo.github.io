@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
 import icon from 'astro-icon'
@@ -15,5 +16,10 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   integrations: [icon(), sitemap()],
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    plugins: [tailwindcss()],
+    resolve: {
+      alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
+    },
+  },
 })

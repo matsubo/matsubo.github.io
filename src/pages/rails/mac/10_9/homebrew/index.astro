@@ -1,0 +1,154 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import Layout from '@/layouts/Layout.astro'
+import terminalImg from '@/images/tutorials/terminal.png'
+---
+
+<Layout
+  lang="en"
+  path="/rails/mac/10_9/homebrew/"
+  title="homebrewのインストール | Yuki Matsukura"
+  description="homebrewとはMac OS Xにコマンドを1回打つだけでアプリケーションを導入できるようにするツールです。"
+>
+  <!-- Breadcrumb -->
+  <div class="bg-base-200 py-4">
+    <div class="container mx-auto px-4">
+      <div class="breadcrumbs text-sm">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rails/">Ruby on Rails install</a></li>
+          <li><a href="/rails/mac/">Mac OS X</a></li>
+          <li><a href="/rails/mac/10_9/">Mac OS X 10.9</a></li>
+          <li>homebrewのインストール</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="badge badge-primary badge-lg">Step 2</div>
+        <h1 class="text-5xl font-bold flex items-center gap-3">
+          <Icon name="heroicons:command-line" class="h-12 w-12 text-primary" />
+          homebrewのインストール
+        </h1>
+      </div>
+      <div class="prose max-w-none">
+        <p class="text-lg">
+          homebrewとはMac OS
+          Xにコマンドを1回打つだけでアプリケーションを導入できるようにするツールです。
+        </p>
+        <p class="text-lg">
+          後ほど利用する、rbenvというrubyを管理するためのアプリケーションをインストールするために利用します。
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <section class="space-y-8">
+      <h2 class="text-3xl font-bold mb-6">手順</h2>
+
+      <!-- Step 1: Terminal -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">1</div>
+            ターミナルを立ち上げます
+          </h3>
+          <div class="bg-base-200 p-4 rounded-lg">
+            <Image src={terminalImg} alt="ターミナル" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Command -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">2</div>
+            以下のコマンドを入力して[Enter]キーを押します
+          </h3>
+          <div class="mockup-code">
+            <pre data-prefix="%"><code>ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Installation -->
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <div class="badge badge-primary">3</div>
+            インストール中の質問に回答
+          </h3>
+          <div class="alert alert-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+              <p>
+                いくつか、インストール中に質問を聞かれるので、適切に回答していきます。
+              </p>
+              <p class="mt-2">
+                途中、自分のパスワード入力を求められるので、入力してEnterを押します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4: Success -->
+      <div class="card bg-success text-success-content shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-2xl mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            インストール完了の確認
+          </h3>
+          <p class="text-lg">
+            最後の方に、以下のメッセージが表示されたら完了です：
+          </p>
+          <div class="mockup-code bg-base-100 text-base-content mt-4">
+            <pre data-prefix="$"><code>Installation successful!</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12 pt-6 border-t border-base-300">
+      <a href="/rails/mac/10_9/command_line_tools" class="btn btn-ghost gap-2">
+        <Icon name="heroicons:chevron-left" class="h-5 w-5" />
+        前のステップに戻る
+      </a>
+      <a href="/rails/mac/10_9/rbenv" class="btn btn-primary gap-2">
+        次のステップへ
+        <Icon name="heroicons:chevron-left" class="h-5 w-5 rotate-180" />
+      </a>
+    </div>
+  </div>
+</Layout>
