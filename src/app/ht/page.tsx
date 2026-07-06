@@ -10,7 +10,6 @@ import {
   PresentationChartBarIcon,
   DocumentTextIcon,
   LinkIcon,
-  BriefcaseIcon,
   ShieldCheckIcon,
   CheckCircleIcon,
 } from '@heroicons/react/24/outline'
@@ -242,33 +241,6 @@ export default function HTPage() {
           </div>
         </section>
 
-        {/* Work History Section */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
-            <BriefcaseIcon className="h-10 w-10 text-primary" />
-            Work History
-          </h2>
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body">
-              <ul className="timeline timeline-vertical">
-                {workHistory.map((work, idx) => (
-                  <li key={idx}>
-                    {idx > 0 && <hr className="bg-primary" />}
-                    <div className="timeline-start">{work.period}</div>
-                    <div className="timeline-middle">
-                      <CheckCircleIcon className={`w-5 h-5 ${work.current ? 'text-secondary' : 'text-primary'}`} />
-                    </div>
-                    <div className="timeline-end timeline-box">
-                      <strong>{work.company}</strong> - {work.position}
-                    </div>
-                    {idx < workHistory.length - 1 && <hr className="bg-primary" />}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
         {/* Skills Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
@@ -376,7 +348,7 @@ const publications: Array<{
     title: 'Platform for Realizing Social Gaming -How to Develop Attractive Games for 1 Billion Users-',
     authors: 'Yuki Matsukura, Hideki Tanaka, Masaki Fujimoto',
     description: 'Technical Committee on Natural Language Understanding and Models of Communication (NLC) 2012',
-    link: 'http://www.ieice.org/ken/program/index.php?tgs_regid=7b51ac8a2255b64211deee115de18aa9001df9945f52808b72e33513fedb8ef3&tgid=IEICE-NLC&lang=',
+    link: 'https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201202246900372066',
   },
 ]
 
@@ -452,64 +424,5 @@ const links: Array<{
     title: '500px',
     url: 'https://500px.com/p/matsubokkuri?view=photos',
     description: 'Photo portfolio on 500px platform.',
-  },
-]
-
-const workHistory: Array<{
-  period: string;
-  company: string;
-  position: string;
-  current?: boolean;
-}> = [
-  {
-    period: '2001/4 - 2001/8',
-    company: 'COM Corp',
-    position: 'System management department',
-  },
-  {
-    period: '2001/9 - 2002/4',
-    company: 'CNS guide 2002',
-    position: 'Editor',
-  },
-  {
-    period: '2002/4 - 2003/3',
-    company: 'SFC Data Science Lab',
-    position: 'Sub-administrator',
-  },
-  {
-    period: '2002/4 - 2002/9',
-    company: 'Clair Inc.',
-    position: 'System developer',
-  },
-  {
-    period: '2002/4 - 2005/9',
-    company: 'Marue Corp.',
-    position: 'Consultant, System Management',
-  },
-  {
-    period: '2003/4 - 2004/3',
-    company: 'CNS guide 2004',
-    position: 'Chief editor',
-  },
-  {
-    period: '2003/4 - 2005/4',
-    company: 'SFC Data Science Lab',
-    position: 'Administrator',
-  },
-  {
-    period: '2006/4 - 2009/3',
-    company: 'E-commerce ASP Company',
-    position: 'System Architect',
-  },
-  {
-    period: '2009/4 - 2011/1',
-    company: 'Coach United',
-    position: 'Chief Engineer',
-  },
-  {
-    period: '2011/2 - Present',
-    company: 'GREE, Inc.',
-    position: 'Senior Engineer / Manager',
-    current: true,
   },
 ]
