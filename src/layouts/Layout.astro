@@ -31,7 +31,9 @@ const localized = !/^\/(rails|sfc|ht)(\/|$)/.test(path)
       ;(function () {
         try {
           var t = localStorage.getItem('theme')
-          if (t) document.documentElement.setAttribute('data-theme', t)
+          if (t === 'fieldmanual' || t === 'fieldmanual-light') {
+            document.documentElement.setAttribute('data-theme', t)
+          }
         } catch (e) {}
       })()
     </script>

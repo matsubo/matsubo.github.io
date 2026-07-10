@@ -15,7 +15,6 @@ const year = new Date().getFullYear()
 const quickLinks = [
   { path: '/ht/', key: 'lab' },
   { path: '/sfc/', key: 'university' },
-  { path: '/rails/', key: 'rails' },
 ]
 ---
 
@@ -119,10 +118,10 @@ const quickLinks = [
     var root = document.documentElement
     var cb = document.getElementById('theme-toggle')
     if (!cb) return
-    var isDark = (localStorage.getItem('theme') || 'editorial') === 'editorial-dark'
+    var isDark = localStorage.getItem('theme') !== 'fieldmanual-light'
     cb.checked = isDark
     cb.addEventListener('change', function () {
-      var theme = cb.checked ? 'editorial-dark' : 'editorial'
+      var theme = cb.checked ? 'fieldmanual' : 'fieldmanual-light'
       root.setAttribute('data-theme', theme)
       try {
         localStorage.setItem('theme', theme)
