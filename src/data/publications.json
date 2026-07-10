@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-07-10T00:42:23.700Z",
+  "featured": [
+    {
+      "title": "🏔️ 17万9千座の山頂データをサブ10msで検索できるPWAをClaude Codeだけで作った話",
+      "url": "https://zenn.dev/matsubokkuri/articles/sota-peak-finder",
+      "source": "zenn",
+      "date": "2026-02-26"
+    },
+    {
+      "title": "Vercel月額$42→自宅サーバ月額$0。Coolifyで個人サービス基盤を作った話",
+      "url": "https://zenn.dev/matsubokkuri/articles/2026-03-13-coolify-why-self-hosted-paas",
+      "source": "zenn",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "19年運用したWordPress 661記事をAstro + Cloudflare Pagesへ移行した手順と技術的ポイント",
+      "url": "https://zenn.dev/matsubokkuri/articles/2026-03-10-wordpress-to-astro-migration",
+      "source": "zenn",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "Claude Opus 4.6 + ブラウザ自動操作で2025年確定申告：CSV解析・仕訳生成・MoneyForward入力・e-Tax送信",
+      "url": "https://blog.teraren.com/posts/tax-return-with-ai-agent-2025/",
+      "source": "blog",
+      "date": "2026-03-17"
+    }
+  ],
+  "latest": [
+    {
+      "title": "アンケート回答を代替するLLM個人モデルの構築と精度検証：N=1予備実験",
+      "url": "https://zenn.dev/minedia/articles/2026-05-25-ai-consumer-panel-digital-twin",
+      "source": "zenn",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "CSV更新→PDF自動生成→印刷会社へ。社員名刺の発注ワークフローをコード化した",
+      "url": "https://zenn.dev/minedia/articles/business-card-pdf-generator",
+      "source": "zenn",
+      "date": "2026-05-18"
+    },
+    {
+      "title": "Coolify環境のログ管理と障害対応：Docker + Zabbix + Discordで運用を回す",
+      "url": "https://zenn.dev/minedia/articles/2026-03-16-coolify-log-incident-response",
+      "source": "zenn",
+      "date": "2026-04-29"
+    },
+    {
+      "title": "Mac mini M4 の容量不足を Thunderbolt 4 接続の M.2 NVMe で解決した（内蔵 SSD と同等の速度）",
+      "url": "https://blog.teraren.com/posts/2026-04-28-mac-mini-m4-thunderbolt4-nvme-ssd/",
+      "source": "blog",
+      "date": "2026-04-28"
+    },
+    {
+      "title": "世界に一つの印影をブラウザで無料で作れるサービスを作った — inkan.teraren.com",
+      "url": "https://blog.teraren.com/posts/2026-04-26-inkan-generator/",
+      "source": "blog",
+      "date": "2026-04-26"
+    },
+    {
+      "title": "会議の録音を ElevenLabs Scribe で自動 transcribe する CLI を Go で作った — vmt",
+      "url": "https://blog.teraren.com/posts/2026-04-25-voice-memo-stt/",
+      "source": "blog",
+      "date": "2026-04-25"
+    },
+    {
+      "title": "Coolify環境のバックアップ戦略：6つのDBを自動ダンプ+復旧手順",
+      "url": "https://zenn.dev/minedia/articles/2026-03-16-coolify-backup-strategy",
+      "source": "zenn",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Raspberry Pi 4 + Debian 13 (Trixie) で RTL-SDR を使った ADS-B 受信局を構築して Flightradar24 にフィードした記録",
+      "url": "https://blog.teraren.com/posts/2026-04-01-airband/",
+      "source": "blog",
+      "date": "2026-04-01"
+    }
+  ]
+}

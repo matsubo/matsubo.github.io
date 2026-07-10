@@ -37,7 +37,7 @@ export function ProjectsSection() {
           </h3>
           <p className="section-subtitle text-lg text-base-content/60 mb-8">{t('projects.aiTools.subtitle')}</p>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="card bg-base-200 border-2 border-primary layer-shadow-xl card-hover-lift overflow-hidden">
+            <div className="card bg-base-100 border border-base-content/10 layer-shadow-lg card-hover-lift overflow-hidden">
               <figure className="card-image-zoom">
                 <Image
                   src={aiModeratorImg}
@@ -54,7 +54,7 @@ export function ProjectsSection() {
                     href="https://ai-moderator.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary border-2 border-primary font-mono text-xs uppercase tracking-wider btn-glow"
+                    className="btn btn-primary btn-glow rounded-full px-5"
                   >
                     {t('projects.aiTools.moderator.button')}
                   </a>
@@ -62,7 +62,7 @@ export function ProjectsSection() {
               </div>
             </div>
 
-            <div className="card bg-base-200 border-2 border-primary layer-shadow-xl card-hover-lift overflow-hidden">
+            <div className="card bg-base-100 border border-base-content/10 layer-shadow-lg card-hover-lift overflow-hidden">
               <figure className="card-image-zoom">
                 <Image
                   src={aiTriathlonImg}
@@ -79,7 +79,7 @@ export function ProjectsSection() {
                     href="https://ai-triathlon-result.teraren.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary border-2 border-primary font-mono text-xs uppercase tracking-wider btn-glow"
+                    className="btn btn-primary btn-glow rounded-full px-5"
                   >
                     {t('projects.aiTools.triathlon.button')}
                   </a>
@@ -97,7 +97,7 @@ export function ProjectsSection() {
           <p className="section-subtitle text-lg text-base-content/60 mb-8">{t('projects.pwaApps.subtitle')}</p>
           <div className="grid md:grid-cols-3 gap-6">
             {/* SOTA Peak Finder */}
-            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card bg-base-100 border border-base-content/10 layer-shadow-md card-hover-lift">
               <div className="card-body p-6">
                 <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.sotaPeakFinder.title')}</h4>
                 <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.sotaPeakFinder.subtitle')}</p>
@@ -107,7 +107,7 @@ export function ProjectsSection() {
                     href="https://matsubo.github.io/sota-peak-finder/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm rounded-full px-4"
                   >
                     {t('projects.pwaApps.sotaPeakFinder.button')}
                   </a>
@@ -116,7 +116,7 @@ export function ProjectsSection() {
             </div>
 
             {/* Offline QTH */}
-            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card bg-base-100 border border-base-content/10 layer-shadow-md card-hover-lift">
               <div className="card-body p-6">
                 <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.offlineQth.title')}</h4>
                 <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.offlineQth.subtitle')}</p>
@@ -126,7 +126,7 @@ export function ProjectsSection() {
                     href="https://matsubo.github.io/offline-qth/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm rounded-full px-4"
                   >
                     {t('projects.pwaApps.offlineQth.button')}
                   </a>
@@ -135,7 +135,7 @@ export function ProjectsSection() {
             </div>
 
             {/* Marathon Pace */}
-            <div className="card bg-base-200 border-2 border-primary layer-shadow-lg card-hover-lift">
+            <div className="card bg-base-100 border border-base-content/10 layer-shadow-md card-hover-lift">
               <div className="card-body p-6">
                 <h4 className="section-header text-xl mb-2 text-base-content">{t('projects.pwaApps.marathonPace.title')}</h4>
                 <p className="code-accent text-xs text-primary font-semibold mb-3">{t('projects.pwaApps.marathonPace.subtitle')}</p>
@@ -145,7 +145,7 @@ export function ProjectsSection() {
                     href="https://matsubo.github.io/marathon-pace/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-sm border-2 font-mono text-xs uppercase tracking-wider"
+                    className="btn btn-outline btn-sm rounded-full px-4"
                   >
                     {t('projects.pwaApps.marathonPace.button')}
                   </a>

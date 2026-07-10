@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "dev": "next dev",
+    "prebuild": "bun scripts/fetch-publications.ts",
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.4",
+    "@types/bun": "^1.3.14",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.5.0",

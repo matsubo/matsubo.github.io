@@ -1,6 +1,11 @@
 'use client'
 import { useTranslations } from 'next-intl'
-import { AcademicCapIcon, DocumentTextIcon, BeakerIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, DocumentTextIcon, BeakerIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
+
+const PATENTS = [
+  { key: 'emailParsing', href: 'https://patents.google.com/patent/JP6755427B1/ja' },
+  { key: 'qualitativeResearch', href: 'https://patents.google.com/patent/JP6676809B1/ja' },
+] as const
 
 export function AcademicSection() {
   const t = useTranslations()
@@ -43,6 +48,36 @@ export function AcademicSection() {
             </div>
           </div>
         </div>
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+            <ShieldCheckIcon className="w-6 h-6 text-secondary" />
+            {t('academic.patents.title')}
+          </h3>
+          <div className="space-y-4">
+            {PATENTS.map(patent => (
+              <div key={patent.key} className="card bg-base-200">
+                <div className="card-body">
+                  <h4 className="card-title">{t(`academic.patents.${patent.key}.title`)}</h4>
+                  <p className="text-sm text-base-content/70">
+                    {t(`academic.patents.${patent.key}.meta`)}
+                  </p>
+                  <p className="mt-2">{t(`academic.patents.${patent.key}.description`)}</p>
+                  <div className="card-actions mt-4">
+                    <a
+                      href={patent.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm"
+                    >
+                      {t(`academic.patents.${patent.key}.button`)}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div>
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
             <BeakerIcon className="w-6 h-6 text-secondary" />

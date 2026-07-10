@@ -12,6 +12,7 @@ import {
   ExperienceSection,
   SkillsSection,
   ProjectsSection,
+  PublicationsSection,
   HobbiesSection,
   ArchiveSection,
   ContactSection,
@@ -82,6 +83,7 @@ export default function IndexPage() {
         <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
+        <PublicationsSection />
         <HobbiesSection />
         <ArchiveSection />
         <ContactSection />

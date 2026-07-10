@@ -59,6 +59,21 @@
         "button": "PDFダウンロード"
       }
     },
+    "patents": {
+      "title": "特許",
+      "emailParsing": {
+        "title": "調査・解析サーバ及びプログラム",
+        "meta": "特許第6755427号 · 株式会社マインディア · 2020年登録",
+        "description": "メールデータの自動解析により購買情報を収集。レシート撮影やバーコードスキャン等の手作業なしで詳細な購買データを取得する技術。",
+        "button": "特許を見る"
+      },
+      "qualitativeResearch": {
+        "title": "定性調査を支援するためのシステム、方法、及びプログラム",
+        "meta": "特許第6676809号 · 株式会社マインディア · 2020年登録",
+        "description": "ミラールーム型インタビューをオンライン化。参加者に気づかれることなく司会者と依頼者が相談できる定性調査システム。",
+        "button": "特許を見る"
+      }
+    },
     "presentations": {
       "title": "プレゼンテーション & 登壇",
       "snowday": {
@@ -135,18 +150,66 @@
     "ai": "AI & 機械学習",
     "expertSkills": "エキスパートレベル",
     "mainSkills": [
-      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
-      { "name": "React", "level": 90, "category": "frameworks" },
-      { "name": "Ruby", "level": 95, "category": "languages" },
-      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
-      { "name": "AWS", "level": 85, "category": "cloud" },
-      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
-      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
-      { "name": "Redis", "level": 85, "category": "database" },
-      { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
-      { "name": "GCP", "level": 75, "category": "cloud" },
-      { "name": "MongoDB", "level": 75, "category": "database" }
+      {
+        "name": "Ruby on Rails",
+        "level": 95,
+        "category": "frameworks"
+      },
+      {
+        "name": "React",
+        "level": 90,
+        "category": "frameworks"
+      },
+      {
+        "name": "Ruby",
+        "level": 95,
+        "category": "languages"
+      },
+      {
+        "name": "JavaScript/TypeScript",
+        "level": 90,
+        "category": "languages"
+      },
+      {
+        "name": "AWS",
+        "level": 85,
+        "category": "cloud"
+      },
+      {
+        "name": "Docker/Kubernetes",
+        "level": 85,
+        "category": "cloud"
+      },
+      {
+        "name": "MySQL/PostgreSQL",
+        "level": 90,
+        "category": "database"
+      },
+      {
+        "name": "Redis",
+        "level": 85,
+        "category": "database"
+      },
+      {
+        "name": "Python",
+        "level": 80,
+        "category": "languages"
+      },
+      {
+        "name": "Next.js/Astro",
+        "level": 85,
+        "category": "frameworks"
+      },
+      {
+        "name": "GCP",
+        "level": 75,
+        "category": "cloud"
+      },
+      {
+        "name": "MongoDB",
+        "level": 75,
+        "category": "database"
+      }
     ]
   },
   "hobbies": {
@@ -250,6 +313,11 @@
       "electrician": "第二種電気工事士 - 2021年",
       "toeic": "TOEIC: 875"
     }
+  },
+  "publications": {
+    "title": "Publications",
+    "featured": "代表記事",
+    "latest": "最新記事"
   },
   "archive": {
     "title": "アーカイブ",

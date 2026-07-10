@@ -59,6 +59,21 @@
         "button": "Download PDF"
       }
     },
+    "patents": {
+      "title": "Patents",
+      "emailParsing": {
+        "title": "Survey & Analysis Server and Program",
+        "meta": "JP6755427B1 · Minedia, Inc. · Granted 2020",
+        "description": "Automated purchase-data collection that parses e-mail receipts, eliminating manual receipt scanning and barcode work for consumer panel research.",
+        "button": "View Patent"
+      },
+      "qualitativeResearch": {
+        "title": "System, Method, and Program for Supporting Qualitative Research",
+        "meta": "JP6676809B1 · Minedia, Inc. · Granted 2020",
+        "description": "Brings mirror-room style interviews online: moderator and client consult over a back channel invisible to interview participants.",
+        "button": "View Patent"
+      }
+    },
     "presentations": {
       "title": "Presentations & Speaking",
       "snowday": {
@@ -135,18 +150,66 @@
     "ai": "AI & Machine Learning",
     "expertSkills": "Expert Level",
     "mainSkills": [
-      { "name": "Ruby on Rails", "level": 95, "category": "frameworks" },
-      { "name": "React", "level": 90, "category": "frameworks" },
-      { "name": "Ruby", "level": 95, "category": "languages" },
-      { "name": "JavaScript/TypeScript", "level": 90, "category": "languages" },
-      { "name": "AWS", "level": 85, "category": "cloud" },
-      { "name": "Docker/Kubernetes", "level": 85, "category": "cloud" },
-      { "name": "MySQL/PostgreSQL", "level": 90, "category": "database" },
-      { "name": "Redis", "level": 85, "category": "database" },
-      { "name": "Python", "level": 80, "category": "languages" },
-      { "name": "Next.js/Astro", "level": 85, "category": "frameworks" },
-      { "name": "GCP", "level": 75, "category": "cloud" },
-      { "name": "MongoDB", "level": 75, "category": "database" }
+      {
+        "name": "Ruby on Rails",
+        "level": 95,
+        "category": "frameworks"
+      },
+      {
+        "name": "React",
+        "level": 90,
+        "category": "frameworks"
+      },
+      {
+        "name": "Ruby",
+        "level": 95,
+        "category": "languages"
+      },
+      {
+        "name": "JavaScript/TypeScript",
+        "level": 90,
+        "category": "languages"
+      },
+      {
+        "name": "AWS",
+        "level": 85,
+        "category": "cloud"
+      },
+      {
+        "name": "Docker/Kubernetes",
+        "level": 85,
+        "category": "cloud"
+      },
+      {
+        "name": "MySQL/PostgreSQL",
+        "level": 90,
+        "category": "database"
+      },
+      {
+        "name": "Redis",
+        "level": 85,
+        "category": "database"
+      },
+      {
+        "name": "Python",
+        "level": 80,
+        "category": "languages"
+      },
+      {
+        "name": "Next.js/Astro",
+        "level": 85,
+        "category": "frameworks"
+      },
+      {
+        "name": "GCP",
+        "level": 75,
+        "category": "cloud"
+      },
+      {
+        "name": "MongoDB",
+        "level": 75,
+        "category": "database"
+      }
     ]
   },
   "hobbies": {
@@ -250,6 +313,11 @@
       "electrician": "Second-Class Electrician - 2021",
       "toeic": "TOEIC: 875"
     }
+  },
+  "publications": {
+    "title": "Publications",
+    "featured": "Featured articles",
+    "latest": "Latest posts"
   },
   "archive": {
     "title": "Archive",

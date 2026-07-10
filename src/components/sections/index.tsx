@@ -1,5 +1,6 @@
 export { HeroSection } from './HeroSection'
 export { ProjectsSection } from './ProjectsSection'
+export { PublicationsSection } from './PublicationsSection'
 export { AboutSection } from './AboutSection'
 export { PersonalitySection } from './PersonalitySection'
 export { AcademicSection } from './AcademicSection'

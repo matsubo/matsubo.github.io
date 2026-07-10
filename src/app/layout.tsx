@@ -1,5 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Hanken_Grotesk } from 'next/font/google'
+
+const hankenGrotesk = Hanken_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-hanken',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Yuki Matsukura - CTO & Software Engineer | 20+ Years Experience',
@@ -45,8 +53,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={hankenGrotesk.variable} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
