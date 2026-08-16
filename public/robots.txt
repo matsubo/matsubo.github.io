@@ -6,4 +6,7 @@ Allow: /
 Host: https://matsubo.github.io
 
 # Sitemaps
+# Crawlers only read robots.txt from the origin root, so projects published
+# under a subpath must declare their sitemaps here to be discoverable.
 Sitemap: https://matsubo.github.io/sitemap-index.xml
+Sitemap: https://matsubo.github.io/sota-peak-finder/sitemap.xml
