@@ -337,12 +337,7 @@
       "postcode": {
         "title": "Postcode API",
         "subtitle": "High-performance Japanese postal code lookup service",
-        "features": [
-          "REST & GraphQL support",
-          "90%+ test coverage",
-          "Multilingual (JP/EN)",
-          "Cloudflare optimized"
-        ],
+        "features": ["REST & GraphQL support", "90%+ test coverage", "Multilingual (JP/EN)", "Cloudflare optimized"],
         "button": "Visit site"
       },
       "bank": {
@@ -359,12 +354,7 @@
       "corporation": {
         "title": "Corporation API",
         "subtitle": "Company registration information",
-        "features": [
-          "Corporate number search",
-          "Company profile data",
-          "Registration details",
-          "Business information"
-        ],
+        "features": ["Corporate number search", "Company profile data", "Registration details", "Business information"],
         "button": "Visit site"
       },
       "train": {
@@ -414,12 +404,7 @@
       "inkan": {
         "title": "Inkan Generator",
         "subtitle": "Japanese hanko/seal image generator",
-        "features": [
-          "Generate seal (inkan) images",
-          "Customizable name & style",
-          "Browser-based",
-          "Free to use"
-        ],
+        "features": ["Generate seal (inkan) images", "Customizable name & style", "Browser-based", "Free to use"],
         "button": "Visit site"
       }
     },
