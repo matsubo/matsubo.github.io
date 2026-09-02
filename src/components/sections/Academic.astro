@@ -22,6 +22,14 @@ const presentations = [
   { key: 'greeLabs', href: 'https://labs.gree.jp/blog/2011/04/3282/' },
 ]
 
+const writing = [
+  { key: 'pointSystem', href: 'https://zenn.dev/matsubokkuri/articles/point-system-with-expiration' },
+  { key: 'bunshin', href: 'https://zenn.dev/minedia/articles/2026-05-25-ai-consumer-panel-digital-twin' },
+  { key: 'realtimeInterviewer', href: 'https://zenn.dev/minedia/articles/realtime-model-ai-moderator' },
+  { key: 'coolify', href: 'https://zenn.dev/matsubokkuri/articles/2026-03-13-coolify-why-self-hosted-paas' },
+  { key: 'wpToAstro', href: 'https://blog.teraren.com/posts/wordpress-to-astro-migration/' },
+]
+
 const patents = [
   { key: 'surveyServer', href: 'https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6755427/15/ja' },
   { key: 'qualitative', href: 'https://www.j-platpat.inpit.go.jp/c1801/PU/JP-6676809/15/ja' },
@@ -70,6 +78,30 @@ const patents = [
               <div class="card-actions mt-4">
                 <a href={item.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                   {t(`academic.presentations.${item.key}.button`)}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-2 flex items-center gap-2">
+        <Icon name="heroicons:pencil-square" class="w-6 h-6 text-secondary" />
+        {t('academic.writing.title')}
+      </h3>
+      <p class="text-base-content/70 mb-6">{t('academic.writing.subtitle')}</p>
+      <div class="space-y-4">
+        {writing.map((item) => (
+          <div class="card fm-card card-hover-lift">
+            <div class="card-body">
+              <h4 class="card-title">{t(`academic.writing.${item.key}.title`)}</h4>
+              <p class="text-sm text-base-content/70">{t(`academic.writing.${item.key}.meta`)}</p>
+              <p class="mt-2">{t(`academic.writing.${item.key}.description`)}</p>
+              <div class="card-actions mt-4">
+                <a href={item.href} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  {t(`academic.writing.${item.key}.button`)}
                 </a>
               </div>
             </div>
