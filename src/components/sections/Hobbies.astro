@@ -10,7 +10,7 @@ interface Props {
 const { lang } = Astro.props
 const t = useTranslations(lang)
 
-const activities = t.raw<{ title: string; description: string }[]>('hobbies.amateurRadio.activities') ?? []
+const activities = t.raw<{ title: string; description: string; url?: string }[]>('hobbies.amateurRadio.activities') ?? []
 const diyProjects = t.raw<{ title: string; url: string }[]>('hobbies.diy.projects') ?? []
 const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.destinations') ?? []
 ---
@@ -52,7 +52,7 @@ const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.des
             ))}
           </ul>
           <div class="mt-4">
-            <a href="https://diary.teraren.com/travel/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
+            <a href="https://blog.teraren.com/category/Travel/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-full">
               {t('hobbies.travel.allTravels')}
             </a>
           </div>
@@ -87,7 +87,11 @@ const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.des
               <li class="flex items-start gap-2">
                 <span class="text-error">📻</span>
                 <div>
-                  <strong>{activity.title}</strong>
+                  {activity.url ? (
+                    <a href={activity.url} target="_blank" rel="noopener noreferrer" class="link font-bold">{activity.title}</a>
+                  ) : (
+                    <strong>{activity.title}</strong>
+                  )}
                   <p class="text-xs text-base-content/70">{activity.description}</p>
                 </div>
               </li>

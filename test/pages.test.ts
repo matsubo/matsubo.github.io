@@ -74,6 +74,19 @@ describe('expected pages exist in the build', () => {
   })
 })
 
+describe('translations resolve on the built home pages', () => {
+  // useTranslations() returns the key itself when a lookup misses, so a typo in
+  // a component would ship as literal "academic.writing.foo.title" text.
+  const SECTION_ROOTS = ['hero', 'about', 'personality', 'academic', 'experience', 'skills', 'projects', 'hobbies', 'archive', 'contact', 'footer']
+  const leakPattern = new RegExp(`>\\s*((?:${SECTION_ROOTS.join('|')})\\.[\\w.]+)\\s*<`, 'g')
+
+  it.each(['index.html', 'ja/index.html'])('%s has no unresolved translation keys', (page) => {
+    const html = readFileSync(path.join(dist, page), 'utf8')
+    const leaks = [...html.matchAll(leakPattern)].map((m) => m[1])
+    expect(leaks, 'keys rendered literally instead of translated').toEqual([])
+  })
+})
+
 describe('internal links and assets resolve to a built file', () => {
   const htmlFiles = existsSync(dist) ? walkHtml(dist) : []
 

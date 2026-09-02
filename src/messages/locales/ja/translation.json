@@ -86,6 +86,40 @@
         "button": "記事を見る"
       }
     },
+    "writing": {
+      "title": "技術記事・執筆",
+      "subtitle": "Zennに110本以上、ブログは2003年から継続。最近の記事から、実際に作ったもの・測ったものを中心に：",
+      "pointSystem": {
+        "title": "有効期限付きポイントシステムの要求定義と設計",
+        "meta": "Zenn • 2023年公開、2026年7月大幅改訂",
+        "description": "航空会社のマイルのような有効期限付きポイントシステムの要求定義とデータモデル設計を全文公開。トランザクションモデル・会計的アプローチ・オブジェクト指向の3方式を比較し、取り消し処理や経理要件まで扱う。2つのサービスで15年の運用実績。2026年に不変条件と正しさの形式化、PostgreSQLでの実測ベンチマーク、スケーラビリティの見立て、関連研究の付録を加えて改訂。",
+        "button": "記事を読む"
+      },
+      "bunshin": {
+        "title": "アンケート回答を代替するLLM個人モデルの構築と精度検証：N=1予備実験",
+        "meta": "Zenn（Minedia）• 2026年5月",
+        "description": "構造化した個人プロフィールから Claude API でアンケート回答を推論する PoC「bunshin」を実装。Chain-of-Thought と Expert Reflection をプロンプトに導入し、伏せておいた10問のホールドアウトで単一選択 accuracy 71.4%、Likert ±1以内 66.7% を記録。強制選択と自由生成の非対称性についても考察。",
+        "button": "記事を読む"
+      },
+      "realtimeInterviewer": {
+        "title": "Realtimeモデルで定性調査のインタビューをAIに任せる",
+        "meta": "Zenn（Minedia）• 2026年4月",
+        "description": "LiveKit と Speech-to-Speech の Realtime モデルで、定性調査のインタビューを実施するAIモデレーターを構築。レイテンシはサブ100ms。Function Calling により画像提示や残り時間の確認をAI自身が呼び出す構成で、モデル別のコスト（30分あたり約$9〜15）も比較。",
+        "button": "記事を読む"
+      },
+      "coolify": {
+        "title": "Coolify セルフホスト連載（全8回）",
+        "meta": "Zenn • 2026年3月〜4月",
+        "description": "Vercel 月額$42 を自宅サーバ月額$0 に置き換えた全8回の連載。Claude Code MCP による「プロンプトでデプロイ」、Hono・Go・Rails のハンズオン、Cloudflare Tunnel での外部公開、Zabbix によるコンテナ監視、6つのDBのバックアップ戦略、ログ管理と障害対応までを体系化。",
+        "button": "連載を読む"
+      },
+      "wpToAstro": {
+        "title": "19年運用したWordPress 661記事をAstro + Cloudflare Pagesへ移行",
+        "meta": "blog.teraren.com • 2026年3月",
+        "description": "661記事・2,515画像を WordPress から完全SSGの Astro + Cloudflare Pages へ移行した手順と技術的ポイント。ホスティング費用ゼロ、git push だけでデプロイ。2026年8月には分離していた日記ブログの632記事も再統合し、旧URLはすべてリダイレクトで誘導。",
+        "button": "記事を読む"
+      }
+    },
     "patents": {
       "title": "特許",
       "surveyServer": {
@@ -176,6 +210,11 @@
         {
           "title": "デジタル簡易無線",
           "description": "デジタル方式の業務・レジャー用無線"
+        },
+        {
+          "title": "ADS-B 受信局",
+          "description": "Raspberry Pi 4 + RTL-SDR で受信した航空機データを Flightradar24 と FlightAware にフィード",
+          "url": "https://blog.teraren.com/posts/2026-04-01-airband/"
         }
       ],
       "website": "https://je1wfv.teraren.com/"
@@ -185,13 +224,23 @@
       "description": "自宅のリフォームや修理をDIYで実践。技術者としての知識を活かし、水栓の取り付けから家電修理、クルマの整備まで幅広く挑戦。",
       "projects": [
         {
+          "title": "JONSBO N4 + mergerfs + SnapRAID で自作NAS",
+          "url": "https://blog.teraren.com/posts/2026-07-17-nas-diy-v2-jonsbo-n4-sata/",
+          "description": "USB DAS の切断が止まらず SATA 直結で組み直し。データ4台＋パリティ2台"
+        },
+        {
+          "title": "実家（3階建RC造）のネットワークインフラ整備",
+          "url": "https://blog.teraren.com/posts/home-network-infrastructure-setup/",
+          "description": "Cat6A 配線、WiFi AP 3台、YAMAHA RTX1200"
+        },
+        {
           "title": "LIXILナビッシュをDIY取り付け",
-          "url": "https://diary.teraren.com/posts/2022-10-20-nah461sy-nabish",
+          "url": "https://blog.teraren.com/posts/2022-10-20-nah461sy-nabish/",
           "description": "タッチレス水栓の取り付けに挑戦"
         },
         {
           "title": "Panasonicビルトイン食洗機をDIY修理",
-          "url": "https://diary.teraren.com/posts/2025-04-03-panasonic-dish-washer",
+          "url": "https://blog.teraren.com/posts/2025-04-03-panasonic-dish-washer/",
           "description": "ビルトイン食洗機の修理プロジェクト"
         },
         {
@@ -223,22 +272,22 @@
       "destinations": [
         {
           "title": "トルコ周遊",
-          "url": "https://diary.teraren.com/posts/2022-10-02-turkey",
+          "url": "https://blog.teraren.com/posts/2022-10-02-turkey/",
           "description": "イスタンブール、カッパドキア"
         },
         {
           "title": "中欧旅行",
-          "url": "https://diary.teraren.com/posts/2018-07-24-vienna-praha",
+          "url": "https://blog.teraren.com/posts/2018-07-24-vienna-praha/",
           "description": "ウィーン、ザルツブルク、プラハ"
         },
         {
           "title": "モルディブ",
-          "url": "https://diary.teraren.com/posts/2014-09-13-maldives-olhuveli",
+          "url": "https://blog.teraren.com/posts/2014-09-13-maldives-olhuveli/",
           "description": "Olhuveli Beach & Spa Resort"
         },
         {
           "title": "クロアチア",
-          "url": "https://diary.teraren.com/posts/2019-07-11-zagreb-croatia",
+          "url": "https://blog.teraren.com/posts/2019-07-11-zagreb-croatia/",
           "description": "ザグレブ、Rastoke地域"
         }
       ]
@@ -307,6 +356,13 @@
         "description": "国内トライアスロン2,444大会以上、レースリザルト350万件以上、選手プロフィール125万件以上のデータベースを基盤としたLLMコーチングプラットフォーム。データはGitHubでオープンソース公開。\n\nレース分析エンジンは、ランキング、パーセンタイルベースの偏差値、強み・弱み診断、トレーニングアドバイス、レース振り返りを生成。LLMコーチは100以上のデータポイントから個別化トレーニングプランを作成し、ピリオダイゼーション（ベース→専門→試合→回復）、パワー／心拍ゾーン最適化、疲労・モチベーションに応じた動的調整に対応。24時間対応のLLMチャットボットがコーチング質問に答え、ドラッグ＆ドロップのカレンダーUIでGoogleカレンダー／Appleカレンダーと同期。\n\nOpenAPI仕様準拠のREST APIとMCP（Model Context Protocol）対応により、Claude等のLLMアシスタントからもデータ参照が可能。\n\nフリープランではレース分析と初回プラン生成、プレミアムプランではゴール無制限、プラン再生成、チャットサポート、パフォーマンス予測を提供。従来のコーチング料金の約1/200という圧倒的なコストパフォーマンスを実現。",
         "button": "ライブサイトを見る",
         "tech": "GPT / Gemini, MCP, OpenAPI, React, Python, Open Source Data"
+      },
+      "meetingRecorder": {
+        "title": "ESP32 議事録レコーダー",
+        "subtitle": "ワンボタンで話者分離つき議事録を残す対面会議用デバイス",
+        "description": "会議室に据え置き、ボタンを押すだけで話者分離つきの議事録が Google Drive に、要約と会議指標が Slack に届く録音端末を自作。ハードは ESP32-C3 SuperMini にマイク・OLED・ボタンを繋いだだけで1台あたり約1,200円。推論はすべてクラウド側で行うため、端末にAI性能は不要。\n\n端末は10秒ぶんずつ音声を送り、Cloudflare Worker は音声をメモリに載せず R2 へ素通しするため、会議が長くなっても処理側の負荷は増えない。話者分離つきの文字起こしは ElevenLabs Scribe、構造化した要約は Claude が担当。ランニングコストは1時間の会議あたり約$0.29、固定費$0。その98.6%が文字起こしと要約のAI費用。\n\nオンライン会議と同じように対面の会話もデータとして残すため、職場の共有会議室向けに製作。ファームウェアと Worker のコードは社内リポジトリで管理。",
+        "button": "記事を読む",
+        "tech": "ESP32-C3, Cloudflare Workers, R2, ElevenLabs Scribe, Claude, Google Drive API, Slack"
       }
     },
     "pwaApps": {
@@ -436,6 +492,18 @@
         "title": "claude-code-max-usage",
         "subtitle": "tmux/StarshipでClaude Code Maxの使用量表示",
         "description": "Claude Code (Maxプラン) のAPI使用量をtmuxステータスバーまたはStarshipプロンプトに表示。5時間／7日間の使用率をカラーコード付きプログレスバーで可視化。Pure bash + jq + curl。",
+        "button": "GitHubで見る"
+      },
+      "astroAffiliateCard": {
+        "title": "astro-affiliate-card",
+        "subtitle": "Astro / remark 向け Amazon・楽天・Yahoo!ショッピング商品カード",
+        "description": "記事に ::amazon{asin=\"...\"} と1行書くだけで、ASIN 1つから Amazon・楽天・Yahoo!ショッピングのボタンが揃った商品カードを表示。商品データは JSON に落としてコミットする方式のため、ビルドやデプロイが外部APIの生死に依存しない。Astro インテグレーション（astro-affiliate-card）とフレームワーク非依存の remark プラグイン（remark-affiliate-card）として npm で公開。",
+        "button": "GitHubで見る"
+      },
+      "roomAirMonitor": {
+        "title": "room-air-monitor",
+        "subtitle": "ESP32-C3 + ESPHome のオフィス環境モニタ",
+        "description": "SCD41・SGP41・INMP441 センサで CO2・温湿度・VOC/NOx 指数・騒音を計測し、OLED に現在値を表示しながら毎分 InfluxDB へ送信。複数の部屋に同構成で設置する前提で、アーキテクチャ・BOM・回路・現場でのトラブルシュートまでドキュメント化。",
         "button": "GitHubで見る"
       }
     },
