@@ -59,7 +59,7 @@ typings/
 out/
 
 # Astro build output
-dist/
+/dist/
 .astro/
 
 # Next.js type definitions

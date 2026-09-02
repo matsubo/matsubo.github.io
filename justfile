@@ -44,4 +44,4 @@ coverage:
 test: test-unit test-dist
 
 # Everything CI runs
-ci: lint typecheck test
+ci: lint typecheck coverage test-dist

@@ -1,7 +1,7 @@
-import { describe, it, expect, beforeAll } from 'vitest'
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { beforeAll, describe, expect, it } from 'vitest'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..')
 const dist = path.join(root, 'dist')
@@ -68,7 +68,7 @@ function walkHtml(dir: string, acc: string[] = []): string[] {
 }
 
 describe('expected pages exist in the build', () => {
-  it.each(EXPECTED_ROUTES)('%s is published', (route) => {
+  it.each(EXPECTED_ROUTES)('%s is published', route => {
     const file = path.join(dist, route.replace(/^\//, ''), 'index.html')
     expect(existsSync(file), `missing built page for ${route} (expected ${path.relative(root, file)})`).toBe(true)
   })
@@ -94,7 +94,7 @@ describe('internal links and assets resolve to a built file', () => {
     expect(targets.length).toBeGreaterThan(20)
   })
 
-  it.each(targets)('%s resolves', (target) => {
+  it.each(targets)('%s resolves', target => {
     const file = resolveToFile(target)
     expect(file && existsSync(file), `broken internal link ${target} (referenced by ${refs.get(target)})`).toBe(true)
   })
