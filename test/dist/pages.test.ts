@@ -99,3 +99,12 @@ describe('internal links and assets resolve to a built file', () => {
     expect(file && existsSync(file), `broken internal link ${target} (referenced by ${refs.get(target)})`).toBe(true)
   })
 })
+
+describe('every page footer shows the last-updated date', () => {
+  it.each(EXPECTED_ROUTES)('%s has a <time datetime> in the footer', route => {
+    const html = readFileSync(path.join(dist, route.replace(/^\//, ''), 'index.html'), 'utf8')
+    // Some archive pages carry their own <footer>; the shared site footer is the last one.
+    const footer = html.slice(html.lastIndexOf('<footer'), html.lastIndexOf('</footer>'))
+    expect(footer).toMatch(/<time datetime="\d{4}-\d{2}-\d{2}">\d{4}-\d{2}-\d{2}<\/time>/)
+  })
+})

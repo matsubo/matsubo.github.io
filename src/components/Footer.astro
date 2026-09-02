@@ -1,5 +1,6 @@
 ---
 import { type Locale, localizePath, useTranslations } from '../i18n/utils'
+import { getLastUpdated } from '../lib/last-updated'
 import LanguageSwitcher from './LanguageSwitcher.astro'
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 const { lang, path = '/', localized = true } = Astro.props
 const t = useTranslations(lang)
 const year = new Date().getFullYear()
+const lastUpdated = getLastUpdated()
 
 const quickLinks = [
   { path: '/ht/', key: 'lab' },
@@ -107,6 +109,9 @@ const quickLinks = [
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-sm text-base-content/60">
           © {year} {t('footer.brand.name')}. {t('footer.copyright')}
+        </p>
+        <p class="text-sm text-base-content/60 font-mono">
+          {t('footer.lastUpdated')}: <time datetime={lastUpdated}>{lastUpdated}</time>
         </p>
       </div>
     </div>
