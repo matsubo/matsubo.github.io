@@ -11,6 +11,7 @@ import cytaImg from '../../images/projects/cyta.webp'
 import emojiSpriteImg from '../../images/projects/emoji-sprite.webp'
 import gasPlatformImg from '../../images/projects/gas-platform.png'
 import greeSmartphoneImg from '../../images/projects/gree-smartphone.webp'
+import meetingRecorderImg from '../../images/projects/meeting-recorder-esp32.webp'
 import minedsImg from '../../images/projects/mineds.webp'
 import recallSystemImg from '../../images/projects/recall-system.png'
 import spikeImg from '../../images/projects/spike.webp'
@@ -26,6 +27,12 @@ const t = useTranslations(lang)
 const aiTools = [
   { key: 'moderator', img: aiModeratorImg, alt: 'AI Moderator', href: 'https://ai-moderator.teraren.com/' },
   { key: 'triathlon', img: aiTriathlonImg, alt: 'AI TRI+', href: 'https://ai-triathlon-result.teraren.com/' },
+  {
+    key: 'meetingRecorder',
+    img: meetingRecorderImg,
+    alt: t('projects.aiTools.meetingRecorder.title'),
+    href: 'https://zenn.dev/minedia/articles/meeting-recorder-esp32',
+  },
 ]
 
 const pwaApps = [
@@ -48,6 +55,8 @@ const apiServices = [
 const ossTools = [
   { key: 'voiceMemoStt', href: 'https://github.com/matsubo/voice-memo-stt' },
   { key: 'claudeCodeMaxUsage', href: 'https://github.com/matsubo/claude-code-max-usage' },
+  { key: 'astroAffiliateCard', href: 'https://github.com/matsubo/astro-affiliate-card' },
+  { key: 'roomAirMonitor', href: 'https://github.com/matsubo/room-air-monitor' },
 ]
 
 const pastProjects = [
