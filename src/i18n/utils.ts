@@ -11,7 +11,10 @@ const dictionaries: Record<Locale, unknown> = { en, ja }
 function resolve(dict: unknown, key: string): unknown {
   return key
     .split('.')
-    .reduce<unknown>((obj, part) => (obj && typeof obj === 'object' ? (obj as Record<string, unknown>)[part] : undefined), dict)
+    .reduce<unknown>(
+      (obj, part) => (obj && typeof obj === 'object' ? (obj as Record<string, unknown>)[part] : undefined),
+      dict,
+    )
 }
 
 export interface Translator {

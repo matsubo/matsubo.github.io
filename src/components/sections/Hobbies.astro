@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
-import { useTranslations, type Locale } from '../../i18n/utils'
 import SectionHeader from '@/components/SectionHeader.astro'
+import { type Locale, useTranslations } from '../../i18n/utils'
 
 interface Props {
   lang: Locale
@@ -10,7 +10,8 @@ interface Props {
 const { lang } = Astro.props
 const t = useTranslations(lang)
 
-const activities = t.raw<{ title: string; description: string; url?: string }[]>('hobbies.amateurRadio.activities') ?? []
+const activities =
+  t.raw<{ title: string; description: string; url?: string }[]>('hobbies.amateurRadio.activities') ?? []
 const diyProjects = t.raw<{ title: string; url: string }[]>('hobbies.diy.projects') ?? []
 const destinations = t.raw<{ title: string; url: string }[]>('hobbies.travel.destinations') ?? []
 ---

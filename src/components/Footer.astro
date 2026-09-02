@@ -1,5 +1,6 @@
 ---
-import { useTranslations, localizePath, type Locale } from '../i18n/utils'
+import { type Locale, localizePath, useTranslations } from '../i18n/utils'
+import { getLastUpdated } from '../lib/last-updated'
 import LanguageSwitcher from './LanguageSwitcher.astro'
 
 interface Props {
@@ -11,11 +12,11 @@ interface Props {
 const { lang, path = '/', localized = true } = Astro.props
 const t = useTranslations(lang)
 const year = new Date().getFullYear()
+const lastUpdated = getLastUpdated()
 
 const quickLinks = [
   { path: '/ht/', key: 'lab' },
   { path: '/sfc/', key: 'university' },
-  { path: '/rails/', key: 'rails' },
 ]
 ---
 
@@ -109,6 +110,9 @@ const quickLinks = [
         <p class="text-sm text-base-content/60">
           © {year} {t('footer.brand.name')}. {t('footer.copyright')}
         </p>
+        <p class="text-sm text-base-content/60 font-mono">
+          {t('footer.lastUpdated')}: <time datetime={lastUpdated}>{lastUpdated}</time>
+        </p>
       </div>
     </div>
   </div>
@@ -119,10 +123,10 @@ const quickLinks = [
     var root = document.documentElement
     var cb = document.getElementById('theme-toggle')
     if (!cb) return
-    var isDark = (localStorage.getItem('theme') || 'editorial') === 'editorial-dark'
+    var isDark = localStorage.getItem('theme') !== 'fieldmanual-light'
     cb.checked = isDark
     cb.addEventListener('change', function () {
-      var theme = cb.checked ? 'editorial-dark' : 'editorial'
+      var theme = cb.checked ? 'fieldmanual' : 'fieldmanual-light'
       root.setAttribute('data-theme', theme)
       try {
         localStorage.setItem('theme', theme)

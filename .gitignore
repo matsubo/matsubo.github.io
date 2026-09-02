@@ -59,7 +59,7 @@ typings/
 out/
 
 # Astro build output
-dist/
+/dist/
 .astro/
 
 # Next.js type definitions
@@ -85,3 +85,5 @@ yarn-error.log
 
 #Intellij editor
 .idea
+# TypeScript incremental build info
+*.tsbuildinfo

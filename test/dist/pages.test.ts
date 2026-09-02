@@ -1,9 +1,9 @@
-import { describe, it, expect, beforeAll } from 'vitest'
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { beforeAll, describe, expect, it } from 'vitest'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..')
 const dist = path.join(root, 'dist')
 
 // Every route the site is expected to publish, as a clean URL path.
@@ -68,7 +68,7 @@ function walkHtml(dir: string, acc: string[] = []): string[] {
 }
 
 describe('expected pages exist in the build', () => {
-  it.each(EXPECTED_ROUTES)('%s is published', (route) => {
+  it.each(EXPECTED_ROUTES)('%s is published', route => {
     const file = path.join(dist, route.replace(/^\//, ''), 'index.html')
     expect(existsSync(file), `missing built page for ${route} (expected ${path.relative(root, file)})`).toBe(true)
   })
@@ -77,12 +77,24 @@ describe('expected pages exist in the build', () => {
 describe('translations resolve on the built home pages', () => {
   // useTranslations() returns the key itself when a lookup misses, so a typo in
   // a component would ship as literal "academic.writing.foo.title" text.
-  const SECTION_ROOTS = ['hero', 'about', 'personality', 'academic', 'experience', 'skills', 'projects', 'hobbies', 'archive', 'contact', 'footer']
+  const SECTION_ROOTS = [
+    'hero',
+    'about',
+    'personality',
+    'academic',
+    'experience',
+    'skills',
+    'projects',
+    'hobbies',
+    'archive',
+    'contact',
+    'footer',
+  ]
   const leakPattern = new RegExp(`>\\s*((?:${SECTION_ROOTS.join('|')})\\.[\\w.]+)\\s*<`, 'g')
 
-  it.each(['index.html', 'ja/index.html'])('%s has no unresolved translation keys', (page) => {
+  it.each(['index.html', 'ja/index.html'])('%s has no unresolved translation keys', page => {
     const html = readFileSync(path.join(dist, page), 'utf8')
-    const leaks = [...html.matchAll(leakPattern)].map((m) => m[1])
+    const leaks = [...html.matchAll(leakPattern)].map(m => m[1])
     expect(leaks, 'keys rendered literally instead of translated').toEqual([])
   })
 })
@@ -107,8 +119,17 @@ describe('internal links and assets resolve to a built file', () => {
     expect(targets.length).toBeGreaterThan(20)
   })
 
-  it.each(targets)('%s resolves', (target) => {
+  it.each(targets)('%s resolves', target => {
     const file = resolveToFile(target)
     expect(file && existsSync(file), `broken internal link ${target} (referenced by ${refs.get(target)})`).toBe(true)
+  })
+})
+
+describe('every page footer shows the last-updated date', () => {
+  it.each(EXPECTED_ROUTES)('%s has a <time datetime> in the footer', route => {
+    const html = readFileSync(path.join(dist, route.replace(/^\//, ''), 'index.html'), 'utf8')
+    // Some archive pages carry their own <footer>; the shared site footer is the last one.
+    const footer = html.slice(html.lastIndexOf('<footer'), html.lastIndexOf('</footer>'))
+    expect(footer).toMatch(/<time datetime="\d{4}-\d{2}-\d{2}">\d{4}-\d{2}-\d{2}<\/time>/)
   })
 })

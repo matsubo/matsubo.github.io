@@ -1,21 +1,21 @@
 ---
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
-import { useTranslations, type Locale } from '../../i18n/utils'
 import SectionHeader from '@/components/SectionHeader.astro'
+import { type Locale, useTranslations } from '../../i18n/utils'
 
 import aiModeratorImg from '../../images/projects/ai-moderator.png'
 import aiTriathlonImg from '../../images/projects/ai-triathlon.png'
+import covid19DailyImg from '../../images/projects/covid19-daily.webp'
+import cytaImg from '../../images/projects/cyta.webp'
+import emojiSpriteImg from '../../images/projects/emoji-sprite.webp'
+import gasPlatformImg from '../../images/projects/gas-platform.png'
+import greeSmartphoneImg from '../../images/projects/gree-smartphone.webp'
 import meetingRecorderImg from '../../images/projects/meeting-recorder-esp32.webp'
 import minedsImg from '../../images/projects/mineds.webp'
-import gasPlatformImg from '../../images/projects/gas-platform.png'
 import recallSystemImg from '../../images/projects/recall-system.png'
 import spikeImg from '../../images/projects/spike.webp'
-import greeSmartphoneImg from '../../images/projects/gree-smartphone.webp'
-import cytaImg from '../../images/projects/cyta.webp'
 import terarenImg from '../../images/projects/teraren.webp'
-import emojiSpriteImg from '../../images/projects/emoji-sprite.webp'
-import covid19DailyImg from '../../images/projects/covid19-daily.webp'
 
 interface Props {
   lang: Locale
@@ -27,7 +27,12 @@ const t = useTranslations(lang)
 const aiTools = [
   { key: 'moderator', img: aiModeratorImg, alt: 'AI Moderator', href: 'https://ai-moderator.teraren.com/' },
   { key: 'triathlon', img: aiTriathlonImg, alt: 'AI TRI+', href: 'https://ai-triathlon-result.teraren.com/' },
-  { key: 'meetingRecorder', img: meetingRecorderImg, alt: t('projects.aiTools.meetingRecorder.title'), href: 'https://zenn.dev/minedia/articles/meeting-recorder-esp32' },
+  {
+    key: 'meetingRecorder',
+    img: meetingRecorderImg,
+    alt: t('projects.aiTools.meetingRecorder.title'),
+    href: 'https://zenn.dev/minedia/articles/meeting-recorder-esp32',
+  },
 ]
 
 const pwaApps = [
@@ -59,11 +64,32 @@ const pastProjects = [
   { key: 'gas', img: gasPlatformImg, alt: 'City Gas Retail Platform', links: [] },
   { key: 'recall', img: recallSystemImg, alt: 'Product Recall System', links: [] },
   { key: 'spike', img: spikeImg, alt: 'SPIKE Payment Service', links: [] },
-  { key: 'gree', img: greeSmartphoneImg, alt: 'GREE Smartphone Adaptation', links: [{ href: 'blog', label: 'blogLabel' }, { href: 'hatena', label: 'hatenaLabel' }] },
+  {
+    key: 'gree',
+    img: greeSmartphoneImg,
+    alt: 'GREE Smartphone Adaptation',
+    links: [
+      { href: 'blog', label: 'blogLabel' },
+      { href: 'hatena', label: 'hatenaLabel' },
+    ],
+  },
   { key: 'cyta', img: cytaImg, alt: 'Cyta.jp Learning Platform', links: [] },
   { key: 'teraren', img: terarenImg, alt: 'teraren.com Rental Server', links: [] },
-  { key: 'emoji', img: emojiSpriteImg, alt: 'Emoji Sprite OSS Library', links: [{ href: 'github', label: 'githubLabel' }] },
-  { key: 'covid19', img: covid19DailyImg, alt: 'COVID-19 Case Visualization System', links: [{ href: 'site', label: 'siteLabel' }, { href: 'github', label: 'githubLabel' }] },
+  {
+    key: 'emoji',
+    img: emojiSpriteImg,
+    alt: 'Emoji Sprite OSS Library',
+    links: [{ href: 'github', label: 'githubLabel' }],
+  },
+  {
+    key: 'covid19',
+    img: covid19DailyImg,
+    alt: 'COVID-19 Case Visualization System',
+    links: [
+      { href: 'site', label: 'siteLabel' },
+      { href: 'github', label: 'githubLabel' },
+    ],
+  },
   { key: 'sfcCns', img: null, alt: '', links: [{ href: 'site', label: 'siteLabel' }] },
 ]
 ---
